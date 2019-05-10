@@ -65,7 +65,7 @@ class OC_Theme {
 	 * @return string entity name
 	 */
 	public function getEntity() {
-		return '/e/';
+		return 'e Foundation';
 	}
 
 	/**
