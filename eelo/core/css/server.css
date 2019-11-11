@@ -22,7 +22,7 @@
 #body-user #header,
 #body-settings #header,
 #body-public #header {
-	background-color: #AFAFAF;
+    background-color: #AFAFAF;
 }
 
 /* log in screen background color */
@@ -44,8 +44,8 @@ input[type="submit"].primary:active,
 input[type="button"].primary:active,
 button.primary:active,
 .button.primary:active {
-	border-color: #000;
-	background-color: #AFAFAF;
+    border-color: #000;
+    background-color: #AFAFAF;
 }
 .primary:hover,
 input[type="submit"].primary:hover,
@@ -57,23 +57,28 @@ input[type="submit"].primary:focus,
 input[type="button"].primary:focus,
 button.primary:focus,
 .button.primary:focus {
-	background-color: #999999;
+    background-color: #999999;
 }
 .primary:active, input[type="submit"].primary:active, input[type="button"].primary:active, button.primary:active, .button.primary:active,
 .primary:disabled, input[type="submit"].primary:disabled, input[type="button"].primary:disabled, button.primary:disabled, .button.primary:disabled,
 .primary:disabled:hover, input[type="submit"].primary:disabled:hover, input[type="button"].primary:disabled:hover, button.primary:disabled:hover, .button.primary:disabled:hover,
 .primary:disabled:focus, input[type="submit"].primary:disabled:focus, input[type="button"].primary:disabled:focus, button.primary:disabled:focus, .button.primary:disabled:focus {
-	background-color: #999999;
+    background-color: #999999;
 }
 
 /* use logos from theme */
 #header .logo,
 #firstrunwizard .logo {
-	background-image: url('../img/logo.png');
-	width: 256px;
-	height: 128px;
+    background-image: url('../img/logo.png');
+    width: 256px;
+    height: 128px;
 }
 #header .logo-icon {
-	width: 62px;
-	height: 34px;
+    width: 62px;
+    height: 34px;
+}
+:root {
+    --color-primary: #AFAFAF;
+    --color-primary-element: #AFAFAF;
+    --color-primary-element-light: #999999;
 }
