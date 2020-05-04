@@ -1,4 +1,5 @@
 { "translations": {
-    "Username or email" : "Email (eg user@e.email)"
+    "Username or email" : "Email (eg user@e.email)",
+    "Email (eg user@e.email)" : "Email (eg user@e.email)"
     },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
