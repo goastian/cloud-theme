@@ -25,9 +25,8 @@ body {
 	text-align: center;
 	background-color: #0082c9;
 	background-image: url('../img/background.png?v=18');
-	background-position: 50% 50%;
-	background-repeat: repeat;
-	background-size: 275px, contain;
+	background-repeat: no-repeat;
+	background-size: cover;
 	background-attachment: fixed; /* fix background gradient */
 	min-height: 100%; /* fix sticky footer */
 	height: auto;
