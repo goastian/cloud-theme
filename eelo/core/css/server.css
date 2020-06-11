@@ -74,11 +74,16 @@ button.primary:focus,
     height: 128px;
 }
 #header .logo-icon {
-    width: 62px;
-    height: 34px;
+    width: 42px;
+    height: 42px;
+    top: 4px;
+    bottom: 0px;
 }
 :root {
     --color-primary: #AFAFAF;
     --color-primary-element: #AFAFAF;
     --color-primary-element-light: #999999;
+}
+#header #nextcloud {
+    padding-left: 70px;
 }
