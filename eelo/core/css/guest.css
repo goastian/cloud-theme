@@ -3,6 +3,14 @@
  See the COPYING-README file. */
 
 /* Default and reset */
+@font-face {
+  font-family: "Century Gothic Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Century Gothic Regular"),
+    url("../webfonts/GOTHIC.woff") format("woff");
+}
+
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section { margin:0; padding:0; border:0; outline:0; font-weight:inherit; font-size:100%; font-family:inherit; vertical-align:baseline; cursor:default; }
 html { height:100%; }
 article, aside, dialog, figure, footer, header, hgroup, nav, section { display:block; }
@@ -24,7 +32,7 @@ body {
 	color: #000;
 	text-align: center;
 	background-color: #0082c9;
-	background-image: url('../img/background.png?v=18')!important;
+	background-image: url('../img/background.png?v=18') !important;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover!important;
@@ -908,14 +916,144 @@ footer .info .entity-name {
 /* keep the labels for screen readers but hide them since we use placeholders */
 label.infield,
 .hidden-visually {
-	position: absolute;
-	left:-10000px;
-	top: auto;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 a.legal {
-	font-size: smaller;
+  font-size: smaller;
+}
+
+#body-login {
+  background-color: #f2f2f2 !important;
+  background-image: none !important;
+  color: #808080;
+  font-family: "Century Gothic Regular";
+}
+
+#body-login #user,
+#body-login #password {
+  color: rgba(0, 0, 0, 0.8);
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 0;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  font-size: 1.3em;
+  line-height: 1.7em;
+  transition: all 0.5s linear;
+  width: 97.656%;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+#body-login .groupbottom,
+#body-login .grouptop {
+  display: block;
+  width: 100%;
+  border: none;
+}
+#body-login #reset-password-wrapper a {
+  color: rgba(0, 0, 0, 0.8);
+}
+#body-login #submit-wrapper,
+#body-login #reset-password-wrapper {
+  background-color: #f2f2f2;
+  margin-top: 26px;
+}
+#body-login #submit-form,
+#body-login #reset-password-submit {
+  background-color: #007fff;
+  color: white;
+  border: none;
+  height: 50px;
+}
+#body-login #submit-form {
+  width: 190px;
+}
+#body-login #reset-password-submit {
+  width: 220px;
+}
+#body-login form {
+  padding-left: 22%;
+  padding-right: 22%;
+  margin-top: 50px;
+}
+#body-login fieldset {
+  width: auto;
+  margin: 0;
+}
+#body-login .toggle-password {
+  right: 0%;
+  top: 39%;
+}
+
+#body-login footer .info,
+#body-login footer .info a,
+#body-login #lost-password,
+#body-login .lost-password-container a {
+  color: #808080;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 1em;
+  text-shadow: none;
+}
+#body-login footer .info,
+#body-login footer .info a {
+  line-height: 1em;
+}
+#body-login .lost-password-container a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+#body-login #submit-wrapper .submit-icon {
+  top: 23px;
+  right: 30%;
+}
+#reset-password-wrapper .submit-icon {
+  top: 23px;
+  right: 25%;
+}
+#body-login .warning,
+#body-login .error {
+  width: 100%;
+  color: #d8000c;
+  background-color: #ffd2d2;
+  font-size: 1.1em;
+}
+
+#body-login .update,
+#body-login .success {
+  color: #4f8a10;
+  background-color: #dff2bf;
+}
+
+#body-login #user:hover,
+#body-login #user:focus,
+#body-login #password:hover,
+#body-login #password:focus {
+  outline: 0;
+  transition: all 0.5s linear !important;
+  box-shadow: inset 0px 0px 10px #ccc !important;
+}
+#body-login #lost-password:hover {
+	text-decoration: underline;
+}
+#body-login #header .logo {
+  background-image: url("../img/logo.png");
+}
+
+#body-login .lost-password-container .update {
+  margin-bottom: 3%;
+  width: 100%;
+  font-size: 1.1em;
+}
+#body-login #submit-form:hover,
+#body-login #reset-password-submit:hover {
+  opacity: 0.9;
 }
