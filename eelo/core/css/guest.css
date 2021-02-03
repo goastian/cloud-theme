@@ -673,7 +673,7 @@
   .warning,
   .update,
   .error {
-	  display: block;
+	  display: block !important;
 	  margin-top: 15px;
 	  padding: 15px;
 	  background-color: rgba(0,0,0,.3);
