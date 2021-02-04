@@ -49,8 +49,7 @@
   
   /* Various fonts settings */
   #body-login a {
-	  color: #fff;
-	  font-weight: 600;
+	  color: #808080;
   }
   #body-login a:not(.button):hover,
   #body-login a:not(.button):focus {
