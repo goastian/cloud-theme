@@ -13,7 +13,7 @@
 /* Mobile font sizes */
 @media screen and (max-width: 768px) {
 	#body-login #user, #body-login #password {
-				   font-size: 1.1em !important;
+				   font-size: 1.1em;
    
 		   }
    }  
