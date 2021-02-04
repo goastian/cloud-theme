@@ -48,8 +48,8 @@
   }
   
   /* Various fonts settings */
-  #body-login a {
-	  color: #808080 !important;
+  #body-login .wrapper a {
+	  color: #808080;
   }
   #body-login a:not(.button):hover,
   #body-login a:not(.button):focus {
