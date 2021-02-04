@@ -1029,7 +1029,7 @@
   #body-login .error {
 	width: 100%;
 	color: white;
-	background-color: #CE6E6E;
+	background-color: #fb3845;
 	font-size: 1.1em;
 	text-align: center;
   }
@@ -1037,7 +1037,7 @@
   #body-login .update,
   #body-login .success {
 	  color: white;
-	  background-color: #9BCE79;
+	  background-color: #3ad975;
   }
   
   #body-login #user:hover,
