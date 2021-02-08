@@ -10,7 +10,13 @@
 	src: local("Century Gothic Regular"),
 	  url("../webfonts/GOTHIC.woff") format("woff");
   }
-  
+/* Mobile font sizes */
+@media screen and (max-width: 768px) {
+	#body-login #user, #body-login #password {
+				   font-size: 1.1em;
+   
+		   }
+   }  
   html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section { margin:0; padding:0; border:0; outline:0; font-weight:inherit; font-size:100%; font-family:inherit; vertical-align:baseline; cursor:default; }
   html { height:100%; }
   article, aside, dialog, figure, footer, header, hgroup, nav, section { display:block; }
@@ -42,9 +48,8 @@
   }
   
   /* Various fonts settings */
-  #body-login a {
-	  color: #fff;
-	  font-weight: 600;
+  #body-login .wrapper a {
+	  color: #808080;
   }
   #body-login a:not(.button):hover,
   #body-login a:not(.button):focus {
@@ -667,7 +672,7 @@
   .warning,
   .update,
   .error {
-	  display: block;
+	  display: block !important;
 	  margin-top: 15px;
 	  padding: 15px;
 	  background-color: rgba(0,0,0,.3);
@@ -986,9 +991,10 @@
   #body-login fieldset {
 	width: auto;
 	margin: 0;
+	overflow-x: hidden;
   }
   #body-login .toggle-password {
-	right: 0%;
+	right: 4%;
 	top: 39%;
   }
   
@@ -1021,10 +1027,11 @@
   }
   #body-login .warning,
   #body-login .error {
-	width: 100%;
+	max-width: 100%;
 	color: white;
 	background-color: #fb3845;
 	font-size: 1.1em;
+	text-align: center;
   }
   
   #body-login .update,
