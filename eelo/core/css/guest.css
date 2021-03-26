@@ -1114,8 +1114,7 @@ a.legal {
 }
 
 #body-login #submit-wrapper,
-#body-login #reset-password-wrapper,
-#body-login .two-factor-submit {
+#body-login #reset-password-wrapper {
     background-color: #f2f2f2;
     margin-top: 26px;
 }
