@@ -1085,7 +1085,8 @@ a.legal {
 }
 
 #body-login #user,
-#body-login #password {
+#body-login #password,
+#body-login .totp-form > input[type="tel"] {
     color: rgba(0, 0, 0, 0.8);
     background-color: white;
     padding-left: 10%;
@@ -1113,20 +1114,29 @@ a.legal {
 }
 
 #body-login #submit-wrapper,
-#body-login #reset-password-wrapper {
+#body-login #reset-password-wrapper
+#body-login {
     background-color: #f2f2f2;
     margin-top: 26px;
 }
 
 #body-login #submit-form,
-#body-login #reset-password-submit {
+#body-login #reset-password-submit,
+#body-login .two-factor-submit {
     background-color: #007fff;
     color: white;
     border: none;
     height: 50px;
 }
 
-#body-login #submit-form {
+#body-login .totp-form input, 
+#body-login .totp-form button {
+    margin-top: 5%;
+    max-width: 90%;
+}
+
+#body-login #submit-form,
+#body-login .two-factor-submit {
     width: 190px;
 }
 
@@ -1221,7 +1231,8 @@ a.legal {
 }
 
 #body-login #submit-form:hover,
-#body-login #reset-password-submit:hover {
+#body-login #reset-password-submit:hover,
+#body-login .two-factor-submit:hover {
     opacity: 0.9;
 }
   
