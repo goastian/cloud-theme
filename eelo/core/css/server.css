@@ -108,7 +108,7 @@ button.primary:focus,
 .icon-file,.icon-filetype-text{
     background-image:url(../img/text.svg)
 }
-.icon-folder,.icon-filetype-folder{
+.icon-folder,.icon-filetype-folder, tr[data-type="dir"] div.thumbnail{
     background-image:url(../img/folder.svg)
 }
 .icon-filetype-folder-drag-accept{
