@@ -87,3 +87,53 @@ button.primary:focus,
 #header #nextcloud {
     padding-left: 70px;
 }
+
+/* CSS TWEAKS TAKEN FROM THEMING APP (disabled now) */ 
+
+.nc-theming-main-background{
+    background-color:#999999
+}
+.nc-theming-main-text{
+    color:#fff
+}
+.nc-theming-contrast{
+    color:#fff
+}
+#appmenu:not(.inverted) svg{
+    filter:none
+}
+#appmenu.inverted svg{
+    filter:invert(1)
+}
+.icon-file,.icon-filetype-text{
+    background-image:url(../img/text.svg)
+}
+.icon-folder,.icon-filetype-folder{
+    background-image:url(../img/folder.svg)
+}
+.icon-filetype-folder-drag-accept{
+    background-image:url(../img/folder-drag-accept.svg) !important
+}
+#header .logo{
+    background-image:url('../img/logo-white.png')
+}
+#body-user #header,#body-settings #header,#body-public #header{
+    background-color:#999999;
+    background-image:none
+}
+
+#header .logo{
+    background-size:contain
+}
+#body-login #header .logo{
+    margin-bottom:22px
+}
+
+input.primary,#alternative-logins li a{
+    background-color:#999999;
+    border:1px solid #fff;
+    color:#fff
+}
+footer{
+    height:92px
+}
