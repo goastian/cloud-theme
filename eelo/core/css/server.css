@@ -108,7 +108,7 @@ button.primary:focus,
 .icon-file,.icon-filetype-text{
     background-image:url(../img/text.svg)
 }
-.icon-folder,.icon-filetype-folder, tr[data-type="dir"] div.thumbnail{
+.icon-folder,.icon-filetype-folder{
     background-image:url(../img/folder.svg)
 }
 .icon-filetype-folder-drag-accept{
@@ -121,13 +121,7 @@ button.primary:focus,
     background-color:#999999;
     background-image:none
 }
-#body-login,#firstrunwizard .firstrunwizard-header,#theming-preview{
-    background-color:#999999;
-    background-image:none;
-    background-size:contain;background-size:cover;
-    background-repeat:no-repeat;
-    background-image:url('../img/background-grey.png')
-}
+
 #header .logo{
     background-size:contain
 }
