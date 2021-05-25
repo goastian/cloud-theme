@@ -1204,6 +1204,7 @@ a.legal {
 #body-login .success {
     color: white;
     background-color: #3ad975;
+    justify-content: center !important;
 }
 
 #body-login #user:hover,
