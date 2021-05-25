@@ -1,4 +1,4 @@
-Nextcloud theme for /e/
+Nextcloud theme for /e/ - nextcloud V18 compatible version
 
 # License
 
