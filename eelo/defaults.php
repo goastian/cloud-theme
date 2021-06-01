@@ -130,7 +130,8 @@ class OC_Theme {
 	 */
 	public function getScssVariables() {
 		return [
-			'color-primary' => '#AFAFAF'
+			'color-primary' => '#AFAFAF',
+			'image-login-background' => 'url("/themes/eelo/core/img/background.png")'
 		];
 	}
 
