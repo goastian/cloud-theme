@@ -83,6 +83,8 @@ button.primary:focus,
     --color-primary: #AFAFAF;
     --color-primary-element: #AFAFAF;
     --color-primary-element-light: #999999;
+    --color-error: #FB3845;
+    --color-success: #3AD975;
 }
 #header #nextcloud {
     padding-left: 70px;
