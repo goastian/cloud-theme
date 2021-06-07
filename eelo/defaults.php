@@ -131,7 +131,9 @@ class OC_Theme {
 	public function getScssVariables() {
 		return [
 			'color-primary' => '#AFAFAF',
-			'image-login-background' => 'url("/themes/eelo/core/img/background.png")'
+			'color-error' => '#FB3845',
+			'color-success' => '#3AD975',
+			'image-login-background' => 'url("/themes/eelo/core/img/background.png")',
 		];
 	}
 
