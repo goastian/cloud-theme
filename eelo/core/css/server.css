@@ -184,7 +184,6 @@ footer{
 }
 
 #header #searchbox {
-    outline-color: black;
     color: black;
-    border-color: black;
+    border-color: #808080 !important; /* !important used in source so needed to override */
 }
