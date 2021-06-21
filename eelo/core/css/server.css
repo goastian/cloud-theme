@@ -83,10 +83,20 @@ button.primary:focus,
     --color-primary: #AFAFAF;
     --color-primary-element: #AFAFAF;
     --color-primary-element-light: #999999;
+    --color-error: #FB3845;
+    --color-success: #3AD975;
+    --icon-search-fffffe: url("/themes/ecloud_2021/core/img/icon-search.svg");
+    --icon-home-000: url("/themes/ecloud_2021/core/img/icon-home.svg");
 }
 #header #nextcloud {
     padding-left: 70px;
 }
+
+#header .notifications .svg {
+    height: 16px;
+    width: 16px;
+}
+
 
 /* CSS TWEAKS TAKEN FROM THEMING APP (disabled now) */ 
 
@@ -118,10 +128,21 @@ button.primary:focus,
     background-image:url('../img/logo-white.png')
 }
 #body-user #header,#body-settings #header,#body-public #header{
-    background-color:#999999;
+    background-color:#f9f9f9;
+    color: black;
     background-image:none
 }
 
+#appmenu li span {
+    color: black
+}
+
+#appmenu li a svg path {
+    fill: #808080;
+}
+#appmenu li a.active svg path {
+    fill: #007fff;
+}
 #header .logo{
     background-size:contain
 }
@@ -136,4 +157,34 @@ input.primary,#alternative-logins li a{
 }
 footer{
     height:92px
+}
+
+#header .icon-search-white{
+    background-image: url("/themes/ecloud_2021/core/img/icon-search.svg");
+}
+
+.icon-home {
+    background-image:  url("/themes/ecloud_2021/core/img/icon-home.svg");
+}
+
+.icon-add {
+    background-image: url("/themes/ecloud_2021/core/img/icon-add.svg");
+}
+
+.icon-shared {
+    background-image: url("/themes/ecloud_2021/core/img/icon-shared.svg");
+}
+
+#header .icon-search-force-white{
+    background-image: url("/themes/ecloud_2021/core/img/icon-search.svg");
+}
+
+#header .icon-close-white {
+    background-image: url("/themes/ecloud_2021/core/img/icon-close.svg");
+}
+
+#header #searchbox {
+    outline-color: black;
+    color: black;
+    border-color: black;
 }
