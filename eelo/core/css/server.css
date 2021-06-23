@@ -90,6 +90,10 @@ button.primary:focus,
     padding-left: 70px;
 }
 
+#contacts-list {
+    margin-top: 44px;
+}
+
 /* CSS TWEAKS TAKEN FROM THEMING APP (disabled now) */ 
 
 .nc-theming-main-background{
