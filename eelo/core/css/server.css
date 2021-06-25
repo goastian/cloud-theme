@@ -85,8 +85,8 @@ button.primary:focus,
     --color-primary-element-light: #999999;
     --color-error: #FB3845;
     --color-success: #3AD975;
-    --icon-search-fffffe: url("/themes/ecloud_2021/core/img/icon-search.svg");
-    --icon-home-000: url("/themes/ecloud_2021/core/img/icon-home.svg");
+    --icon-search-fffffe: url("/themes/eelo/core/img/icon-search.svg");
+    --icon-home-000: url("/themes/eelo/core/img/icon-home.svg");
 }
 #header #nextcloud {
     padding-left: 70px;
@@ -160,27 +160,27 @@ footer{
 }
 
 #header .icon-search-white{
-    background-image: url("/themes/ecloud_2021/core/img/icon-search.svg");
+    background-image: url("/themes/eelo/core/img/icon-search.svg");
 }
 
 .icon-home {
-    background-image:  url("/themes/ecloud_2021/core/img/icon-home.svg");
+    background-image:  url("/themes/eelo/core/img/icon-home.svg");
 }
 
 .icon-add {
-    background-image: url("/themes/ecloud_2021/core/img/icon-add.svg");
+    background-image: url("/themes/eelo/core/img/icon-add.svg");
 }
 
 .icon-shared {
-    background-image: url("/themes/ecloud_2021/core/img/icon-shared.svg");
+    background-image: url("/themes/eelo/core/img/icon-shared.svg");
 }
 
 #header .icon-search-force-white{
-    background-image: url("/themes/ecloud_2021/core/img/icon-search.svg");
+    background-image: url("/themes/eelo/core/img/icon-search.svg");
 }
 
 #header .icon-close-white {
-    background-image: url("/themes/ecloud_2021/core/img/icon-close.svg");
+    background-image: url("/themes/eelo/core/img/icon-close.svg");
 }
 
 #header #searchbox {
