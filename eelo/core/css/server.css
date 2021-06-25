@@ -125,7 +125,7 @@ button.primary:focus,
     background-image:url(../img/folder-drag-accept.svg) !important
 }
 #header .logo{
-    background-image:url('../img/logo-white.png')
+    background-image:url('../img/logo.png')
 }
 #body-user #header,#body-settings #header,#body-public #header{
     background-color:#f9f9f9;
