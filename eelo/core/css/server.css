@@ -143,6 +143,9 @@ button.primary:focus,
 #appmenu li a.active svg path {
     fill: #007fff;
 }
+#header #navigation li a svg path {
+    fill: #808080;
+}
 #header .logo{
     background-size:contain
 }
@@ -183,7 +186,49 @@ footer{
     background-image: url("/themes/eelo/core/img/icon-close.svg");
 }
 
+#header .icon-contacts {
+    background-image: url("/themes/eelo/apps/contacts/img/app.svg");
+}
+
 #header #searchbox {
     color: black;
     border-color: #808080 !important; /* !important used in source so needed to override */
+}
+
+.nav-icon-files {
+    background-image: url("/svg/files/app?color=808080");
+}
+
+.nav-icon-files.active {
+    background-image: url("/svg/files/app?color=007fff")
+}
+
+.nav-icon-recent {
+    background-image: url("/svg/files/recent?color=808080");
+}
+
+.nav-icon-recent.active {
+    background-image: url("/svg/files/recent?color=007fff");
+}
+
+.nav-icon-favorites {
+    background-image: url("/svg/files/star?color=808080");
+}
+.nav-icon-favorites.active {
+    background-image: url("/svg/files/star?color=007fff");
+}
+
+.nav-icon-shareoverview {
+    background-image: url("/svg/files/share?color=808080");
+}
+.nav-icon-shareoverview.active {
+    background-image: url("/svg/files/share?color=007fff");
+}
+
+.nav-icon-trashbin {
+    background-image: url("/svg/files/delete?color=808080");
+}
+
+.nav-icon-trashbin.active {
+    background-image: url("/svg/files/delete?color=007fff");
 }
