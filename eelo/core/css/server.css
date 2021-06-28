@@ -90,6 +90,18 @@ button.primary:focus,
     padding-left: 70px;
 }
 
+#contacts-list {
+    margin-top: 44px;
+}
+/* 
+    For the overflow in search filter;
+    It doesn't use specific ids so gave the rule a lot of specificity
+*/
+.popover > .popover__wrapper .open ul li p{ 
+    white-space: normal;
+} 
+
+
 /* CSS TWEAKS TAKEN FROM THEMING APP (disabled now) */ 
 
 .nc-theming-main-background{
