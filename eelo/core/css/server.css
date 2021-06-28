@@ -249,3 +249,8 @@ footer{
 .icon-quota.active {
     background-image: url("/svg/core/actions/quota?color=007fff");
 }
+
+
+#content.app-files #app-settings .settings-button {
+    background-image: url("/svg/core/actions/settings?color=808080");
+}
