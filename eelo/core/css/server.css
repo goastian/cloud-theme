@@ -87,6 +87,7 @@ button.primary:focus,
     --color-success: #3AD975;
     --icon-search-fffffe: url("/themes/eelo/core/img/icon-search.svg");
     --icon-home-000: url("/themes/eelo/core/img/icon-home.svg");
+    --icon-contacts-000: url("/themes/eelo/apps/contacts/img/app.svg");
 }
 #header #nextcloud {
     padding-left: 70px;
@@ -231,4 +232,20 @@ footer{
 
 .nav-icon-trashbin.active {
     background-image: url("/svg/files/delete?color=007fff");
+}
+
+.nav-icon-systemtagsfilter {
+    background-image: url("/svg/core/actions/tag?color=808080");
+}
+
+.nav-icon-systemtagsfilter.active {
+    background-image: url("/svg/core/actions/tag?color=007fff");
+}
+
+.icon-quota {
+    background-image: url("/svg/core/actions/quota?color=808080");
+}
+
+.icon-quota.active {
+    background-image: url("/svg/core/actions/quota?color=007fff");
 }
