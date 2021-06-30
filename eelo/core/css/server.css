@@ -88,6 +88,11 @@ button.primary:focus,
     --icon-search-fffffe: url("/themes/eelo/core/img/icon-search.svg");
     --icon-home-000: url("/themes/eelo/core/img/icon-home.svg");
     --icon-contacts-000: url("/themes/eelo/apps/contacts/img/app.svg");
+    --icon-files-000: url("/svg/files/app?color=000000");
+    --icon-calendar-000: url("/svg/calendar/calendar?color=000000");
+    --color-main-background: #f2f2f2;
+    --color-main-background-translucent: #f2f2f2;
+    --color-text-maxcontrast: black;
 }
 #header #nextcloud {
     padding-left: 70px;
@@ -129,8 +134,9 @@ button.primary:focus,
     background-image:url('../img/logo.png')
 }
 #body-user #header,#body-settings #header,#body-public #header{
-    background-color:#f9f9f9;
+    background-color:white !important;
     color: black;
+    opacity: 0.9;
     background-image:none
 }
 
@@ -179,6 +185,14 @@ footer{
     background-image: url("/themes/eelo/core/img/icon-shared.svg");
 }
 
+#header .unified-search .icon-search {  
+    background-image: url("/svg/core/actions/search?color=808080");
+}
+
+#header-menu-unified-search {
+    opacity: 1.0;
+}
+
 #header .icon-search-force-white{
     background-image: url("/themes/eelo/core/img/icon-search.svg");
 }
@@ -196,8 +210,20 @@ footer{
     border-color: #808080 !important; /* !important used in source so needed to override */
 }
 
+#app-content-files  #controls {
+    background-color: var(--color-main-background);
+}
+
 .nav-icon-files {
     background-image: url("/svg/files/app?color=808080");
+}
+
+#app-dashboard .panel .panel--header > .icon-calendar-dark {
+    background-position: 14px 10px;
+}
+
+#app-dashboard .panel .panel--header > .icon-files-dark {
+    background-position: 14px 16px;
 }
 
 .nav-icon-files.active {
@@ -234,6 +260,10 @@ footer{
     background-image: url("/svg/files/delete?color=007fff");
 }
 
+#content.app-files #app-settings .settings-button {
+    background-image: url("/svg/core/actions/settings?color=808080");
+}
+
 .nav-icon-systemtagsfilter {
     background-image: url("/svg/core/actions/tag?color=808080");
 }
@@ -250,7 +280,26 @@ footer{
     background-image: url("/svg/core/actions/quota?color=007fff");
 }
 
+#header .header-right .magnify-icon {
 
-#content.app-files #app-settings .settings-button {
-    background-image: url("/svg/core/actions/settings?color=808080");
+	    background: url("/svg/core/actions/search?color=000000") no-repeat center;
+}
+
+#app-dashboard .panel {
+    background-color: white;
+    opacity: 0.9;
+}
+
+#app-dashboard .statuses button {
+    background-color: white;
+    opacity: 0.9
+}
+
+#app-dashboard footer a {
+    background-color: white;
+    opacity: 0.9;
+}
+
+#app-navigation:not(.vue) > ul > li a.active {
+    background-color: #f2f2f2;
 }
