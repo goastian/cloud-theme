@@ -406,15 +406,17 @@ li.active#everyone .icon-contacts-dark {
     background-color: white;
 }
 
-#header #header-menu-unified-search {
-    background-color: white;
-}
-
-#header #header-menu-unified-search .unified-search__input-wrapper {
-    background-color: white;
-}
-
 #header #header-menu-unified-search .unified-search__form-input {
-    background-color: white;
-    color: black;
+  color: black;
+}
+
+#header #header-menu-unified-search .unified-search__form-input,
+#header .header-right > div > .notification-container.menu,
+#header #header-menu-unified-search .unified-search__input-wrapper,
+#settings #expanddiv {
+  background-color: white;
+}
+
+.icon-delete {
+    background-image: url("/svg/files/delete?color=808080");
 }
