@@ -178,6 +178,10 @@ footer{
     height:92px
 }
 
+#app-navigation {
+    color: black;
+}
+
 .icon-home {
     background-image:  url("/svg/core/places/home?color=808080");
 }
@@ -198,6 +202,9 @@ footer{
     background-image: url("/svg/contacts/app?color=808080");
 }
 
+.icon-star {
+    background-image: url("/svg/core/actions/star?color=808080");
+}
 
 #header-menu-unified-search .icon-close {
     background-image: url("/svg/core/actions/close?color=808080");
@@ -371,4 +378,26 @@ li.active#everyone .icon-contacts-dark {
 
 .app-navigation #app-settings #app-settings-header .settings-button {
     background-image: url("/svg/core/actions/settings?color=808080");
+}
+
+/* Calendar */
+
+.datepicker-button-section button {
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: bold;
+}
+
+.datepicker-button-section .icon-leftarrow {
+    background-image: url("/svg/core/actions/arrow-left?color=ffffff")
+}
+
+.datepicker-button-section .icon-rightarrow {
+    background-image: url("/svg/core/actions/arrow-right?color=ffffff")
+
+}
+
+.button.today {
+    background-color: var(--color-primary);
+    color: white;
 }
