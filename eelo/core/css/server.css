@@ -16,20 +16,19 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-
 /* header color */
 /* this is the main brand color */
 #body-user #header,
 #body-settings #header,
 #body-public #header {
-    background-color: #AFAFAF;
+  background-color: #afafaf;
 }
 
 /* log in screen background color */
 /* gradient of the header color and a brighter shade */
 /* can also be a flat color or an image */
 #body-login {
-    background-color: #AFAFAF !important;
+  background-color: #afafaf !important;
 }
 
 /* primary action button, use sparingly */
@@ -44,8 +43,8 @@ input[type="submit"].primary:active,
 input[type="button"].primary:active,
 button.primary:active,
 .button.primary:active {
-    background-color: #007fff;
-    color: white;
+  background-color: #007fff;
+  color: white;
 }
 .primary:hover,
 input[type="submit"].primary:hover,
@@ -57,353 +56,365 @@ input[type="submit"].primary:focus,
 input[type="button"].primary:focus,
 button.primary:focus,
 .button.primary:focus {
-    background-color: white !important;
-    color: #007fff;
+  background-color: white !important;
+  color: #007fff;
 }
-.primary:active, input[type="submit"].primary:active, input[type="button"].primary:active, button.primary:active, .button.primary:active,
-.primary:disabled, input[type="submit"].primary:disabled, input[type="button"].primary:disabled, button.primary:disabled, .button.primary:disabled,
-.primary:disabled:hover, input[type="submit"].primary:disabled:hover, input[type="button"].primary:disabled:hover, button.primary:disabled:hover, .button.primary:disabled:hover,
-.primary:disabled:focus, input[type="submit"].primary:disabled:focus, input[type="button"].primary:disabled:focus, button.primary:disabled:focus, .button.primary:disabled:focus {
-    background-color: white !important;
-    color: #007fff;
+.primary:active,
+input[type="submit"].primary:active,
+input[type="button"].primary:active,
+button.primary:active,
+.button.primary:active,
+.primary:disabled,
+input[type="submit"].primary:disabled,
+input[type="button"].primary:disabled,
+button.primary:disabled,
+.button.primary:disabled,
+.primary:disabled:hover,
+input[type="submit"].primary:disabled:hover,
+input[type="button"].primary:disabled:hover,
+button.primary:disabled:hover,
+.button.primary:disabled:hover,
+.primary:disabled:focus,
+input[type="submit"].primary:disabled:focus,
+input[type="button"].primary:disabled:focus,
+button.primary:disabled:focus,
+.button.primary:disabled:focus {
+  background-color: white !important;
+  color: #007fff;
 }
 
 /* use logos from theme */
 #header .logo,
 #firstrunwizard .logo {
-    background-image: url('../img/logo.png');
-    width: 256px;
-    height: 128px;
+  background-image: url("../img/logo.png");
+  width: 256px;
+  height: 128px;
 }
 #header .logo-icon {
-    width: 42px;
-    height: 42px;
-    top: 4px;
-    bottom: 0px;
+  width: 42px;
+  height: 42px;
+  top: 4px;
+  bottom: 0px;
 }
 :root {
-    --color-primary: #007fff;
-    --color-primary-element: #007fff;
-    --color-primary-element-light: #007fff;
-    --color-error: #FB3845;
-    --color-success: #3AD975;
-    --icon-search-fffffe: url("/themes/eelo/core/img/icon-search.svg");
-    --icon-home-000: url("/svg/core/places/home?color=808080");
-    --icon-contacts-000: url("/themes/eelo/apps/contacts/img/app.svg");
-    --icon-files-000: url("/svg/files/app?color=000000");
-    --icon-calendar-000: url("/svg/calendar/calendar?color=000000");
-    --color-main-background: #f2f2f2;
-    --color-main-background-translucent: #f2f2f2;
-    --color-main-text: black;
-    --color-text-maxcontrast: black;
-    --color-border-dark: #e6e6e6;
-    --color-border: #e6e6e6;
-    --icon-settings-dark-000: #000000;
+  --color-primary: #007fff;
+  --color-primary-element: #007fff;
+  --color-primary-element-light: #007fff;
+  --color-error: #fb3845;
+  --color-success: #3ad975;
+  --icon-search-fffffe: url("/themes/eelo/core/img/icon-search.svg");
+  --icon-home-000: url("/svg/core/places/home?color=808080");
+  --icon-contacts-000: url("/themes/eelo/apps/contacts/img/app.svg");
+  --icon-files-000: url("/svg/files/app?color=000000");
+  --icon-calendar-000: url("/svg/calendar/calendar?color=000000");
+  --color-main-background: #f2f2f2;
+  --color-main-background-translucent: #f2f2f2;
+  --color-main-text: black;
+  --color-text-maxcontrast: black;
+  --color-border-dark: #e6e6e6;
+  --color-border: #e6e6e6;
+  --icon-settings-dark-000: #000000;
 }
 #header #nextcloud {
-    padding-left: 70px;
+  padding-left: 70px;
 }
 
 #header .notifications .svg {
-    height: 16px;
-    width: 16px;
+  height: 16px;
+  width: 16px;
 }
 
+/* CSS TWEAKS TAKEN FROM THEMING APP (disabled now) */
 
-/* CSS TWEAKS TAKEN FROM THEMING APP (disabled now) */ 
-
-.nc-theming-main-background{
-    background-color:#999999
+.nc-theming-main-background {
+  background-color: #999999;
 }
-.nc-theming-main-text{
-    color:#fff
+.nc-theming-main-text {
+  color: #fff;
 }
-.nc-theming-contrast{
-    color:#fff
+.nc-theming-contrast {
+  color: #fff;
 }
-#appmenu:not(.inverted) svg{
-    filter:none
+#appmenu:not(.inverted) svg {
+  filter: none;
 }
-#appmenu.inverted svg{
-    filter:invert(1)
+#appmenu.inverted svg {
+  filter: invert(1);
 }
-.icon-file,.icon-filetype-text{
-    background-image:url(../img/text.svg)
+.icon-file,
+.icon-filetype-text {
+  background-image: url(../img/text.svg);
 }
-.icon-folder,.icon-filetype-folder{
-    background-image:url(../img/folder.svg)
+.icon-folder,
+.icon-filetype-folder {
+  background-image: url(../img/folder.svg);
 }
-.icon-filetype-folder-drag-accept{
-    background-image:url(../img/folder-drag-accept.svg) !important
+.icon-filetype-folder-drag-accept {
+  background-image: url(../img/folder-drag-accept.svg) !important;
 }
-#header .logo{
-    background-image:url('../img/logo.png')
+#header .logo {
+  background-image: url("../img/logo.png");
 }
-#body-user #header,#body-settings #header,#body-public #header{
-    background-color:white !important;
-    color: black;
-    background-image:none
+#body-user #header,
+#body-settings #header,
+#body-public #header {
+  background-color: white !important;
+  color: black;
+  background-image: none;
 }
 
 #body-user[data-dashboard-background] #header {
-    opacity: 0.9;
-}  
+  opacity: 0.9;
+}
 
 #appmenu li span {
-    color: black
+  color: black;
 }
 
 #appmenu li a svg path {
-    fill: #808080;
+  fill: #808080;
 }
 #appmenu li a.active svg path {
-    fill: #007fff;
+  fill: #007fff;
 }
 #header #navigation li a svg path {
-    fill: #808080;
+  fill: #808080;
 }
-#header .logo{
-    background-size:contain
+#header .logo {
+  background-size: contain;
 }
-#body-login #header .logo{
-    margin-bottom:22px
-}
-
-input.primary,#alternative-logins li a{
-    background-color:#999999;
-    border:1px solid #fff;
-    color:#fff
-}
-footer{
-    height:92px
+#body-login #header .logo {
+  margin-bottom: 22px;
 }
 
-#app-navigation {
-    color: black;
+input.primary,
+#alternative-logins li a {
+  background-color: #999999;
+  border: 1px solid #fff;
+  color: #fff;
+}
+footer {
+  height: 92px;
+}
+
+#content #app-navigation {
+  color: black;
+  border-right: 2px solid var(--color-border);
 }
 
 .icon-home {
-    background-image:  url("/svg/core/places/home?color=808080");
+  background-image: url("/svg/core/places/home?color=808080");
 }
 
 .icon-add {
-    background-image: url("/svg/core/actions/add?color=808080");
+  background-image: url("/svg/core/actions/add?color=808080");
 }
 
 .icon-shared {
-    background-image: url("/svg/core/actions/share?color=808080");
+  background-image: url("/svg/core/actions/share?color=808080");
 }
 
 .icon-contacts-dark {
-    background-image: url("/svg/contacts/app?color=808080")
+  background-image: url("/svg/contacts/app?color=808080");
 }
 
 .icon-user {
-    background-image: url("/svg/contacts/app?color=808080");
+  background-image: url("/svg/contacts/app?color=808080");
 }
 
 .icon-star {
-    background-image: url("/svg/core/actions/star?color=808080");
+  background-image: url("/svg/core/actions/star?color=808080");
 }
 
 #header-menu-unified-search .icon-close {
-    background-image: url("/svg/core/actions/close?color=808080");
+  background-image: url("/svg/core/actions/close?color=808080");
 }
-
-
 
 #header #searchbox {
-    color: black;
-    border-color: #808080 !important; /* !important used in source so needed to override */
+  color: black;
+  border-color: #808080 !important; /* !important used in source so needed to override */
 }
 
-#app-content-files  #controls {
-    background-color: var(--color-main-background);
+#fileList th,
+#fileList td {
+  border-bottom: 2px solid var(--color-border);
+}
+#app-content-files #controls {
+  background-color: var(--color-main-background);
 }
 
 .nav-icon-files {
-    background-image: url("/svg/files/app?color=808080");
+  background-image: url("/svg/files/app?color=808080");
 }
 
 .icon-files-dark {
-    background-image: url("/svg/files/app?color=808080");
+  background-image: url("/svg/files/app?color=808080");
 }
 
 .icon-calendar-dark {
-    background-image: url("/svg/calendar/calendar?color=000000");
+  background-image: url("/svg/calendar/calendar?color=000000");
 }
 
 #app-dashboard .panel .panel--header > .icon-calendar-dark {
-    background-position: 14px 10px;
+  background-position: 14px 10px;
 }
 
 #app-dashboard .panel .panel--header > .icon-files-dark {
-    background-position: 14px 16px;
+  background-position: 14px 16px;
 }
 
 .nav-icon-files.active {
-    background-image: url("/svg/files/app?color=007fff")
+  background-image: url("/svg/files/app?color=007fff");
 }
 
 .nav-icon-recent {
-    background-image: url("/svg/files/recent?color=808080");
+  background-image: url("/svg/files/recent?color=808080");
 }
 
 .nav-icon-recent.active {
-    background-image: url("/svg/files/recent?color=007fff");
+  background-image: url("/svg/files/recent?color=007fff");
 }
 
 .nav-icon-favorites {
-    background-image: url("/svg/files/star?color=808080");
+  background-image: url("/svg/files/star?color=808080");
 }
 .nav-icon-favorites.active {
-    background-image: url("/svg/files/star?color=007fff");
+  background-image: url("/svg/files/star?color=007fff");
 }
 
 .nav-icon-shareoverview {
-    background-image: url("/svg/files/share?color=808080");
+  background-image: url("/svg/files/share?color=808080");
 }
 .nav-icon-shareoverview.active {
-    background-image: url("/svg/files/share?color=007fff");
+  background-image: url("/svg/files/share?color=007fff");
 }
 
 .nav-icon-trashbin {
-    background-image: url("/svg/files/delete?color=808080");
+  background-image: url("/svg/files/delete?color=808080");
 }
 
 .nav-icon-trashbin.active {
-    background-image: url("/svg/files/delete?color=007fff");
+  background-image: url("/svg/files/delete?color=007fff");
 }
 
 #app-navigation #app-settings #app-settings-header .settings-button {
-    background-image: url("/svg/core/actions/settings?color=808080");
+  background-image: url("/svg/core/actions/settings?color=808080");
 }
 
 .nav-icon-systemtagsfilter {
-    background-image: url("/svg/core/actions/tag?color=808080");
+  background-image: url("/svg/core/actions/tag?color=808080");
 }
 
 .nav-icon-systemtagsfilter.active {
-    background-image: url("/svg/core/actions/tag?color=007fff");
+  background-image: url("/svg/core/actions/tag?color=007fff");
 }
 
 .icon-quota {
-    background-image: url("/svg/core/actions/quota?color=808080");
+  background-image: url("/svg/core/actions/quota?color=808080");
 }
 
 .icon-quota.active {
-    background-image: url("/svg/core/actions/quota?color=007fff");
+  background-image: url("/svg/core/actions/quota?color=007fff");
 }
 
 #header .header-right .magnify-icon {
-
-	    background: url("/svg/core/actions/search?color=000000") no-repeat center;
+  background: url("/svg/core/actions/search?color=000000") no-repeat center;
 }
 
 #app-dashboard .panel {
-    background-color: white;
-    opacity: 0.9;
+  background-color: white;
+  opacity: 0.9;
 }
 
 #app-dashboard .statuses button {
-    background-color: white;
-    opacity: 0.9
+  background-color: white;
+  opacity: 0.9;
 }
 
 #app-dashboard footer a {
-    background-color: white;
-    opacity: 0.9;
+  background-color: white;
+  opacity: 0.9;
 }
 
 #app-navigation:not(.vue) > ul > li a.active {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
-
-#app-content-files #filestable span, #app-content-files #filestable td {
-    color: black !important;
+#app-content-files #filestable span,
+#app-content-files #filestable td {
+  color: black !important;
 }
-
-#app-navigation {
-    border-right: 2px solid var(--color-border);
-}
-
 
 /* Contacts App */
 
 #content-vue.app-contacts .empty-content__icon {
-    height: 80px;
+  height: 80px;
 }
 
 #everyone .icon-contacts-dark {
-    background-image: url("/svg/core/actions/group?color=808080");
+  background-image: url("/svg/core/actions/group?color=808080");
 }
 li.active#everyone .icon-contacts-dark {
-    background-image: url("/svg/core/actions/group?color=007fff");
+  background-image: url("/svg/core/actions/group?color=007fff");
 }
 
 #new-contact-button {
-    background-color: #007fff;
-    color: white;
+  background-color: #007fff;
+  color: white;
 }
 
 #new-contact-button.icon-add {
-    background-image: url("/svg/core/actions/add?color=ffffff");
+  background-image: url("/svg/core/actions/add?color=ffffff");
 }
 
 /* Photos App */
 
 .icon-yourphotos {
-    background-image: url("/svg/photos/app?color=808080")
+  background-image: url("/svg/photos/app?color=808080");
 }
 
 .icon-video {
-    background-image: url("/svg/core/actions/video?color=808080")
+  background-image: url("/svg/core/actions/video?color=808080");
 }
 
 .icon-favorite {
-    background-image: url("/svg/core/actions/star?color=808080")
+  background-image: url("/svg/core/actions/star?color=808080");
 }
 .icon-share {
-    background-image: url("/svg/core/actions/share?color=808080")
+  background-image: url("/svg/core/actions/share?color=808080");
 }
 
 .icon-tag {
-    background-image: url("/svg/core/actions/tag?color=808080")
+  background-image: url("/svg/core/actions/tag?color=808080");
 }
 
 .icon-address {
-    background-image: url("/svg/core/actions/address?color=808080")
+  background-image: url("/svg/core/actions/address?color=808080");
 }
 
 .app-navigation #app-settings #app-settings-header .settings-button {
-    background-image: url("/svg/core/actions/settings?color=808080");
+  background-image: url("/svg/core/actions/settings?color=808080");
 }
 
 /* Calendar */
 
 .datepicker-button-section button {
-    background-color: var(--color-primary);
-    color: white;
-    font-weight: bold;
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: bold;
 }
 
 .datepicker-button-section .icon-leftarrow {
-    background-image: url("/svg/core/actions/arrow-left?color=ffffff")
+  background-image: url("/svg/core/actions/arrow-left?color=ffffff");
 }
 
 .datepicker-button-section .icon-rightarrow {
-    background-image: url("/svg/core/actions/arrow-right?color=ffffff")
-
+  background-image: url("/svg/core/actions/arrow-right?color=ffffff");
 }
 
 .button.today {
-    background-color: var(--color-primary);
-    color: white;
-}
-
-#settings #expanddiv {
-    background-color: white;
+  background-color: var(--color-primary);
+  color: white;
 }
 
 #header #header-menu-unified-search .unified-search__form-input {
@@ -418,5 +429,5 @@ li.active#everyone .icon-contacts-dark {
 }
 
 .icon-delete {
-    background-image: url("/svg/files/delete?color=808080");
+  background-image: url("/svg/files/delete?color=808080");
 }
