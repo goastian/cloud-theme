@@ -219,7 +219,7 @@ footer{
 }
 
 .icon-files-dark {
-    background-image: url("/svg/files/app?color=000000");
+    background-image: url("/svg/files/app?color=808080");
 }
 
 .icon-calendar-dark {
@@ -268,7 +268,7 @@ footer{
     background-image: url("/svg/files/delete?color=007fff");
 }
 
-#app-navigation #app-settings .settings-button {
+#app-navigation #app-settings #app-settings-header .settings-button {
     background-image: url("/svg/core/actions/settings?color=808080");
 }
 
@@ -344,5 +344,31 @@ li.active#everyone .icon-contacts-dark {
     background-image: url("/svg/core/actions/add?color=ffffff");
 }
 
-/* Activity App */
+/* Photos App */
 
+.icon-yourphotos {
+    background-image: url("/svg/photos/app?color=808080")
+}
+
+.icon-video {
+    background-image: url("/svg/core/actions/video?color=808080")
+}
+
+.icon-favorite {
+    background-image: url("/svg/core/actions/star?color=808080")
+}
+.icon-share {
+    background-image: url("/svg/core/actions/share?color=808080")
+}
+
+.icon-tag {
+    background-image: url("/svg/core/actions/tag?color=808080")
+}
+
+.icon-address {
+    background-image: url("/svg/core/actions/address?color=808080")
+}
+
+.app-navigation #app-settings #app-settings-header .settings-button {
+    background-image: url("/svg/core/actions/settings?color=808080");
+}
