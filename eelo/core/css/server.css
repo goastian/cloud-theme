@@ -401,3 +401,20 @@ li.active#everyone .icon-contacts-dark {
     background-color: var(--color-primary);
     color: white;
 }
+
+#settings #expanddiv {
+    background-color: white;
+}
+
+#header #header-menu-unified-search {
+    background-color: white;
+}
+
+#header #header-menu-unified-search .unified-search__input-wrapper {
+    background-color: white;
+}
+
+#header #header-menu-unified-search .unified-search__form-input {
+    background-color: white;
+    color: black;
+}
