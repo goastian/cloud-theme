@@ -16,7 +16,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-#body-user, #body-settings {
+#body-user,
+#body-settings {
   display: none;
 }
 
@@ -50,6 +51,7 @@ button.primary:active,
   background-color: #007fff;
   color: white;
 }
+/*
 .primary:hover,
 input[type="submit"].primary:hover,
 input[type="button"].primary:hover,
@@ -62,7 +64,7 @@ button.primary:focus,
 .button.primary:focus {
   background-color: white !important;
   color: #007fff;
-}
+}*/
 .primary:active,
 input[type="submit"].primary:active,
 input[type="button"].primary:active,
@@ -87,8 +89,18 @@ button.primary:disabled:focus,
   color: #007fff;
 }
 
-select, input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="submit"]):not([type="button"]):not([type="reset"]):not([type="color"]):not([type="file"]):not([type="image"]) {
+select,
+input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="submit"]):not([type="button"]):not([type="reset"]):not([type="color"]):not([type="file"]):not([type="image"]) {
   background-color: white;
+}
+button,
+.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: #007fff;
+  border-color: #007fff;
+  color: white;
 }
 
 /* use logos from theme */
@@ -99,9 +111,9 @@ select, input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not
   height: 128px;
 }
 #header .logo-icon {
-  width: 42px;
-  height: 42px;
-  top: 4px;
+  width: 25px;
+  height: 25px;
+  top: 12.5px;
   bottom: 0px;
 }
 :root {
@@ -175,9 +187,12 @@ select, input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not
   opacity: 0.9;
 }
 
-#header .menu, #header #launcher-menu, #header .header--menu {
-  opacity: 1.0;
+#header .menu,
+#header #launcher-menu,
+#header .header--menu {
+  opacity: 1;
 }
+
 #appmenu li span {
   color: black;
 }
@@ -219,6 +234,17 @@ footer {
 
 .icon-add {
   background-image: url("/svg/core/actions/add?color=808080");
+}
+
+.button .icon-add {
+  background-image: url("/svg/core/actions/add?color=ffffff");
+}
+
+button > span[class^="icon-"],
+.button > span[class^="icon-"],
+button > span[class*=" icon-"],
+.button > span[class*=" icon-"] {
+  opacity: 1;
 }
 
 .icon-shared {
@@ -441,4 +467,78 @@ li.active#everyone .icon-contacts-dark {
 
 .icon-delete {
   background-image: url("/svg/files/delete?color=808080");
+}
+
+#appmenu li a span {
+  color: white;
+}
+
+#appmenu li:hover a span {
+  color: var(--color-main-text);
+}
+#appmenu li:hover a svg {
+  color: var(--color-main-text);
+  transform: translateY(-7px);
+}
+
+#appmenu:hover li svg,
+#appmenu:hover li .icon-more,
+#appmenu:hover li .icon-more-white,
+#appmenu:hover li .icon-loading-small,
+#appmenu:hover li .icon-loading-small-dark {
+  transform: none;
+}
+
+/* Settings app */
+
+/* Personal Info */
+
+#selectavatar.icon-folder {
+  background-image: url("/svg/core/filetypes/folder?color=ffffff");
+}
+
+#uploadavatarbutton.icon-upload {
+  background-image: url("/svg/core/actions/upload?color=ffffff");
+}
+
+/* Mobile & Desktop */
+
+.button.icon-clippy {
+  background-image: url("/svg/core/actions/clippy?color=ffffff");
+}
+
+/* Sharing */
+
+button.social-facebook {
+  background-image:url("/svg/federatedfilesharing/social-facebook?color=ffffff");
+}
+
+button.social-twitter {
+  background-image:url("/svg/federatedfilesharing/social-twitter?color=ffffff");
+}
+
+
+button.social-diaspora {
+  background-image:url("/svg/federatedfilesharing/social-diaspora?color=ffffff");
+}
+
+/* Flow */
+
+#workflowengine .actions__item.colored {
+  background-color: #007fff !important;
+}
+#workflowengine .actions__item.colored button {
+  background-color: white;
+  color: #007fff;
+}
+
+/* Privacy */
+
+.who-has-access .action-item.icon-add.addAdditionalAdmin {
+  background-image: url("/svg/core/actions/add?color=808080");
+}
+
+.who-has-access .action-item--single.action-item.icon-rename,
+.where-is-my-data .action-item--single.action-item.icon-rename {
+  background-image: url("/svg/core/actions/rename?color=808080");
 }
