@@ -16,6 +16,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
+#body-user, #body-settings {
+  display: none;
+}
+
 /* header color */
 /* this is the main brand color */
 #body-user #header,
@@ -81,6 +85,10 @@ button.primary:disabled:focus,
 .button.primary:disabled:focus {
   background-color: white !important;
   color: #007fff;
+}
+
+select, input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="submit"]):not([type="button"]):not([type="reset"]):not([type="color"]):not([type="file"]):not([type="image"]) {
+  background-color: white;
 }
 
 /* use logos from theme */
@@ -167,6 +175,9 @@ button.primary:disabled:focus,
   opacity: 0.9;
 }
 
+#header .menu, #header #launcher-menu, #header .header--menu {
+  opacity: 1.0;
+}
 #appmenu li span {
   color: black;
 }
