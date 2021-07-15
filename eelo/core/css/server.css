@@ -41,30 +41,30 @@
 .primary,
 input[type="submit"].primary,
 input[type="button"].primary,
+button.toggle.has-tooltip,
 button.primary,
 .button.primary,
 .primary:active,
 input[type="submit"].primary:active,
 input[type="button"].primary:active,
 button.primary:active,
-.button.primary:active {
-  background-color: #007fff;
+.button.primary:active,
+#new-contact-button,
+#quotaincreasestoragebutton,
+#content-vue.app-tasks .action.icon-checkmark,
+.button.today,
+button.import-contact__button-main,
+button#notes_new_note,
+.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"]  {
+  background-color: var(--color-primary);
   color: white;
+  border-color: var(--color-primary);
 }
 /*
-.primary:hover,
-input[type="submit"].primary:hover,
-input[type="button"].primary:hover,
-button.primary:hover,
-.button.primary:hover,
-.primary:focus,
-input[type="submit"].primary:focus,
-input[type="button"].primary:focus,
-button.primary:focus,
-.button.primary:focus {
-  background-color: white !important;
-  color: #007fff;
-}*/
+
 .primary:active,
 input[type="submit"].primary:active,
 input[type="button"].primary:active,
@@ -86,21 +86,12 @@ input[type="button"].primary:disabled:focus,
 button.primary:disabled:focus,
 .button.primary:disabled:focus {
   background-color: white !important;
-  color: #007fff;
+  color: var(--color-primary);
 }
-
+*/
 select,
-input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="submit"]):not([type="button"]):not([type="reset"]):not([type="color"]):not([type="file"]):not([type="image"]) {
+input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="submit"]):not([type="button"]):not([type="reset"]):not([type="color"]):not([type="file"]):not([type="image"]):not(.multiselect__input) {
   background-color: white;
-}
-button,
-.button,
-input[type="button"],
-input[type="submit"],
-input[type="reset"] {
-  background-color: #007fff;
-  border-color: #007fff;
-  color: white;
 }
 
 /* use logos from theme */
@@ -127,6 +118,7 @@ input[type="reset"] {
   --icon-contacts-000: url("/themes/eelo/apps/contacts/img/app.svg");
   --icon-files-000: url("/svg/files/app?color=000000");
   --icon-calendar-000: url("/svg/calendar/calendar?color=000000");
+  --icon-calendar: url("/svg/calendar/calendar?color=808080");
   --color-main-background: #f2f2f2;
   --color-main-background-translucent: #f2f2f2;
   --color-main-text: black;
@@ -134,6 +126,8 @@ input[type="reset"] {
   --color-border-dark: #e6e6e6;
   --color-border: #e6e6e6;
   --icon-settings-dark-000: #000000;
+  --icon-inactive-color: #808080;
+  --icon-active-color: #007fff;
 }
 #header #nextcloud {
   padding-left: 70px;
@@ -197,15 +191,6 @@ input[type="reset"] {
   color: black;
 }
 
-#appmenu li a svg path {
-  fill: #808080;
-}
-#appmenu li a.active svg path {
-  fill: #007fff;
-}
-#header #navigation li a svg path {
-  fill: #808080;
-}
 #header .logo {
   background-size: contain;
 }
@@ -232,8 +217,26 @@ footer {
   background-image: url("/svg/core/places/home?color=808080");
 }
 
+.icon-mail {
+  background-image: url("/svg/core/actions/mail?color=808080");
+}
+.icon-error {
+  background-image: url("/svg/core/actions/error?color=808080");
+}
+
 .icon-add {
   background-image: url("/svg/core/actions/add?color=808080");
+}
+
+.action.icon-checkmark {
+  background-image: url("/svg/core/actions/checkmark?color=ffffff");
+}
+.icon-phone {
+  background-image: url("/svg/core/clients/phone?color=808080")
+}
+
+.icon-toggle-filelist {
+  background-image: url("/svg/core/actions/toggle-filelist?color=808080");
 }
 
 .button .icon-add {
@@ -252,6 +255,10 @@ button > span[class*=" icon-"],
 }
 
 .icon-contacts-dark {
+  background-image: url("/svg/contacts/app?color=808080");
+}
+
+.icon-contacts {
   background-image: url("/svg/contacts/app?color=808080");
 }
 
@@ -288,8 +295,15 @@ button > span[class*=" icon-"],
   background-image: url("/svg/files/app?color=808080");
 }
 
+.icon-fullscreen {
+  background-image: url("/svg/core/actions/fullscreen?color=808080");
+}
+
 .icon-calendar-dark {
-  background-image: url("/svg/calendar/calendar?color=000000");
+  background-image: url("/svg/calendar/calendar?color=808080");
+}
+.icon-talk {
+  background-image: url("/svg/spreed/app?color=808080")
 }
 
 #app-dashboard .panel .panel--header > .icon-calendar-dark {
@@ -395,13 +409,32 @@ li.active#everyone .icon-contacts-dark {
   background-image: url("/svg/core/actions/group?color=007fff");
 }
 
-#new-contact-button {
-  background-color: #007fff;
-  color: white;
-}
-
 #new-contact-button.icon-add {
   background-image: url("/svg/core/actions/add?color=ffffff");
+}
+
+#content-vue.app-contacts .app-navigation-caption__title {
+  color: black;
+}
+
+#content-vue.app-contacts .contact-header__infos input {
+  background-color: var(--color-main-background);
+}
+
+.icon-address-book {
+  background-image: url("/svg/contacts/address-book?color=808080");
+}
+
+#content-vue.app-contacts .icon-phone {
+  background-image: url("/svg/contacts/phone?color=808080");
+}
+
+button.import-contact__button-main .icon-upload {
+  background-image: url("/svg/core/actions/upload?color=ffffff");
+}
+
+#content-vue.app-contacts ~ .popover .icon-contacts-dark {
+  background-image: url("/svg/core/actions/group?color=808080");
 }
 
 /* Photos App */
@@ -431,27 +464,6 @@ li.active#everyone .icon-contacts-dark {
 
 .app-navigation #app-settings #app-settings-header .settings-button {
   background-image: url("/svg/core/actions/settings?color=808080");
-}
-
-/* Calendar */
-
-.datepicker-button-section button {
-  background-color: var(--color-primary);
-  color: white;
-  font-weight: bold;
-}
-
-.datepicker-button-section .icon-leftarrow {
-  background-image: url("/svg/core/actions/arrow-left?color=ffffff");
-}
-
-.datepicker-button-section .icon-rightarrow {
-  background-image: url("/svg/core/actions/arrow-right?color=ffffff");
-}
-
-.button.today {
-  background-color: var(--color-primary);
-  color: white;
 }
 
 #header #header-menu-unified-search .unified-search__form-input {
@@ -525,11 +537,11 @@ button.social-diaspora {
 /* Flow */
 
 #workflowengine .actions__item.colored {
-  background-color: #007fff !important;
+  background-color: var(--color-primary) !important;
 }
 #workflowengine .actions__item.colored button {
   background-color: white;
-  color: #007fff;
+  color: var(--color-primary);
 }
 
 /* Privacy */
@@ -542,3 +554,79 @@ button.social-diaspora {
 .where-is-my-data .action-item--single.action-item.icon-rename {
   background-image: url("/svg/core/actions/rename?color=808080");
 }
+
+/* Calendar */
+
+.datepicker-button-section button {
+  background-color: var(--color-main-background);
+  color: black;
+  font-weight: bold;
+  border: none;
+  max-width: 100px;
+  margin: auto;
+}
+
+
+.datepicker-button-section.icon-leftarrow {
+  background-image: url("/svg/core/actions/arrow-left?color=808080");
+}
+
+.datepicker-button-section.icon-rightarrow {
+  background-image: url("/svg/core/actions/arrow-right?color=808080");
+}
+
+.button.datepicker-button-section__next, .button.datepicker-button-section__previous {
+  border: none;
+  margin: auto;
+}
+
+.new-event-today-view-section .button {
+  border-radius: 8px;
+}
+
+.icon-new-calendar {
+  background-image: var(--icon-calendar);
+}
+
+.icon-new-calendar-with-task-list {
+  background-image: url("/svg/calendar/new-calendar-with-task-list?color=808080");
+}
+
+.icon-public {
+  background-image: url("/svg/core/actions/public?color=808080");
+}
+
+#content-vue.app-calendar .settings-fieldset-interior-item .icon-upload{
+  background-image: url("svg/core/actions/upload?color=ffffff");
+}
+
+#content-vue.app-calendar #app-navigation .action-item.icon-share {
+  background-size: 12px;
+}
+
+
+/* Notes */
+
+#content-vue.app-notes #notes_new_note.icon-add {
+  background-image: url("/svg/core/actions/add?color=ffffff");
+}
+
+#content-vue.app-notes .welcome-content .icon-files-dark {
+  background-size: 18px;
+}
+
+
+#content-vue.app-notes .welcome-content .icon-phone {
+  background-size: 11px;
+}
+
+/* Tasks */
+
+.icon.sprt-trash {
+  background-image: url("/svg/core/actions/delete?color=808080");
+}
+
+.app-navigation-entry-icon.sprt-add {
+  background-image: url("/svg/core/actions/add?color=808080");
+}
+
