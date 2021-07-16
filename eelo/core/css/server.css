@@ -89,7 +89,7 @@ button.primary:disabled:focus,
   color: var(--color-primary);
 }
 */
-select,
+select, textarea,
 input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="submit"]):not([type="button"]):not([type="reset"]):not([type="color"]):not([type="file"]):not([type="image"]):not(.multiselect__input) {
   background-color: white;
 }
@@ -226,6 +226,14 @@ footer {
 
 .icon-add {
   background-image: url("/svg/core/actions/add?color=808080");
+}
+
+.icon-rename {
+  background-image: url("/svg/core/actions/rename?color=808080");
+}
+
+.icon-download {
+  background-image: url("/svg/core/actions/download?color=808080");
 }
 
 .action.icon-checkmark {
@@ -626,7 +634,108 @@ button.social-diaspora {
   background-image: url("/svg/core/actions/delete?color=808080");
 }
 
-.app-navigation-entry-icon.sprt-add {
+#content-vue.app-tasks #app-navigation-vue .app-navigation-entry-icon.sprt-add::before {
   background-image: url("/svg/core/actions/add?color=808080");
 }
+
+#content-vue.app-tasks #app-navigation-vue .app-navigation-entry-icon.sprt-current::before {
+background-image: url("/svg/serverinfo/app-dark?color=808080");
+background-size: 15px;
+}
+
+#content-vue.app-tasks #app-navigation-vue .app-navigation-entry-icon.sprt-all::before {
+  background-image: url("/svg/tasks/sprt-bw?color=808080");
+}
+
+#content-vue.app-tasks #app-navigation-vue .app-navigation-entry-icon.sprt-task-star::before {
+  background-image: url("/svg/tasks/task-star?color=808080");
+}
+
+#content-vue.app-tasks .icon-task-star, #content-vue.app-tasks .icon.sprt-task-star ,#content-vue.app-tasks .task-body-icons .icon.sprt-task-star {
+  background-image: url("/svg/tasks/task-star?color=808080");
+}
+#content-vue.app-tasks .icon-task-star--up {
+  background-image: url("/svg/tasks/task-star--up?color=808080");
+}
+
+#content-vue.app-tasks .icon-task-star--down {
+  background-image: url("/svg/tasks/task-star--down?color=808080");
+}
+
+#content-vue.app-tasks .icon-alphabetically {
+  background-image: url("/svg/tasks/alphabetically?color=808080");
+}
+
+#content-vue.app-tasks .icon-alphabetically--down {
+  background-image: url("/svg/tasks/alphabetically--down?color=808080");
+}
+
+#content-vue.app-tasks .icon-alphabetically--up {
+  background-image: url("/svg/tasks/alphabetically--up?color=808080");
+}
+
+#content-vue.app-tasks .icon-checkmark {
+  background-image: url("/svg/tasks/checkmark?color=808080");
+}
+#content-vue.app-tasks .icon-checkmark--up {
+  background-image: url("/svg/tasks/checkmark--up?color=808080");
+}
+
+#content-vue.app-tasks .icon-checkmark--down {
+  background-image: url("/svg/tasks/checkmark--down?color=808080");
+}
+
+#content-vue.app-tasks .icon-start {
+  background-image: url("/svg/tasks/start?color=808080");
+}
+
+#content-vue.app-tasks .icon-start--up {
+  background-image: url("/svg/tasks/start--up?color=808080");
+}
+
+#content-vue.app-tasks .icon-start--down {
+  background-image: url("/svg/tasks/start--down?color=808080");
+}
+
+
+#content-vue.app-tasks .icon-due {
+  background-image: url("/svg/tasks/due?color=808080");
+}
+
+#content-vue.app-tasks .icon-due--up {
+  background-image: url("/svg/tasks/due--up?color=808080");
+}
+
+#content-vue.app-tasks .icon-due--down {
+  background-image: url("/svg/tasks/due--down?color=808080");
+}
+
+
+#content-vue.app-tasks .icon-manual {
+  background-image: url("/svg/tasks/manual?color=808080");
+}
+
+#content-vue.app-tasks .icon-manual--up {
+  background-image: url("/svg/tasks/manual--up?color=808080");
+}
+
+#content-vue.app-tasks .icon-manual--down {
+  background-image: url("/svg/tasks/manual--down?color=808080");
+}
+
+#content-vue.app-tasks #app-sidebar .section-content.note, #content-vue.app-tasks #app-sidebar .note-body.selectable, #content-vue.app-tasks #app-sidebar textarea#noteInput {
+  background-color: white;
+}
+
+#content-vue.app-tasks #app-sidebar .icon.sprt-trash {
+ background-image: url("/svg/files/delete?color=808080"); 
+}
+#content-vue.app-tasks #app-sidebar .icon.sprt-pinned-off {
+  background-image: url("/svg/tasks/sprt-bw?color=808080"); 
+}
+#content-vue.app-tasks #app-sidebar .icon.sprt-pinned {
+  background-image: url("/svg/tasks/sprt-bw?color=808080"); 
+}
+
+
 
