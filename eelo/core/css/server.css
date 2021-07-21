@@ -18,7 +18,7 @@
 
 #body-user,
 #body-settings {
-  display: none;
+  /*display: none;*/
 }
 
 /* header color */
@@ -162,10 +162,10 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
 }
 .icon-folder,
 .icon-filetype-folder {
-  background-image: var(--icon-filetype-folder);
+  background-image: var(--icon-folder-007fff);
 }
 .icon-filetype-folder-drag-accept {
-  background-image: var(--icon-filetype-folder-drag-accept) !important;
+  background-image: var(--icon-folder-drag-accept-007fff) !important;
 }
 #header .logo {
   background-image: url("../img/logo.png");
@@ -252,6 +252,22 @@ footer {
   background-image: var(--icon-download-808080);
 }
 
+#header .icon-notifications, #header .icon-notifications-new {
+  background-size: 14px;
+}
+
+.icon-notifications-new {
+  background-image: var(--icon-notifications-notifications-new-000);
+}
+
+.icon-notifications {
+  background-image: var(--icon-notifications-notifications-000);
+}
+
+.icon-external {
+  background-image: var(--icon-external-808080);
+}
+
 .action.icon-checkmark {
   background-image: var(--icon-checkmark-fff);
 }
@@ -270,6 +286,7 @@ footer {
 }
 
 .button .icon-add,
+button .icon-add,
 #new-contact-button.icon-add,
 #content-vue.app-notes #notes_new_note.icon-add {
   background-image: var(--icon-add-fff);
@@ -309,10 +326,13 @@ button > span[class*=" icon-"],
   border-color: #808080 !important; /* !important used in source so needed to override */
 }
 
-#fileList th,
-#fileList td,
 #app-navigation,
 #app-navigation-vue {
+  border-right: 2px solid var(--color-border);
+}
+
+#fileList th,
+#fileList td {
   border-bottom: 2px solid var(--color-border);
 }
 #app-content-files #controls {
