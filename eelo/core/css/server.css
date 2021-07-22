@@ -812,3 +812,7 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
 #deleteaccount:not([disabled]) .icon-delete {
   background-image: var(--icon-delete-fff);
 }
+
+#content-vue.app-tasks .task-body__checkbox label.reactive.no-nav::before {
+  background-color: white;
+}
