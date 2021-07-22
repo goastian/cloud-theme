@@ -92,11 +92,13 @@ button.primary:disabled:focus,
 */
 select,
 textarea,
-#body-user .multiselect .multiselect__tags .multiselect__single,
-#body-settings .multiselect .multiselect__tags .multiselect__single,
-#body-user .multiselect .multiselect__content,
-#body-settings .multiselect .multiselect__tags .multiselect__content,
+input[type="text"],
+.multiselect .multiselect__tags .multiselect__single,
+.multiselect .multiselect__tags .multiselect__content,
+.multiselect .multiselect__tags .multiselect__tags-wrap,
 .multiselect .multiselect__input,
+.multiselect .multiselect__content-wrapper .multiselect__content li.multiselect__element,
+.multiselect .multiselect__content-wrapper .multiselect__content li.multiselect__element .multiselect__option,
 input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="submit"]):not([type="button"]):not([type="reset"]):not([type="color"]):not([type="file"]):not([type="image"]):not(.multiselect__input) {
   background-color: white;
 }
@@ -252,6 +254,10 @@ footer {
   background-image: var(--icon-download-808080);
 }
 
+.icon-files {
+  background-image: var(--icon-files-app-808080);
+}
+
 #header .icon-notifications,
 #header .icon-notifications-new {
   background-size: 14px;
@@ -392,13 +398,24 @@ button > span[class*=" icon-"],
   background-image: var(--icon-star-007fff);
 }
 
-.nav-icon-shareoverview {
+.nav-icon-shareoverview,
+.nav-icon-sharingout,
+.nav-icon-sharingin,
+.nav-icon-pendingshares {
   background-image: var(--icon-files-share-808080);
 }
-.nav-icon-shareoverview.active {
+.nav-icon-shareoverview.active,
+.nav-icon-sharingout.active,
+.nav-icon-sharingin.active,
+.nav-icon-pendingshares.active {
   background-image: var(--icon-files-share-007fff);
 }
-
+.nav-icon-sharinglinks {
+  background-image: var(--icon-public-808080);
+}
+.nav-icon-sharinglinks {
+  background-image: var(--icon-public-007fff);
+}
 .nav-icon-trashbin {
   background-image: var(--icon-files-delete-808080);
 }
@@ -418,7 +435,9 @@ button > span[class*=" icon-"],
 .icon-quota {
   background-image: var(--icon-quota-808080);
 }
-
+#app-content-systemtagsfilter .select2-container ul {
+  background-color: white !important;
+}
 .app-sidebar-header__star.icon-star,
 .app-sidebar-header__star.icon-starred,
 .app-sidebar-header__star.icon-star:hover,
@@ -499,6 +518,20 @@ button.import-contact__button-main .icon-upload,
 #uploadavatarbutton.icon-upload,
 .button .icon-upload {
   background-image: var(--icon-upload-fff);
+}
+
+#content-vue.app-contacts .menu-icon path {
+  fill: #222;
+}
+.icon-recent-actors {
+  background-image: var(--icon-contacts-recent-actors-808080);
+}
+
+.popover .action-input__input + .action-input__label {
+  background-color: var(--color-primary);
+}
+.popover .action-input__input + .action-input__label > .arrow-right-icon path {
+  fill: #fff;
 }
 
 /* Photos App */
@@ -679,15 +712,33 @@ button.social-diaspora {
 #content-vue.app-notes .welcome-content .icon-phone {
   background-size: 11px;
 }
-
-#app-sidebar-vue .note-category .category input.icon-confirm {
+input[type="text"] + .icon-confirm,
+input[type="password"] + .icon-confirm,
+input[type="email"] + .icon-confirm {
   background-color: var(--color-primary) !important;
+  background-image: var(--icon-confirm-fff) !important;
+}
+
+input[type="text"]:not(:active):not(:hover):not(:focus) + .icon-confirm:active,
+input[type="password"]:not(:active):not(:hover):not(:focus)
+  + .icon-confirm:active,
+input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:active,
+input[type="text"]:not(:active):not(:hover):not(:focus) + .icon-confirm:hover,
+input[type="password"]:not(:active):not(:hover):not(:focus)
+  + .icon-confirm:hover,
+input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:hover,
+input[type="text"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus,
+input[type="password"]:not(:active):not(:hover):not(:focus)
+  + .icon-confirm:focus,
+input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
+  border-radius: 0 var(--border-radius) var(--border-radius) 0 !important;
+  border-left-color: transparent !important;
 }
 
 #app-sidebar-vue .note-category .category input.icon-confirm:hover {
   border-radius: 0 var(--border-radius) var(--border-radius) 0 !important;
 }
- #content-vue.app-notes li.active .app-navigation-entry__utils {
+#content-vue.app-notes li.active .app-navigation-entry__utils {
   background-color: white;
 }
 
