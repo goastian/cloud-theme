@@ -93,7 +93,7 @@ button.primary:disabled:focus,
 select,
 textarea,
 input[type="text"],
-.multiselect .multiselect__tags .multiselect__single,
+.multiselect .multiselect__tags input.multiselect__single,
 .multiselect .multiselect__tags .multiselect__content,
 .multiselect .multiselect__tags .multiselect__tags-wrap,
 .multiselect .multiselect__input,
@@ -506,6 +506,16 @@ body.theme--highcontrast #header .header-right .magnify-icon {
 }
 
 /* Contacts App */
+#content-vue.app-contacts .property-masonry .multiselect .multiselect__input[placeholder='Choose property type'] {
+  background-color: white;
+}
+#content-vue.app-contacts .multiselect .multiselect__input,
+#content-vue.app-contacts
+  .multiselect
+  > .multiselect__tags
+  > .multiselect__single {
+  background-color: var(--color-main-background);
+}
 
 #content-vue.app-contacts .empty-content__icon {
   height: 80px;
@@ -528,9 +538,12 @@ li.active#everyone .icon-contacts-dark {
 }
 
 .icon-address-book {
-  background-image: var(--icon-contacts-addressbook-808080);
+  background-image: var(--icon-contacts-address-book-808080);
 }
 
+.property .icon-contacts {
+  background-image: var(--icon-group-808080);
+}
 #content-vue.app-contacts .icon-phone {
   background-image: var(--icon-contacts-phone-808080);
 }
@@ -554,6 +567,10 @@ button.import-contact__button-main .icon-upload,
 }
 .popover .action-input__input + .action-input__label > .arrow-right-icon path {
   fill: #fff;
+}
+
+#content-vue.app-contacts .dots-horizontal-icon svg path {
+  fill: #808080;
 }
 
 /* Photos App */
