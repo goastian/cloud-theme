@@ -506,7 +506,10 @@ body.theme--highcontrast #header .header-right .magnify-icon {
 }
 
 /* Contacts App */
-#content-vue.app-contacts .property-masonry .multiselect .multiselect__input[placeholder='Choose property type'] {
+#content-vue.app-contacts
+  .property-masonry
+  .multiselect
+  .multiselect__input[placeholder="Choose property type"] {
   background-color: white;
 }
 #content-vue.app-contacts .multiselect .multiselect__input,
@@ -555,7 +558,7 @@ button.import-contact__button-main .icon-upload,
   background-image: var(--icon-upload-fff);
 }
 
-#content-vue.app-contacts .menu-icon path {
+.menu-icon svg path {
   fill: #222;
 }
 .icon-recent-actors {
@@ -789,7 +792,8 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
 #content-vue.app-notes .app-navigation-entry__utils {
   background-color: #f2f2f2;
 }
-#content-vue.app-notes .icon.action-item__menutoggle::before {
+#content-vue.app-notes .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
+#content-vue.app-tasks .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before {
   content: var(--icon-more-808080);
   font-size: unset;
   font-weight: unset;
@@ -803,6 +807,11 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
 .icon.sprt-trash,
 #content-vue.app-tasks #app-sidebar .icon.sprt-trash {
   background-image: var(--icon-delete-808080);
+}
+
+#content-vue.app-tasks ~ .popover .icon-add,
+#content-vue.app-tasks button.action-button .icon-add {
+  background-image: var(--icon-add-808080);
 }
 
 #content-vue.app-tasks
