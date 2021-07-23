@@ -93,7 +93,12 @@ button.primary:disabled:focus,
 select,
 textarea,
 input[type="text"],
+input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="submit"]):not([type="button"]):not([type="reset"]):not([type="color"]):not([type="file"]):not([type="image"]):not(.multiselect__input) {
+  background-color: white;
+}
+
 .multiselect .multiselect__tags input.multiselect__single,
+.multiselect .multiselect__tags span.multiselect__single,
 .multiselect .multiselect__tags .multiselect__content,
 .multiselect .multiselect__tags .multiselect__tags-wrap,
 .multiselect .multiselect__input,
@@ -105,11 +110,9 @@ input[type="text"],
   .multiselect__content-wrapper
   .multiselect__content
   li.multiselect__element
-  .multiselect__option,
-input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="submit"]):not([type="button"]):not([type="reset"]):not([type="color"]):not([type="file"]):not([type="image"]):not(.multiselect__input) {
-  background-color: white;
+  .multiselect__option {
+  background-color: white !important;
 }
-
 /* use logos from theme */
 #header .logo,
 #firstrunwizard .logo {
@@ -185,6 +188,11 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
   background-color: white !important;
   color: black;
   background-image: none;
+}
+
+#body-user.dark--theme,
+#body-settings.dark--theme {
+  color: white !important;
 }
 
 #body-user[data-dashboard-background] #header {
@@ -394,6 +402,9 @@ button > span[class*=" icon-"],
   background-repeat: no-repeat;
 }
 
+#filestable .filesize, #filestable .date .modified.live-relative-timestamp {
+  color: black !important;
+}
 .nav-icon-files {
   background-image: var(--icon-files-app-808080);
 }
@@ -432,7 +443,7 @@ button > span[class*=" icon-"],
 .nav-icon-sharinglinks {
   background-image: var(--icon-public-808080);
 }
-.nav-icon-sharinglinks {
+.nav-icon-sharinglinks.active {
   background-image: var(--icon-public-007fff);
 }
 .nav-icon-trashbin {
@@ -809,10 +820,10 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
   fill: #808080;
 }
 
-#deleteaccount:not([disabled]) .icon-delete {
-  background-image: var(--icon-delete-fff);
-}
-
 #content-vue.app-tasks .task-body__checkbox label.reactive.no-nav::before {
   background-color: white;
+}
+
+#deleteaccount:not([disabled]) .icon-delete {
+  background-image: var(--icon-delete-fff);
 }
