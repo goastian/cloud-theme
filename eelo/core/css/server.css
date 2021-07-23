@@ -402,7 +402,8 @@ button > span[class*=" icon-"],
   background-repeat: no-repeat;
 }
 
-#filestable .filesize, #filestable .date .modified.live-relative-timestamp {
+#filestable .filesize,
+#filestable .date .modified.live-relative-timestamp {
   color: black !important;
 }
 .nav-icon-files {
@@ -517,18 +518,20 @@ body.theme--highcontrast #header .header-right .magnify-icon {
 }
 
 /* Contacts App */
-#content-vue.app-contacts
-  .property-masonry
-  .multiselect
-  .multiselect__input[placeholder="Choose property type"] {
-  background-color: white;
-}
-#content-vue.app-contacts .multiselect .multiselect__input,
+
+#content-vue.app-contacts .multiselect .multiselect__tags .multiselect__input,
 #content-vue.app-contacts
   .multiselect
   > .multiselect__tags
   > .multiselect__single {
-  background-color: var(--color-main-background);
+  background-color: var(--color-main-background) !important;
+}
+
+#content-vue.app-contacts .property.property--without-actions.property--last.property-masonry:not(.property--addressbooks):not(.property--groups)
+  .multiselect
+  .multiselect__tags
+  .multiselect__input {
+  background-color: white !important;
 }
 
 #content-vue.app-contacts .empty-content__icon {
@@ -651,6 +654,10 @@ li.active .icon-share {
 
 .icon-delete {
   background-image: var(--icon-files-delete-808080);
+}
+
+.icon-delete:hover {
+  background-image: var(--icon-delete-e9322d);
 }
 
 #appmenu li a span {
