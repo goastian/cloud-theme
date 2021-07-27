@@ -882,6 +882,10 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
   line-height: unset;
 }
 
+#content-vue.app-tasks .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before {
+  content: unset;
+}
+
 /* Tasks */
 
 #content-vue.app-tasks svg path,
