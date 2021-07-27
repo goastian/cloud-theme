@@ -18,22 +18,7 @@
 
 #body-user,
 #body-settings {
-  /*display: none;*/
-}
-
-/* header color */
-/* this is the main brand color */
-#body-user #header,
-#body-settings #header,
-#body-public #header {
-  background-color: #afafaf;
-}
-
-/* log in screen background color */
-/* gradient of the header color and a brighter shade */
-/* can also be a flat color or an image */
-#body-login {
-  background-color: #afafaf !important;
+  display: none;
 }
 
 /* primary action button, use sparingly */
@@ -64,6 +49,12 @@ input[type="reset"] {
   color: white;
   border-color: var(--color-primary);
 }
+
+input[type="checkbox"].checkbox + label::before,
+input[type="radio"].checkbox + label::before {
+  border-color: #808080;
+}
+
 /*
 
 .primary:active,
@@ -168,13 +159,12 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
 #appmenu.inverted svg {
   filter: invert(1);
 }
-.icon-file,
-.icon-filetype-text {
-  background-image: var(--icon-files);
-}
 .icon-folder,
 .icon-filetype-folder {
   background-image: var(--icon-folder-007fff);
+}
+.icon-filetype-text {
+  background-image: var(--icon-text-007fff);
 }
 .icon-filetype-folder-drag-accept {
   background-image: var(--icon-folder-drag-accept-007fff) !important;
@@ -184,7 +174,8 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
 }
 #body-user #header,
 #body-settings #header,
-#body-public #header {
+#body-public #header,
+#body-login {
   background-color: white !important;
   color: black;
   background-image: none;
@@ -196,6 +187,7 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
 }
 
 #body-user[data-dashboard-background] #header {
+  background-color: #f2f2f2;
   opacity: 0.9;
 }
 
@@ -268,6 +260,21 @@ footer {
 .icon-download {
   background-image: var(--icon-download-808080);
 }
+.icon-projects {
+  background-image: var(--icon-projects-808080);
+}
+.icon-comment {
+  background-image: var(--icon-comment-808080);
+}
+.icon-activity {
+  background-image: var(--icon-activity-activity-808080);
+}
+.icon-link {
+  background-image: var(--icon-public-808080);
+}
+button .icon-link {
+  background-image: var(--icon-public-fff);
+}
 
 .icon-recent {
   background-image: var(--icon-files-recent-808080);
@@ -277,7 +284,8 @@ footer {
   background-image: var(--icon-more-808080);
 }
 
-.icon-files, .icon-emptyfolder {
+.icon-files,
+.icon-emptyfolder {
   background-image: var(--icon-files-app-808080);
 }
 
@@ -302,7 +310,8 @@ body.theme--highcontrast .icon-notifications {
   background-image: var(--icon-notifications-notifications-000);
 }
 
-.icon-external {
+.icon-external,
+.icon-goto {
   background-image: var(--icon-external-808080);
 }
 
@@ -321,6 +330,10 @@ body.theme--highcontrast .icon-notifications {
 }
 .icon-toggle-filelist {
   background-image: var(--icon-toggle-filelist-808080);
+}
+
+.icon-toggle-pictures {
+  background-image: var(--icon-toggle-pictures-808080);
 }
 
 .button .icon-add,
@@ -351,8 +364,17 @@ button > span[class*=" icon-"],
   background-image: var(--icon-user-808080);
 }
 
-.icon-star {
+.icon-star,
+.icon-star-dark,
+.icon-starred:hover {
   background-image: var(--icon-star-808080);
+}
+
+.icon-starred,
+.icon-star:hover,
+.icon-star-dark:hover,
+#filestable .filename .favorite-mark .icon-starred {
+  background-image: var(--icon-star-fc0);
 }
 
 #header-menu-unified-search .icon-close {
@@ -369,12 +391,9 @@ button > span[class*=" icon-"],
   border-right: 2px solid var(--color-border);
 }
 
-#fileList th,
-#fileList td {
+table th,
+table td {
   border-bottom: 2px solid var(--color-border);
-}
-#app-content-files #controls {
-  background-color: var(--color-main-background);
 }
 
 .icon-files-dark {
@@ -406,6 +425,34 @@ button > span[class*=" icon-"],
   background-repeat: no-repeat;
 }
 
+#content.app-files #filestable.view-grid thead tr,
+#content.app-files #filestable.view-grid thead th {
+  border-bottom: 0px;
+}
+
+#content.app-files #commentsTabView .newCommentForm .message {
+  background-color: white;
+}
+
+#content.app-files #commentsTabView .newCommentForm .message:hover {
+  background-color: white !important;
+}
+
+#content.app-files #emptycontent .icon-share {
+  background-image: var(--icon-files-share-808080);
+}
+
+#content #app-content-files #controls {
+  background-color: var(--color-main-background);
+}
+
+#app-content-files button .icon-file {
+  background-image: var(--icon-text-fff);
+}
+#fileList tr td.selection > .selectCheckBox + label::before {
+  opacity: 1;
+}
+
 #filestable .filesize,
 #filestable .date .modified.live-relative-timestamp {
   color: black !important;
@@ -427,16 +474,25 @@ button > span[class*=" icon-"],
 }
 
 .nav-icon-favorites {
-  background-image: var(--icon-star-808080);
+  background-image: var(--icon-star-outline-808080);
 }
 .nav-icon-favorites.active {
-  background-image: var(--icon-star-007fff);
+  background-image: var(--icon-star-outline-007fff);
+}
+
+.nav-icon-deletedshares {
+  background-image: var(--icon-files-unshare-808080);
+}
+.nav-icon-deletedshares.active {
+  background-image: var(--icon-files-unshare-007fff);
 }
 
 .nav-icon-shareoverview,
 .nav-icon-sharingout,
 .nav-icon-sharingin,
-.nav-icon-pendingshares {
+.nav-icon-pendingshares,
+#content.app-files .icon-share,
+#content.app-files .icon-shared {
   background-image: var(--icon-files-share-808080);
 }
 .nav-icon-shareoverview.active,
@@ -480,6 +536,24 @@ button > span[class*=" icon-"],
   background-size: 16px;
 }
 
+#content.app-files
+  #sharing
+  #collection-list
+  .multiselect
+  .multiselect__tags
+  .multiselect__input {
+  background-color: transparent !important;
+}
+
+#content.app-files #sharing .sharing-entry .avatar-external,
+#content.app-files #sharing .sharing-entry .avatar-shared,
+#content.app-files #sharing .icon-public-white {
+  background-color: var(--color-primary);
+}
+#content.app-files #sharing .sharing-entry .avatar-shared.icon-more-white {
+  background-image: var(--icon-more-fff);
+}
+
 #header .header-right .magnify-icon {
   background: var(--icon-search-000) no-repeat center;
 }
@@ -488,18 +562,22 @@ body.theme--highcontrast #header .header-right .magnify-icon {
 }
 
 #app-dashboard .panel {
-  background-color: white;
+  background-color: #f2f2f2;
   opacity: 0.9;
 }
 
 #app-dashboard .statuses button {
-  background-color: white;
+  background-color: #f2f2f2;
   opacity: 0.9;
   color: var(--color-main-text);
 }
 
-#app-dashboard footer a {
+#app-dashboard .statuses button:hover {
   background-color: white;
+}
+
+#app-dashboard footer a {
+  background-color: #f2f2f2;
   opacity: 0.9;
 }
 
@@ -516,8 +594,8 @@ body.theme--highcontrast #header .header-right .magnify-icon {
   opacity: 1;
 }
 
-#app-content-files #filestable span,
-#app-content-files #filestable td {
+#content.app-files #filestable span,
+#content.app-files #filestable td {
   color: black !important;
 }
 
@@ -613,16 +691,17 @@ li.active .icon-video {
 }
 
 li.active .icon-favorite {
-  background-image: var(--icon-star-007fff);
+  background-image: var(--icon-star-outline-007fff);
 }
 .icon-favorite {
-  background-image: var(--icon-star-808080);
+  background-image: var(--icon-star-outline-808080);
 }
 
 li.active .icon-tag {
   background-image: var(--icon-tag-007fff);
 }
-.icon-tag {
+.icon-tag,
+.icon-systemtags {
   background-image: var(--icon-tag-808080);
 }
 
