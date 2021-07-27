@@ -21,8 +21,13 @@
   display: none;
 }
 
+#body-user #header,
+#body-settings #header,
+#body-public #header {
+  background-color: white !important;
+}
+
 /* primary action button, use sparingly */
-/* header color as border, brighter shade again, here as background */
 button,
 .primary,
 input[type="submit"].primary,
@@ -81,10 +86,26 @@ button.primary:disabled:focus,
   color: var(--color-primary);
 }
 */
+
 select,
 textarea,
 input[type="text"],
-input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="submit"]):not([type="button"]):not([type="reset"]):not([type="color"]):not([type="file"]):not([type="image"]):not(.multiselect__input) {
+input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="submit"]):not([type="button"]):not([type="reset"]):not([type="color"]):not([type="file"]):not([type="image"]):not(.multiselect__input),
+#header #header-menu-unified-search .unified-search__form-input,
+#header .header-right > div > .notification-container.menu,
+#header #header-menu-unified-search .unified-search__input-wrapper,
+#content-vue.app-tasks .task-body__checkbox label.reactive.no-nav::before,
+#content.app-files #commentsTabView .newCommentForm .message {
+  background-color: white;
+}
+
+#settings #expanddiv,
+#app-navigation ul li a.active,
+#app-navigation-vue ul li a.active,
+#app-navigation ul li.active a,
+#app-navigation-vue ul li.active a,
+#content-vue.app-notes li.active .app-navigation-entry__utils,
+#app-dashboard .statuses button:hover {
   background-color: white;
 }
 
@@ -101,7 +122,14 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
   .multiselect__content-wrapper
   .multiselect__content
   li.multiselect__element
-  .multiselect__option {
+  .multiselect__option,
+#content-vue.app-contacts
+  .property.property--without-actions.property--last.property-masonry:not(.property--addressbooks):not(.property--groups)
+  .multiselect
+  .multiselect__tags
+  .multiselect__input,
+#content.app-files #commentsTabView .newCommentForm .message:hover,
+#app-content-systemtagsfilter .select2-container ul {
   background-color: white !important;
 }
 /* use logos from theme */
@@ -174,9 +202,7 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
 }
 #body-user #header,
 #body-settings #header,
-#body-public #header,
-#body-login {
-  background-color: white !important;
+#body-public #header {
   color: black;
   background-image: none;
 }
@@ -184,11 +210,6 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
 #body-user.dark--theme,
 #body-settings.dark--theme {
   color: white !important;
-}
-
-#body-user[data-dashboard-background] #header {
-  background-color: #f2f2f2;
-  opacity: 0.9;
 }
 
 #header .menu,
@@ -411,12 +432,32 @@ table td {
   background-image: var(--icon-spreed-app-808080);
 }
 
+#app-navigation li a,
+#app-navigation:not(.vue) > ul > li > a,
+#app-navigation:not(.vue) > ul > li > ul > li > a {
+  opacity: 1;
+}
+
+/* Dashboard App */
+
+#body-user[data-dashboard-background] #header,
+#app-dashboard .panel,
+#app-dashboard .statuses button,
+#app-dashboard footer a {
+  background-color: #f2f2f2;
+  opacity: 0.9;
+}
+
 #app-dashboard .panel .panel--header > .icon-calendar-dark {
   background-position: 14px 10px;
 }
 
 #app-dashboard .panel .panel--header > .icon-files-dark {
   background-position: 14px 16px;
+}
+
+#app-dashboard .statuses button {
+  color: var(--color-main-text);
 }
 
 /* Files App */
@@ -428,14 +469,6 @@ table td {
 #content.app-files #filestable.view-grid thead tr,
 #content.app-files #filestable.view-grid thead th {
   border-bottom: 0px;
-}
-
-#content.app-files #commentsTabView .newCommentForm .message {
-  background-color: white;
-}
-
-#content.app-files #commentsTabView .newCommentForm .message:hover {
-  background-color: white !important;
 }
 
 #content.app-files #emptycontent .icon-share {
@@ -526,9 +559,6 @@ table td {
 .icon-quota {
   background-image: var(--icon-quota-808080);
 }
-#app-content-systemtagsfilter .select2-container ul {
-  background-color: white !important;
-}
 .app-sidebar-header__star.icon-star,
 .app-sidebar-header__star.icon-starred,
 .app-sidebar-header__star.icon-star:hover,
@@ -561,39 +591,6 @@ body.theme--highcontrast #header .header-right .magnify-icon {
   background: var(--icon-search-fff) no-repeat center;
 }
 
-#app-dashboard .panel {
-  background-color: #f2f2f2;
-  opacity: 0.9;
-}
-
-#app-dashboard .statuses button {
-  background-color: #f2f2f2;
-  opacity: 0.9;
-  color: var(--color-main-text);
-}
-
-#app-dashboard .statuses button:hover {
-  background-color: white;
-}
-
-#app-dashboard footer a {
-  background-color: #f2f2f2;
-  opacity: 0.9;
-}
-
-#app-navigation ul li a.active,
-#app-navigation-vue ul li a.active,
-#app-navigation ul li.active a,
-#app-navigation-vue ul li.active a {
-  background-color: white;
-}
-
-#app-navigation li a,
-#app-navigation:not(.vue) > ul > li > a,
-#app-navigation:not(.vue) > ul > li > ul > li > a {
-  opacity: 1;
-}
-
 #content.app-files #filestable span,
 #content.app-files #filestable td {
   color: black !important;
@@ -607,14 +604,6 @@ body.theme--highcontrast #header .header-right .magnify-icon {
   > .multiselect__tags
   > .multiselect__single {
   background-color: var(--color-main-background) !important;
-}
-
-#content-vue.app-contacts
-  .property.property--without-actions.property--last.property-masonry:not(.property--addressbooks):not(.property--groups)
-  .multiselect
-  .multiselect__tags
-  .multiselect__input {
-  background-color: white !important;
 }
 
 #content-vue.app-contacts .empty-content__icon {
@@ -727,13 +716,6 @@ li.active .icon-share {
 
 #header #header-menu-unified-search .unified-search__form-input {
   color: black;
-}
-
-#header #header-menu-unified-search .unified-search__form-input,
-#header .header-right > div > .notification-container.menu,
-#header #header-menu-unified-search .unified-search__input-wrapper,
-#settings #expanddiv {
-  background-color: white;
 }
 
 .icon-delete {
@@ -887,9 +869,6 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
 #app-sidebar-vue .note-category .category input.icon-confirm:hover {
   border-radius: 0 var(--border-radius) var(--border-radius) 0 !important;
 }
-#content-vue.app-notes li.active .app-navigation-entry__utils {
-  background-color: white;
-}
 
 #content-vue.app-notes .app-navigation-entry__utils {
   background-color: #f2f2f2;
@@ -908,10 +887,6 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
 #content-vue.app-tasks svg path,
 #content-vue.app-tasks ~ .popover svg path {
   fill: #808080;
-}
-
-#content-vue.app-tasks .task-body__checkbox label.reactive.no-nav::before {
-  background-color: white;
 }
 
 #deleteaccount:not([disabled]) .icon-delete {
