@@ -58,6 +58,7 @@ input[type="reset"] {
 input[type="checkbox"].checkbox + label::before,
 input[type="radio"].checkbox + label::before {
   border-color: #808080;
+  background-color: white;
 }
 
 /*
@@ -287,6 +288,10 @@ footer {
 
 .icon-download {
   background-image: var(--icon-download-808080);
+}
+.icon-reminder {
+  background-image: var(--icon-notifications-notifications-808080);
+  background-size: 13px;
 }
 .icon-clippy {
   background-image: var(--icon-clippy-808080);
@@ -609,11 +614,12 @@ table td {
   background-image: var(--icon-more-fff);
 }
 
-#header .header-right .magnify-icon {
+body.theme--highcontrast #header .header-right .magnify-icon {
   background: var(--icon-search-000) no-repeat center;
 }
-body.theme--highcontrast #header .header-right .magnify-icon {
-  background: var(--icon-search-fff) no-repeat center;
+
+#header .header-right .magnify-icon {
+  background: var(--icon-search-000) no-repeat center;
 }
 
 #content.app-files #filestable span,
@@ -824,6 +830,9 @@ button.social-diaspora {
   max-width: 100px;
   margin: auto;
 }
+.mx-datepicker .mx-calendar td {
+  border: 0px;
+}
 
 .datepicker-button-section.icon-leftarrow {
   background-image: var(--icon-arrow-left-808080);
@@ -861,6 +870,33 @@ button.social-diaspora {
 #content-vue.app-calendar .fc-scrollgrid {
   padding-top: 14px;
 }
+
+#content-vue.app-calendar .fc-dayGridMonth-view table {
+  font-size: 16px;
+}
+#content-vue.app-calendar .fc-dayGridMonth-view table,
+#content-vue.app-calendar .fc-dayGridMonth-view td,
+#content-vue.app-calendar .fc-dayGridMonth-view th
+ {
+  border: 0px none;
+}
+
+.icon-view-week {
+  background-image: var(--icon-calendar-view-week-808080);
+}
+
+.icon-view-day {
+  background-image: var(--icon-calendar-view-day-808080);
+}
+
+.icon-view-module {
+  background-image: var(--icon-calendar-view-module-808080);
+}
+
+.icon-view-list {
+  background-image: var(--icon-calendar-view-list-808080);
+}
+
 /* Notes */
 
 #content-vue.app-notes .welcome-content .icon-files-dark {
