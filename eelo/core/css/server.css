@@ -149,7 +149,7 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
 }
 
 #nextcloud .logo-icon:hover {
-  background-color: rgba(127,127,127,0.25);
+  background-color: rgba(127, 127, 127, 0.25);
 }
 
 :root {
@@ -287,6 +287,16 @@ footer {
 
 .icon-download {
   background-image: var(--icon-download-808080);
+}
+.icon-clippy {
+  background-image: var(--icon-clippy-808080);
+}
+.icon-confirm {
+  background-image: var(--icon-confirm-808080);
+}
+.icon-notes,
+.icon-notes-trans {
+  background-image: var(--icon-notes-notes-808080);
 }
 .icon-projects {
   background-image: var(--icon-projects-808080);
@@ -845,10 +855,12 @@ button.social-diaspora {
   background-image: var(--icon-public-808080);
 }
 
-#content-vue.app-calendar #app-navigation .action-item.icon-share {
+#content-vue.app-calendar #app-navigation-vue .action-item.icon-share {
   background-size: 12px;
 }
-
+#content-vue.app-calendar .fc-scrollgrid {
+  padding-top: 14px;
+}
 /* Notes */
 
 #content-vue.app-notes .welcome-content .icon-files-dark {
@@ -897,9 +909,10 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
   background-color: #f2f2f2;
 }
 
-
-#content-vue.app-calendar .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
-#content-vue.app-notes .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before  {
+#content-vue.app-calendar
+  .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
+#content-vue.app-notes
+  .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before {
   content: var(--icon-more-808080);
   font-size: unset;
   font-weight: unset;
@@ -907,8 +920,6 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
   font-family: unset;
   line-height: unset;
 }
-
-
 
 /* Tasks */
 
