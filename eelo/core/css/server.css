@@ -141,11 +141,17 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
   height: 128px;
 }
 #header .logo-icon {
-  width: 25px;
-  height: 25px;
-  top: 12.5px;
+  width: 40px;
+  height: 40px;
+  top: 5px;
   bottom: 0px;
+  border-radius: 22px;
 }
+
+#nextcloud .logo-icon:hover {
+  background-color: rgba(127,127,127,0.25);
+}
+
 :root {
   --color-primary: #007fff;
   --color-primary-element: #007fff;
@@ -224,7 +230,7 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
 }
 
 #header .logo {
-  background-size: contain;
+  background-size: 25px;
 }
 #body-login #header .logo {
   margin-bottom: 22px;
