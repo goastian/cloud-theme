@@ -88,6 +88,15 @@ button.primary:disabled:focus,
 }
 */
 
+textarea:not(:disabled):active,
+div[contenteditable="true"]:not(:disabled):active,
+textarea:not(:disabled):hover,
+div[contenteditable="true"]:not(:disabled):hover,
+textarea:not(:disabled):focus,
+div[contenteditable="true"]:not(:disabled):focus {
+  background-color: white !important;
+}
+
 select,
 textarea,
 input[type="text"],
@@ -112,6 +121,7 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
 
 .multiselect .multiselect__tags input.multiselect__single,
 .multiselect .multiselect__tags span.multiselect__single,
+.multiselect .multiselect__tags span.multiselect__placeholder,
 .multiselect .multiselect__tags .multiselect__content,
 .multiselect .multiselect__tags .multiselect__tags-wrap,
 .multiselect .multiselect__input,
@@ -291,6 +301,8 @@ footer {
 }
 .icon-reminder {
   background-image: var(--icon-notifications-notifications-808080);
+}
+#content-vue.app-calendar .app-sidebar-tabs__tab-icon.icon-reminder {
   background-size: 13px;
 }
 .icon-clippy {
@@ -876,8 +888,7 @@ button.social-diaspora {
 }
 #content-vue.app-calendar .fc-dayGridMonth-view table,
 #content-vue.app-calendar .fc-dayGridMonth-view td,
-#content-vue.app-calendar .fc-dayGridMonth-view th
- {
+#content-vue.app-calendar .fc-dayGridMonth-view th {
   border: 0px none;
 }
 
