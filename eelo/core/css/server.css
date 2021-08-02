@@ -27,9 +27,33 @@
   background-color: white !important;
 }
 
+button:hover,
+.primary:hover,
+.button:hover,
+button.toggle.has-tooltip:hover,
+.primary:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.primary:active,
+.button:active,
+#new-contact-button:hover,
+#quotaincreasebutton:hover,
+#content-vue.app-tasks .action.icon-checkmark:hover,
+.button.today:hover,
+button.import-contact__button-main:hover,
+button#notes_new_note:hover
+{
+  opacity: 0.9
+}
+
 /* primary action button, use sparingly */
 button,
 .primary,
+.button,
 input[type="submit"].primary,
 input[type="button"].primary,
 button.toggle.has-tooltip,
@@ -46,7 +70,6 @@ button.primary:active,
 .button.today,
 button.import-contact__button-main,
 button#notes_new_note,
-.button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
@@ -61,32 +84,6 @@ input[type="radio"].checkbox + label::before {
   background-color: white;
 }
 
-/*
-
-.primary:active,
-input[type="submit"].primary:active,
-input[type="button"].primary:active,
-button.primary:active,
-.button.primary:active,
-.primary:disabled,
-input[type="submit"].primary:disabled,
-input[type="button"].primary:disabled,
-button.primary:disabled,
-.button.primary:disabled,
-.primary:disabled:hover,
-input[type="submit"].primary:disabled:hover,
-input[type="button"].primary:disabled:hover,
-button.primary:disabled:hover,
-.button.primary:disabled:hover,
-.primary:disabled:focus,
-input[type="submit"].primary:disabled:focus,
-input[type="button"].primary:disabled:focus,
-button.primary:disabled:focus,
-.button.primary:disabled:focus {
-  background-color: white !important;
-  color: var(--color-primary);
-}
-*/
 
 textarea:not(:disabled):active,
 div[contenteditable="true"]:not(:disabled):active,
