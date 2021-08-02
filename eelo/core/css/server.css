@@ -340,6 +340,7 @@ button .icon-link {
 }
 
 .icon-files,
+.icon-category-files,
 .icon-emptyfolder {
   background-image: var(--icon-files-app-808080);
 }
@@ -377,7 +378,7 @@ body.theme--highcontrast .icon-notifications {
   background-image: var(--icon-phone-808080);
 }
 
-.icon-password {
+.icon-password, .icon-category-security {
   background-image: var(--icon-password-808080);
 }
 .icon-link {
@@ -419,8 +420,13 @@ button > span[class*=" icon-"],
   background-image: var(--icon-contacts-app-808080);
 }
 
-.icon-user {
+.icon-user,
+.icon-category-installed {
   background-image: var(--icon-user-808080);
+}
+
+.icon-category-enabled {
+  background-image: var(--icon-checkmark-808080);
 }
 
 .icon-star,
@@ -436,7 +442,8 @@ button > span[class*=" icon-"],
   background-image: var(--icon-star-fc0);
 }
 
-#header-menu-unified-search .icon-close {
+#header-menu-unified-search .icon-close,
+.icon-category-disabled {
   background-image: var(--icon-close-808080);
 }
 
@@ -654,7 +661,8 @@ body.theme--highcontrast #header .header-right .magnify-icon {
 }
 
 #everyone .icon-contacts-dark,
-#content-vue.app-contacts ~ .popover .icon-contacts-dark {
+#content-vue.app-contacts ~ .popover .icon-contacts-dark,
+.icon-category-social {
   background-image: var(--icon-group-808080);
 }
 li.active#everyone .icon-contacts-dark {
@@ -753,7 +761,8 @@ li.active .icon-share {
 }
 
 #app-navigation-vue #app-settings #app-settings-header .settings-button,
-#app-navigation #app-settings #app-settings-header .settings-button {
+#app-navigation #app-settings #app-settings-header .settings-button,
+.icon-category-tools {
   background-image: var(--icon-settings-808080);
 }
 
@@ -977,4 +986,41 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
 
 #deleteaccount:not([disabled]) .icon-delete {
   background-image: var(--icon-delete-fff);
+}
+
+/* Apps categories icons */
+
+.icon-category-app-bundles {
+  background-image: var(--icon-bundles-808080);
+}
+.icon-category-dashboard {
+  background-image: var(--icon-dashboard-dashboard-808080);
+}
+.icon-category-customization {
+  background-image: var(--icon-customization-808080);
+}
+.icon-category-games {
+  background-image: var(--icon-games-808080);
+}
+.icon-category-integration {
+  background-image: var(--icon-integration-808080);
+}
+.icon-category-monitoring {
+  background-image: var(--icon-monitoring-808080);
+}
+.icon-category-multimedia {
+  background-image: var(--icon-multimedia-808080);
+}
+.icon-category-office {
+  background-image: var(--icon-office-808080);
+}
+.icon-category-organization {
+  background-image: var(--icon-organization-808080);
+}
+.icon-category-search {
+  background-image: var(--icon-search-808080);
+}
+
+.icon-category-workflow {
+  background-image: var(--icon-workflow-808080);
 }
