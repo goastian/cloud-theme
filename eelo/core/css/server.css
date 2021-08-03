@@ -45,9 +45,8 @@ input[type="reset"]:hover,
 #content-vue.app-tasks .action.icon-checkmark:hover,
 .button.today:hover,
 button.import-contact__button-main:hover,
-button#notes_new_note:hover
-{
-  opacity: 0.9
+button#notes_new_note:hover {
+  opacity: 0.9;
 }
 
 /* primary action button, use sparingly */
@@ -83,7 +82,6 @@ input[type="radio"].checkbox + label::before {
   border-color: #808080;
   background-color: white;
 }
-
 
 textarea:not(:disabled):active,
 div[contenteditable="true"]:not(:disabled):active,
@@ -154,10 +152,6 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
   top: 5px;
   bottom: 0px;
   border-radius: 22px;
-}
-
-#nextcloud .logo-icon:hover {
-  background-color: rgba(127, 127, 127, 0.25);
 }
 
 :root {
@@ -375,7 +369,8 @@ body.theme--highcontrast .icon-notifications {
   background-image: var(--icon-phone-808080);
 }
 
-.icon-password, .icon-category-security {
+.icon-password,
+.icon-category-security {
   background-image: var(--icon-password-808080);
 }
 .icon-link {
@@ -487,7 +482,7 @@ table td {
 #app-dashboard .statuses button,
 #app-dashboard .footer a {
   background-color: #f2f2f2;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 #app-dashboard .panel .panel--header > .icon-calendar-dark {
@@ -780,7 +775,7 @@ li.active .icon-share {
 }
 
 #appmenu li:hover a span {
-  color: var(--color-main-text);
+  color: #808080;
 }
 
 body.theme--highcontrast #appmenu li:hover a span {
