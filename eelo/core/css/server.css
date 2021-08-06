@@ -89,7 +89,7 @@ textarea:not(:disabled):hover,
 div[contenteditable="true"]:not(:disabled):hover,
 textarea:not(:disabled):focus,
 div[contenteditable="true"]:not(:disabled):focus {
-  background-color: white !important;
+  background-color: var(--input-background-color) !important;
 }
 
 select,
@@ -101,7 +101,7 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
 #header #header-menu-unified-search .unified-search__input-wrapper,
 #content-vue.app-tasks .task-body__checkbox label.reactive.no-nav::before,
 #content.app-files #commentsTabView .newCommentForm .message {
-  background-color: white;
+  background-color: var(--input-background-color);
 }
 
 #settings #expanddiv,
@@ -137,7 +137,7 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
 #content.app-files #commentsTabView .newCommentForm .message:hover,
 #app-dashboard .footer a:hover,
 #app-content-systemtagsfilter .select2-container ul {
-  background-color: white !important;
+  background-color: var(--input-background-color) !important;
 }
 /* use logos from theme */
 #header .logo,
@@ -169,6 +169,7 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
   --icon-settings-dark-000: #000000;
   --icon-inactive-color: #808080;
   --icon-active-color: #007fff;
+  --input-background-color: white;
 }
 #header #nextcloud {
   padding-left: 70px;
