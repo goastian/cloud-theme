@@ -16,10 +16,11 @@ minify-css:
     stage: minify
     script:
         - minify ./eelo/core/css/server.css > ./eelo/core/css/server.min.css
+        - minify ./eelo/core/css/guest.css > ./eelo/core/css/guest.min.css
         - mv ./eelo/core/css/server.min.css ./eelo/core/css/server.css
+        - mv ./eelo/core/css/guest.min.css ./eelo/core/css/guest.css
         - mkdir -p dist/ecloud-theme
         - cp -a eelo LICENSE README.md dist/ecloud-theme
-        - cd dist/ && tar -czf ecloud-theme.tar.gz ecloud-theme
     artifacts:
         paths:
-            - dist/ecloud-theme.tar.gz
+            - dist/ecloud-theme
