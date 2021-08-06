@@ -1,0 +1,25 @@
+stages:
+    - minify
+
+default:
+    image: node:15.14.0-stretch
+    before_script:
+        - npm set cache .npm
+        - npm i -g minify
+    cache:
+        key: ${CI_COMMIT_REF_SLUG}
+        paths:
+            - .npm/
+            - node_modules/
+
+minify-css:
+    stage: minify
+    script:
+        - minify ./eelo/core/css/server.css > ./eelo/core/css/server.min.css
+        - mv ./eelo/core/css/server.min.css ./eelo/core/css/server.css
+        - mkdir -p dist/ecloud-theme
+        - cp -a eelo LICENSE README.md dist/ecloud-theme
+        - cd dist/ && tar -czf ecloud-theme.tar.gz ecloud-theme
+    artifacts:
+        paths:
+            - dist/ecloud-theme.tar.gz
