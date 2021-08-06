@@ -79,7 +79,7 @@ input[type="reset"] {
 
 input[type="checkbox"].checkbox + label::before,
 input[type="radio"].checkbox + label::before {
-  border-color: #808080;
+  border-color: var(--icon-inactive-color);
   background-color: white;
 }
 
@@ -441,7 +441,7 @@ button > span[class*=" icon-"],
 
 #header #searchbox {
   color: black;
-  border-color: #808080 !important; /* !important used in source so needed to override */
+  border-color: var(--icon-inactive-color) !important; /* !important used in source so needed to override */
 }
 
 #app-navigation,
@@ -481,7 +481,7 @@ table td {
 #app-dashboard .panel,
 #app-dashboard .statuses button,
 #app-dashboard .footer a {
-  background-color: #f2f2f2;
+  background-color: var(--color-main-background);
   opacity: 0.95;
 }
 
@@ -702,7 +702,7 @@ button.import-contact__button-main .icon-upload,
 }
 
 #content-vue.app-contacts .dots-horizontal-icon svg path {
-  fill: #808080;
+  fill: var(--icon-inactive-color);
 }
 
 /* Photos App */
@@ -775,7 +775,7 @@ li.active .icon-share {
 }
 
 #appmenu li:hover a span {
-  color: #808080;
+  color: var(--icon-inactive-color);
 }
 
 body.theme--highcontrast #appmenu li:hover a span {
@@ -954,7 +954,7 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
 }
 
 #content-vue.app-notes .app-navigation-entry__utils {
-  background-color: #f2f2f2;
+  background-color: var(--color-main-background);
 }
 
 #content-vue.app-calendar
@@ -973,14 +973,14 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
 
 #content-vue.app-tasks svg path,
 #content-vue.app-tasks ~ .popover svg path {
-  fill: #808080;
+  fill: var(--icon-inactive-color);
 }
 
 #deleteaccount:not([disabled]) .icon-delete {
   background-image: var(--icon-delete-fff);
 }
 
-/* Apps categories icons */
+/* Settings Apps categories icons */
 
 .icon-category-app-bundles {
   background-image: var(--icon-bundles-808080);
