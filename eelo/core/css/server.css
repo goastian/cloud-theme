@@ -16,6 +16,25 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
+:root {
+  --color-primary: #007fff;
+  --color-primary-element: #007fff;
+  --color-primary-element-light: #007fff;
+  --color-error: #fb3845;
+  --color-success: #3ad975;
+  --color-main-background: #f2f2f2;
+  --color-main-background-translucent: #f2f2f2;
+  --color-main-text: black;
+  --color-text-maxcontrast: black;
+  --color-border-dark: #e6e6e6;
+  --color-border: #e6e6e6;
+  --icon-settings-dark-000: #000000;
+  --icon-inactive-color: #808080;
+  --icon-active-color: #007fff;
+  --input-background-color: white;
+  --menu-icon-color: #222;
+}
+
 #body-user,
 #body-settings {
   display: none;
@@ -154,24 +173,6 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
   border-radius: 22px;
 }
 
-:root {
-  --color-primary: #007fff;
-  --color-primary-element: #007fff;
-  --color-primary-element-light: #007fff;
-  --color-error: #fb3845;
-  --color-success: #3ad975;
-  --color-main-background: #f2f2f2;
-  --color-main-background-translucent: #f2f2f2;
-  --color-main-text: black;
-  --color-text-maxcontrast: black;
-  --color-border-dark: #e6e6e6;
-  --color-border: #e6e6e6;
-  --icon-settings-dark-000: #000000;
-  --icon-inactive-color: #808080;
-  --icon-active-color: #007fff;
-  --input-background-color: white;
-  --menu-icon-color: #222;
-}
 #header #nextcloud {
   padding-left: 70px;
 }
@@ -443,7 +444,9 @@ button > span[class*=" icon-"],
 
 #header #searchbox {
   color: var(--color-main-text);
-  border-color: var(--icon-inactive-color) !important; /* !important used in source so needed to override */
+  border-color: var(
+    --icon-inactive-color
+  ) !important; /* !important used in source so needed to override */
 }
 
 #app-navigation,
