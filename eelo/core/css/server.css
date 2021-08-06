@@ -182,6 +182,14 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
   width: 16px;
 }
 
+/* 
+  For the overflow in search filter;
+  It doesn't use specific ids so gave the rule a lot of specificity
+*/
+.popover > .popover__wrapper .open ul li p{ 
+  white-space: normal;
+} 
+
 /* CSS TWEAKS TAKEN FROM THEMING APP (disabled now) */
 
 .nc-theming-main-background {
@@ -644,6 +652,10 @@ body.theme--highcontrast #header .header-right .magnify-icon {
 }
 
 /* Contacts App */
+
+#contacts-list {
+  margin-top: 44px;
+}
 
 #content-vue.app-contacts .multiselect .multiselect__tags .multiselect__input,
 #content-vue.app-contacts
