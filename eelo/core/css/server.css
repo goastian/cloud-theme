@@ -170,6 +170,7 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
   --icon-inactive-color: #808080;
   --icon-active-color: #007fff;
   --input-background-color: white;
+  --menu-icon-color: #222;
 }
 #header #nextcloud {
   padding-left: 70px;
@@ -689,7 +690,7 @@ button.import-contact__button-main .icon-upload,
 }
 
 .menu-icon svg path {
-  fill: #222;
+  fill: var(--menu-icon-color);
 }
 .icon-recent-actors {
   background-image: var(--icon-contacts-recent-actors-808080);
@@ -699,7 +700,7 @@ button.import-contact__button-main .icon-upload,
   background-color: var(--color-primary);
 }
 .popover .action-input__input + .action-input__label > .arrow-right-icon path {
-  fill: #fff;
+  fill: white;
 }
 
 #content-vue.app-contacts .dots-horizontal-icon svg path {
