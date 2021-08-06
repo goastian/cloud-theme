@@ -212,7 +212,7 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
 #body-user #header,
 #body-settings #header,
 #body-public #header {
-  color: black;
+  color: var(--color-main-text);
   background-image: none;
 }
 
@@ -228,7 +228,7 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
 }
 
 #appmenu li span {
-  color: black;
+  color: var(--color-main-text);
 }
 
 #header .logo {
@@ -249,7 +249,7 @@ footer {
 }
 
 #content #app-navigation {
-  color: black;
+  color: var(--color-main-text);
   border-right: 2px solid var(--color-border);
 }
 
@@ -440,7 +440,7 @@ button > span[class*=" icon-"],
 }
 
 #header #searchbox {
-  color: black;
+  color: var(--color-main-text);
   border-color: var(--icon-inactive-color) !important; /* !important used in source so needed to override */
 }
 
@@ -529,7 +529,7 @@ table td {
 
 #filestable .filesize,
 #filestable .date .modified.live-relative-timestamp {
-  color: black !important;
+  color: var(--color-main-text) !important;
 }
 .nav-icon-files {
   background-image: var(--icon-files-app-808080);
@@ -635,7 +635,7 @@ body.theme--highcontrast #header .header-right .magnify-icon {
 
 #content.app-files #filestable span,
 #content.app-files #filestable td {
-  color: black !important;
+  color: var(--color-main-text) !important;
 }
 
 /* Contacts App */
@@ -662,7 +662,7 @@ li.active#everyone .icon-contacts-dark {
 }
 
 #content-vue.app-contacts .app-navigation-caption__title {
-  color: black;
+  color: var(--color-main-text);
 }
 
 #content-vue.app-contacts .contact-header__infos input {
@@ -759,7 +759,7 @@ li.active .icon-share {
 }
 
 #header #header-menu-unified-search .unified-search__form-input {
-  color: black;
+  color: var(--color-main-text);
 }
 
 .icon-delete {
@@ -837,7 +837,7 @@ button.social-diaspora {
 
 .datepicker-button-section button {
   background-color: var(--color-main-background);
-  color: black;
+  color: var(--color-main-text);
   font-weight: bold;
   border: none;
   max-width: 100px;
