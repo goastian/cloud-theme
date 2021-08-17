@@ -96,6 +96,15 @@ body {
     color: #808080;
 }
 
+
+#body-login .wrapper .update.two-factor a, 
+#body-login .wrapper .update.two-factor h3, 
+#body-login .wrapper .update.two-factor p, 
+#body-login .wrapper .two-factor-secondary {
+    color: white;
+}
+
+
 #body-login a:not(.button):hover,
 #body-login a:not(.button):focus {
     text-decoration: underline;
