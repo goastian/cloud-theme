@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-:root {
+ :root {
   --color-primary: #007fff;
   --color-primary-element: #007fff;
   --color-primary-element-light: #007fff;
@@ -25,6 +25,7 @@
   --color-main-background: #f2f2f2;
   --color-main-background-translucent: #f2f2f2;
   --color-main-text: black;
+  --color-background-hover: white;
   --color-text-maxcontrast: black;
   --color-border-dark: #e6e6e6;
   --color-border: #e6e6e6;
@@ -33,11 +34,6 @@
   --icon-active-color: #007fff;
   --input-background-color: white;
   --menu-icon-color: #222;
-}
-
-#body-user,
-#body-settings {
-  display: none;
 }
 
 #body-user #header,
@@ -124,11 +120,6 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
 }
 
 #settings #expanddiv,
-#app-navigation ul li a.active,
-#app-navigation-vue ul li a.active,
-#app-navigation ul li.active a,
-#app-navigation-vue ul li.active a,
-#content-vue.app-notes li.active .app-navigation-entry__utils,
 #app-dashboard .statuses button:hover {
   background-color: white;
 }
@@ -153,6 +144,14 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
   .multiselect
   .multiselect__tags
   .multiselect__input,
+#content-vue.app-contacts
+  .multiselect
+  .multiselect__tags
+  input.multiselect__input,
+#content-vue.app-contacts
+  .multiselect
+  > .multiselect__tags
+  > span.multiselect__single,
 #content.app-files #commentsTabView .newCommentForm .message:hover,
 #app-dashboard .footer a:hover,
 #app-content-systemtagsfilter .select2-container ul {
@@ -186,8 +185,37 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
   For the overflow in search filter;
   It doesn't use specific ids so gave the rule a lot of specificity
 */
-.popover > .popover__wrapper .open ul li p{ 
+.popover > .popover__wrapper .open ul li p {
   white-space: normal;
+}
+
+/* App Navigation rules */
+#app-navigation:not(.vue) > ul > li.active,
+#app-navigation:not(.vue) > ul > li a:active,
+#app-navigation:not(.vue) > ul > li a.selected,
+#app-navigation:not(.vue) > ul > li a.active,
+#app-navigation:not(.vue) > ul > li.active > a,
+#app-navigation:not(.vue) > ul > li a:active > a,
+#app-navigation:not(.vue) > ul > li a.selected > a,
+#app-navigation:not(.vue) > ul > li a.active > a {
+  background-color:var(--color-main-background);
+}
+
+
+li.app-navigation-entry.active {
+  background-color: var(--color-main-background) !important;
+}
+
+li.app-navigation-entry:not(.active):hover {
+  background-color: var(--color-background-hover) !important;
+}
+
+li.app-navigation-entry.app-navigation-entry--collapsible:hover {
+  background-color: var(--color-main-background) !important;
+}
+
+li.app-navigation-entry.app-navigation-entry--collapsible > a:hover {
+  background-color: var(--color-background-hover);
 } 
 
 /* CSS TWEAKS TAKEN FROM THEMING APP (disabled now) */
@@ -419,7 +447,8 @@ button > span[class*=" icon-"],
 }
 
 .icon-contacts-dark,
-.icon-contacts {
+.icon-contacts,
+.icon-category-social {
   background-image: var(--icon-contacts-app-808080);
 }
 
@@ -456,6 +485,7 @@ button > span[class*=" icon-"],
     --icon-inactive-color
   ) !important; /* !important used in source so needed to override */
 }
+
 
 #app-navigation,
 #app-navigation-vue {
@@ -657,6 +687,21 @@ body.theme--highcontrast #header .header-right .magnify-icon {
   margin-top: 44px;
 }
 
+li.app-navigation-entry.active .icon-user {
+  background-image: var(--icon-user-007fff);
+}
+
+li.app-navigation-entry.active .icon-contacts-dark,
+li.app-navigation-entry.active .icon-group {
+  background-image: var(--icon-contacts-app-007fff);
+}
+li.app-navigation-entry.active .icon-address-book {
+  background-image: var(--icon-contacts-address-book-007fff);
+}
+li.app-navigation-entry.active .icon-recent-actors {
+  background-image: var(--icon-contacts-recent-actors-007fff);
+}
+
 #content-vue.app-contacts .multiselect .multiselect__tags .multiselect__input,
 #content-vue.app-contacts
   .multiselect
@@ -668,14 +713,8 @@ body.theme--highcontrast #header .header-right .magnify-icon {
 #content-vue.app-contacts .empty-content__icon {
   height: 80px;
 }
-
-#everyone .icon-contacts-dark,
-#content-vue.app-contacts ~ .popover .icon-contacts-dark,
-.icon-category-social {
-  background-image: var(--icon-group-808080);
-}
-li.active#everyone .icon-contacts-dark {
-  background-image: var(--icon-settings-007fff);
+.icon-address-book {
+  background-image: var(--icon-contacts-address-book-808080);
 }
 
 #content-vue.app-contacts .app-navigation-caption__title {
@@ -686,12 +725,8 @@ li.active#everyone .icon-contacts-dark {
   background-color: var(--color-main-background);
 }
 
-.icon-address-book {
-  background-image: var(--icon-contacts-address-book-808080);
-}
-
 .property .icon-contacts {
-  background-image: var(--icon-group-808080);
+  background-image: var(--icon-contacts-app-808080);
 }
 #content-vue.app-contacts .icon-phone {
   background-image: var(--icon-contacts-phone-808080);
@@ -850,7 +885,7 @@ button.social-diaspora {
   color: var(--color-primary);
 }
 
-/* Calendar */
+/* Calendar  App*/
 
 .datepicker-button-section button {
   background-color: var(--color-main-background);
@@ -926,7 +961,11 @@ button.social-diaspora {
   background-image: var(--icon-calendar-view-list-808080);
 }
 
-/* Notes */
+.popover .action-input__label[data-v-46fb3421]::before {
+  content: var(--icon-arrow-right-fff);
+}
+
+/* Notes App*/
 
 #content-vue.app-notes .welcome-content .icon-files-dark {
   background-size: 18px;
@@ -943,6 +982,7 @@ button.social-diaspora {
 #content-vue.app-notes .welcome-content .icon-phone {
   background-size: 11px;
 }
+
 input[type="text"] + .icon-confirm,
 input[type="password"] + .icon-confirm,
 input[type="email"] + .icon-confirm {
@@ -970,13 +1010,12 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
   border-radius: 0 var(--border-radius) var(--border-radius) 0 !important;
 }
 
-#content-vue.app-notes .app-navigation-entry__utils {
-  background-color: var(--color-main-background);
-}
 
 #content-vue.app-calendar
   .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
 #content-vue.app-notes
+  .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
+#content.app-files
   .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before {
   content: var(--icon-more-808080);
   font-size: unset;
@@ -984,6 +1023,12 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
   font-style: unset;
   font-family: unset;
   line-height: unset;
+}
+
+#content.app-files
+  #app-sidebar-vue
+  .icon.action-item__menutoggle.action-item__menutoggle--default-icon {
+  background-color: white;
 }
 
 /* Tasks */
