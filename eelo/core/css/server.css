@@ -190,7 +190,7 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
 }
 
 #header-menu-unified-search {
-  right: -38px; 
+  right: -38px;
 }
 #header-menu-unified-search .header-menu__carret {
   right: 53px;
@@ -218,9 +218,8 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="
 #app-navigation:not(.vue) > ul > li a:active > a,
 #app-navigation:not(.vue) > ul > li a.selected > a,
 #app-navigation:not(.vue) > ul > li a.active > a {
-  background-color:var(--color-main-background);
+  background-color: var(--color-main-background);
 }
-
 
 li.app-navigation-entry.active {
   background-color: var(--color-main-background) !important;
@@ -236,7 +235,7 @@ li.app-navigation-entry.app-navigation-entry--collapsible:hover {
 
 li.app-navigation-entry.app-navigation-entry--collapsible > a:hover {
   background-color: var(--color-background-hover);
-} 
+}
 
 /* CSS TWEAKS TAKEN FROM THEMING APP (disabled now) */
 
@@ -506,7 +505,6 @@ button > span[class*=" icon-"],
   ) !important; /* !important used in source so needed to override */
 }
 
-
 #app-navigation,
 #app-navigation-vue {
   border-right: 2px solid var(--color-border);
@@ -755,8 +753,13 @@ li.app-navigation-entry.active .icon-recent-actors {
 button.import-contact__button-main .icon-upload,
 #content-vue.app-calendar .settings-fieldset-interior-item .icon-upload,
 #uploadavatarbutton.icon-upload,
-.button .icon-upload {
+.button .icon-upload,
+button .icon-upload {
   background-image: var(--icon-upload-fff);
+}
+
+button .icon-download {
+  background-image: var(--icon-download-fff);
 }
 
 .menu-icon svg path {
@@ -1008,6 +1011,8 @@ input[type="password"] + .icon-confirm,
 input[type="email"] + .icon-confirm {
   background-color: var(--color-primary) !important;
   background-image: var(--icon-confirm-fff) !important;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 input[type="text"]:not(:active):not(:hover):not(:focus) + .icon-confirm:active,
@@ -1029,7 +1034,6 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
 #app-sidebar-vue .note-category .category input.icon-confirm:hover {
   border-radius: 0 var(--border-radius) var(--border-radius) 0 !important;
 }
-
 
 #content-vue.app-calendar
   .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
@@ -1058,7 +1062,8 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
   fill: var(--icon-inactive-color);
 }
 
-#deleteaccount:not([disabled]) .icon-delete {
+#deleteaccount:not([disabled]) .icon-delete,
+button .icon-delete {
   background-image: var(--icon-delete-fff);
 }
 
@@ -1097,4 +1102,36 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
 
 .icon-category-workflow {
   background-image: var(--icon-workflow-808080);
+}
+
+/* Bookmarks app */
+
+.popover .action-button__icon.icon-link {
+  background-image: var(--icon-public-808080);
+}
+
+.material-design-icon.sync-icon svg path {
+  fill: white;
+}
+
+.app-navigation-entry-icon svg path,
+.controls svg path,
+.material-design-icon.earth-icon svg path,
+.popover .action-button .material-design-icon svg path {
+  fill: var(--icon-inactive-color);
+}
+
+.app-navigation-entry.active .app-navigation-entry-icon svg path,
+.popover .action.active .action-button .material-design-icon svg path {
+  fill: var(--icon-active-color);
+}
+
+.app-navigation-entry
+  .app-navigation-entry__inline-input-container
+  form
+  button.icon-confirm::before {
+  content: unset;
+}
+.app-navigation-entry.active .icon-home {
+  background-image: var(--icon-home-007fff);
 }
