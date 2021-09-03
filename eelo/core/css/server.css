@@ -111,7 +111,8 @@ input[type="reset"] {
 button.button:not(.primary),
 input[type="button"]:not(.primary),
 input[type="submit"]:not(.primary),
-input[type="reset"]:not(.primary) {
+input[type="reset"]:not(.primary),
+.event-popover__buttons button:not(.primary) {
   background-color: var(--color-secondary-element);
   color: var(--color-primary);
   border-color: var(--border-color-secondary-element);
@@ -734,6 +735,7 @@ body.theme--highcontrast #header .header-right .magnify-icon {
 
 #header .header-right .magnify-icon {
   background: var(--icon-search-000) no-repeat center;
+  background-size: 15px;
 }
 
 #content.app-files #filestable span,
