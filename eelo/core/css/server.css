@@ -16,13 +16,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
- :root {
+:root {
   --color-primary: #007fff;
   --color-primary-element: #007fff;
   --color-secondary-element: white;
   --border-color-secondary-element: #007fff;
   --color-primary-element-light: #007fff;
   --color-error: #fb3845;
+  --color-delete: #e9322d;
   --color-success: #3ad975;
   --color-main-background: #f2f2f2;
   --color-main-background-translucent: #f2f2f2;
@@ -56,8 +57,8 @@ body.theme--highcontrast {
   background-color: white !important;
 }
 
-button:hover,
-.primary:hover,
+button:not(:disabled):hover,
+.primary:not(:disabled):hover,
 .button:hover,
 button.toggle.has-tooltip:hover,
 .primary:active,
@@ -74,13 +75,15 @@ input[type="reset"]:hover,
 #content-vue.app-tasks .action.icon-checkmark:hover,
 .button.today:hover,
 button.import-contact__button-main:hover,
-button#notes_new_note:hover {
-  opacity: 0.9;
+button#notes_new_note:hover,
+#oc-dialog-filepicker-content .actions.creatable .icon.icon-add:hover {
+  opacity: 0.8;
 }
 
 /* primary action button, use sparingly */
-.primary,
+button,
 .button,
+.primary,
 input[type="submit"].primary,
 input[type="button"].primary,
 button.toggle.has-tooltip,
@@ -91,10 +94,11 @@ input[type="submit"].primary:active,
 input[type="button"].primary:active,
 button.primary:active,
 .button.primary:active,
+.actions a.button,
 #new-contact-button,
 #quotaincreasebutton,
+.mx-datepicker .mx-datepicker-footer .mx-btn,
 #content-vue.app-tasks .action.icon-checkmark,
-.button.today,
 button.import-contact__button-main,
 button#notes_new_note,
 #content.app-news button.explore-subscribe,
@@ -108,11 +112,13 @@ input[type="reset"] {
 
 /* For buttons that are not primary or submit/reset/button inputs that are not primary */
 
-button.button:not(.primary),
-input[type="button"]:not(.primary),
-input[type="submit"]:not(.primary),
-input[type="reset"]:not(.primary),
-.event-popover__buttons button:not(.primary) {
+button.primary + button:not(.primary),
+button.primary + button:not(.primary):active,
+.entity-picker__navigation button:not(.primary),
+.event-popover__buttons button:not(.primary),
+.event-popover__buttons button:not(.primary):active,
+.oc-dialog-buttonrow.twobuttons button:not(.primary),
+.oc-dialog-buttonrow.twobuttons button:not(.primary):active {
   background-color: var(--color-secondary-element);
   color: var(--color-primary);
   border-color: var(--border-color-secondary-element);
@@ -124,6 +130,7 @@ input[type="radio"].checkbox + label::before {
   background-color: white;
 }
 
+textarea:not(:disabled),
 textarea:not(:disabled):active,
 div[contenteditable="true"]:not(:disabled):active,
 textarea:not(:disabled):hover,
@@ -138,7 +145,14 @@ textarea,
 input[type="text"],
 input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="submit"]):not([type="button"]):not([type="reset"]):not([type="color"]):not([type="file"]):not([type="image"]):not(.multiselect__input),
 #content-vue.app-tasks .task-body__checkbox label.reactive.no-nav::before,
-#content.app-files #commentsTabView .newCommentForm .message {
+#content.app-files #commentsTabView .newCommentForm .message,
+.multiselect
+  .multiselect__content-wrapper
+  .multiselect__content
+  li
+  > span.multiselect__option,
+div.select2-container-multi .select2-choices,
+div.select2-container-multi.select2-container-active .select2-choices {
   background-color: var(--input-background-color);
 }
 
@@ -336,13 +350,28 @@ footer {
   height: 92px;
 }
 
-#content #app-navigation {
+.notifications-button.hasNotifications {
+  opacity: 0.6 !important;
+}
+.notifications-button.hasNotifications:hover,
+.notifications-button.hasNotifications:focus {
+  opacity: 1 !important;
+}
+
+#content #app-navigation,
+#content.app-news #app-navigation button {
   color: var(--color-main-text);
   border-right: 2px solid var(--color-border);
 }
 
-.icon-home {
+.icon-home,
+#oc-dialog-filepicker-content .dirtree div:first-child a {
   background-image: var(--icon-home-808080);
+}
+
+#controls .icon-home,
+#oc-dialog-filepicker-content .dirtree div:first-child a {
+  background-size: 20px;
 }
 
 .icon-mail {
@@ -357,6 +386,9 @@ footer {
 }
 
 .icon-add,
+.action-item.icon-add,
+button.action-item__menutoggle.icon-add,
+#content.app-news .add-new button.icon-add,
 .who-has-access .action-item.icon-add.addAdditionalAdmin,
 #content-vue.app-tasks
   #app-navigation-vue
@@ -378,11 +410,23 @@ footer {
 .icon-download {
   background-image: var(--icon-download-808080);
 }
+.icon-checkmark {
+  background-image: var(--icon-checkmark-808080);
+}
+.icon-group {
+  background-image: var(--icon-group-808080);
+}
+.icon-timezone {
+  background-image: var(--icon-timezone-808080);
+}
 .icon-edit {
   background-image: var(--icon-edit-808080);
 }
 .icon-reminder {
   background-image: var(--icon-notifications-notifications-808080);
+}
+.icon-gravatar {
+  background-image: var(--icon-contacts-gravatar-808080);
 }
 #content-vue.app-calendar .app-sidebar-tabs__tab-icon.icon-reminder {
   background-size: 13px;
@@ -393,6 +437,15 @@ footer {
 .icon-confirm {
   background-image: var(--icon-confirm-808080);
 }
+
+.icon-user-admin {
+  background-image: var(--icon-user-admin-808080);
+}
+
+.icon-disabled-users {
+  background-image: var(--icon-disabled-users-808080);
+}
+
 .icon-notes,
 .icon-notes-trans {
   background-image: var(--icon-notes-notes-808080);
@@ -417,6 +470,7 @@ button .icon-link {
   background-image: var(--icon-files-recent-808080);
 }
 
+.icon-more,
 .icon-more-white {
   background-image: var(--icon-more-808080);
 }
@@ -463,14 +517,21 @@ button .icon-link {
   background-image: var(--icon-toggle-filelist-808080);
 }
 
+button.icon-toggle-filelist {
+  background-color: var(--color-main-background);
+}
+
 .icon-toggle-pictures {
   background-image: var(--icon-toggle-pictures-808080);
 }
 
 .button .icon-add,
 button .icon-add,
+button.icon-add,
 #new-contact-button.icon-add,
-#content-vue.app-notes #notes_new_note.icon-add {
+#content-vue.app-notes #notes_new_note.icon-add,
+#oc-dialog-filepicker-content .actions.creatable .icon.icon-add,
+#content.app-news .add-new .icon-add.add-new-folder-primary {
   background-image: var(--icon-add-fff);
 }
 
@@ -518,6 +579,7 @@ button > span[class*=" icon-"],
   background-image: var(--icon-star-fc0);
 }
 
+.icon-close,
 #header-menu-unified-search .icon-close,
 .icon-category-disabled {
   background-image: var(--icon-close-808080);
@@ -599,6 +661,15 @@ table td {
 .actions .button.new:active {
   background-color: var(--color-primary);
 }
+
+#fileList td a a.action {
+  opacity: 0.6;
+}
+
+#fileList td a a.action:hover {
+  opacity: 0.8;
+}
+
 #content.app-files #filestable.view-grid thead tr,
 #content.app-files #filestable.view-grid thead th {
   border-bottom: 0px;
@@ -609,7 +680,9 @@ table td {
 }
 
 .breadcrumb div.crumb span.icon-shared,
-.breadcrumb div.crumb span.icon-public {
+.breadcrumb div.crumb span.icon-public,
+.selectedActions a,
+#commentsTabView .comment .action {
   opacity: 0.8;
 }
 
@@ -624,7 +697,8 @@ table td {
 #app-content-files button .icon-file {
   background-image: var(--icon-text-fff);
 }
-#fileList tr td.selection > .selectCheckBox + label::before {
+#fileList tr td.selection > .selectCheckBox + label::before,
+#oc-dialog-filepicker-content .actions.creatable .icon.icon-add {
   opacity: 1;
 }
 
@@ -717,6 +791,14 @@ table td {
   background-color: transparent !important;
 }
 
+#app-sidebar-vue
+  #sharing
+  #collection-list
+  .multiselect.multiselect--active
+  .multiselect__tags
+  .multiselect__input {
+  background-color: var(--input-background-color) !important;
+}
 #app-sidebar-vue #sharing .sharing-entry .avatar-external,
 #app-sidebar-vue #sharing .sharing-entry .avatar-shared {
   background-color: var(--color-primary);
@@ -805,23 +887,40 @@ li.app-navigation-entry.active .icon-recent-actors {
   background-image: var(--icon-contacts-phone-808080);
 }
 
-button.import-contact__button-main .icon-upload,
-#content-vue.app-calendar .settings-fieldset-interior-item .icon-upload,
+button .icon-upload,
 #uploadavatarbutton.icon-upload,
-.button .icon-upload,
-button .icon-upload {
+.button.primary .icon-upload,
+button.primary .icon-upload,
+#content-vue.app-calendar .settings-fieldset-interior-item .icon-upload,
+#content-vue.app-bookmarks #app-settings-content button .icon-upload,
+button.import-contact__button-main .icon-upload,
+.import-export button.icon-upload {
   background-image: var(--icon-upload-fff);
 }
 
-.action-button .icon-upload {
+.action-button .icon-upload,
+.menuitem .icon-upload {
   background-image: var(--icon-upload-808080);
 }
 
-button .icon-download {
+button .icon-download,
+.button .icon-download,
+.import-export .button.icon-download {
   background-image: var(--icon-download-fff);
 }
 .action-button .icon-download {
   background-image: var(--icon-download-808080);
+}
+
+#deleteaccount:not([disabled]) .icon-delete,
+button .icon-delete,
+.button .icon-delete {
+  background-image: var(--icon-delete-fff);
+}
+
+button.menuitem .icon-delete,
+.app-navigation-entry-menu button .icon-delete {
+  background-image: var(--icon-delete-808080);
 }
 
 .menu-icon svg path {
@@ -839,6 +938,10 @@ button .icon-download {
 }
 
 #content-vue.app-contacts .dots-horizontal-icon svg path {
+  fill: var(--icon-inactive-color);
+}
+
+.mx-icon-calendar svg path {
   fill: var(--icon-inactive-color);
 }
 
@@ -908,8 +1011,11 @@ button.action-button .icon-delete {
   background-image: var(--icon-files-delete-808080);
 }
 
-.icon-delete:hover,
-button.action-button:hover .icon-delete {
+.menuitem:hover .icon-delete,
+.menu-option:hover .icon-delete,
+button.action-button:hover .icon-delete,
+button.menuitem:hover .icon-delete,
+.app-navigation-entry-menu button:hover .icon-delete {
   background-image: var(--icon-delete-e9322d);
 }
 
@@ -976,7 +1082,7 @@ button.social-diaspora {
   color: var(--color-primary);
 }
 
-/* Calendar  App*/
+/* Calendar App*/
 
 .datepicker-button-section button.button {
   background-color: var(--color-main-background);
@@ -988,8 +1094,29 @@ button.social-diaspora {
 .mx-datepicker .mx-calendar td {
   border: 0px;
 }
+
+.icon-eye {
+  background-image: var(--icon-calendar-eye-808080);
+}
+
+.icon-briefcase {
+  background-image: var(--icon-calendar-briefcase-808080);
+}
+
+.icon-color-picker {
+  background-image: var(--icon-calendar-color-picker-808080);
+}
+.icon-menu {
+  background-image: var(--icon-menu-808080);
+}
 .mx-datepicker .mx-input-wrapper {
   background-color: var(--input-background-color);
+}
+
+.mx-datepicker-main .mx-datepicker-footer .mx-btn:hover,
+.mx-datepicker-main .mx-datepicker-footer .mx-btn:focus {
+  background-color: var(--color-primary);
+  color: white;
 }
 
 .mx-datepicker .mx-input {
@@ -1036,7 +1163,7 @@ button.social-diaspora {
 }
 
 #content-vue.app-calendar .fc-dayGridMonth-view table {
-  font-size: 16px;
+  font-size: 1em;
 }
 #content-vue.app-calendar .fc-dayGridMonth-view table,
 #content-vue.app-calendar .fc-dayGridMonth-view td,
@@ -1060,8 +1187,15 @@ button.social-diaspora {
   background-image: var(--icon-calendar-view-list-808080);
 }
 
-.popover .action-input .action-input__label:not(.is-svg)::before {
+.popover .action-input .action-input__label::before {
   content: var(--icon-confirm-fff);
+}
+
+#content-vue.app-contacts
+  ~ .popover
+  .action-input
+  .action-input__label::before {
+  content: unset;
 }
 
 /* Notes App*/
@@ -1077,10 +1211,6 @@ button.social-diaspora {
   background-size: 18px;
 }
 
-#content-vue.app-notes button.icon-confirm {
-  background-image: none !important;
-}
-
 #content-vue.app-notes button.icon-confirm::before {
   content: var(--icon-confirm-fff);
 }
@@ -1094,8 +1224,14 @@ input[type="password"] + .icon-confirm,
 input[type="email"] + .icon-confirm {
   background-color: var(--color-primary) !important;
   background-image: var(--icon-confirm-fff) !important;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+input[type="text"] + .icon-confirm::before,
+input[type="password"] + .icon-confirm::before,
+input[type="email"] + .icon-confirm::before {
+  content: unset !important;
 }
 
 input[type="text"]:not(:active):not(:hover):not(:focus) + .icon-confirm:active,
@@ -1124,13 +1260,17 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
 }
 
 #content-vue.app-calendar
-  .icon.action-item__menutoggle.action-item__menutoggle--default-icon:not(.is-svg)::before,
+  .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
 #content-vue.app-notes
-  .icon.action-item__menutoggle.action-item__menutoggle--default-icon:not(.is-svg)::before,
+  .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
 #content.app-files
-  .icon.action-item__menutoggle.action-item__menutoggle--default-icon:not(.is-svg)::before,
+  .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
 #header
-  .icon.action-item__menutoggle.action-item__menutoggle--default-icon:not(.is-svg)::before {
+  .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
+#content-vue.app-bookmarks
+  .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
+#content-vue.app-photos
+  .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before {
   content: var(--icon-more-808080);
   font-size: unset;
   font-weight: unset;
@@ -1139,23 +1279,36 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
   line-height: unset;
 }
 
+#content-vue.app-bookmarks
+  .icon.action-item__menutoggle--primary.action-item__menutoggle--default-icon::before {
+  content: var(--icon-more-fff);
+}
+
 #note-container .CodeMirror-code[contenteditable="true"]:hover,
 #note-container .CodeMirror-code[contenteditable="true"]:focus,
 #note-container .CodeMirror-code[contenteditable="true"]:active {
   background-color: var(--color-main-background) !important;
 }
-/* Tasks */
+/* Tasks app*/
 
-#content-vue.app-tasks svg path,
-#content-vue.app-tasks ~ .popover svg path {
-  fill: var(--icon-inactive-color);
+.action-item:not(.priority--high) .material-design-icon,
+#app-settings .collection .material-design-icon,
+.material-design-icon.emoticon-outline-icon {
+  color: var(--icon-inactive-color);
 }
 
-#deleteaccount:not([disabled]) .icon-delete,
-button .icon-delete {
-  background-image: var(--icon-delete-fff);
+.action.active .material-design-icon.delete-icon,
+.action-item:hover .material-design-icon.delete-icon {
+  color: var(--color-delete);
 }
 
+#content-vue.app-tasks .app-sidebar-tabs .property__item--clearable {
+  color: var(--icon-active-color) !important;
+}
+
+#content-vue.app-tasks .app-sidebar-tabs .multiselect-picker-option.active {
+  color: var(--icon-active-color);
+}
 /* Settings Apps categories icons */
 
 .icon-category-app-bundles {
@@ -1203,16 +1356,20 @@ button .icon-delete {
   fill: white;
 }
 
-.app-navigation-entry-icon svg path,
 .controls svg path,
-.material-design-icon.earth-icon svg path,
-.popover .action-button .material-design-icon svg path {
+.material-design-icon.earth-icon svg path {
   fill: var(--icon-inactive-color);
 }
 
-.app-navigation-entry.active .app-navigation-entry-icon svg path,
-.popover .action.active .action-button .material-design-icon svg path {
-  fill: var(--icon-active-color);
+.app-navigation-entry-icon .material-design-icon,
+.action .material-design-icon {
+  color: var(--icon-inactive-color);
+}
+
+.app-navigation-entry.active .app-navigation-entry-icon .material-design-icon,
+.action.active .material-design-icon,
+.action.selected .material-design-icon {
+  color: var(--icon-active-color);
 }
 
 .app-navigation-entry
@@ -1225,15 +1382,29 @@ button .icon-delete {
   background-image: var(--icon-home-007fff);
 }
 
-/* News App */ 
-
-#app-settings .import-export button.icon-download {
-  background-image: var(--icon-download-fff);
-  background-color: var(--color-primary);
+#content-vue.app-bookmarks .app-navigation-entry-icon svg path {
+  fill: var(--icon-inactive-color);
+}
+#content-vue.app-bookmarks .app-navigation-entry.active svg path {
+  fill: var(--icon-active-color);
 }
 
-#app-settings .import-export button.icon-upload {
-  background-image: var(--icon-upload-007fff);
-  background-color: var(--color-secondary-element);
-  border-color: var(--border-color-secondary-element);
+/* News App */
+
+#content-vue.app-bookmarks .empty-content {
+  text-align: center;
+}
+
+#app-navigation .icon-unpinned {
+  background-image: var(--icon-news-unpinned-808080);
+}
+
+#app-navigation .icon-pinned {
+  background-image: var(--icon-news-pinned-808080);
+}
+#app-navigation .icon-full-text-disabled {
+  background-image: var(--icon-news-nonfulltext-808080);
+}
+#app-navigation .icon-full-text-enabled {
+  background-image: var(--icon-news-fulltext-808080);
 }
