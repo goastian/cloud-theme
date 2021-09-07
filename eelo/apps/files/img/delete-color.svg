@@ -1,40 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   width="14"
-   height="14"
-   viewBox="0 0 14 14"
-   fill="none"
-   version="1.1"
-   id="svg4"
-   sodipodi:docname="delete-color.svg"
-   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none" version="1.1" id="svg4" sodipodi:docname="delete-color.svg" inkscape:version="1.1 (c68e22c387, 2021-05-23)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs8" />
-  <sodipodi:namedview
-     id="namedview6"
-     pagecolor="#505050"
-     bordercolor="#ffffff"
-     borderopacity="1"
-     inkscape:pageshadow="0"
-     inkscape:pageopacity="0"
-     inkscape:pagecheckerboard="1"
-     showgrid="false"
-     inkscape:zoom="13.670731"
-     inkscape:cx="-6.8760039"
-     inkscape:cy="9.2533457"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg4" />
-  <path
-     d="m 8.7812782,6.9812296 4.0498698,-4.012304 c 0.224924,-0.2249401 0.224924,-0.6376299 0,-0.8625537 l -0.93736,-0.9376717 c -0.224923,-0.22493348 -0.637352,-0.22493348 -0.862553,0 L 7.0189311,5.218556 2.9687668,1.1687002 c -0.2249402,-0.22493348 -0.6373032,-0.22493348 -0.8622434,0 L 1.16886,2.1063719 c -0.22493532,0.2249238 -0.22493532,0.6373522 0,0.8625537 L 5.219034,6.9812296 1.16886,11.031394 c -0.22493532,0.224941 -0.22493532,0.637304 0,0.862244 l 0.9376634,0.93767 c 0.2249402,0.224923 0.6373032,0.224923 0.8622434,0 L 7.0189311,8.7811267 11.031235,12.831308 c 0.22494,0.224923 0.63763,0.224923 0.862553,0 l 0.93736,-0.93767 c 0.224924,-0.22494 0.224924,-0.637303 0,-0.862244 z"
-     fill="#d40000"
-     id="path2"
-     style="stroke-width:1.63331" />
+   <defs id="defs8" />
+   <sodipodi:namedview id="namedview6" pagecolor="#505050" bordercolor="#ffffff" borderopacity="1" inkscape:pageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="1" showgrid="false" inkscape:zoom="13.670731" inkscape:cx="-6.8760039" inkscape:cy="9.2533457" inkscape:window-width="1920" inkscape:window-height="1017" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="svg4" />
+   <path d="m 8.7812782,6.9812296 4.0498698,-4.012304 c 0.224924,-0.2249401 0.224924,-0.6376299 0,-0.8625537 l -0.93736,-0.9376717 c -0.224923,-0.22493348 -0.637352,-0.22493348 -0.862553,0 L 7.0189311,5.218556 2.9687668,1.1687002 c -0.2249402,-0.22493348 -0.6373032,-0.22493348 -0.8622434,0 L 1.16886,2.1063719 c -0.22493532,0.2249238 -0.22493532,0.6373522 0,0.8625537 L 5.219034,6.9812296 1.16886,11.031394 c -0.22493532,0.224941 -0.22493532,0.637304 0,0.862244 l 0.9376634,0.93767 c 0.2249402,0.224923 0.6373032,0.224923 0.8622434,0 L 7.0189311,8.7811267 11.031235,12.831308 c 0.22494,0.224923 0.63763,0.224923 0.862553,0 l 0.93736,-0.93767 c 0.224924,-0.22494 0.224924,-0.637303 0,-0.862244 z" fill="#d40000" id="path2" style="stroke-width:1.63331" />
 </svg>

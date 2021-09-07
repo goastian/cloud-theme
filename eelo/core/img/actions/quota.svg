@@ -1,3 +1,10 @@
-<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.66912 0.156815C2.1372 0.156815 0.0859375 2.20809 0.0859375 4.74001C0.0859375 7.27194 2.1372 9.32319 4.66912 9.32319C7.20104 9.32319 9.2523 7.27194 9.2523 4.74001C9.2523 2.20809 7.20104 0.156815 4.66912 0.156815ZM5.47269 1.13248C7.12258 1.50196 8.36554 2.98286 8.36554 4.74001H4.66912L5.47269 1.13248Z" fill="#808080"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none" version="1.1" id="svg4" sodipodi:docname="quota.svg" inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg">
+    <defs id="defs8" />
+    <sodipodi:namedview id="namedview6" pagecolor="#505050" bordercolor="#ffffff" borderopacity="1" inkscape:pageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="1" showgrid="false" width="14px" inkscape:zoom="24.607316" inkscape:cx="8.0463875" inkscape:cy="10.057984" inkscape:window-width="1920" inkscape:window-height="1017" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="svg4" />
+    <path d="m 7.0000014,0.999992 c -3.3146234,0 -6.00000165,2.6853946 -6.00000165,6.000018 0,3.314636 2.68537825,5.999998 6.00000165,5.999998 C 10.314625,13.000008 13,10.314646 13,7.00001 13,3.6853866 10.314625,0.999992 7.0000014,0.999992 Z M 8.0519825,2.2772686 C 10.21191,2.7609675 11.839112,4.6996646 11.839112,7.00001 H 7.0000014 Z" fill="#808080" id="path2" style="stroke-width:1.30913" />
 </svg>
