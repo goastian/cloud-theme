@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-:root {
+ :root {
   --color-primary: #007fff;
   --color-primary-element: #007fff;
   --color-secondary-element: white;
@@ -132,6 +132,7 @@ input[type="radio"].checkbox + label::before {
 
 textarea:not(:disabled),
 textarea:not(:disabled):active,
+div[contenteditable="true"]:not(:disabled),
 div[contenteditable="true"]:not(:disabled):active,
 textarea:not(:disabled):hover,
 div[contenteditable="true"]:not(:disabled):hover,
@@ -900,7 +901,8 @@ button.primary .icon-upload,
 #content-vue.app-calendar .settings-fieldset-interior-item .icon-upload,
 #content-vue.app-bookmarks #app-settings-content button .icon-upload,
 button.import-contact__button-main .icon-upload,
-.import-export button.icon-upload {
+.import-export button.icon-upload,
+.attachments-drag-zone button.icon-upload {
   background-image: var(--icon-upload-fff);
 }
 
@@ -1287,6 +1289,8 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
 #content-vue.app-photos
   .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
 #content-vue.app-talk
+  .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
+#content.app-deck
   .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before {
   content: var(--icon-more-808080);
   font-size: unset;
