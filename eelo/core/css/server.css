@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
- :root {
+:root {
   --color-primary: #007fff;
   --color-primary-element: #007fff;
   --color-secondary-element: white;
@@ -282,7 +282,8 @@ li.app-navigation-entry.app-navigation-entry--collapsible:hover {
   background-color: var(--color-main-background) !important;
 }
 
-li.app-navigation-entry.app-navigation-entry--collapsible > a:hover {
+li.app-navigation-entry.app-navigation-entry--collapsible > a:hover,
+#content.app-passwords #app-navigation .active {
   background-color: var(--color-background-hover);
 }
 
