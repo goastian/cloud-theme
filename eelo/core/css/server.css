@@ -415,6 +415,10 @@ button.action-item__menutoggle.icon-add,
 .icon-download {
   background-image: var(--icon-download-808080);
 }
+.icon-tasks,
+.panel--header .icon-tasks {
+  background-image: var(--icon-tasks-tasks-808080);
+}
 .icon-checkmark {
   background-image: var(--icon-checkmark-808080);
 }
