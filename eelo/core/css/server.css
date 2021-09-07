@@ -132,7 +132,6 @@ input[type="radio"].checkbox + label::before {
 
 textarea:not(:disabled),
 textarea:not(:disabled):active,
-div[contenteditable="true"]:not(:disabled),
 div[contenteditable="true"]:not(:disabled):active,
 textarea:not(:disabled):hover,
 div[contenteditable="true"]:not(:disabled):hover,
