@@ -275,7 +275,8 @@ li.app-navigation-entry.active {
   background-color: var(--color-main-background) !important;
 }
 
-li.app-navigation-entry:not(.active):hover {
+li.app-navigation-entry:not(.active):hover,
+#content.app-deck li.app-navigation-entry.active {
   background-color: var(--color-background-hover) !important;
 }
 
