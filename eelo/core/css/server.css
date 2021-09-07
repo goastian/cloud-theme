@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-:root {
+ :root {
   --color-primary: #007fff;
   --color-primary-element: #007fff;
   --color-secondary-element: white;
@@ -263,6 +263,11 @@ body.theme--dark #app-dashboard .statuses button:hover {
 #app-navigation:not(.vue) > ul > li a.selected > a,
 #app-navigation:not(.vue) > ul > li a.active > a {
   background-color: var(--color-main-background);
+}
+
+li.app-navigation-entry,
+.conversations .acli_wrapper .acli {
+  background-clip: content-box;
 }
 
 li.app-navigation-entry.active {
@@ -679,6 +684,10 @@ table td {
   background-size: 14px;
 }
 
+#uploadprogressbar + button.icon-close {
+  background-image: var(--icon-close-fff);
+}
+
 .breadcrumb div.crumb span.icon-shared,
 .breadcrumb div.crumb span.icon-public,
 .selectedActions a,
@@ -782,18 +791,10 @@ table td {
   background-size: 16px;
 }
 
-#app-sidebar-vue
-  #sharing
-  #collection-list
-  .multiselect
-  .multiselect__tags
-  .multiselect__input {
+#collection-list .multiselect .multiselect__tags .multiselect__input {
   background-color: transparent !important;
 }
-
-#app-sidebar-vue
-  #sharing
-  #collection-list
+#collection-list
   .multiselect.multiselect--active
   .multiselect__tags
   .multiselect__input {
@@ -946,6 +947,13 @@ button.menuitem .icon-delete,
 }
 
 /* Photos App */
+
+#content-vue.app-photos .icon-folder {
+  background-image: var(--icon-folder-007fff);
+}
+#content-vue.app-photos .folder-name__icon {
+  opacity: 0.8;
+}
 
 li.active .icon-yourphotos {
   background-image: var(--icon-photos-app-007fff);
@@ -1200,11 +1208,8 @@ button.social-diaspora {
 
 /* Notes App*/
 
-#content-vue.app-notes ul.app-navigation__list {
-  padding-right: 2px;
-}
-
-#content-vue.app-notes li.app-navigation-entry.active {
+#content-vue.app-notes li.app-navigation-entry.active,
+#content-vue.app-talk li.acli_wrapper.active {
   background-color: var(--color-background-hover) !important;
 }
 #content-vue.app-notes .welcome-content .icon-files-dark {
@@ -1219,6 +1224,11 @@ button.social-diaspora {
   background-size: 11px;
 }
 
+.CodeMirror .CodeMirror-line::selection,
+.CodeMirror .CodeMirror-line > span::selection,
+.CodeMirror .CodeMirror-line > span > span::selection {
+  background: var(--color-primary);
+}
 input[type="text"] + .icon-confirm,
 input[type="password"] + .icon-confirm,
 input[type="email"] + .icon-confirm {
@@ -1270,6 +1280,8 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
 #content-vue.app-bookmarks
   .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
 #content-vue.app-photos
+  .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
+#content-vue.app-talk
   .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before {
   content: var(--icon-more-808080);
   font-size: unset;
@@ -1407,4 +1419,24 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
 }
 #app-navigation .icon-full-text-enabled {
   background-image: var(--icon-news-fulltext-808080);
+}
+
+/* Passwords App */
+
+.searchbox .icon-search-force-white {
+  background-image: var(--icon-search-000);
+}
+
+.searchbox {
+  opacity: 1 !important;
+}
+
+#content.app-passwords #app-navigation .icon.fa::before {
+  content: unset;
+}
+
+/* Talk App */
+
+#content-vue.app-talk .acli_wrapper .acli.active {
+  background-color: transparent;
 }
