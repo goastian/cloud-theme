@@ -37,6 +37,8 @@
   --icon-active-color: #007fff;
   --input-background-color: white;
   --menu-icon-color: #222;
+  --color-dashboard-panels: #f2f2f2;
+  --color-dashboard-background-plain: #d2d2d2;
 }
 
 /* Force a few variables to right values for dark theme */
@@ -118,7 +120,8 @@ button.primary + button:not(.primary):active,
 .event-popover__buttons button:not(.primary),
 .event-popover__buttons button:not(.primary):active,
 .oc-dialog-buttonrow.twobuttons button:not(.primary),
-.oc-dialog-buttonrow.twobuttons button:not(.primary):active {
+.oc-dialog-buttonrow.twobuttons button:not(.primary):active,
+.status-buttons .status-buttons__select {
   background-color: var(--color-secondary-element);
   color: var(--color-primary);
   border-color: var(--border-color-secondary-element);
@@ -164,10 +167,6 @@ body.theme--dark #header .header-right > div > .notification-container.menu,
 body.theme--dark #settings #expanddiv {
   background-color: var(--color-main-background);
 }
-body.theme--dark #app-dashboard .statuses button:hover {
-  background-color: var(--color-background-hover);
-}
-
 .multiselect .multiselect__tags input.multiselect__single,
 .multiselect .multiselect__tags span.multiselect__single,
 .multiselect .multiselect__tags span.multiselect__placeholder,
@@ -636,15 +635,33 @@ table td {
 
 /* Dashboard App */
 
-#app-dashboard .statuses button:hover {
-  background-color: white;
+#body-user[data-dashboard-background]:not(.theme--dark)
+  #app-dashboard
+  .statuses
+  button:hover,
+#body-user[data-dashboard-background]:not(.theme--dark) .edit-panels:hover {
+  background-color: var(--color-background-hover) !important;
 }
 
-#body-user[data-dashboard-background] #header,
-#app-dashboard .panel,
-#app-dashboard .statuses button,
-#app-dashboard .footer a {
-  background-color: var(--color-main-background);
+body.theme--highcontrast #app-dashboard .statuses button,
+body.theme--highcontrast #app-dashboard .edit-panels {
+  border: 1px solid var(--color-main-text);
+}
+
+#body-user[data-dashboard-background]:not(.theme--dark) #app-dashboard .panel,
+#body-user[data-dashboard-background]:not(.theme--dark)
+  #app-dashboard
+  .statuses
+  button,
+#body-user[data-dashboard-background]:not(.theme--dark)
+  #app-dashboard
+  .footer
+  a {
+  background-color: var(--color-dashboard-panels);
+  opacity: 0.9;
+}
+
+#body-user[data-dashboard-background]:not(.theme--dark) #header {
   opacity: 0.95;
 }
 #body-user[data-dashboard-background].theme--highcontrast #header {
@@ -660,6 +677,34 @@ table td {
 }
 
 #app-dashboard .statuses button {
+  color: var(--color-main-text);
+}
+
+body[data-dashboard-background]:not(.theme--dark)
+  .background-selector
+  .background.filepicker,
+body[data-dashboard-background]:not(.theme--dark)
+  .background-selector
+  .background.default,
+body[data-dashboard-background]:not(.theme--dark)
+  .modal__content
+  .background-selector
+  .background.color {
+  background-color: var(--color-dashboard-background-plain);
+  color: var(--color-main-text);
+}
+
+body[data-dashboard-background="#0082c9"] #app-dashboard,
+body[data-dashboard-background="default"] #app-dashboard {
+  background-color: var(--color-dashboard-background-plain);
+}
+
+body[data-dashboard-background="default"] #app-dashboard {
+  background-image: none !important;
+}
+
+body[data-dashboard-background="#0082c9"] #app-dashboard h2,
+body[data-dashboard-background="default"] #app-dashboard h2 {
   color: var(--color-main-text);
 }
 
@@ -874,6 +919,13 @@ li.app-navigation-entry.active .icon-recent-actors {
 
 #content-vue.app-contacts .empty-content__icon {
   height: 80px;
+}
+
+#content-vue.app-contacts .empty-content__title {
+  text-align: center;
+}
+#content-vue.app-contacts .app-content > .empty-content {
+  margin: 20vh;
 }
 .icon-address-book {
   background-image: var(--icon-contacts-address-book-808080);
