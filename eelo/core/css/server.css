@@ -714,6 +714,10 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
   background-repeat: no-repeat;
 }
 
+.breadcrumb .canDrop > a, #filestable tbody tr.canDrop {
+  background-color: var(--color-primary-light);
+}
+
 .actions .button.new:active {
   background-color: var(--color-primary);
 }
@@ -1006,6 +1010,10 @@ button.menuitem .icon-delete,
 }
 
 /* Photos App */
+
+#content-vue.app-photos #app-navigation-vue .app-navigation-entry.active {
+  background-color: var(--color-main-background) !important;
+}
 
 #content-vue.app-photos .icon-folder {
   background-image: var(--icon-folder-007fff);
