@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
- :root {
+:root {
   --color-primary: #007fff;
   --color-primary-element: #007fff;
   --color-secondary-element: white;
@@ -363,7 +363,9 @@ footer {
 .notifications-button.hasNotifications:focus {
   opacity: 1 !important;
 }
-
+#header .notification-wrapper .dismiss-all .icon.icon-close {
+  margin-top: 4px;
+}
 #content #app-navigation,
 #content.app-news #app-navigation button {
   color: var(--color-main-text);
@@ -714,7 +716,8 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
   background-repeat: no-repeat;
 }
 
-.breadcrumb .canDrop > a, #filestable tbody tr.canDrop {
+.breadcrumb .canDrop > a,
+#filestable tbody tr.canDrop {
   background-color: var(--color-primary-light);
 }
 
