@@ -427,8 +427,12 @@ button.action-item__menutoggle.icon-add,
   background-image: var(--icon-download-808080);
 }
 .icon-tasks,
-.panel--header .icon-tasks {
+.panel--header .icon-tasks,
+.modal__content .icon-tasks {
   background-image: var(--icon-tasks-tasks-808080);
+}
+#tasks_panel .empty-content .icon-tasks {
+  background-image: var(--icon-tasks-tasks-808080) !important;
 }
 .icon-checkmark {
   background-image: var(--icon-checkmark-808080);
@@ -785,6 +789,11 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
 #editor .menububble__button .icon-file {
   background-image: var(--icon-text-fff);
 }
+
+#editor .ProseMirror {
+  background-color: var(--color-main-background) !important;
+}
+
 #fileList tr td.selection > .selectCheckBox + label::before,
 #oc-dialog-filepicker-content .actions.creatable .icon.icon-add {
   opacity: 1;
@@ -1533,4 +1542,8 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
 
 #content-vue.app-talk .acli_wrapper .acli.active {
   background-color: transparent;
+}
+
+#content-vue.app-talk #app-sidebar .username-form button.icon-rename {
+  background-image: var(--icon-rename-fff);
 }
