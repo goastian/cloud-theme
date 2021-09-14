@@ -163,6 +163,14 @@ div.select2-container-multi.select2-container-active .select2-choices {
 #header .header-right > div > .notification-container.menu {
   background-color: var(--color-main-background);
 }
+
+#header .header-appname {
+  color: var(--color-main-text);
+}
+
+#settings #expanddiv li a.active {
+  background-color: var(--color-background-hover);
+}
 body.theme--dark #header .header-right > div > .notification-container.menu,
 body.theme--dark #settings #expanddiv {
   background-color: var(--color-main-background);
@@ -717,7 +725,19 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
 }
 
 .breadcrumb .canDrop > a,
-#filestable tbody tr.canDrop {
+#filestable tbody tr.canDrop,
+#filestable.view-grid:not(.hidden)
+  #fileList
+  tr:not(.hidden).selected
+  .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden)
+  #fileList
+  tr:not(.hidden).selected
+  .fileactions,
+#filestable.view-grid:not(.hidden)
+  #fileList
+  tr:not(.hidden).selected
+  .nametext {
   background-color: var(--color-primary-light);
 }
 
@@ -761,7 +781,8 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
   background-color: var(--color-main-background);
 }
 
-#app-content-files button .icon-file {
+#app-content-files button .icon-file,
+#editor .menububble__button .icon-file {
   background-image: var(--icon-text-fff);
 }
 #fileList tr td.selection > .selectCheckBox + label::before,
@@ -845,7 +866,8 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
 .app-sidebar-header__star.icon-star,
 .app-sidebar-header__star.icon-starred,
 .app-sidebar-header__star.icon-star:hover,
-.app-sidebar-header__star.icon-starred:hover {
+.app-sidebar-header__star.icon-starred:hover,
+#view-toggle {
   background-size: 16px;
 }
 
