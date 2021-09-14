@@ -1012,7 +1012,8 @@ button .icon-download,
 
 #deleteaccount:not([disabled]) .icon-delete,
 button .icon-delete,
-.button .icon-delete {
+.button .icon-delete,
+#removeavatar.icon-delete {
   background-image: var(--icon-delete-fff);
 }
 
@@ -1124,7 +1125,8 @@ button.action-button .icon-delete {
 .menu-option:hover .icon-delete,
 button.action-button:hover .icon-delete,
 button.menuitem:hover .icon-delete,
-.app-navigation-entry-menu button:hover .icon-delete {
+.app-navigation-entry-menu button:hover .icon-delete,
+#removeavatar.icon-delete:hover {
   background-image: var(--icon-delete-e9322d);
 }
 
