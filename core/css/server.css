@@ -1276,11 +1276,6 @@ button.social-diaspora {
 #content-vue.app-calendar .fc-dayGridMonth-view table {
   font-size: 1em;
 }
-#content-vue.app-calendar .fc-dayGridMonth-view table,
-#content-vue.app-calendar .fc-dayGridMonth-view td,
-#content-vue.app-calendar .fc-dayGridMonth-view th {
-  border: 0px none;
-}
 
 .icon-view-week {
   background-image: var(--icon-calendar-view-week-808080);
