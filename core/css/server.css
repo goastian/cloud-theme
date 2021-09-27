@@ -767,7 +767,9 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
 }
 
 #uploadprogressbar + button.icon-close,
-#google-rm-cred .icon-close {
+#google-rm-cred .icon-close,
+#google-drive button .icon-close,
+#google-photos button .icon-close {
   background-image: var(--icon-close-fff);
 }
 
@@ -1563,4 +1565,8 @@ button.edit-output-dir .icon-rename {
 
 #google-import-files .icon-files-dark {
   background-image: var(--icon-files-app-fff);
+}
+
+#google-import-photos .icon-picture {
+  background-image: var(--icon-picture-fff);
 }
