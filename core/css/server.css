@@ -694,6 +694,7 @@ body.theme--highcontrast #app-dashboard .edit-panels {
   color: var(--color-main-text);
 }
 
+#content.app-dashboard #app-dashboard,
 body[data-dashboard-background]:not(.theme--dark)
   .background-selector
   .background.filepicker,
