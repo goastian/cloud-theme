@@ -766,7 +766,8 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
   background-size: 14px;
 }
 
-#uploadprogressbar + button.icon-close {
+#uploadprogressbar + button.icon-close,
+#google-rm-cred .icon-close {
   background-image: var(--icon-close-fff);
 }
 
@@ -779,7 +780,7 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
 
 #content.app-files #emptycontent .icon-share {
   background-image: var(--icon-files-share-808080);
-}
+}calendar
 
 #content #app-content-files #controls {
   background-color: var(--color-main-background);
@@ -1541,6 +1542,25 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
   background-color: transparent;
 }
 
-#content-vue.app-talk #app-sidebar .username-form button.icon-rename {
+#content-vue.app-talk #app-sidebar .username-form button.icon-rename,
+button.edit-output-dir .icon-rename {
   background-image: var(--icon-rename-fff);
+}
+
+/* Google integration */
+
+#google_prefs #google-content button.google-oauth {
+  background-color: var(--color-primary);
+}
+
+#google-import-contacts .icon-contacts-dark {
+  background-image: var(--icon-contacts-app-fff);
+}
+
+#google-calendars button .icon-calendar-dark {
+  background-image: var(--icon-calendar-calendar-fff);
+}
+
+#google-import-files .icon-files-dark {
+  background-image: var(--icon-files-app-fff);
 }
