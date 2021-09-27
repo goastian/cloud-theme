@@ -782,7 +782,7 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
 
 #content.app-files #emptycontent .icon-share {
   background-image: var(--icon-files-share-808080);
-}calendar
+}
 
 #content #app-content-files #controls {
   background-color: var(--color-main-background);
