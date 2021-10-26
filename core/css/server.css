@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-:root {
+ :root {
   --color-primary: #007fff;
   --color-primary-element: #007fff;
   --color-secondary-element: white;
@@ -44,8 +44,8 @@
 /* Force a few variables to right values for dark theme */
 body.theme--dark {
   --input-background-color: #181818;
-  --icon-notifications-notifications-000: url("/svg/notifications/notifications?color=000");
-  --icon-notifications-notifications-new-000: url("/svg/notifications/notifications-new?color=000");
+  --icon-notifications-notifications-000000: url("/svg/notifications/notifications?color=000");
+  --icon-notifications-notifications-new-000000: url("/svg/notifications/notifications-new?color=000");
   --icon-search-000: url("/svg/core/actions/search?color=000");
 }
 
@@ -314,7 +314,7 @@ li.app-navigation-entry.app-navigation-entry--collapsible > a:hover,
 }
 .icon-folder,
 .icon-filetype-folder {
-  background-image: var(--icon-folder-007fff);
+  background-image: var(--icon-folder-007FFF);
 }
 .icon-filetype-text {
   background-image: var(--icon-text-007fff);
@@ -487,7 +487,7 @@ button.action-item__menutoggle.icon-add,
   background-image: var(--icon-public-808080);
 }
 button .icon-link {
-  background-image: var(--icon-public-fff);
+  background-image: var(--icon-public-ffffff);
 }
 
 .icon-recent {
@@ -511,11 +511,11 @@ button .icon-link {
 }
 
 .icon-notifications-new {
-  background-image: var(--icon-notifications-notifications-new-000);
+  background-image: var(--icon-notifications-notifications-new-000000);
 }
 
 .icon-notifications {
-  background-image: var(--icon-notifications-notifications-000);
+  background-image: var(--icon-notifications-notifications-000000);
 }
 
 .icon-external,
@@ -524,7 +524,7 @@ button .icon-link {
 }
 
 .action.icon-checkmark {
-  background-image: var(--icon-checkmark-fff);
+  background-image: var(--icon-checkmark-ffffff);
 }
 .icon-phone {
   background-image: var(--icon-phone-808080);
@@ -556,7 +556,7 @@ button.icon-add,
 #content-vue.app-notes #notes_new_note.icon-add,
 #oc-dialog-filepicker-content .actions.creatable .icon.icon-add,
 #content.app-news .add-new .icon-add.add-new-folder-primary {
-  background-image: var(--icon-add-fff);
+  background-image: var(--icon-add-ffffff);
 }
 
 .popover .action-button .action-button__icon.icon-add {
@@ -600,7 +600,7 @@ button > span[class*=" icon-"],
 .icon-star:hover,
 .icon-star-dark:hover,
 #filestable .filename .favorite-mark .icon-starred {
-  background-image: var(--icon-star-fc0);
+  background-image: var(--icon-star-FFCC00);
 }
 
 .icon-close,
@@ -791,7 +791,7 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
 
 #app-content-files button .icon-file,
 #editor .menububble__button .icon-file {
-  background-image: var(--icon-text-fff);
+  background-image: var(--icon-text-ffffff);
 }
 
 #editor .ProseMirror {
@@ -997,7 +997,7 @@ button.primary .icon-upload,
 button.import-contact__button-main .icon-upload,
 .import-export button.icon-upload,
 .attachments-drag-zone button.icon-upload {
-  background-image: var(--icon-upload-fff);
+  background-image: var(--icon-upload-ffffff);
 }
 
 .action-button .icon-upload,
@@ -1008,7 +1008,7 @@ button.import-contact__button-main .icon-upload,
 button .icon-download,
 .button .icon-download,
 .import-export .button.icon-download {
-  background-image: var(--icon-download-fff);
+  background-image: var(--icon-download-ffffff);
 }
 .action-button .icon-download {
   background-image: var(--icon-download-808080);
@@ -1018,7 +1018,7 @@ button .icon-download,
 button .icon-delete,
 .button .icon-delete,
 #removeavatar.icon-delete {
-  background-image: var(--icon-delete-fff);
+  background-image: var(--icon-delete-ffffff);
 }
 
 button.menuitem .icon-delete,
@@ -1055,7 +1055,7 @@ button.menuitem .icon-delete,
 }
 
 #content-vue.app-photos .icon-folder {
-  background-image: var(--icon-folder-007fff);
+  background-image: var(--icon-folder-007FFF);
 }
 #content-vue.app-photos .folder-name__icon {
   opacity: 0.8;
@@ -1164,27 +1164,27 @@ body.theme--highcontrast #appmenu li:hover a span {
 /* Personal Info */
 
 #selectavatar.icon-folder {
-  background-image: var(--icon-folder-fff);
+  background-image: var(--icon-folder-ffffff);
 }
 
 /* Mobile & Desktop */
 
 .button.icon-clippy {
-  background-image: var(--icon-clippy-fff);
+  background-image: var(--icon-clippy-ffffff);
 }
 
 /* Sharing */
 
 button.social-facebook {
-  background-image: var(--icon-federatedfilesharing-social-facebook-fff);
+  background-image: var(--icon-federatedfilesharing-social-facebook-ffffff);
 }
 
 button.social-twitter {
-  background-image: var(--icon-federatedfilesharing-social-twitter-fff);
+  background-image: var(--icon-federatedfilesharing-social-twitter-ffffff);
 }
 
 button.social-diaspora {
-  background-image: var(--icon-federatedfilesharing-social-diaspora-fff);
+  background-image: var(--icon-federatedfilesharing-social-diaspora-ffffff);
 }
 
 /* Flow */
@@ -1557,17 +1557,17 @@ button.edit-output-dir .icon-rename {
 }
 
 #google-import-contacts .icon-contacts-dark {
-  background-image: var(--icon-contacts-app-fff);
+  background-image: var(--icon-contacts-app-ffffff);
 }
 
 #google-calendars button .icon-calendar-dark {
-  background-image: var(--icon-calendar-calendar-fff);
+  background-image: var(--icon-calendar-calendar-ffffff);
 }
 
 #google-import-files .icon-files-dark {
-  background-image: var(--icon-files-app-fff);
+  background-image: var(--icon-files-app-ffffff);
 }
 
 #google-import-photos .icon-picture {
-  background-image: var(--icon-picture-fff);
+  background-image: var(--icon-picture-ffffff);
 }
