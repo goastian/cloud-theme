@@ -581,6 +581,10 @@ button > span[class*=" icon-"],
   background-image: var(--icon-contacts-app-808080);
 }
 
+#contactsmenu .icon-contacts { 
+  background-image: var(--icon-contacts-000);
+}
+
 .icon-user,
 .icon-category-installed {
   background-image: var(--icon-user-808080);
