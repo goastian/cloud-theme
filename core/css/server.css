@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
- :root {
+:root {
   --color-primary: #007fff;
   --color-primary-element: #007fff;
   --color-secondary-element: white;
@@ -110,6 +110,15 @@ input[type="reset"] {
   background-color: var(--color-primary);
   color: white;
   border-color: var(--color-primary);
+}
+
+input.primary:not(:disabled):hover,
+input.primary:not(:disabled):focus,
+button.primary:not(:disabled):hover,
+button.primary:not(:disabled):focus,
+a.primary:not(:disabled):hover,
+a.primary:not(:disabled):focus {
+  background-image: none;
 }
 
 /* For buttons that are not primary or submit/reset/button inputs that are not primary */
