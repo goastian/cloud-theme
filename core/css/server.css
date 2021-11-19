@@ -1319,6 +1319,10 @@ button.social-diaspora {
   background-size: 11px;
 }
 
+#content-vue.app-notes #app-settings__header .settings-button__icon .material-design-icon__svg {
+  color: var(--icon-inactive-color);
+}
+
 .CodeMirror .CodeMirror-line::selection,
 .CodeMirror .CodeMirror-line > span::selection,
 .CodeMirror .CodeMirror-line > span > span::selection {
@@ -1365,8 +1369,6 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
 }
 
 #content-vue.app-calendar
-  .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
-#content-vue.app-notes
   .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
 #content.app-files
   .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
