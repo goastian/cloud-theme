@@ -249,26 +249,10 @@ body.theme--dark #settings #expanddiv {
   white-space: normal;
 }
 
-#header-menu-unified-search {
-  right: -38px;
-}
-#header-menu-unified-search .header-menu__carret {
-  right: 53px;
+#unified-search #header-menu-unified-search .header-menu__carret {
+  right: 125px;
 }
 
-/* Corrections to search menu for small screens */
-@media only screen and (max-width: 480px) {
-  #header-menu-unified-search {
-    right: -100px;
-  }
-  #header-menu-unified-search .header-menu__carret {
-    right: 115px;
-  }
-
-  #header-menu-unified-search .header-menu__content {
-    max-width: calc(100vw - 10px);
-  }
-}
 /* App Navigation rules */
 #app-navigation:not(.vue) > ul > li.active,
 #app-navigation:not(.vue) > ul > li a:active,
