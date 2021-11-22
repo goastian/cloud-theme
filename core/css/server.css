@@ -1154,6 +1154,10 @@ body.theme--highcontrast #appmenu li:hover a span {
 
 /* Settings app */
 
+#pass2 + input[name="newpassword-clone"] {
+  width: 100%;
+}
+
 /* Personal Info */
 
 #selectavatar.icon-folder {
