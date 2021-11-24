@@ -419,6 +419,9 @@ button.action-item__menutoggle.icon-add,
 .icon-download {
   background-image: var(--icon-download-808080);
 }
+.icon-template-add {
+  background-image: var(--icon-template-add-808080);
+}
 .icon-tasks,
 .panel--header .icon-tasks,
 .modal__content .icon-tasks {
@@ -758,6 +761,10 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
 
 #content.app-files #controls .icon-shared {
   background-size: 14px;
+}
+
+#content.app-files #editor .menububble__button {
+  background-color: var(--color-primary);
 }
 
 #uploadprogressbar + button.icon-close,
