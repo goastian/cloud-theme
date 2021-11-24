@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none" version="1.1" id="svg4" sodipodi:docname="user.svg" inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg">
+    <defs id="defs8" />
+    <sodipodi:namedview id="namedview6" pagecolor="#505050" bordercolor="#ffffff" borderopacity="1" inkscape:pageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="1" showgrid="false" width="15px" inkscape:zoom="46.4" inkscape:cx="5.9913793" inkscape:cy="7.4892241" inkscape:window-width="1920" inkscape:window-height="1017" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="svg4" />
+    <path d="m 9.0858872,8.1250856 c -0.6795924,0 -0.9842814,0.3749128 -2.0858916,0.3749128 -1.1250669,0 -1.4296643,-0.3749128 -2.1094031,-0.3749128 -1.7343991,0 -3.1405885,1.4295456 -3.1405885,3.1639444 v 0.586096 C 1.750004,12.507896 2.2422911,13 2.8750891,13 h 8.2500329 c 0.609249,0 1.124874,-0.492104 1.124874,-1.124874 V 11.28903 c 0,-1.7343988 -1.429728,-3.1639444 -3.1641088,-3.1639444 z M 11.125122,11.875126 H 2.8750891 V 11.28903 c 0,-1.124966 0.8905739,-2.03907 2.0155034,-2.03907 0.3516023,0 0.8906013,0.3751416 2.1094031,0.3751416 1.195336,0 1.7344357,-0.3751416 2.0858916,-0.3751416 1.1250668,0 2.0392348,0.914104 2.0392348,2.03907 z M 6.9999956,7.7499993 c 1.851609,0 3.3750904,-1.5000159 3.3750904,-3.3750907 C 10.375086,2.5234551 8.8516046,1 6.9999956,1 5.1249299,1 3.6250879,2.5234551 3.6250879,4.3749086 c 0,1.8750748 1.499842,3.3750907 3.3749077,3.3750907 z m 0,-5.6250871 c 1.2186646,0 2.2500052,1.031341 2.2500052,2.2499964 0,1.2422767 -1.0313406,2.2501794 -2.2500052,2.2501794 -1.2422676,0 -2.2499964,-1.0079027 -2.2499964,-2.2501794 0,-1.2186554 1.0077288,-2.2499964 2.2499964,-2.2499964 z" fill="#808080" id="path2" style="stroke-width:0.9152" />
+</svg>

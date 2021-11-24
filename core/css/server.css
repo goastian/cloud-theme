@@ -963,6 +963,10 @@ li.app-navigation-entry.active .icon-recent-actors {
   height: 80px;
 }
 
+#content-vue.app-contacts #addressbook-list .addressbook-shares .multiselect__content {
+  background-color: var(--color-secondary-element);
+}
+
 #content-vue.app-contacts .empty-content__title {
   text-align: center;
 }
@@ -1274,7 +1278,9 @@ button.social-diaspora {
   background-image: var(--icon-public-808080);
 }
 
-#content-vue.app-calendar #app-navigation-vue .action-item.icon-share {
+#content-vue.app-calendar #app-navigation-vue .action-item.icon-share,
+#content-vue.app-calendar #app-navigation-vue .action-item.icon-shared,
+#content-vue.app-contacts #addressbook-list .icon-shared {
   background-size: 12px;
 }
 #content-vue.app-calendar .fc-scrollgrid {
