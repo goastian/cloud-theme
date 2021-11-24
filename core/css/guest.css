@@ -365,12 +365,6 @@ input[type='password'].password-with-toggle, input[type='text'].password-with-to
     padding-right: 40px;
 }
 
-.toggle-password {
-    position: absolute;
-    top: 17px;
-    right: 20px;
-}
-
 input.login {
     width: 260px;
     height: 50px;
@@ -1162,11 +1156,6 @@ a.legal {
     width: auto;
     margin: 0;
     overflow-x: hidden;
-}
-
-#body-login .toggle-password {
-    right: 4%;
-    top: 39%;
 }
 
 #body-login footer .info,

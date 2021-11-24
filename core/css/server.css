@@ -44,8 +44,8 @@
 /* Force a few variables to right values for dark theme */
 body.theme--dark {
   --input-background-color: #181818;
-  --icon-notifications-notifications-000: url("/svg/notifications/notifications?color=000");
-  --icon-notifications-notifications-new-000: url("/svg/notifications/notifications-new?color=000");
+  --icon-notifications-notifications-000000: url("/svg/notifications/notifications?color=000");
+  --icon-notifications-notifications-new-000000: url("/svg/notifications/notifications-new?color=000");
   --icon-search-000: url("/svg/core/actions/search?color=000");
 }
 
@@ -110,6 +110,15 @@ input[type="reset"] {
   background-color: var(--color-primary);
   color: white;
   border-color: var(--color-primary);
+}
+
+input.primary:not(:disabled):hover,
+input.primary:not(:disabled):focus,
+button.primary:not(:disabled):hover,
+button.primary:not(:disabled):focus,
+a.primary:not(:disabled):hover,
+a.primary:not(:disabled):focus {
+  background-image: none;
 }
 
 /* For buttons that are not primary or submit/reset/button inputs that are not primary */
@@ -240,26 +249,10 @@ body.theme--dark #settings #expanddiv {
   white-space: normal;
 }
 
-#header-menu-unified-search {
-  right: -38px;
-}
-#header-menu-unified-search .header-menu__carret {
-  right: 53px;
+#unified-search #header-menu-unified-search .header-menu__carret {
+  right: 125px;
 }
 
-/* Corrections to search menu for small screens */
-@media only screen and (max-width: 480px) {
-  #header-menu-unified-search {
-    right: -100px;
-  }
-  #header-menu-unified-search .header-menu__carret {
-    right: 115px;
-  }
-
-  #header-menu-unified-search .header-menu__content {
-    max-width: calc(100vw - 10px);
-  }
-}
 /* App Navigation rules */
 #app-navigation:not(.vue) > ul > li.active,
 #app-navigation:not(.vue) > ul > li a:active,
@@ -314,7 +307,7 @@ li.app-navigation-entry.app-navigation-entry--collapsible > a:hover,
 }
 .icon-folder,
 .icon-filetype-folder {
-  background-image: var(--icon-folder-007fff);
+  background-image: var(--icon-folder-007FFF);
 }
 .icon-filetype-text {
   background-image: var(--icon-text-007fff);
@@ -426,6 +419,9 @@ button.action-item__menutoggle.icon-add,
 .icon-download {
   background-image: var(--icon-download-808080);
 }
+.icon-template-add {
+  background-image: var(--icon-template-add-808080);
+}
 .icon-tasks,
 .panel--header .icon-tasks,
 .modal__content .icon-tasks {
@@ -487,7 +483,7 @@ button.action-item__menutoggle.icon-add,
   background-image: var(--icon-public-808080);
 }
 button .icon-link {
-  background-image: var(--icon-public-fff);
+  background-image: var(--icon-public-ffffff);
 }
 
 .icon-recent {
@@ -511,11 +507,11 @@ button .icon-link {
 }
 
 .icon-notifications-new {
-  background-image: var(--icon-notifications-notifications-new-000);
+  background-image: var(--icon-notifications-notifications-new-000000);
 }
 
 .icon-notifications {
-  background-image: var(--icon-notifications-notifications-000);
+  background-image: var(--icon-notifications-notifications-000000);
 }
 
 .icon-external,
@@ -524,7 +520,7 @@ button .icon-link {
 }
 
 .action.icon-checkmark {
-  background-image: var(--icon-checkmark-fff);
+  background-image: var(--icon-checkmark-ffffff);
 }
 .icon-phone {
   background-image: var(--icon-phone-808080);
@@ -556,7 +552,7 @@ button.icon-add,
 #content-vue.app-notes #notes_new_note.icon-add,
 #oc-dialog-filepicker-content .actions.creatable .icon.icon-add,
 #content.app-news .add-new .icon-add.add-new-folder-primary {
-  background-image: var(--icon-add-fff);
+  background-image: var(--icon-add-ffffff);
 }
 
 .popover .action-button .action-button__icon.icon-add {
@@ -604,7 +600,7 @@ button > span[class*=" icon-"],
 .icon-star:hover,
 .icon-star-dark:hover,
 #filestable .filename .favorite-mark .icon-starred {
-  background-image: var(--icon-star-fc0);
+  background-image: var(--icon-star-FFCC00);
 }
 
 .icon-close,
@@ -771,6 +767,10 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
   background-size: 14px;
 }
 
+#content.app-files #editor .menububble__button {
+  background-color: var(--color-primary);
+}
+
 #uploadprogressbar + button.icon-close,
 #google-rm-cred .icon-close,
 #google-drive button .icon-close,
@@ -795,7 +795,7 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
 
 #app-content-files button .icon-file,
 #editor .menububble__button .icon-file {
-  background-image: var(--icon-text-fff);
+  background-image: var(--icon-text-ffffff);
 }
 
 #editor .ProseMirror {
@@ -967,6 +967,10 @@ li.app-navigation-entry.active .icon-recent-actors {
   height: 80px;
 }
 
+#content-vue.app-contacts #addressbook-list .addressbook-shares .multiselect__content {
+  background-color: var(--color-secondary-element);
+}
+
 #content-vue.app-contacts .empty-content__title {
   text-align: center;
 }
@@ -1001,7 +1005,7 @@ button.primary .icon-upload,
 button.import-contact__button-main .icon-upload,
 .import-export button.icon-upload,
 .attachments-drag-zone button.icon-upload {
-  background-image: var(--icon-upload-fff);
+  background-image: var(--icon-upload-ffffff);
 }
 
 .action-button .icon-upload,
@@ -1012,7 +1016,7 @@ button.import-contact__button-main .icon-upload,
 button .icon-download,
 .button .icon-download,
 .import-export .button.icon-download {
-  background-image: var(--icon-download-fff);
+  background-image: var(--icon-download-ffffff);
 }
 .action-button .icon-download {
   background-image: var(--icon-download-808080);
@@ -1022,7 +1026,7 @@ button .icon-download,
 button .icon-delete,
 .button .icon-delete,
 #removeavatar.icon-delete {
-  background-image: var(--icon-delete-fff);
+  background-image: var(--icon-delete-ffffff);
 }
 
 button.menuitem .icon-delete,
@@ -1059,7 +1063,7 @@ button.menuitem .icon-delete,
 }
 
 #content-vue.app-photos .icon-folder {
-  background-image: var(--icon-folder-007fff);
+  background-image: var(--icon-folder-007FFF);
 }
 #content-vue.app-photos .folder-name__icon {
   opacity: 0.8;
@@ -1165,30 +1169,34 @@ body.theme--highcontrast #appmenu li:hover a span {
 
 /* Settings app */
 
+#pass2 + input[name="newpassword-clone"] {
+  width: 100%;
+}
+
 /* Personal Info */
 
 #selectavatar.icon-folder {
-  background-image: var(--icon-folder-fff);
+  background-image: var(--icon-folder-ffffff);
 }
 
 /* Mobile & Desktop */
 
 .button.icon-clippy {
-  background-image: var(--icon-clippy-fff);
+  background-image: var(--icon-clippy-ffffff);
 }
 
 /* Sharing */
 
 button.social-facebook {
-  background-image: var(--icon-federatedfilesharing-social-facebook-fff);
+  background-image: var(--icon-federatedfilesharing-social-facebook-ffffff);
 }
 
 button.social-twitter {
-  background-image: var(--icon-federatedfilesharing-social-twitter-fff);
+  background-image: var(--icon-federatedfilesharing-social-twitter-ffffff);
 }
 
 button.social-diaspora {
-  background-image: var(--icon-federatedfilesharing-social-diaspora-fff);
+  background-image: var(--icon-federatedfilesharing-social-diaspora-ffffff);
 }
 
 /* Flow */
@@ -1274,7 +1282,9 @@ button.social-diaspora {
   background-image: var(--icon-public-808080);
 }
 
-#content-vue.app-calendar #app-navigation-vue .action-item.icon-share {
+#content-vue.app-calendar #app-navigation-vue .action-item.icon-share,
+#content-vue.app-calendar #app-navigation-vue .action-item.icon-shared,
+#content-vue.app-contacts #addressbook-list .icon-shared {
   background-size: 12px;
 }
 #content-vue.app-calendar .fc-scrollgrid {
@@ -1330,6 +1340,10 @@ button.social-diaspora {
   background-size: 11px;
 }
 
+#content-vue.app-notes #app-settings__header .settings-button__icon .material-design-icon__svg {
+  color: var(--icon-inactive-color);
+}
+
 .CodeMirror .CodeMirror-line::selection,
 .CodeMirror .CodeMirror-line > span::selection,
 .CodeMirror .CodeMirror-line > span > span::selection {
@@ -1376,8 +1390,6 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
 }
 
 #content-vue.app-calendar
-  .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
-#content-vue.app-notes
   .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
 #content.app-files
   .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
@@ -1561,17 +1573,17 @@ button.edit-output-dir .icon-rename {
 }
 
 #google-import-contacts .icon-contacts-dark {
-  background-image: var(--icon-contacts-app-fff);
+  background-image: var(--icon-contacts-app-ffffff);
 }
 
 #google-calendars button .icon-calendar-dark {
-  background-image: var(--icon-calendar-calendar-fff);
+  background-image: var(--icon-calendar-calendar-ffffff);
 }
 
 #google-import-files .icon-files-dark {
-  background-image: var(--icon-files-app-fff);
+  background-image: var(--icon-files-app-ffffff);
 }
 
 #google-import-photos .icon-picture {
-  background-image: var(--icon-picture-fff);
+  background-image: var(--icon-picture-ffffff);
 }
