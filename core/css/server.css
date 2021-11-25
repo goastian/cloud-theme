@@ -39,6 +39,7 @@
   --menu-icon-color: #222;
   --color-dashboard-panels: #f2f2f2;
   --color-dashboard-background-plain: #d2d2d2;
+  --color-sharing-icon-background: #767676;
 }
 
 /* Force a few variables to right values for dark theme */
@@ -493,6 +494,20 @@ button .icon-link {
 .icon-more,
 .icon-more-white {
   background-image: var(--icon-more-808080);
+}
+
+.avatar-shared.icon-more-white {
+  background-image: var(--icon-more-fff);
+}
+
+#collection-list .avatar .icon-projects {
+  background-image: var(--icon-projects-fff);
+}
+
+#sharing-inherited-shares .sharing-entry .avatar-shared.icon-more-white,
+.sharing-entry.sharing-entry__internal .avatar-external.icon-external-white,
+#collection-list .avatar {
+  background-color: var(--color-sharing-icon-background);
 }
 
 .icon-files,
@@ -967,7 +982,10 @@ li.app-navigation-entry.active .icon-recent-actors {
   height: 80px;
 }
 
-#content-vue.app-contacts #addressbook-list .addressbook-shares .multiselect__content {
+#content-vue.app-contacts
+  #addressbook-list
+  .addressbook-shares
+  .multiselect__content {
   background-color: var(--color-secondary-element);
 }
 
@@ -1340,7 +1358,10 @@ button.social-diaspora {
   background-size: 11px;
 }
 
-#content-vue.app-notes #app-settings__header .settings-button__icon .material-design-icon__svg {
+#content-vue.app-notes
+  #app-settings__header
+  .settings-button__icon
+  .material-design-icon__svg {
   color: var(--icon-inactive-color);
 }
 
