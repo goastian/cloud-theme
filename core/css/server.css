@@ -592,7 +592,7 @@ button > span[class*=" icon-"],
   background-image: var(--icon-contacts-app-808080);
 }
 
-#contactsmenu .icon-contacts { 
+#contactsmenu .icon-contacts {
   background-image: var(--icon-contacts-000);
 }
 
@@ -782,8 +782,24 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
   background-size: 14px;
 }
 
-#content.app-files #editor .menububble__button {
+#editor .menububble.is-active .menububble__button {
   background-color: var(--color-primary);
+}
+
+#editor .menububble.is-active .menububble__button:hover {
+  background-color: var(--color-background-hover);
+}
+
+#editor .menububble__button:hover .menububble__buttontext {
+  color: var(--color-primary);
+}
+
+#editor .menububble__button:hover .icon-link {
+  background-image: var(--icon-public-007fff);
+}
+
+#editor .menububble__button:hover .icon-file {
+  background-image: var(--icon-text-007fff);
 }
 
 #uploadprogressbar + button.icon-close,
