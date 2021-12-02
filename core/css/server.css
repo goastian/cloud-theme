@@ -1352,7 +1352,6 @@ button.social-diaspora {
   background-image: var(--icon-calendar-view-list-808080);
 }
 
-
 #content-vue.app-calendar .app-sidebar-tabs__tab a.active {
   color: var(--color-text-light);
 }
@@ -1441,6 +1440,8 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
   background-color: var(--color-main-background);
 }
 
+#content.app-settings
+  .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
 #content.app-files
   .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
 #header
