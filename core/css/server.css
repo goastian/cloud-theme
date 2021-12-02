@@ -1352,9 +1352,6 @@ button.social-diaspora {
   background-image: var(--icon-calendar-view-list-808080);
 }
 
-.popover .action-input .action-input__label::before {
-  content: var(--icon-confirm-fff);
-}
 
 #content-vue.app-calendar .app-sidebar-tabs__tab a.active {
   color: var(--color-text-light);
