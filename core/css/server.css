@@ -592,7 +592,7 @@ button > span[class*=" icon-"],
   background-image: var(--icon-contacts-app-808080);
 }
 
-#contactsmenu .icon-contacts { 
+#contactsmenu .icon-contacts {
   background-image: var(--icon-contacts-000);
 }
 
@@ -782,8 +782,24 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
   background-size: 14px;
 }
 
-#content.app-files #editor .menububble__button {
+#editor .menububble.is-active .menububble__button {
   background-color: var(--color-primary);
+}
+
+#editor .menububble.is-active .menububble__button:hover {
+  background-color: var(--color-background-hover);
+}
+
+#editor .menububble__button:hover .menububble__buttontext {
+  color: var(--color-primary);
+}
+
+#editor .menububble__button:hover .icon-link {
+  background-image: var(--icon-public-007fff);
+}
+
+#editor .menububble__button:hover .icon-file {
+  background-image: var(--icon-text-007fff);
 }
 
 #uploadprogressbar + button.icon-close,
@@ -1074,6 +1090,13 @@ button.menuitem .icon-delete,
   fill: var(--icon-inactive-color);
 }
 
+#content-vue.app-contacts
+  ~ .popover
+  .action-input
+  .action-input__label::before {
+  content: unset;
+}
+
 /* Photos App */
 
 #content-vue.app-photos #app-navigation-vue .app-navigation-entry.active {
@@ -1329,15 +1352,8 @@ button.social-diaspora {
   background-image: var(--icon-calendar-view-list-808080);
 }
 
-.popover .action-input .action-input__label::before {
-  content: var(--icon-confirm-fff);
-}
-
-#content-vue.app-contacts
-  ~ .popover
-  .action-input
-  .action-input__label::before {
-  content: unset;
+#content-vue.app-calendar .app-sidebar-tabs__tab a.active {
+  color: var(--color-text-light);
 }
 
 /* Notes App*/
@@ -1361,7 +1377,21 @@ button.social-diaspora {
 #content-vue.app-notes
   #app-settings__header
   .settings-button__icon
-  .material-design-icon__svg {
+  .material-design-icon__svg,
+#content-vue.app-calendar
+  #app-settings
+  .settings-button__icon
+  .material-design-icon__svg,
+#content-vue.app-calendar
+  ~ .popover
+  div[class^="property-"]
+  .material-design-icon__svg,
+#content-vue.app-calendar div[class^="property-"] .material-design-icon__svg,
+#content-vue.app-calendar
+  .app-sidebar
+  .app-sidebar__close
+  .material-design-icon__svg,
+#content-vue.app-calendar .app-sidebar-tabs__tab a {
   color: var(--icon-inactive-color);
 }
 
@@ -1410,7 +1440,7 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
   background-color: var(--color-main-background);
 }
 
-#content-vue.app-calendar
+#content.app-settings
   .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
 #content.app-files
   .icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
