@@ -994,6 +994,16 @@ li.app-navigation-entry.active .icon-recent-actors {
   background-color: var(--color-main-background) !important;
 }
 
+#content-vue.app-contacts ~ .popover .action.active,
+#content-vue.app-contacts ~ .popover .action.active .action-input:hover,
+#content-vue.app-contacts ~ .popover .action.active .action-input:focus-within {
+  opacity: 1;
+}
+
+#content-vue.app-contacts ~ .popover .action.active .action-input {
+  opacity: .7;
+}
+
 #content-vue.app-contacts .empty-content__icon {
   height: 80px;
 }
@@ -1043,7 +1053,9 @@ button.import-contact__button-main .icon-upload,
 }
 
 .action-button .icon-upload,
-.menuitem .icon-upload {
+.menuitem .icon-upload,
+button.import-contact__button--local:disabled .import-contact__button-icon.icon-upload
+ {
   background-image: var(--icon-upload-808080);
 }
 
@@ -1366,7 +1378,8 @@ button.social-diaspora {
   background-size: 18px;
 }
 
-#content-vue.app-notes button.icon-confirm::before {
+#content-vue.app-notes button.icon-confirm::before,
+#content.app-dashboard ~ .popover .action-input__form .action-input__label::before {
   content: var(--icon-confirm-fff);
 }
 
