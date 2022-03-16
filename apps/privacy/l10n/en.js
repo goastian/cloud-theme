@@ -6,8 +6,8 @@ OC.L10N.register(
         "here":"here",
         "To protect your data, we have implemented server-side-encryption on our servers which hides by default the content of your files and notes even to these administrators.": "To protect your data, we have implemented server-side-encryption on our servers which hides by default the content of your files and notes even to these administrators.",
         "People you shared documents or folders with": "People you shared documents or folders with",
-        "Where is my data?": "Where is my data?",
-        "Who has access to my data?": "Who has access to my data?"
+        "Where is your data?": "Where is my data?",
+        "Who has access to your data?": "Who has access to my data?"
     },
     "nplurals=2; plural=(n != 1);"
 );
