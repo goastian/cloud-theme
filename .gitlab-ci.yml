@@ -18,8 +18,7 @@ stages:
     - apt-get update && apt-get install -y openssh-client
   script:
     - echo "Deploying to $CI_ENVIRONMENT_NAME ($DEPLOYMENT_HOST)"
-    - ssh root@$DEPLOYMENT_HOST "ls /mnt/repo-base"
-    #- ssh $SSH_USER@$DEPLOYMENT_HOST "git clone --depth 1 $CI_REPOSITORY_URL --branch $CI_COMMIT_BRANCH --single-branch /tmp/${CI_JOB_ID}/${CI_PROJECT_NAME} && sudo rsync -avzh --chown www-data:www-data --delete --exclude '.git*' /tmp/${CI_JOB_ID}/${CI_PROJECT_NAME} ${DEPLOYMENT_PATH}/wp-content/themes/ && rm -rf /tmp/${CI_JOB_ID}"
+    - ssh $SSH_USER@$DEPLOYMENT_HOST "git clone --depth 1 $CI_REPOSITORY_URL --branch $CI_COMMIT_BRANCH --single-branch /tmp/${CI_JOB_ID}/${CI_PROJECT_NAME} && sudo rsync -avzh --chown www-data:www-data --delete --exclude '.git*' /tmp/${CI_JOB_ID}/${CI_PROJECT_NAME} ${DEPLOYMENT_PATH}/html/themes/ && rm -rf /tmp/${CI_JOB_ID}"
 
 deploy:dev01:
   extends: .deploy:theme
@@ -28,4 +27,5 @@ deploy:dev01:
     url: https://dev.eeo.one/
   variables:
     DEPLOYMENT_HOST: eservice0.eu
+    DEPLOYMENT_PATH: /mnt/repo-base/volumes/dev01_nextcloud/
 
