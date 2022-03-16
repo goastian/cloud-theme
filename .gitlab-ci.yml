@@ -1,0 +1,31 @@
+stages:
+  - deploy
+
+# Deploy stage
+.deploy:theme:
+  image: ubuntu:focal
+  stage: deploy
+  before_script:
+    - mkdir $HOME/.ssh
+    - chmod 700 ~/.ssh
+    # cannot use GitLab variable type File and cp here because key format
+    # gets garbled somehow; this doesn't happen with echo
+    - echo "$SSH_PRIVATE_KEY_ED" > $HOME/.ssh/id_ed25519
+    - echo "$SSH_PUBKEY_ED" > $HOME/.ssh/id_ed25519.pub
+    - echo "$SSH_KNOWN_HOSTS" > $HOME/.ssh/known_hosts
+    - chmod 600 ~/.ssh/id_ed25519
+    - chmod 644 ~/.ssh/known_hosts ~/.ssh/id_ed25519.pub
+    - apt-get update && apt-get install -y openssh-client
+  script:
+    - echo "Deploying to $CI_ENVIRONMENT_NAME ($DEPLOYMENT_HOST)"
+    - ssh root@$DEPLOYMENT_HOST "ls /mnt/repo-base"
+    #- ssh $SSH_USER@$DEPLOYMENT_HOST "git clone --depth 1 $CI_REPOSITORY_URL --branch $CI_COMMIT_BRANCH --single-branch /tmp/${CI_JOB_ID}/${CI_PROJECT_NAME} && sudo rsync -avzh --chown www-data:www-data --delete --exclude '.git*' /tmp/${CI_JOB_ID}/${CI_PROJECT_NAME} ${DEPLOYMENT_PATH}/wp-content/themes/ && rm -rf /tmp/${CI_JOB_ID}"
+
+deploy:dev01:
+  extends: .deploy:theme
+  environment:
+    name: dev/01
+    url: https://dev.eeo.one/
+  variables:
+    DEPLOYMENT_HOST: eservice0.eu
+
