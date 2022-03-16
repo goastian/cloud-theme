@@ -6,8 +6,8 @@ OC.L10N.register(
         "here":"darüber",
         "To protect your data, we have implemented server-side-encryption on our servers which hides by default the content of your files and notes even to these administrators.": "Um Ihre Daten zu schützen, haben wir auf dem Server eine Verschlüsselung aktiviert, die es selbst Administratoren unmöglich macht, den Inhalt von Dateien und Notizen einzusehen.",
         "People you shared documents or folders with": "Personen, für die Sie Dokumente oder Ordner freigegeben haben",
-        "Where is my data?": "Wo werden meine Daten gespeichert?",
-        "Who has access to my data?": "Wer kann auf meine Daten zugreifen?"
+        "Where is your data?": "Wo werden meine Daten gespeichert?",
+        "Who has access to your data?": "Wer kann auf meine Daten zugreifen?"
     },
     "nplurals=2; plural=(n != 1);"
 );

@@ -5,8 +5,8 @@
         "here":"ici",
         "To protect your data, we have implemented server-side-encryption on our servers which hides by default the content of your files and notes even to these administrators.": "Pour protéger vos données, nous avons implémenté un chiffrement côté serveurs qui dissimule par défaut le contenu de vos fichiers et notes, même à ces administrateurs.",
         "People you shared documents or folders with": "Les personnes avec lesquelles vous avez partagé des fichiers ou dossiers:",
-        "Where is my data?": "Où sont stockées mes données ?",
-        "Who has access to my data?": "Qui peut accéder à mes données ?"
+        "Where is your data?": "Où sont stockées mes données ?",
+        "Who has access to your data?": "Qui peut accéder à mes données ?"
     },
     "pluralForm": "nplurals=2; plural=(n != 1);"
 }
