@@ -25,7 +25,17 @@ deploy:dev01:
   environment:
     name: dev/01
     url: https://dev.eeo.one/
-  variables:
-    DEPLOYMENT_HOST: eservice0.eu
-    DEPLOYMENT_PATH: /mnt/repo-base/volumes/dev01_nextcloud/
 
+deploy:dev02:
+  extends: .deploy:theme
+  when: manual
+  environment:
+    name: dev/02
+    url: https://ecloud02.dev.eeo.one
+
+deploy:dev03:
+  extends: .deploy:theme
+  when: manual
+  environment:
+    name: dev/03
+    url: https://ecloud03.dev.eeo.one
