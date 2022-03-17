@@ -22,7 +22,10 @@ stages:
 
 deploy:dev01:
   extends: .deploy:theme
-  when: manual
+  only:
+    - master
+    - main
+    - production
   environment:
     name: dev/01
     url: https://dev.eeo.one/
@@ -33,6 +36,10 @@ deploy:dev01:
 deploy:dev02:
   extends: .deploy:theme
   when: manual
+  only:
+    - master
+    - main
+    - production
   environment:
     name: dev/02
     url: https://ecloud02.dev.eeo.one
@@ -43,6 +50,10 @@ deploy:dev02:
 deploy:dev03:
   extends: .deploy:theme
   when: manual
+  only:
+    - master
+    - main
+    - production
   environment:
     name: dev/03
     url: https://ecloud03.dev.eeo.one
