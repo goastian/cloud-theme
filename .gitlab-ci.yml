@@ -18,7 +18,7 @@ stages:
     - apt-get update && apt-get install -y openssh-client
   script:
     - echo "Deploying to $CI_ENVIRONMENT_NAME ($DEPLOYMENT_HOST)"
-    - ssh $SSH_USER@$DEPLOYMENT_HOST "git clone --depth 1 $CI_REPOSITORY_URL --branch $DEPLOYMENT_BRANCH --single-branch /tmp/${CI_JOB_ID}/eCloud && sudo rsync -avzh --chown www-data:www-data --delete --exclude '.git*' /tmp/${CI_JOB_ID}/eCloud ${DEPLOYMENT_PATH}/html/themes/ && rm -rf /tmp/${CI_JOB_ID} && sudo docker exec -u www-data $CONTAINER_NAME /var/www/html/occ maintenance:theme:update"
+    - ssh $SSH_USER@$DEPLOYMENT_HOST "git clone --depth 1 $CI_REPOSITORY_URL --branch $DEPLOYMENT_BRANCH --single-branch /tmp/${CI_JOB_ID}/eCloud && sudo rsync -avzh --chown www-data:www-data --delete --exclude '.git*' /tmp/${CI_JOB_ID}/eCloud ${DEPLOYMENT_PATH}/html/themes/ && rm -rf /tmp/${CI_JOB_ID} && docker exec -u www-data $CONTAINER_NAME /usr/local/bin/php /var/www/html/occ maintenance:theme:update"
 
 deploy:dev01:
   extends: .deploy:theme
@@ -71,6 +71,18 @@ deploy:staging:
   environment:
     name: staging/01
     url: https://eeo.one
+  variables:
+    DEPLOYMENT_BRANCH: $CI_COMMIT_BRANCH
+    CONTAINER_NAME: nextcloud
+
+deploy:production:
+  extends: .deploy:theme
+  when: manual
+  only:
+    - production
+  environment:
+    name: prod/01
+    url: https://ecloud.global
   variables:
     DEPLOYMENT_BRANCH: $CI_COMMIT_BRANCH
     CONTAINER_NAME: nextcloud
