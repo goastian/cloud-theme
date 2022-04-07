@@ -74,3 +74,16 @@ deploy:staging:
   variables:
     DEPLOYMENT_BRANCH: $CI_COMMIT_BRANCH
     CONTAINER_NAME: nextcloud
+
+deploy:production:
+  extends: .deploy:theme
+  when: manual
+  only:
+    - gitlab-deployments
+    - production
+  environment:
+    name: prod/01
+    url: https://ecloud.global
+  variables:
+    DEPLOYMENT_BRANCH: $CI_COMMIT_BRANCH
+    CONTAINER_NAME: nextcloud
