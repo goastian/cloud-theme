@@ -79,7 +79,6 @@ deploy:production:
   extends: .deploy:theme
   when: manual
   only:
-    - gitlab-deployments
     - production
   environment:
     name: prod/01
