@@ -112,7 +112,7 @@ class OC_Theme {
 	 * @return string documentation link
 	 */
 	public function buildDocLinkToKey($key) {
-		return $this->getDocBaseUrl() . '/server/21/go.php?to=' . $key;
+		return $this->getDocBaseUrl() . '/server/22/go.php?to=' . $key;
 	}
 
 
@@ -133,7 +133,7 @@ class OC_Theme {
 			'color-primary' => '#007FFF',
 			'color-error' => '#FB3845',
 			'color-success' => '#3AD975',
-			'image-login-background' => 'url("/themes/eelo/core/img/background.png")'
+			'image-login-background' => 'url("/themes/eCloud/core/img/background.png")'
 		];
 	}
 
