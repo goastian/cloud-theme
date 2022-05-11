@@ -1203,6 +1203,9 @@ a.legal {
     color: white;
     background-color: #3ad975;
     justify-content: center !important;
+    width: 92%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 #body-login #user:hover,
@@ -1233,4 +1236,3 @@ a.legal {
 #body-login .two-factor-submit:hover {
     opacity: 0.9;
 }
-  

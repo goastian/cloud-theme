@@ -1041,7 +1041,6 @@ li.app-navigation-entry.active .icon-recent-actors {
 }
 
 button .icon-upload,
-#uploadavatarbutton.icon-upload,
 .button.primary .icon-upload,
 button.primary .icon-upload,
 #content-vue.app-calendar .settings-fieldset-interior-item .icon-upload,
@@ -1049,9 +1048,11 @@ button.primary .icon-upload,
 button.import-contact__button-main .icon-upload,
 .import-export button.icon-upload,
 .attachments-drag-zone button.icon-upload {
+  background-image: var(--icon-upload-000);
+}
+#uploadavatarbutton.icon-upload{
   background-image: var(--icon-upload-ffffff);
 }
-
 .action-button .icon-upload,
 .menuitem .icon-upload,
 button.import-contact__button--local:disabled .import-contact__button-icon.icon-upload
@@ -1230,26 +1231,32 @@ body.theme--highcontrast #appmenu li:hover a span {
 
 #selectavatar.icon-folder {
   background-image: var(--icon-folder-ffffff);
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
 }
 
 /* Mobile & Desktop */
 
 .button.icon-clippy {
-  background-image: var(--icon-clippy-ffffff);
+  background-image: var(--icon-clippy-808080);
 }
 
 /* Sharing */
 
 button.social-facebook {
-  background-image: var(--icon-federatedfilesharing-social-facebook-ffffff);
+  padding-left: 30px;
+  background-image: var(--icon-federatedfilesharing-social-facebook-000);
 }
 
 button.social-twitter {
-  background-image: var(--icon-federatedfilesharing-social-twitter-ffffff);
+  padding-left: 30px;
+  background-image: var(--icon-federatedfilesharing-social-twitter-000);
 }
 
 button.social-diaspora {
-  background-image: var(--icon-federatedfilesharing-social-diaspora-ffffff);
+  padding-left: 30px;
+  background-image: var(--icon-federatedfilesharing-social-diaspora-000);
 }
 
 /* Flow */
@@ -1548,10 +1555,6 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
   background-image: var(--icon-public-808080);
 }
 
-.material-design-icon.sync-icon svg path {
-  fill: white;
-}
-
 .controls svg path,
 .material-design-icon.earth-icon svg path {
   fill: var(--icon-inactive-color);
@@ -1650,4 +1653,8 @@ button.edit-output-dir .icon-rename {
 
 #google-import-photos .icon-picture {
   background-image: var(--icon-picture-ffffff);
+}
+
+#header .header-right .magnify-icon > svg {
+  display: none;
 }
