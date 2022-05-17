@@ -1081,28 +1081,29 @@ a.legal {
 }
 
 #body-login {
-    background-color: #f2f2f2 !important;
+    background-color: #ffffff !important;
     background-image: none !important;
     color: #808080;
     font-family: "Century Gothic Regular";
+}
+#body-login .v-align {
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 32px 0px;
+    padding: 64px 44px;
 }
 
 #body-login #user,
 #body-login #password,
 #body-login .totp-form > input[type="tel"] {
-    color: rgba(0, 0, 0, 0.8);
-    background-color: white;
-    padding-left: 10%;
-    padding-right: 0;
-    padding-bottom: 2%;
-    padding-top: 2%;
-    font-size: 1.3em;
-    line-height: 1.7em;
-    transition: all 0.5s linear;
-    width: 97.656%;
-    margin: 0;
-    border: none;
-    border-radius: 0;
+    padding: 12px 16px;
+    width: 424px;
+    height: 48px;
+    border: 1px solid #E6E8E9;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 12px 0px;
 }
 
 #body-login .groupbottom,
@@ -1118,17 +1119,25 @@ a.legal {
 
 #body-login #submit-wrapper,
 #body-login #reset-password-wrapper {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     margin-top: 26px;
 }
 
 #body-login #submit-form,
 #body-login #reset-password-submit,
 #body-login .two-factor-submit {
-    background-color: #007fff;
-    color: white;
+	color: white;
     border: none;
-    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    height: 48px;
+    left: 0px;
+    top: 261px;
+    background: #0075E0;
+    border-radius: 6px;
+    flex-grow: 1;
+    margin: 24px 0px;
 }
 
 #body-login .totp-form input, 
@@ -1147,8 +1156,6 @@ a.legal {
 }
 
 #body-login form {
-    padding-left: 10%;
-    padding-right: 10%;
     margin-top: 50px;
 }
 
@@ -1208,22 +1215,27 @@ a.legal {
     margin-right: 0;
 }
 
-#body-login #user:hover,
+/* #body-login #user:hover,
 #body-login #user:focus,
 #body-login #password:hover,
 #body-login #password:focus {
-    outline: 0;
-    transition: all 0.5s linear !important;
-    box-shadow: inset 0px 0px 10px #ccc !important;
-}
+    padding: 12px 16px;
+    width: 424px;
+    height: 48px;
+    border: 1px solid #E6E8E9;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 12px 0px;
+} */
 
 #body-login #lost-password:hover {
     text-decoration: underline;
 }
 
 #body-login #header .logo {
-    background-image: url("../img/logo.png");
+    background-image: url("../img/logo@2x.svg");
     margin-top: 0.5em;
+	background-size: contain;
 }
 
 #body-login .lost-password-container .update {
