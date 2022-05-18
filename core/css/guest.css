@@ -147,7 +147,7 @@ body {
 }
 
 #header .logo {
-    background-image: url('../img/logo.png?v=19');
+    background-image: url('../img/logo@2x.svg');
     background-repeat: no-repeat;
     background-size: 100px;
     background-position: center;
