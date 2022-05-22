@@ -1108,7 +1108,7 @@ a.legal {
 #body-login #password,
 #body-login .totp-form > input[type="tel"] {
     padding: 12px 16px;
-    width: 424px;
+    width: 100%;
     height: 48px;
     border: 1px solid #E6E8E9;
     box-sizing: border-box;
@@ -1216,13 +1216,13 @@ a.legal {
 }
 
 #body-login #submit-wrapper .submit-icon {
-    top: 32px;
+    top: 45px;
     right: 30%;
 }
 
 #reset-password-wrapper .submit-icon {
-    top: 32px;
-    right: 25%;
+    top: 45px;
+    right: 30%;
 }
 
 #body-login .warning,
@@ -1341,6 +1341,7 @@ a.legal {
 }
 .v-align main
 {
+    width: 100%;
     margin: 0 auto;
 }
 #lost-password{
