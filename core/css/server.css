@@ -355,9 +355,6 @@
   #header .logo {
 	background-size: auto;
   }
-  #body-login #header .logo {
-	margin-bottom: 22px;
-  }
   
   input.primary,
   #alternative-logins li a {
@@ -1699,7 +1696,6 @@
 	font-family: 'Roboto';
 	letter-spacing: 1px;
   }
-  #header{border-bottom: 1px solid #E6E8E9;}
   #filestable thead{background-color: unset !important ;}
   #recommendations{height: 100px !important;}
   .recommendation{border: 1px solid #E6E8E9;padding: 10px !important;margin-bottom: 5px;border-radius: 6px !important;}
