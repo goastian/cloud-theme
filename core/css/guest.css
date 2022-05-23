@@ -801,11 +801,15 @@ form #selectDbType label span {
     user-select: text;
 }
 
-.body-login-container h2,
+.body-login-container h2
+{
+    color: #fff;
+    text-align: center;
+}
 .warning h2,
 .update h2,
 .error h2 {
-    color: #fff;
+    color: #333;
     text-align: center;
 }
 
@@ -899,8 +903,8 @@ p.info {
 }
 
 .update .appList {
-    list-style: disc;
-    text-align: left;
+    list-style: inside;
+    text-align: center;
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -1107,7 +1111,12 @@ a.legal {
     padding: 64px 44px;
     position: relative;
 }
-
+#body-login .warning-messsage {
+    width: 30%;
+    margin: 5% auto;
+    height: auto;
+    gap: 0;
+}
 #body-login #user,
 #body-login #password,
 #body-login .totp-form > input[type="tel"] {
@@ -1306,22 +1315,22 @@ a.legal {
     color: #FFFFFF;
     text-align: left;
 }
-.banner-content--1
+.banner-content-get-free-murena
 {
     font-weight: 700;
     font-size: 32px;
     line-height: 150%;
-    display: flex;
+    display: block;
     letter-spacing: -1px;
 }
-.banner-content--2
+.banner-content-why-murena
 {
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
     margin: 10% 0 15% 0;
 }
-.banner-content--3 button
+.banner-content-create-button button
 {
     border: 1px solid #FFFFFF;
     border-radius: 24px;
@@ -1329,7 +1338,7 @@ a.legal {
     color: white;
     width: 70%;
 }
-.banner-content--3 a
+.banner-content-create-button a
 {
     border: 1px solid #FFFFFF !important;
     border-radius: 24px !important;
@@ -1342,11 +1351,11 @@ a.legal {
     cursor: pointer;
     text-align: center;
 }
-.banner-content--3 a:hover{
+.banner-content-create-button a:hover{
     text-decoration: none !important;
     opacity: 0.9;
 }
-.banner-content--2 li {
+.banner-content-why-murena li {
     list-style: inside;
 }
 .v-align header{
@@ -1444,10 +1453,10 @@ a.legal {
         top: 15%;
         left: 10%;
     }
-    .banner-content--1{
+    .banner-content-get-free-murena{
         font-size: 26px;
     }
-    .banner-content--2{
+    .banner-content-why-murena{
         font-size: 14px;
     }
     footer{
