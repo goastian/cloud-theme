@@ -1392,12 +1392,15 @@ a.legal {
         box-ordinal-group: 2;
         width: 100%;
         position: relative;
+        height: 92%;
     }
     
     .v-align {
         -webkit-box-ordinal-group: 1;
         -moz-box-ordinal-group: 1;
         box-ordinal-group: 1;
+        width: 70%;
+        margin: 0 auto;
     }
     .wrapper{
         display: -webkit-box;
@@ -1406,5 +1409,43 @@ a.legal {
         -webkit-box-orient: vertical;
         -moz-box-orient: vertical;
         box-orient: vertical;
+    }
+    footer{
+        bottom: -100%;
+        background-color: white;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .v-align {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .banner-right-align{
+        height: 60%;
+    }
+    .banner-right-align .banner-content{
+        top: 15%;
+        left: 10%;
+    }
+    .banner-content--1{
+        font-size: 26px;
+    }
+    .banner-content--2{
+        font-size: 14px;
+    }
+    footer{
+        bottom: -70%;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .v-align {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .banner-right-align{
+        display: none;
+    }
+    footer {
+        bottom: 0;
     }
 }
