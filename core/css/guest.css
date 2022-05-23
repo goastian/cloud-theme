@@ -1405,6 +1405,9 @@ a.legal {
     font-size: 16px;
     line-height: 150%;
 }
+.pos-fixed{
+    position: fixed !important;
+}
 @media only screen and (max-width: 1440px) {
     .banner-right-align {
         width: 65%;
