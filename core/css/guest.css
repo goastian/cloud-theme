@@ -1329,6 +1329,23 @@ a.legal {
     color: white;
     width: 70%;
 }
+.banner-content--3 a
+{
+    border: 1px solid #FFFFFF !important;
+    border-radius: 24px !important;
+    background: transparent;
+    color: white !important;
+    width: 70% !important;
+    display: inline-block;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+.banner-content--3 a:hover{
+    text-decoration: none !important;
+    opacity: 0.9;
+}
 .banner-content--2 li {
     list-style: inside;
 }
