@@ -24,6 +24,7 @@ deploy:dev01:
   extends: .deploy:theme
   when: manual
   only:
+    - /^dev\/.*$/
     - master
     - main
   environment:
@@ -37,6 +38,7 @@ deploy:dev02:
   extends: .deploy:theme
   when: manual
   only:
+    - /^dev\/.*$/
     - master
     - main
   environment:
@@ -50,6 +52,7 @@ deploy:dev03:
   extends: .deploy:theme
   when: manual
   only:
+    - /^dev\/.*$/
     - master
     - main
   environment:
