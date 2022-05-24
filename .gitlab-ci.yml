@@ -16,7 +16,7 @@ include:
       - ssh $SSH_USER@$DEPLOYMENT_HOST "git clone --depth 1 $CI_REPOSITORY_URL --branch $DEPLOYMENT_BRANCH --single-branch /tmp/${CI_JOB_ID}/eCloud && sudo rsync -avzh --chown www-data:www-data --delete --exclude '.git*' /tmp/${CI_JOB_ID}/eCloud ${DEPLOYMENT_PATH}/html/themes/ && rm -rf /tmp/${CI_JOB_ID} && docker exec -u www-data $CONTAINER_NAME /usr/local/bin/php /var/www/html/occ maintenance:theme:update"
 
 deploy:production:
-  extends: .deploy:theme
+  extends: .deploy:nextcloud-app
   when: manual
   only:
     - production
