@@ -84,6 +84,22 @@ class OC_Theme {
 	public function getLogoClaim() {
 		return '';
 	}
+	
+	/**
+	 * Returns the terms and condition URL
+	 * @return string URL
+	 */
+	public function getTermsUrl() {
+		return 'https://murena.com/terms-conditions/';
+	}
+
+	/**
+	 * Returns the terms and condition URL
+	 * @return string URL
+	 */
+	public function getPrivacyUrl() {
+		return 'https://murena.com/privacy-policy/';
+	}
 
 	/**
 	 * Returns short version of the footer
@@ -91,8 +107,8 @@ class OC_Theme {
 	 */
 	public function getShortFooter() {
 		$footer = '© ' . date('Y') . ' <a href="' . $this->getBaseUrl() . '" target="_blank">' . $this->getName() . '</a>';
-		$footer .= ' . '.' <a href="' . $this->getBaseUrl() . '" target="_blank"> Terms & Conditions </a>';
-		$footer .= ' . '.' <a href="' . $this->getBaseUrl() . '" target="_blank"> Privacy policy </a>';
+		$footer .= ' . '.' <a href="' . $this->getTermsUrl() . '" target="_blank"> Terms & Conditions </a>';
+		$footer .= ' . '.' <a href="' . $this->getPrivacyUrl() . '" target="_blank"> Privacy policy </a>';
 		return $footer;
 	}
 
@@ -102,8 +118,8 @@ class OC_Theme {
 	 */
 	public function getLongFooter() {
 		$footer = '© ' . date('Y') . ' <a href="' . $this->getBaseUrl() . '" target="_blank">' . $this->getName() . '</a>' ;
-		$footer .= ' . '.' <a href="' . $this->getBaseUrl() . '" target="_blank"> Terms & Conditions </a>';
-		$footer .= ' . '.' <a href="' . $this->getBaseUrl() . '" target="_blank"> Privacy policy </a>';
+		$footer .= ' . '.' <a href="' . $this->getTermsUrl() . '" target="_blank"> Terms & Conditions </a>';
+		$footer .= ' . '.' <a href="' . $this->getPrivacyUrl() . '" target="_blank"> Privacy policy </a>';
 
 		return $footer;
 	}
