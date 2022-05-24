@@ -100,6 +100,17 @@ class OC_Theme {
 	public function getPrivacyUrl() {
 		return 'https://murena.com/privacy-policy/';
 	}
+	/**
+	 * Returns the signup URL
+	 * @return string URL
+	 */
+	public function getSignupURL() {
+		$footer = '© ' . date('Y') . ' <a href="' . $this->getBaseUrl() . '" target="_blank">' . $this->getName() . '</a>' ;
+		$footer .= ' . '.' <a href="' . $this->getTermsUrl() . '" target="_blank"> Terms & Conditions </a>';
+		$footer .= ' . '.' <a href="' . $this->getPrivacyUrl() . '" target="_blank"> Privacy policy </a>';
+
+		return $footer;
+	}
 
 	/**
 	 * Returns short version of the footer
