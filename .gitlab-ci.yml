@@ -3,9 +3,9 @@ stages:
 
 # Deploy stage
 include:
-    - project: 'e/infra/ecloud/nextcloud-apps/ci-templates'
-      ref: dev/template
-      file: 'auto-deploy-pipelines.yml'
+  - project: "e/infra/ecloud/nextcloud-apps/ci-templates"
+    ref: dev/template
+    file: "nc-apps-deploy.yml"
 
 .deploy:nextcloud-app:
     stage: deploy
