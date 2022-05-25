@@ -4,19 +4,15 @@ stages:
 # Deploy stage
 include:
   - project: "e/infra/ecloud/nextcloud-apps/ci-templates"
-    ref: dev/template
-    file: "nc-apps-deploy.yml"
+    ref: dev/nc-apps-checkout-deploy
+    file: "nc-apps-checkout-deploy.yml"
 
-.deploy:nextcloud-app:
-    stage: deploy
-    script:
-        # overriding script as all it needs is clone, copy and chown
-        # print var to confirm
-      - echo "Deploying to $CI_ENVIRONMENT_NAME ($DEPLOYMENT_HOST)"
-      - ssh $SSH_USER@$DEPLOYMENT_HOST "git clone --depth 1 $CI_REPOSITORY_URL --branch $DEPLOYMENT_BRANCH --single-branch /tmp/${CI_JOB_ID}/eCloud && sudo rsync -avzh --chown www-data:www-data --delete --exclude '.git*' /tmp/${CI_JOB_ID}/eCloud ${DEPLOYMENT_PATH}/html/themes/ && rm -rf /tmp/${CI_JOB_ID} && docker exec -u www-data $CONTAINER_NAME /usr/local/bin/php /var/www/html/occ maintenance:theme:update"
+.deploy:nextcloud-app-by-checkout:
+  stage: deploy
+  variables:
 
 deploy:production:
-  extends: .deploy:nextcloud-app
+  extends: .deploy:nextcloud-app-by-checkout
   when: manual
   only:
     - production
