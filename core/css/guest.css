@@ -4,13 +4,6 @@
 
 /* Default and reset */
 @font-face {
-    font-family: "Century Gothic Regular";
-    font-style: normal;
-    font-weight: normal;
-    src: local("Century Gothic Regular"),
-    url("../webfonts/GOTHIC.woff") format("woff");
-}
-@font-face {
     font-family: 'Montserrat';
     src: url('../webfonts/Montserrat.woff2') format('woff2'),
         url('../webfonts/Montserrat.woff') format('woff');
@@ -110,9 +103,12 @@ body {
 #body-login .wrapper .update.two-factor h3, 
 #body-login .wrapper .update.two-factor p, 
 #body-login .wrapper .two-factor-secondary {
-    color: white;
+    color: #808080;
 }
-
+#body-login .wrapper .two-factor-secondary{
+	border-color: #808080;
+    text-decoration: underline;
+}
 
 #body-login a:not(.button):hover,
 #body-login a:not(.button):focus {
@@ -582,7 +578,7 @@ form .warning input[type='checkbox'] + label {
 }
 
 .body-login-container.two-factor {
-    max-width: 290px;
+    max-width: 100%;
     margin: 15px auto 0;
 }
 
@@ -624,6 +620,8 @@ form .warning input[type='checkbox'] + label {
     width: 100px;
     display: block;
     margin: 0 auto;
+	background-color: gray;
+    border-radius: 10px;
 }
 
 .two-factor-submit {
@@ -1102,7 +1100,7 @@ a.legal {
     background-color: #ffffff !important;
     background-image: none !important;
     color: #808080;
-    font-family: "Century Gothic Regular";
+    font-family: "Montserrat";
 }
 #body-login .v-align {
     display: flex;
