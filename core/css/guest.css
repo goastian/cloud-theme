@@ -172,10 +172,10 @@ body {
 
 .wrapper {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     max-width: unset;
     margin-top: 0;
-    position: absolute;
+    display: inline;
 }
 
 /* Default FORM */
@@ -1071,6 +1071,7 @@ footer {
     position: absolute;
     bottom: 0;
     right: 0;
+    padding-bottom: 15px;
 }
 
 footer .info .entity-name {
@@ -1301,10 +1302,12 @@ a.legal {
     opacity: 0.9;
 }
 .banner-right-align {
+	text-align: left;
     display: flex;
+    align-items: center;
+    height: 100%;
     justify-content: center;
     vertical-align: middle;
-	height: 100%;
     float: left;
     width: 70%;
     background: linear-gradient(127.57deg, #FF7A00 3.94%, #ED1C61 76.89%);
@@ -1324,8 +1327,6 @@ a.legal {
     font-style: normal;
     color: #FFFFFF;
     text-align: left;
-    -ms-transform: translateY(30%);
-    transform: translateY(30%);
 }
 .banner-content-get-free-murena
 {
@@ -1433,7 +1434,7 @@ a.legal {
         box-ordinal-group: 2;
         width: 100%;
         position: relative;
-        height: 92%;
+        height: 85%;
     }
     
     .v-align {
@@ -1453,30 +1454,41 @@ a.legal {
     }
     footer{
         bottom: -100%;
-        background-color: white;
     }
+	.lines{
+		width: 30%;
+	}
 }
 @media only screen and (max-width: 640px) {
-    .v-align {
+	.wrapper{
+		position: relative;
+	}
+	#body-login .v-align{
         width: 90%;
         margin: 0 auto;
+		position: unset !important;
     }
     .banner-right-align{
-        height: 60%;
+        height: 50%;
     }
     .banner-right-align .banner-content{
-        top: 15%;
-        left: 10%;
+        margin-left: 10%;
+		-ms-transform: translateY(5%);
+    	transform: translateY(5%);
     }
     .banner-content-get-free-murena{
-        font-size: 26px;
+        font-size: 18px;
     }
     .banner-content-why-murena{
         font-size: 14px;
+		margin: 10% 0 10% 0;
     }
     footer{
-        bottom: -70%;
+        bottom: -60%;
     }
+	.lines{
+		display: none;
+	}
 }
 @media only screen and (max-width: 360px) {
     .v-align {
