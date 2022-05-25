@@ -1301,9 +1301,10 @@ a.legal {
     opacity: 0.9;
 }
 .banner-right-align {
-    height: 100%;
-    left: 0px;
-    top: 0px;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+	height: 100%;
     float: left;
     width: 70%;
     background: linear-gradient(127.57deg, #FF7A00 3.94%, #ED1C61 76.89%);
@@ -1312,16 +1313,19 @@ a.legal {
     background-image: url(../img/lines.png);
     background-repeat: no-repeat;
     height: 100%;
-    background-size: contain;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
 }
 .banner-content {
-    position: absolute;
-    top: 30%;
-    left: 20%;
-    font-family: 'Montserrat';
+	font-family: 'Montserrat';
     font-style: normal;
     color: #FFFFFF;
     text-align: left;
+    -ms-transform: translateY(30%);
+    transform: translateY(30%);
 }
 .banner-content-get-free-murena
 {
