@@ -1430,14 +1430,16 @@ a.legal {
     }
 }
 @media only screen and (max-width: 1050px) {
-  
+	#body-login .v-align{
+		height: 80%;
+	}
     .banner-right-align {
         -webkit-box-ordinal-group: 2;
         -moz-box-ordinal-group: 2;
         box-ordinal-group: 2;
         width: 100%;
         position: relative;
-        height: 85%;
+        height: 70%;
     }
     
     .v-align {
@@ -1456,7 +1458,7 @@ a.legal {
         box-orient: vertical;
     }
     footer{
-        bottom: -100%;
+		bottom: -100%;
     }
 	.lines{
 		width: 30%;
@@ -1487,7 +1489,7 @@ a.legal {
 		margin: 10% 0 10% 0;
     }
     footer{
-        bottom: -60%;
+        bottom: -40%;
     }
 	.lines{
 		display: none;
