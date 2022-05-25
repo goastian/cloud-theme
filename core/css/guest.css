@@ -1421,6 +1421,9 @@ a.legal {
 .pos-fixed{
     position: fixed !important;
 }
+.banner-content-get-free-murena p{
+	width: 75%;
+}
 @media only screen and (max-width: 1440px) {
     .banner-right-align {
         width: 65%;
