@@ -8,6 +8,8 @@ OC.L10N.register(
 		"Sync calendar and contacts with the cloud": "Sincroniza calendario y contactos con la nube",
 		"and many new features added regularly!": "¡y muchas características nuevas agregadas regularmente!",
 		"Create My Account": "Crear mi cuenta",
-		"Sign in to your account": "Iniciar sesión en su cuenta"
+		"Sign in to your account": "Iniciar sesión en su cuenta",
+		"Terms & Conditions": "Términos y condiciones",
+		"Privacy Policy": "Política de privacidad"
 },
 "nplurals=2; plural=(n != 1);");

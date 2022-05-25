@@ -41,7 +41,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getTitle() {
-		return '/e/';
+		return 'Murena';
 	}
 
 	/**
@@ -49,7 +49,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getName() {
-		return '/e/';
+		return 'Murena';
 	}
 
 	/**
@@ -57,7 +57,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getHTMLName() {
-		return '/e/';
+		return 'Murena';
 	}
 
 	/**
@@ -100,38 +100,25 @@ class OC_Theme {
 	public function getPrivacyUrl() {
 		return 'https://murena.com/privacy-policy/';
 	}
-	/**
-	 * Returns the signup URL
-	 * @return string URL
-	 */
-	public function getSignupURL() {
-		$footer = '© ' . date('Y') . ' <a href="' . $this->getBaseUrl() . '" target="_blank">' . $this->getName() . '</a>' ;
-		$footer .= ' . '.' <a href="' . $this->getTermsUrl() . '" target="_blank"> Terms & Conditions </a>';
-		$footer .= ' . '.' <a href="' . $this->getPrivacyUrl() . '" target="_blank"> Privacy policy </a>';
-
-		return $footer;
-	}
 
 	/**
 	 * Returns short version of the footer
 	 * @return string short footer
 	 */
 	public function getShortFooter() {
-		$footer = '© ' . date('Y') . ' <a href="' . $this->getBaseUrl() . '" target="_blank">' . $this->getName() . '</a>';
-		$footer .= ' . '.' <a href="' . $this->getTermsUrl() . '" target="_blank"> Terms & Conditions </a>';
-		$footer .= ' . '.' <a href="' . $this->getPrivacyUrl() . '" target="_blank"> Privacy policy </a>';
+		$footer = 'Copyright © ' . date('Y') . ' <a href="' . $this->getBaseUrl() . '" target="_blank">' . $this->getName() . '</a>' ;
+
 		return $footer;
 	}
-
 	/**
 	 * Returns long version of the footer
 	 * @return string long footer
 	 */
 	public function getLongFooter() {
-		$footer = '© ' . date('Y') . ' <a href="' . $this->getBaseUrl() . '" target="_blank">' . $this->getName() . '</a>' ;
-		$footer .= ' . '.' <a href="' . $this->getTermsUrl() . '" target="_blank"> Terms & Conditions </a>';
-		$footer .= ' . '.' <a href="' . $this->getPrivacyUrl() . '" target="_blank"> Privacy policy </a>';
-
+		$footer = '<p>Copyright © ' . date('Y') .' '.$this->getName() .'. All Rights Reserved.</p>' ;
+		$footer .= '<p>'.' <a href="' . $this->getTermsUrl() . '" target="_blank"> '.(\OC::$server->getL10N('lib')->t('Terms & Conditions')).' </a>';
+		$footer .= ' - '.' <a href="' . $this->getPrivacyUrl() . '" target="_blank"> '.(\OC::$server->getL10N('lib')->t('Privacy Policy')).' </a> </p>';
+		
 		return $footer;
 	}
 
