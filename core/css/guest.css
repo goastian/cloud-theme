@@ -1,6 +1,4 @@
-/* Copyright (c) 2011, Jan-Christoph Borchardt, http://jancborchardt.net
- This file is licensed under the Affero General Public License version 3 or later.
- See the COPYING-README file. */
+/* Copyright (c) 2022, Murena. AGPLv3 license */
 
 /* Default and reset */
 @font-face {
@@ -1213,7 +1211,6 @@ a.legal {
 #body-login fieldset {
     width: auto;
     margin: 0;
-    overflow-x: hidden;
 }
 
 #body-login footer .info,
