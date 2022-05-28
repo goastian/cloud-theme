@@ -1708,3 +1708,9 @@
   progress{border-radius: 10px 10px !important;height: 12px !important;}
   #appmenu li a:focus .icon-more, #appmenu li a:focus .icon-more-white {transform: none !important;}
   #more-apps:hover span, #more-apps:focus span, #more-apps a:focus span{display: none !important;}
+  button#quotaincreasebutton {
+    margin-top: 15px !important;
+  }
+  #quota a.icon-quota.svg {
+    background-position-y: 38%;
+  }
