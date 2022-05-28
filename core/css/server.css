@@ -1714,3 +1714,13 @@
   .warning-messsage footer {
     position: fixed;
   }
+  @media only screen and (max-width: 640px) {
+	.new-icons .color-icons {
+		height: 50px;
+		background-size: 40px;
+	}
+	#launcher-menu {
+		width: 300px;
+		left: 10%;
+	}
+  }
