@@ -1695,6 +1695,8 @@
   .new-icons .spreadsheet {background-image: url("../img/app-icons/Spreadsheet.svg");}
   .new-icons .tasks {background-image: url("../img/app-icons/Tasks.svg");}
   .new-icons .photos {background-image: url("../img/app-icons/Gallery.svg");}
+  .new-icons .e-user-support-center {background-image: url("../img/app-icons/Support.svg");}
+  /* .new-icons .passwords {background-image: url("../img/app-icons/Password.svg");} */
   #appmenu li:hover a, #appmenu li a:focus {
 	font-size: 12px;
 	font-family: 'Roboto';
