@@ -1460,6 +1460,9 @@ a.legal {
 	.lines{
 		width: 30%;
 	}
+	#body-login .warning-messsage {
+		width: 50%;
+	}
 }
 @media only screen and (max-width: 640px) {
 	.wrapper{
@@ -1491,6 +1494,9 @@ a.legal {
 	.lines{
 		display: none;
 	}
+	#body-login .warning-messsage {
+		width: 80%;
+	}
 }
 @media only screen and (max-width: 360px) {
     .v-align {
@@ -1503,4 +1509,7 @@ a.legal {
     footer {
         bottom: 0;
     }
+	#body-login .warning-messsage {
+		width: 90%;
+	}
 }
