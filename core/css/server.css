@@ -1711,3 +1711,6 @@
   button#quotaincreasebutton {
     margin-top: 15px !important;
   }
+  .warning-messsage footer {
+    position: fixed;
+  }
