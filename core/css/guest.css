@@ -4,13 +4,14 @@
 
 /* Default and reset */
 @font-face {
-    font-family: "Century Gothic Regular";
-    font-style: normal;
-    font-weight: normal;
-    src: local("Century Gothic Regular"),
-    url("../webfonts/GOTHIC.woff") format("woff");
-}
-
+    font-family: 'Montserrat';
+    src: url('../webfonts/Montserrat.woff2') format('woff2'),
+        url('../webfonts/Montserrat.woff') format('woff');
+    /* font-weight: 600; */
+    /* font-style: normal; */
+    font-display: swap;
+    letter-spacing: 1px;	
+ }
 /* Mobile font sizes */
 @media screen and (max-width: 768px) {
     #body-login #user, #body-login #password {
@@ -29,6 +30,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     font-family: inherit;
     vertical-align: baseline;
     cursor: default;
+	font-family: 'Montserrat';
 }
 
 html {
@@ -101,9 +103,12 @@ body {
 #body-login .wrapper .update.two-factor h3, 
 #body-login .wrapper .update.two-factor p, 
 #body-login .wrapper .two-factor-secondary {
-    color: white;
+    color: #808080;
 }
-
+#body-login .wrapper .two-factor-secondary{
+	border-color: #808080;
+    text-decoration: underline;
+}
 
 #body-login a:not(.button):hover,
 #body-login a:not(.button):focus {
@@ -151,7 +156,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100px;
     background-position: center;
-    width: 256px;
+    width: 180px;
     min-height: 128px;
     max-height: 200px;
     margin: 0 auto;
@@ -166,9 +171,11 @@ body {
 }
 
 .wrapper {
-    width: 96%;
-    max-width: 500px;
-    margin-top: 10vh;
+    width: 100%;
+    height: 100vh;
+    max-width: unset;
+    margin-top: 0;
+    display: inline;
 }
 
 /* Default FORM */
@@ -571,7 +578,7 @@ form .warning input[type='checkbox'] + label {
 }
 
 .body-login-container.two-factor {
-    max-width: 290px;
+    max-width: 100%;
     margin: 15px auto 0;
 }
 
@@ -613,6 +620,8 @@ form .warning input[type='checkbox'] + label {
     width: 100px;
     display: block;
     margin: 0 auto;
+	background-color: gray;
+    border-radius: 10px;
 }
 
 .two-factor-submit {
@@ -799,11 +808,15 @@ form #selectDbType label span {
     user-select: text;
 }
 
-.body-login-container h2,
+.body-login-container h2
+{
+    color: #fff;
+    text-align: center;
+}
 .warning h2,
 .update h2,
 .error h2 {
-    color: #fff;
+    color: #333;
     text-align: center;
 }
 
@@ -897,8 +910,8 @@ p.info {
 }
 
 .update .appList {
-    list-style: disc;
-    text-align: left;
+    list-style: inside;
+    text-align: center;
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -1054,7 +1067,11 @@ img.icon-loading-small-dark, object.icon-loading-small-dark, video.icon-loading-
 /* FOOTER */
 footer {
     height: 70px;
-    margin-top: auto;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 15px;
 }
 
 footer .info .entity-name {
@@ -1084,26 +1101,41 @@ a.legal {
     background-color: #ffffff !important;
     background-image: none !important;
     color: #808080;
-    font-family: "Century Gothic Regular";
+    font-family: "Montserrat";
 }
 #body-login .v-align {
-    border: 1px solid #DCDCDC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    height: 100%;
+    background: #FFFFFF;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
     box-sizing: border-box;
-    border-radius: 8px;
-    margin: 32px 0px;
     padding: 64px 44px;
+    position: relative;
 }
-
+#body-login .warning-messsage {
+    width: 30%;
+    margin: 5% auto;
+    height: auto;
+    gap: 0;
+}
 #body-login #user,
 #body-login #password,
 #body-login .totp-form > input[type="tel"] {
     padding: 12px 16px;
-    width: 424px;
+    width: 100%;
     height: 48px;
     border: 1px solid #E6E8E9;
     box-sizing: border-box;
     border-radius: 8px;
     margin: 12px 0px;
+    font-size: 16px;
 }
 
 #body-login .groupbottom,
@@ -1120,7 +1152,7 @@ a.legal {
 #body-login #submit-wrapper,
 #body-login #reset-password-wrapper {
     background-color: #ffffff;
-    margin-top: 26px;
+    margin-top: 0px;
 }
 
 #body-login #submit-form,
@@ -1148,15 +1180,34 @@ a.legal {
 
 #body-login #submit-form,
 #body-login .two-factor-submit {
-    width: 190px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+    width: 100%;
+    height: 42px;
+    background: #0086FF;
+    border-radius: 24px;
+    font-size: 16px;
 }
 
 #body-login #reset-password-submit {
-    width: 220px;
-}
-
-#body-login form {
-    margin-top: 50px;
+    /* width: 220px; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+    width: 100%;
+    height: 42px;
+    background: #0086FF;
+    border-radius: 24px;
+    font-size: 16px;
 }
 
 #body-login fieldset {
@@ -1187,32 +1238,34 @@ a.legal {
 }
 
 #body-login #submit-wrapper .submit-icon {
-    top: 32px;
+    top: 45px;
     right: 30%;
 }
 
 #reset-password-wrapper .submit-icon {
-    top: 32px;
-    right: 25%;
+    top: 45px;
+    right: 30%;
 }
 
 #body-login .warning,
 #body-login .error {
     max-width: 100%;
-    color: white;
-    background-color: #fb3845;
+    color: #fb3845;
+    background-color: white;
     font-size: 1.1em;
     text-align: center;
+    border: 1px solid;
 }
 
 #body-login .update,
 #body-login .success {
-    color: white;
-    background-color: #3ad975;
+    color: #029f3c;
+    background-color: white;
     justify-content: center !important;
     width: 92%;
     margin-left: 0;
     margin-right: 0;
+    border: 1px solid;
 }
 
 /* #body-login #user:hover,
@@ -1247,4 +1300,210 @@ a.legal {
 #body-login #reset-password-submit:hover,
 #body-login .two-factor-submit:hover {
     opacity: 0.9;
+}
+.banner-right-align {
+	text-align: left;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    vertical-align: middle;
+    float: left;
+    width: 70%;
+    background: linear-gradient(127.57deg, #FF7A00 3.94%, #ED1C61 76.89%);
+}
+.lines{
+    background-image: url(../img/lines.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+}
+.banner-content {
+	font-family: 'Montserrat';
+    font-style: normal;
+    color: #FFFFFF;
+    text-align: left;
+}
+.banner-content-get-free-murena
+{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    display: block;
+    letter-spacing: -1px;
+}
+.banner-content-why-murena
+{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    margin: 10% 0 15% 0;
+}
+.banner-content-create-button button
+{
+    border: 1px solid #FFFFFF;
+    border-radius: 24px;
+    background: transparent;
+    color: white;
+    width: 70%;
+}
+.banner-content-create-button a
+{
+    border: 1px solid #FFFFFF !important;
+    border-radius: 24px !important;
+    background: transparent;
+    color: white !important;
+    width: 70% !important;
+    display: inline-block;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+.banner-content-create-button a:hover{
+    text-decoration: none !important;
+    opacity: 0.9;
+}
+.banner-content-why-murena li {
+    list-style: inside;
+}
+.v-align header{
+    width: 100%;
+}
+.sign-in-label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    letter-spacing: -0.44px;
+    color: #333333;
+}
+.v-align main
+{
+    width: 100%;
+    margin: 0 auto;
+}
+#lost-password{
+    color: #0086FF !important;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 150%;
+}
+ .v-align main .grouptop, .v-align main .groupbottom{
+    position: relative;
+    margin: 10px 0;
+}
+.v-align main .grouptop input, .v-align main .groupbottom input
+{
+    padding: 12px 16px;
+    width: 424px;
+    height: 48px;
+    border: 1px solid #E6E8E9;
+    box-sizing: border-box;
+    margin: 12px 0px;
+    border-bottom: 1px solid #E6E8E9 !important;
+    border-bottom-left-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    border-top-left-radius: 8px !important;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+.pos-fixed{
+    position: fixed !important;
+}
+.banner-content-get-free-murena p{
+	width: 75%;
+}
+@media only screen and (max-width: 1440px) {
+    .banner-right-align {
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 1050px) {
+	#body-login .v-align{
+		height: 80%;
+	}
+    .banner-right-align {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        box-ordinal-group: 2;
+        width: 100%;
+        position: relative;
+        height: 70%;
+    }
+    
+    .v-align {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        box-ordinal-group: 1;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .wrapper{
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+    }
+    footer{
+		bottom: -100%;
+    }
+	.lines{
+		width: 30%;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.wrapper{
+		position: relative;
+	}
+	#body-login .v-align{
+        width: 90%;
+        margin: 0 auto;
+		position: unset !important;
+    }
+    .banner-right-align{
+        height: 50%;
+    }
+    .banner-right-align .banner-content{
+        margin-left: 10%;
+		-ms-transform: translateY(5%);
+    	transform: translateY(5%);
+    }
+    .banner-content-get-free-murena{
+        font-size: 18px;
+    }
+    .banner-content-why-murena{
+        font-size: 14px;
+		margin: 10% 0 10% 0;
+    }
+    footer{
+        bottom: -40%;
+    }
+	.lines{
+		display: none;
+	}
+}
+@media only screen and (max-width: 360px) {
+    .v-align {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .banner-right-align{
+        display: none;
+    }
+    footer {
+        bottom: 0;
+    }
 }
