@@ -1,5 +1,6 @@
-{
-	"translations": {
+OC.L10N.register(
+    "core",
+    {
 		"Get your FREE Murena account now" : "Get your FREE Murena account now",
 		"1GB storage for FREE to store and sync your pictures & videos.": "1GB storage for FREE to store and sync your pictures & videos.",
 		"Edit your documents online.": "Edit your documents online.",
@@ -9,7 +10,8 @@
 		"Create My Account": "Create My Account",
 		"Sign in to your account": "Sign in to your account",
 		"Terms & Conditions": "Terms & Conditions",
-		"Privacy Policy": "Privacy Policy"
-    },
-	"pluralForm": "nplurals=2; plural=(n != 1);"
-}
+		"Privacy Policy": "Privacy Policy",
+		"All Rights Reserved": "All Rights Reserved",
+		"Copyright": "Copyright"
+},
+"nplurals=2; plural=(n != 1);");

@@ -10,6 +10,8 @@ OC.L10N.register(
 		"Create My Account": "Créer mon compte",
 		"Sign in to your account": "Connectez-vous à votre compte",
 		"Terms & Conditions": "termes et conditions",
-		"Privacy Policy": "Politique de confidentialité"
+		"Privacy Policy": "Politique de confidentialité",
+		"All Rights Reserved": "Tous les droits sont réservés",
+		"Copyright": "droits d'auteur"
 },
 "nplurals=2; plural=(n != 1);");
