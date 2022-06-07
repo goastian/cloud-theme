@@ -10,6 +10,8 @@ OC.L10N.register(
 		"Create My Account": "Erstelle meinen Account",
 		"Sign in to your account": "Melden Sie sich bei Ihrem Konto an",
 		"Terms & Conditions": "algemene voorwaarden",
-		"Privacy Policy": "Privacybeleid"
+		"Privacy Policy": "Privacybeleid",
+		"All Rights Reserved": "Alle rechten voorbehouden",
+		"Copyright": "Auteursrechten"
 },
 "nplurals=2; plural=(n != 1);");
