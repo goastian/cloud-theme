@@ -1108,7 +1108,7 @@ a.legal {
     align-items: flex-start;
     gap: 40px;
     height: 100%;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     flex: none;
     order: 0;
     align-self: stretch;
@@ -1134,6 +1134,7 @@ a.legal {
     border-radius: 8px;
     margin: 12px 0px;
     font-size: 16px;
+	background-color: #ffffff;
 }
 
 #body-login .groupbottom,
