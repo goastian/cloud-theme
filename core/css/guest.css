@@ -1066,7 +1066,6 @@ img.icon-loading-small-dark, object.icon-loading-small-dark, video.icon-loading-
 footer {
     height: 70px;
     width: 100%;
-    /* position: absolute; */
     bottom: 0;
     right: 0;
     padding-bottom: 15px;
