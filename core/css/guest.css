@@ -1121,12 +1121,14 @@ a.legal {
     position: relative;
     overflow: auto;
     max-height: 100%;
+    transition: 1s;
 }
 #body-login .warning-messsage {
     width: 30%;
     margin: 5% auto;
     height: auto;
     gap: 0;
+    overflow: hidden;
 }
 #body-login #user,
 #body-login #password,
@@ -1314,6 +1316,7 @@ a.legal {
     float: left;
     width: 70%;
     background: linear-gradient(127.57deg, #FF7A00 3.94%, #ED1C61 76.89%);
+	transition: 1s;
 }
 .lines{
     background-image: url(../img/lines.png);
@@ -1529,4 +1532,7 @@ a.legal {
     #body-login .warning-messsage {
         width: 90%;
 	}
+}
+.width0{
+	width: 0;
 }
