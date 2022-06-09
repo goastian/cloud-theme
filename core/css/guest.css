@@ -1069,11 +1069,11 @@ img.icon-loading-small-dark, object.icon-loading-small-dark, video.icon-loading-
 footer {
     height: 70px;
     width: 100%;
+	background-color: #ffffff;
+	margin-top: 15%;
     bottom: 0;
     right: 0;
     padding-bottom: 15px;
-	background-color: #ffffff;
-	margin-top: 15%;
 }
 
 footer .info .entity-name {
