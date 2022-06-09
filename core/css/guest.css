@@ -1506,12 +1506,12 @@ a.legal {
         position: fixed;
         height: auto;
     }
-	.lines{
+    .lines{
         display: none;
 	}
-	#body-login .warning-messsage {
+    #body-login .warning-messsage {
         width: 80%;
-	}
+    }
 }
 @media only screen and (max-width: 360px) {
     .v-align {
@@ -1526,7 +1526,7 @@ a.legal {
         position: fixed;
         height: auto;
     }
-	#body-login .warning-messsage {
+    #body-login .warning-messsage {
         width: 90%;
 	}
 }
