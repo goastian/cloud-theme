@@ -1435,8 +1435,8 @@ a.legal {
 }
 @media only screen and (max-width: 1050px) {
 	#body-login .v-align{
-		height: 80%;
-		overflow: hidden;
+        height: 80%;
+        overflow: hidden;
 	}
     .banner-right-align {
         -webkit-box-ordinal-group: 2;
@@ -1447,7 +1447,7 @@ a.legal {
         height: 90%;
     }
 	.banner-content-create-button{
-		text-align: center;
+        text-align: center;
 	}
     
     .v-align {
