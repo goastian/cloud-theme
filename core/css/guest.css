@@ -96,6 +96,9 @@ body {
     color: #808080;
 }
 
+#body-login .toggle-password {
+	background-color: #ffffff;
+}
 
 #body-login .wrapper .update.two-factor a, 
 #body-login .wrapper .update.two-factor h3, 
@@ -1117,6 +1120,7 @@ a.legal {
     padding: 15vh 5vh;
     position: relative;
 	overflow: auto;
+    max-height: 100%;
 }
 #body-login .warning-messsage {
     width: 30%;
@@ -1372,7 +1376,7 @@ a.legal {
 }
 .v-align header{
     width: 100%;
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 }
 .sign-in-label {
     font-family: 'Montserrat';
@@ -1440,7 +1444,7 @@ a.legal {
         box-ordinal-group: 2;
         width: 100%;
         position: relative;
-        height: 80%;
+        height: 90%;
     }
 	.banner-content-create-button{
 		text-align: center;
@@ -1488,6 +1492,7 @@ a.legal {
     }
     .banner-right-align .banner-content{
         margin-left: 10%;
+		margin-top: -25%;
     }
     .banner-content-get-free-murena{
         font-size: 18px;
