@@ -8,7 +8,7 @@
     /* font-weight: 600; */
     /* font-style: normal; */
     font-display: swap;
-    letter-spacing: 1px;	
+    letter-spacing: 1px;    
  }
 /* Mobile font sizes */
 @media screen and (max-width: 768px) {
@@ -28,7 +28,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     font-family: inherit;
     vertical-align: baseline;
     cursor: default;
-	font-family: 'Montserrat';
+    font-family: 'Montserrat';
 }
 
 html {
@@ -97,7 +97,7 @@ body {
 }
 
 #body-login .toggle-password {
-	background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 #body-login .wrapper .update.two-factor a, 
@@ -107,7 +107,7 @@ body {
     color: #808080;
 }
 #body-login .wrapper .two-factor-secondary{
-	border-color: #808080;
+    border-color: #808080;
     text-decoration: underline;
 }
 
@@ -1470,25 +1470,25 @@ a.legal {
     }
     footer{
         bottom: 0;
-		position: fixed;
-		height: auto;
+        position: fixed;
+        height: auto;
     }
-	.lines{
-		width: 30%;
-	}
-	#body-login .warning-messsage {
-		width: 50%;
-	}
+    .lines{
+        width: 30%;
+    }
+    #body-login .warning-messsage {
+        width: 50%;
+    }
 }
 @media only screen and (max-width: 640px) {
-	.wrapper{
-		position: relative;
-	}
-	#body-login .v-align{
+    .wrapper{
+        position: relative;
+    }
+    #body-login .v-align{
         width: 100%;
         margin: 0 auto;
-		overflow: hidden;
-		position: unset !important;
+        overflow: hidden;
+        position: unset !important;
     }
     .banner-right-align{
         height: 60%;
@@ -1511,7 +1511,7 @@ a.legal {
     }
     .lines{
         display: none;
-	}
+    }
     #body-login .warning-messsage {
         width: 80%;
     }
@@ -1531,8 +1531,8 @@ a.legal {
     }
     #body-login .warning-messsage {
         width: 90%;
-	}
+    }
 }
 .width0{
-	width: 0;
+    width: 0;
 }
