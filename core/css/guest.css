@@ -1066,10 +1066,12 @@ img.icon-loading-small-dark, object.icon-loading-small-dark, video.icon-loading-
 footer {
     height: 70px;
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     right: 0;
     padding-bottom: 15px;
+	background-color: #ffffff;
+	margin-top: 15%;
 }
 
 footer .info .entity-name {
@@ -1106,16 +1108,16 @@ a.legal {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 40px;
-    height: 100%;
+    height: auto;
     background-color: #FFFFFF;
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
     box-sizing: border-box;
-    padding: 64px 44px;
+    padding: 15vh 5vh;
     position: relative;
+	overflow: auto;
 }
 #body-login .warning-messsage {
     width: 30%;
@@ -1371,6 +1373,7 @@ a.legal {
 }
 .v-align header{
     width: 100%;
+	margin-bottom: 10%;
 }
 .sign-in-label {
     font-family: 'Montserrat';
@@ -1430,6 +1433,7 @@ a.legal {
 @media only screen and (max-width: 1050px) {
 	#body-login .v-align{
 		height: 80%;
+		overflow: hidden;
 	}
     .banner-right-align {
         -webkit-box-ordinal-group: 2;
@@ -1437,8 +1441,11 @@ a.legal {
         box-ordinal-group: 2;
         width: 100%;
         position: relative;
-        height: 70%;
+        height: 80%;
     }
+	.banner-content-create-button{
+		text-align: center;
+	}
     
     .v-align {
         -webkit-box-ordinal-group: 1;
@@ -1456,7 +1463,9 @@ a.legal {
         box-orient: vertical;
     }
     footer{
-		bottom: -100%;
+		bottom: 0;
+		position: fixed;
+		height: auto;
     }
 	.lines{
 		width: 30%;
@@ -1470,17 +1479,16 @@ a.legal {
 		position: relative;
 	}
 	#body-login .v-align{
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
+		overflow: hidden;
 		position: unset !important;
     }
     .banner-right-align{
-        height: 50%;
+        height: 60%;
     }
     .banner-right-align .banner-content{
         margin-left: 10%;
-		-ms-transform: translateY(5%);
-    	transform: translateY(5%);
     }
     .banner-content-get-free-murena{
         font-size: 18px;
@@ -1490,7 +1498,9 @@ a.legal {
 		margin: 10% 0 10% 0;
     }
     footer{
-        bottom: -40%;
+		bottom: 0;
+		position: fixed;
+		height: auto;
     }
 	.lines{
 		display: none;
@@ -1508,7 +1518,9 @@ a.legal {
         display: none;
     }
     footer {
-        bottom: 0;
+		bottom: 0;
+		position: fixed;
+		height: auto;
     }
 	#body-login .warning-messsage {
 		width: 90%;
