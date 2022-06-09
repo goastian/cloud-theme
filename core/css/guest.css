@@ -1119,7 +1119,7 @@ a.legal {
     box-sizing: border-box;
     padding: 15vh 5vh;
     position: relative;
-	overflow: auto;
+    overflow: auto;
     max-height: 100%;
 }
 #body-login .warning-messsage {
@@ -1492,25 +1492,25 @@ a.legal {
     }
     .banner-right-align .banner-content{
         margin-left: 10%;
-		margin-top: -25%;
+        margin-top: -25%;
     }
     .banner-content-get-free-murena{
         font-size: 18px;
     }
     .banner-content-why-murena{
         font-size: 14px;
-		margin: 10% 0 10% 0;
+        margin: 10% 0 10% 0;
     }
     footer{
-		bottom: 0;
-		position: fixed;
-		height: auto;
+        bottom: 0;
+        position: fixed;
+        height: auto;
     }
 	.lines{
-		display: none;
+        display: none;
 	}
 	#body-login .warning-messsage {
-		width: 80%;
+        width: 80%;
 	}
 }
 @media only screen and (max-width: 360px) {
@@ -1522,11 +1522,11 @@ a.legal {
         display: none;
     }
     footer {
-		bottom: 0;
-		position: fixed;
-		height: auto;
+        bottom: 0;
+        position: fixed;
+        height: auto;
     }
 	#body-login .warning-messsage {
-		width: 90%;
+        width: 90%;
 	}
 }
