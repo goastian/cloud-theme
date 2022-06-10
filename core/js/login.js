@@ -1,5 +1,5 @@
 $(document).on('click','#lost-password', function(){
-	$('.banner-content').hide('fast');
+	$('.banner-content').hide('slow');
 	$('.banner-right-align').addClass('width0');
 	$('.lines').hide();
 	$('.v-align').addClass('warning-messsage');

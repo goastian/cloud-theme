@@ -1121,7 +1121,7 @@ a.legal {
     position: relative;
     overflow: auto;
     max-height: 100%;
-    transition: all 1s linear;
+    transition: all 0.3s linear;
 }
 #body-login .warning-messsage {
     width: 30%;
