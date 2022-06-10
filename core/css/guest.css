@@ -8,7 +8,7 @@
     /* font-weight: 600; */
     /* font-style: normal; */
     font-display: swap;
-    letter-spacing: 1px;	
+    letter-spacing: 1px;    
  }
 /* Mobile font sizes */
 @media screen and (max-width: 768px) {
@@ -28,7 +28,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     font-family: inherit;
     vertical-align: baseline;
     cursor: default;
-	font-family: 'Montserrat';
+    font-family: 'Montserrat';
 }
 
 html {
@@ -96,6 +96,9 @@ body {
     color: #808080;
 }
 
+#body-login .toggle-password {
+    background-color: #ffffff;
+}
 
 #body-login .wrapper .update.two-factor a, 
 #body-login .wrapper .update.two-factor h3, 
@@ -104,7 +107,7 @@ body {
     color: #808080;
 }
 #body-login .wrapper .two-factor-secondary{
-	border-color: #808080;
+    border-color: #808080;
     text-decoration: underline;
 }
 
@@ -618,7 +621,7 @@ form .warning input[type='checkbox'] + label {
     width: 100px;
     display: block;
     margin: 0 auto;
-	background-color: gray;
+    background-color: gray;
     border-radius: 10px;
 }
 
@@ -1066,7 +1069,8 @@ img.icon-loading-small-dark, object.icon-loading-small-dark, video.icon-loading-
 footer {
     height: 70px;
     width: 100%;
-    position: absolute;
+    background-color: #ffffff;
+    margin-top: 15%;
     bottom: 0;
     right: 0;
     padding-bottom: 15px;
@@ -1106,22 +1110,25 @@ a.legal {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 40px;
-    height: 100%;
+    height: auto;
     background-color: #FFFFFF;
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
     box-sizing: border-box;
-    padding: 64px 44px;
+    padding: 15vh 5vh;
     position: relative;
+    overflow: auto;
+    max-height: 100%;
+    transition: all 0.3s linear;
 }
 #body-login .warning-messsage {
     width: 30%;
     margin: 5% auto;
     height: auto;
     gap: 0;
+    overflow: hidden;
 }
 #body-login #user,
 #body-login #password,
@@ -1134,7 +1141,7 @@ a.legal {
     border-radius: 8px;
     margin: 12px 0px;
     font-size: 16px;
-	background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 #body-login .groupbottom,
@@ -1157,7 +1164,7 @@ a.legal {
 #body-login #submit-form,
 #body-login #reset-password-submit,
 #body-login .two-factor-submit {
-	color: white;
+    color: white;
     border: none;
     justify-content: center;
     align-items: center;
@@ -1286,7 +1293,7 @@ a.legal {
 #body-login #header .logo {
     background-image: url("../img/logo@2x.svg");
     margin-top: 0.5em;
-	background-size: contain;
+    background-size: contain;
 }
 
 #body-login .lost-password-container .update {
@@ -1300,7 +1307,7 @@ a.legal {
     opacity: 0.9;
 }
 .banner-right-align {
-	text-align: left;
+    text-align: left;
     display: flex;
     align-items: center;
     height: 100%;
@@ -1309,6 +1316,7 @@ a.legal {
     float: left;
     width: 70%;
     background: linear-gradient(127.57deg, #FF7A00 3.94%, #ED1C61 76.89%);
+    transition: 1s;
 }
 .lines{
     background-image: url(../img/lines.png);
@@ -1321,7 +1329,7 @@ a.legal {
     width: 20%;
 }
 .banner-content {
-	font-family: 'Montserrat';
+    font-family: 'Montserrat';
     font-style: normal;
     color: #FFFFFF;
     text-align: left;
@@ -1371,6 +1379,7 @@ a.legal {
 }
 .v-align header{
     width: 100%;
+    margin-bottom: 5%;
 }
 .sign-in-label {
     font-family: 'Montserrat';
@@ -1420,7 +1429,7 @@ a.legal {
     position: fixed !important;
 }
 .banner-content-get-free-murena p{
-	width: 75%;
+    width: 75%;
 }
 @media only screen and (max-width: 1440px) {
     .banner-right-align {
@@ -1428,16 +1437,20 @@ a.legal {
     }
 }
 @media only screen and (max-width: 1050px) {
-	#body-login .v-align{
-		height: 80%;
-	}
+    #body-login .v-align{
+        height: 80%;
+        overflow: hidden;
+    }
     .banner-right-align {
         -webkit-box-ordinal-group: 2;
         -moz-box-ordinal-group: 2;
         box-ordinal-group: 2;
         width: 100%;
         position: relative;
-        height: 70%;
+        height: 90%;
+    }
+    .banner-content-create-button{
+        text-align: center;
     }
     
     .v-align {
@@ -1456,48 +1469,52 @@ a.legal {
         box-orient: vertical;
     }
     footer{
-		bottom: -100%;
+        bottom: 0;
+        position: fixed;
+        height: auto;
     }
-	.lines{
-		width: 30%;
-	}
-	#body-login .warning-messsage {
-		width: 50%;
-	}
+    .lines{
+        width: 30%;
+    }
+    #body-login .warning-messsage {
+        width: 50%;
+    }
 }
 @media only screen and (max-width: 640px) {
-	.wrapper{
-		position: relative;
-	}
-	#body-login .v-align{
-        width: 90%;
+    .wrapper{
+        position: relative;
+    }
+    #body-login .v-align{
+        width: 100%;
         margin: 0 auto;
-		position: unset !important;
+        overflow: hidden;
+        position: unset !important;
     }
     .banner-right-align{
-        height: 50%;
+        height: 60%;
     }
     .banner-right-align .banner-content{
         margin-left: 10%;
-		-ms-transform: translateY(5%);
-    	transform: translateY(5%);
+        margin-top: -25%;
     }
     .banner-content-get-free-murena{
         font-size: 18px;
     }
     .banner-content-why-murena{
         font-size: 14px;
-		margin: 10% 0 10% 0;
+        margin: 10% 0 10% 0;
     }
     footer{
-        bottom: -40%;
+        bottom: 0;
+        position: fixed;
+        height: auto;
     }
-	.lines{
-		display: none;
-	}
-	#body-login .warning-messsage {
-		width: 80%;
-	}
+    .lines{
+        display: none;
+    }
+    #body-login .warning-messsage {
+        width: 80%;
+    }
 }
 @media only screen and (max-width: 360px) {
     .v-align {
@@ -1509,8 +1526,13 @@ a.legal {
     }
     footer {
         bottom: 0;
+        position: fixed;
+        height: auto;
     }
-	#body-login .warning-messsage {
-		width: 90%;
-	}
+    #body-login .warning-messsage {
+        width: 90%;
+    }
+}
+.width0{
+    width: 0;
 }
