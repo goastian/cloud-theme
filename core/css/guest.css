@@ -1070,7 +1070,7 @@ footer {
     height: 70px;
     width: 100%;
     background-color: #ffffff;
-    margin-top: 15%;
+    /* position: absolute; */
     bottom: 0;
     right: 0;
     padding-bottom: 15px;
@@ -1106,18 +1106,19 @@ a.legal {
     font-family: "Montserrat";
 }
 #body-login .v-align {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    height: auto;
+    height: 100%;
     background-color: #FFFFFF;
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
     box-sizing: border-box;
-    padding: 15vh 5vh;
+    padding: 5vh;
     position: relative;
     overflow: auto;
     max-height: 100%;
@@ -1126,9 +1127,10 @@ a.legal {
 #body-login .warning-messsage {
     width: 30%;
     margin: 5% auto;
-    height: auto;
+    height: 80%;
     gap: 0;
-    overflow: hidden;
+    overflow: auto;
+    margin-top: 0%;
 }
 #body-login #user,
 #body-login #password,
@@ -1379,7 +1381,7 @@ a.legal {
 }
 .v-align header{
     width: 100%;
-    margin-bottom: 5%;
+    margin-top: 10vh;
 }
 .sign-in-label {
     font-family: 'Montserrat';
@@ -1389,10 +1391,10 @@ a.legal {
     letter-spacing: -0.44px;
     color: #333333;
 }
-.v-align main
-{
+.v-align main{
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 10vh;
 }
 #lost-password{
     color: #0086FF !important;
