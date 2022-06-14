@@ -1072,7 +1072,7 @@ footer {
     right: 5%;
     bottom: 0;
     padding-bottom: 15px;
-	max-width: 350px;
+    max-width: 350px;
 }
 
 footer .info .entity-name {
@@ -1333,7 +1333,7 @@ a.legal {
     font-style: normal;
     color: #FFFFFF;
     text-align: left;
-	max-width: 60%;
+    max-width: 60%;
 }
 .banner-content-get-free-murena
 {
@@ -1435,7 +1435,7 @@ a.legal {
     }
 }
 @media only screen and (max-width: 1050px) {
-	.banner-content{
+    .banner-content{
         max-width: 80%;
     }
     #body-login .v-align{
@@ -1456,7 +1456,7 @@ a.legal {
     }
     .banner-content-create-button a{
         width: 90%;
-	}
+    }
     .v-align {
         -webkit-box-ordinal-group: 1;
         -moz-box-ordinal-group: 1;
