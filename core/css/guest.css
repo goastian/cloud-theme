@@ -1073,6 +1073,7 @@ footer {
     bottom: 0;
     padding-bottom: 15px;
     max-width: 350px;
+    transition: all 0.3s linear;
 }
 
 footer .info .entity-name {
@@ -1435,6 +1436,10 @@ a.legal {
     }
 }
 @media only screen and (max-width: 1050px) {
+    .width0{
+        width: 0 !important;
+        height: 0 !important;
+    }
     .banner-content{
         max-width: 80%;
     }
@@ -1536,4 +1541,9 @@ a.legal {
 }
 .pos-relative{
     position: relative;
+}
+.forgotpass-footer {
+    margin: 0 auto;
+    position: unset;
+    transition: all 0.3s linear;
 }
