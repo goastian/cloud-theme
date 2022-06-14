@@ -1067,12 +1067,12 @@ img.icon-loading-small-dark, object.icon-loading-small-dark, video.icon-loading-
 
 /* FOOTER */
 footer {
-    height: 70px;
-    width: 100%;
     background-color: #ffffff;
+    position: absolute;
+    right: 5%;
     bottom: 0;
-    right: 0;
     padding-bottom: 15px;
+	max-width: 350px;
 }
 
 footer .info .entity-name {
@@ -1105,7 +1105,6 @@ a.legal {
     font-family: "Montserrat";
 }
 #body-login .v-align {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1334,6 +1333,7 @@ a.legal {
     font-style: normal;
     color: #FFFFFF;
     text-align: left;
+	max-width: 60%;
 }
 .banner-content-get-free-murena
 {
@@ -1364,7 +1364,7 @@ a.legal {
     border-radius: 24px !important;
     background: transparent;
     color: white !important;
-    width: 70% !important;
+    width: 70%;
     display: inline-block;
     padding: 12px;
     font-weight: bold;
@@ -1393,7 +1393,7 @@ a.legal {
 .v-align main{
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
 }
 #lost-password{
     color: #0086FF !important;
@@ -1429,36 +1429,39 @@ a.legal {
 .pos-fixed{
     position: fixed !important;
 }
-.banner-content-get-free-murena p{
-    width: 75%;
-}
 @media only screen and (max-width: 1440px) {
     .banner-right-align {
         width: 65%;
     }
 }
 @media only screen and (max-width: 1050px) {
+	.banner-content{
+        max-width: 80%;
+    }
     #body-login .v-align{
         height: 80%;
         overflow: hidden;
+		width: 70%;
     }
     .banner-right-align {
         -webkit-box-ordinal-group: 2;
         -moz-box-ordinal-group: 2;
         box-ordinal-group: 2;
         width: 100%;
-        position: relative;
         height: 90%;
+        position: relative;
     }
     .banner-content-create-button{
         text-align: center;
     }
-    
+    .banner-content-create-button a{
+		width: 90%;
+	}
     .v-align {
         -webkit-box-ordinal-group: 1;
         -moz-box-ordinal-group: 1;
         box-ordinal-group: 1;
-        width: 70%;
+        width: 50%;
         margin: 0 auto;
     }
     .wrapper{
@@ -1471,8 +1474,12 @@ a.legal {
     }
     footer{
         bottom: 0;
-        position: fixed;
         height: auto;
+        -webkit-box-ordinal-group: 3;
+        -moz-box-ordinal-group: 3;
+        box-ordinal-group: 3;
+        margin: 0 auto;
+        position: unset;
     }
     .lines{
         width: 30%;
@@ -1490,25 +1497,16 @@ a.legal {
         margin: 0 auto;
         overflow: hidden;
         position: unset !important;
+		width: 100%;
     }
-    .banner-right-align{
-        height: 60%;
-    }
-    .banner-right-align .banner-content{
-        margin-left: 10%;
-        margin-top: -25%;
-    }
-    .banner-content-get-free-murena{
+	.banner-content-get-free-murena{
         font-size: 18px;
+	}
+    .banner-right-align{
+        height: 50%;
     }
     .banner-content-why-murena{
         font-size: 14px;
-        margin: 10% 0 10% 0;
-    }
-    footer{
-        bottom: 0;
-        position: fixed;
-        height: auto;
     }
     .lines{
         display: none;
@@ -1525,15 +1523,13 @@ a.legal {
     .banner-right-align{
         display: none;
     }
-    footer {
-        bottom: 0;
-        position: fixed;
-        height: auto;
-    }
     #body-login .warning-messsage {
         width: 90%;
     }
 }
 .width0{
     width: 0;
+}
+.pos-relative{
+    position: relative;
 }
