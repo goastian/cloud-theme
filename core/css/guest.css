@@ -1487,9 +1487,9 @@ a.legal {
     #body-login .warning-messsage {
         width: 50%;
     }
-	.banner-content-why-murena{
+    .banner-content-why-murena{
         margin: 5% 0 5% 0;
-	}
+    }
 }
 @media only screen and (max-width: 640px) {
     .wrapper{
@@ -1502,9 +1502,9 @@ a.legal {
         position: unset !important;
         height: 80%;
     }
-	.banner-content-get-free-murena{
+    .banner-content-get-free-murena{
         font-size: 18px;
-	}
+    }
     .banner-right-align{
         height: 50%;
     }
