@@ -1505,6 +1505,7 @@ a.legal {
         margin: 0 auto;
         overflow: hidden;
         position: unset !important;
+        height: unset;
     }
     .banner-content-get-free-murena{
         font-size: 18px;
@@ -1522,7 +1523,7 @@ a.legal {
         width: 80%;
     }
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 375px) {
     .banner-right-align{
         display: none;
     }
@@ -1549,6 +1550,9 @@ a.legal {
 .have-an-account {
     margin-top: 10px;
     color: #333333;
+    border-top: 1px solid #d7d7d7;
+    border-width: thin;
+    padding: 15px;
 }
 .have-an-account a{
     color: #0086ff !important;
