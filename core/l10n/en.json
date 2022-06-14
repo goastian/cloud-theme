@@ -11,7 +11,9 @@
 		"Terms & Conditions": "Terms & Conditions",
 		"Privacy Policy": "Privacy Policy",
 		"All Rights Reserved": "All Rights Reserved",
-		"Copyright": "Copyright"
+		"Copyright": "Copyright",
+		"Dont have an account yet?": "Don't have an account yet?",
+		"Create an account": "Create an account"
     },
 	"pluralForm": "nplurals=2; plural=(n != 1);"
 }

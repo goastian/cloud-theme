@@ -12,6 +12,8 @@ OC.L10N.register(
 		"Terms & Conditions": "termes et conditions",
 		"Privacy Policy": "Politique de confidentialité",
 		"All Rights Reserved": "Tous les droits sont réservés",
-		"Copyright": "droits d'auteur"
+		"Copyright": "droits d'auteur",
+		"Dont have an account yet?": "Vous n'avez pas encore de compte ?",
+		"Create an account": "Créer un compte"
 },
 "nplurals=2; plural=(n != 1);");
