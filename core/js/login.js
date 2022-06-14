@@ -1,6 +1,7 @@
 $(document).on('click','#lost-password', function(){
 	if(window.innerWidth > 1050){
 		$('.banner-content').hide('slow');
+		$('.have-an-account').hide('slow');
 		$('.banner-right-align').addClass('width0');
 		$('.lines').hide();
 		$('.v-align').addClass('warning-messsage');
@@ -14,5 +15,6 @@ $(document).on('click','.lost-password-container a', function(){
 		$('footer').removeClass('forgotpass-footer');
 		$('.lines').show('slow');
 		$('.banner-content').show('slow');
+		$('.have-an-account').show('slow');
 	}
 });

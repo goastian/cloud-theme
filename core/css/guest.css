@@ -1124,12 +1124,10 @@ a.legal {
     transition: all 0.3s linear;
 }
 #body-login .warning-messsage {
-    width: 30%;
-    margin: 5% auto;
-    height: 80%;
-    gap: 0;
-    overflow: auto;
-    margin-top: 0%;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 0;
+	padding: 0;
 }
 #body-login #user,
 #body-login #password,
@@ -1383,6 +1381,9 @@ a.legal {
     width: 100%;
     margin-top: 10vh;
 }
+.warning-messsage header{
+    margin-top: 0;
+}
 .sign-in-label {
     font-family: 'Montserrat';
     font-style: normal;
@@ -1395,6 +1396,10 @@ a.legal {
     width: 100%;
     margin: 0 auto;
     margin-bottom: 15vh;
+}
+.warning-messsage main{
+    margin-bottom: 0;
+    max-width: 90%;
 }
 #lost-password{
     color: #0086FF !important;
@@ -1488,9 +1493,6 @@ a.legal {
     }
     .lines{
         width: 30%;
-    }
-    #body-login .warning-messsage {
-        width: 50%;
     }
     .banner-content-why-murena{
         margin: 5% 0 5% 0;
