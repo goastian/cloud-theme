@@ -13,7 +13,7 @@ OC.L10N.register(
 		"Privacy Policy": "Privacybeleid",
 		"All Rights Reserved": "Alle rechten voorbehouden",
 		"Copyright": "Auteursrechten",
-		"Dont have an account yet?": "Heb je nog geen account?",
+		"Don't have an account yet?": "Heb je nog geen account?",
 		"Create an account": "Account aanmaken"
 },
 "nplurals=2; plural=(n != 1);");

@@ -13,7 +13,7 @@ OC.L10N.register(
 		"Privacy Policy": "Política de privacidad",
 		"All Rights Reserved": "Reservados todos los derechos",
 		"Copyright": "Derechos de autor",
-		"Dont have an account yet?": "¿Aún no tienes una cuenta?",
+		"Don't have an account yet?": "¿Aún no tienes una cuenta?",
 		"Create an account": "Regístrate!"
 },
 "nplurals=2; plural=(n != 1);");
