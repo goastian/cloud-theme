@@ -1523,6 +1523,9 @@ a.legal {
     }
 }
 @media only screen and (max-width: 360px) {
+    .banner-right-align{
+        display: none;
+    }
     .v-align {
         width: 100%;
         margin: 0 auto;
@@ -1543,3 +1546,11 @@ a.legal {
     position: unset;
     transition: all 0.3s linear;
 }
+.have-an-account {
+    margin-top: 10px;
+    color: #333333;
+}
+.have-an-account a{
+    color: #0086ff !important;
+}
+
