@@ -12,6 +12,8 @@ OC.L10N.register(
 		"Terms & Conditions": "algemene voorwaarden",
 		"Privacy Policy": "Privacybeleid",
 		"All Rights Reserved": "Alle rechten voorbehouden",
-		"Copyright": "Auteursrechten"
+		"Copyright": "Auteursrechten",
+		"Don't have an account yet?": "Heb je nog geen account?",
+		"Create an account": "Account aanmaken"
 },
 "nplurals=2; plural=(n != 1);");
