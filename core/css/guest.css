@@ -1067,13 +1067,13 @@ img.icon-loading-small-dark, object.icon-loading-small-dark, video.icon-loading-
 
 /* FOOTER */
 footer {
-    height: 70px;
-    width: 100%;
     background-color: #ffffff;
-    margin-top: 15%;
+    position: absolute;
+    right: 5%;
     bottom: 0;
-    right: 0;
     padding-bottom: 15px;
+    max-width: 350px;
+    transition: all 0.3s linear;
 }
 
 footer .info .entity-name {
@@ -1110,25 +1110,24 @@ a.legal {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    height: auto;
+    height: 100%;
     background-color: #FFFFFF;
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
     box-sizing: border-box;
-    padding: 15vh 5vh;
+    padding: 5vh;
     position: relative;
     overflow: auto;
     max-height: 100%;
     transition: all 0.3s linear;
 }
 #body-login .warning-messsage {
-    width: 30%;
-    margin: 5% auto;
-    height: auto;
-    gap: 0;
-    overflow: hidden;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 0;
+	padding: 0;
 }
 #body-login #user,
 #body-login #password,
@@ -1333,6 +1332,7 @@ a.legal {
     font-style: normal;
     color: #FFFFFF;
     text-align: left;
+    max-width: 60%;
 }
 .banner-content-get-free-murena
 {
@@ -1363,7 +1363,7 @@ a.legal {
     border-radius: 24px !important;
     background: transparent;
     color: white !important;
-    width: 70% !important;
+    width: 70%;
     display: inline-block;
     padding: 12px;
     font-weight: bold;
@@ -1379,7 +1379,10 @@ a.legal {
 }
 .v-align header{
     width: 100%;
-    margin-bottom: 5%;
+    margin-top: 10vh;
+}
+.warning-messsage header{
+    margin-top: 0;
 }
 .sign-in-label {
     font-family: 'Montserrat';
@@ -1389,10 +1392,14 @@ a.legal {
     letter-spacing: -0.44px;
     color: #333333;
 }
-.v-align main
-{
+.v-align main{
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 15vh;
+}
+.warning-messsage main{
+    margin-bottom: 0;
+    max-width: 90%;
 }
 #lost-password{
     color: #0086FF !important;
@@ -1428,36 +1435,43 @@ a.legal {
 .pos-fixed{
     position: fixed !important;
 }
-.banner-content-get-free-murena p{
-    width: 75%;
-}
 @media only screen and (max-width: 1440px) {
     .banner-right-align {
         width: 65%;
     }
 }
 @media only screen and (max-width: 1050px) {
+    .width0{
+        width: 0 !important;
+        height: 0 !important;
+    }
+    .banner-content{
+        max-width: 80%;
+    }
     #body-login .v-align{
-        height: 80%;
+        height: 70%;
         overflow: hidden;
+        width: 70%;
     }
     .banner-right-align {
         -webkit-box-ordinal-group: 2;
         -moz-box-ordinal-group: 2;
         box-ordinal-group: 2;
         width: 100%;
+        height: 60%;
         position: relative;
-        height: 90%;
     }
     .banner-content-create-button{
         text-align: center;
     }
-    
+    .banner-content-create-button a{
+        width: 90%;
+    }
     .v-align {
         -webkit-box-ordinal-group: 1;
         -moz-box-ordinal-group: 1;
         box-ordinal-group: 1;
-        width: 70%;
+        width: 50%;
         margin: 0 auto;
     }
     .wrapper{
@@ -1470,14 +1484,18 @@ a.legal {
     }
     footer{
         bottom: 0;
-        position: fixed;
         height: auto;
+        -webkit-box-ordinal-group: 3;
+        -moz-box-ordinal-group: 3;
+        box-ordinal-group: 3;
+        margin: 0 auto;
+        position: unset;
     }
     .lines{
         width: 30%;
     }
-    #body-login .warning-messsage {
-        width: 50%;
+    .banner-content-why-murena{
+        margin: 5% 0 5% 0;
     }
 }
 @media only screen and (max-width: 640px) {
@@ -1489,25 +1507,16 @@ a.legal {
         margin: 0 auto;
         overflow: hidden;
         position: unset !important;
-    }
-    .banner-right-align{
-        height: 60%;
-    }
-    .banner-right-align .banner-content{
-        margin-left: 10%;
-        margin-top: -25%;
+        height: unset;
     }
     .banner-content-get-free-murena{
         font-size: 18px;
     }
+    .banner-right-align{
+        height: 50%;
+    }
     .banner-content-why-murena{
         font-size: 14px;
-        margin: 10% 0 10% 0;
-    }
-    footer{
-        bottom: 0;
-        position: fixed;
-        height: auto;
     }
     .lines{
         display: none;
@@ -1516,18 +1525,14 @@ a.legal {
         width: 80%;
     }
 }
-@media only screen and (max-width: 360px) {
-    .v-align {
-        width: 100%;
-        margin: 0 auto;
-    }
+@media only screen and (max-width: 375px) {
     .banner-right-align{
         display: none;
     }
-    footer {
-        bottom: 0;
-        position: fixed;
-        height: auto;
+    .v-align {
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
     }
     #body-login .warning-messsage {
         width: 90%;
@@ -1536,3 +1541,22 @@ a.legal {
 .width0{
     width: 0;
 }
+.pos-relative{
+    position: relative;
+}
+.forgotpass-footer {
+    margin: 0 auto;
+    position: unset;
+    transition: all 0.3s linear;
+}
+.have-an-account {
+    margin-top: 10px;
+    color: #333333;
+    border-top: 1px solid #d7d7d7;
+    border-width: thin;
+    padding: 15px;
+}
+.have-an-account a{
+    color: #0086ff !important;
+}
+
