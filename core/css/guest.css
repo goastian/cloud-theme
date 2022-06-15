@@ -98,6 +98,9 @@ body {
 
 #body-login .toggle-password {
     background-color: #ffffff;
+    border-radius: 50%;
+    padding: 12px;
+    top: 4px;
 }
 
 #body-login .wrapper .update.two-factor a, 
