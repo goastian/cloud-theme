@@ -1514,6 +1514,10 @@ a.legal {
     .banner-content-why-murena{
         margin: 5% 0 5% 0;
     }
+    .warning-messsage main{
+        max-width: 90%;
+        overflow-x: auto;
+    }
 }
 @media only screen and (max-width: 640px) {
     .wrapper{
