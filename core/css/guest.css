@@ -1394,7 +1394,6 @@ a.legal {
 .v-align main{
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 15vh;
 }
 .warning-messsage main{
     margin-bottom: 0;
@@ -1582,4 +1581,7 @@ a.legal {
 }
 .have-an-account a{
     color: #0086ff !important;
+}
+.v-align > footer p.info {
+    height: 40%;
 }
