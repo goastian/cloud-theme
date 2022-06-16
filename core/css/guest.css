@@ -1070,7 +1070,7 @@ footer {
     background-color: #ffffff;
     width: 100%;
     transition: all 0.3s linear;
-	padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 footer .info .entity-name {
@@ -1124,7 +1124,7 @@ a.legal {
     width: 50%;
     margin: 0 auto;
     margin-top: 0;
-	padding: 0;
+    padding: 0;
 }
 #body-login #user,
 #body-login #password,
@@ -1435,7 +1435,7 @@ a.legal {
 }
 .v-align > footer{
     display: block;
-	margin-top: 30px;
+    margin-top: 30px;
 }
 @media only screen and (max-width: 1440px) {
     .banner-right-align {
@@ -1533,9 +1533,9 @@ a.legal {
     #body-login .warning-messsage {
         width: 80%;
     }
-	.warning-messsage main{
-		max-width: 90%;
-	}
+    .warning-messsage main{
+        max-width: 90%;
+    }
 }
 @media only screen and (max-width: 375px) {
     .banner-right-align{
