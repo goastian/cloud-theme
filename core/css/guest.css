@@ -1068,12 +1068,9 @@ img.icon-loading-small-dark, object.icon-loading-small-dark, video.icon-loading-
 /* FOOTER */
 footer {
     background-color: #ffffff;
-    position: absolute;
-    right: 5%;
-    bottom: 0;
-    padding-bottom: 15px;
-    max-width: 350px;
+    width: 100%;
     transition: all 0.3s linear;
+	padding-bottom: 20px;
 }
 
 footer .info .entity-name {
@@ -1379,7 +1376,6 @@ a.legal {
 }
 .v-align header{
     width: 100%;
-    margin-top: 10vh;
 }
 .warning-messsage header{
     margin-top: 0;
@@ -1395,7 +1391,6 @@ a.legal {
 .v-align main{
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 15vh;
 }
 .warning-messsage main{
     margin-bottom: 0;
@@ -1435,12 +1430,24 @@ a.legal {
 .pos-fixed{
     position: fixed !important;
 }
+#body-login > .wrapper > footer{
+    display: none;
+}
+.v-align > footer{
+    display: block;
+}
 @media only screen and (max-width: 1440px) {
     .banner-right-align {
         width: 65%;
     }
 }
 @media only screen and (max-width: 1050px) {
+    .v-align footer{
+        display: none;
+    }
+    #body-login > .wrapper > footer{
+        display: block;
+    }
     .width0{
         width: 0 !important;
         height: 0 !important;
@@ -1449,9 +1456,9 @@ a.legal {
         max-width: 80%;
     }
     #body-login .v-align{
-        height: 70%;
         overflow: hidden;
         width: 70%;
+        height: auto;
     }
     .banner-right-align {
         -webkit-box-ordinal-group: 2;
@@ -1460,6 +1467,7 @@ a.legal {
         width: 100%;
         height: 60%;
         position: relative;
+        clear: both;
     }
     .banner-content-create-button{
         text-align: center;
@@ -1559,4 +1567,3 @@ a.legal {
 .have-an-account a{
     color: #0086ff !important;
 }
-
