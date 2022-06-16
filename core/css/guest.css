@@ -1394,7 +1394,7 @@ a.legal {
 }
 .warning-messsage main{
     margin-bottom: 0;
-    max-width: 90%;
+    max-width: 60%;
 }
 #lost-password{
     color: #0086FF !important;
@@ -1435,6 +1435,7 @@ a.legal {
 }
 .v-align > footer{
     display: block;
+	margin-top: 30px;
 }
 @media only screen and (max-width: 1440px) {
     .banner-right-align {
@@ -1532,6 +1533,9 @@ a.legal {
     #body-login .warning-messsage {
         width: 80%;
     }
+	.warning-messsage main{
+		max-width: 90%;
+	}
 }
 @media only screen and (max-width: 375px) {
     .banner-right-align{
