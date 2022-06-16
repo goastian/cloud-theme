@@ -98,6 +98,9 @@ body {
 
 #body-login .toggle-password {
     background-color: #ffffff;
+    border-radius: 50%;
+    padding: 12px;
+    top: 4px;
 }
 
 #body-login .wrapper .update.two-factor a, 
@@ -1391,6 +1394,11 @@ a.legal {
 .v-align main{
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 15vh;
+}
+.warning-messsage main{
+    margin-bottom: 0;
+    max-width: 90%;
 }
 .warning-messsage main{
     margin-bottom: 0;
