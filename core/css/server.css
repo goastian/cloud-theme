@@ -1716,9 +1716,6 @@
   button#quotaincreasebutton {
       margin-top: 15px !important;
   }
-  .warning-messsage footer {
-      position: fixed;
-  }
   @media only screen and (max-width: 640px) {
       .new-icons .color-icons {
           height: 50px;
