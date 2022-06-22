@@ -529,11 +529,13 @@
   }
 
   #header .icon-notifications,
-  #header .icon-notifications-new {
+  #header .hasNotifications {
 	background-size: 17px;
+	background-repeat: no-repeat;
+	background-position: center;
   }
 
-  .icon-notifications-new {
+  .hasNotifications {
 	background-image: var(--icon-notifications-notifications-new-000000);
   }
 
