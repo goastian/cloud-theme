@@ -58,7 +58,6 @@
 	--input-background-color: #181818;
 	--icon-notifications-notifications-000000: url("/svg/notifications/notifications?color=000");
 	--icon-notifications-notifications-new-000000: url("/svg/notifications/notifications-new?color=000");
-	--icon-notifications-notifications-has-new-000000: url("/svg/notifications/notifications-has-new?color=000");
 	--icon-search-000: url("/svg/core/actions/search?color=000");
   }
 
@@ -542,13 +541,6 @@
 	background-image: var(--icon-notifications-notifications-000000);
   }
   
-  .notifications-button{
-	background-image: var(--icon-notifications-notifications-has-new-000000);
-  }
-
-  .notifications-button img{
-	display: none;
-  }
   .icon-external,
   .icon-goto {
 	background-image: var(--icon-external-808080);
