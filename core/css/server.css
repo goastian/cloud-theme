@@ -528,23 +528,17 @@
 	background-image: var(--icon-files-app-808080);
   }
 
-  #header .notifications-button,
-  #header .hasNotifications {
+  #header .icon-notifications,
+  #header .icon-notifications-new {
 	background-size: 17px;
-	background-repeat: no-repeat;
-	background-position: center;
   }
 
-  .notifications-button {
-	background-image: var(--icon-notifications-notifications-000000);
-  }
-
-  .hasNotifications {
+  .icon-notifications-new {
 	background-image: var(--icon-notifications-notifications-new-000000);
   }
 
-  .notifications-button img{
-	  display: none;
+  .icon-notifications {
+	background-image: var(--icon-notifications-notifications-000000);
   }
 
   .icon-external,
