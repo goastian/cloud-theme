@@ -539,6 +539,9 @@
 
   .notifications-button {
 	background-image: var(--icon-notifications-notifications-000000);
+	background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: center;
   }
   
   .icon-external,
