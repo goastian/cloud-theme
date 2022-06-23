@@ -543,6 +543,10 @@
 	background-image: var(--icon-notifications-notifications-new-000000);
   }
 
+  .notifications-button img{
+	  display: none;
+  }
+
   .icon-external,
   .icon-goto {
 	background-image: var(--icon-external-808080);
