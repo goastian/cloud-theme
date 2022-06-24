@@ -57,8 +57,7 @@
   body.theme--dark {
 	--input-background-color: #181818;
 	--icon-notifications-notifications-000000: url("/svg/notifications/notifications?color=000");
-	--icon-notifications-notifications-new-000000: url("/themes/eCloud/apps/notifications/img/notifications-new");
-	--icon-notifications-notifications-pre-000000: url("/themes/eCloud/apps/notifications/img/notifications-has-new");
+	--icon-notifications-notifications-new-000000: url("/svg/notifications/notifications-new?color=000");
 	--icon-search-000: url("/svg/core/actions/search?color=000");
   }
 
@@ -529,27 +528,21 @@
 	background-image: var(--icon-files-app-808080);
   }
 
-  #header .icon-notifications,
-  #header .icon-notifications-new {
+  #header .notifications-button,
+  #header .hasNotifications {
 	background-size: 17px;
+	background-repeat: no-repeat;
+	background-position: center;
   }
 
-  .icon-notifications-new {
+  .notifications-button {
+	background-image: var(--icon-notifications-notifications-000000);
+  }
+
+  .hasNotifications {
 	background-image: var(--icon-notifications-notifications-new-000000);
   }
-  .icon-notifications {
-	background-image: var(--icon-notifications-notifications-000000);
-  }
-  .icon-notifications-pre {
-	background-image: var(--icon-notifications-notifications-pre-000000);
-  }
-  /* .notifications-button {
-	background-image: var(--icon-notifications-notifications-000000);
-	background-repeat: no-repeat;
-    background-size: 17px;
-    background-position: center;
-  } */
-  
+
   .icon-external,
   .icon-goto {
 	background-image: var(--icon-external-808080);
