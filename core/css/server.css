@@ -536,13 +536,15 @@
   .icon-notifications-new {
 	background-image: var(--icon-notifications-notifications-new-000000);
   }
-
-  .notifications-button {
+  .icon-notifications {
+	background-image: var(--icon-notifications-notifications-000000);
+  }
+  /* .notifications-button {
 	background-image: var(--icon-notifications-notifications-000000);
 	background-repeat: no-repeat;
     background-size: 17px;
     background-position: center;
-  }
+  } */
   
   .icon-external,
   .icon-goto {
