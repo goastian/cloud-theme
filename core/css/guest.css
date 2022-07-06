@@ -974,6 +974,7 @@ p.info {
 
 .icon-checkmark-white {
     background-image: url('../img/actions/checkmark-white.svg?v=1');
+    background-size: contain;
 }
 
 
@@ -1270,6 +1271,7 @@ a.legal {
     margin-left: 0;
     margin-right: 0;
     border: 1px solid;
+    padding: 10px 5px;
 }
 
 /* #body-login #user:hover,
