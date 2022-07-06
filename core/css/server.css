@@ -42,7 +42,7 @@
 	--color-background-hover: white;
 	--color-text-maxcontrast: black;
 	--color-border-dark: #e6e6e6;
-	--color-border: #e6e6e6;
+	--color-border: #ebebeb;
 	--icon-settings-dark-000: #000000;
 	--icon-inactive-color: #808080;
 	--icon-active-color: #007fff;
@@ -383,7 +383,7 @@
   #content #app-navigation,
   #content.app-news #app-navigation button {
 	color: var(--color-main-text);
-	border-right: 0.5px solid var(--color-border);
+	border-right: 1px solid var(--color-border);
   }
 
   .icon-home,
@@ -650,7 +650,7 @@
 
   table th,
   table td {
-	border-bottom: 0.5px solid var(--color-border);
+	border-bottom: 1px solid var(--color-border);
   }
 
   .icon-files-dark {
