@@ -976,7 +976,7 @@ p.info {
     background-image: url('../img/actions/checkmark-white.svg?v=1');
 }
 
-.warning-messsage .icon-checkmark-white {
+#body-login .warning-messsage .icon-checkmark-white {
     background-image: url('../img/actions/checkmark-success.svg?v=1');
 }
 
