@@ -974,9 +974,11 @@ p.info {
 
 .icon-checkmark-white {
     background-image: url('../img/actions/checkmark-white.svg?v=1');
-    background-size: contain;
 }
 
+.warning-messsage .icon-checkmark-white {
+    background-image: url('../img/actions/checkmark-success.svg?v=1');
+}
 
 /* Loading */
 .float-spinner {
