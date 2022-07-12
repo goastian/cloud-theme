@@ -1269,8 +1269,9 @@ a.legal {
     color: #029f3c;
     background-color: white;
     justify-content: center !important;
-    width: fit-content;
-    margin: 0 auto;
+    width: 92%;
+    margin-left: 0;
+    margin-right: 0;
     border: 1px solid;
 }
 
@@ -1549,6 +1550,11 @@ a.legal {
     .warning-messsage main{
         max-width: 90%;
     }
+	#body-login .update, #body-login .success {
+        width: fit-content;
+        padding-left: 5px;
+        padding-right: 5px;
+	}
 }
 @media only screen and (max-width: 375px) {
     .banner-right-align{
