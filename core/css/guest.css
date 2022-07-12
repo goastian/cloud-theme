@@ -1269,9 +1269,8 @@ a.legal {
     color: #029f3c;
     background-color: white;
     justify-content: center !important;
-    width: 92%;
-    margin-left: 0;
-    margin-right: 0;
+    width: fit-content;
+    margin: 0 auto;
     border: 1px solid;
     padding: 10px 5px;
 }
