@@ -976,6 +976,9 @@ p.info {
     background-image: url('../img/actions/checkmark-white.svg?v=1');
 }
 
+#body-login .warning-messsage .icon-checkmark-white {
+    background-image: url('../img/actions/checkmark-success.svg?v=1');
+}
 
 /* Loading */
 .float-spinner {
@@ -1546,6 +1549,11 @@ a.legal {
     }
     .warning-messsage main{
         max-width: 90%;
+    }
+    #body-login .update, #body-login .success {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media only screen and (max-width: 375px) {
