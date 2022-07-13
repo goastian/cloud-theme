@@ -1591,6 +1591,7 @@ a.legal {
 @media only screen and (max-width: 550px) {
     #body-login .update, #body-login .success {
         width: fit-content;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
