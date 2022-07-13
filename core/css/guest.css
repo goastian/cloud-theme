@@ -1552,8 +1552,6 @@ a.legal {
     }
 	#body-login .update, #body-login .success {
         width: fit-content;
-        padding-left: 5px;
-        padding-right: 5px;
 	}
 }
 @media only screen and (max-width: 375px) {
