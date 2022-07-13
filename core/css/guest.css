@@ -1550,6 +1550,11 @@ a.legal {
     .warning-messsage main{
         max-width: 90%;
     }
+    #body-login .update, #body-login .success {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 @media only screen and (max-width: 375px) {
     .banner-right-align{
@@ -1587,11 +1592,4 @@ a.legal {
 }
 .v-align > footer p.info {
     height: 40%;
-}
-@media only screen and (max-width: 550px) {
-    #body-login .update, #body-login .success {
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
