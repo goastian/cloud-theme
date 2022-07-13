@@ -1588,7 +1588,7 @@ a.legal {
 .v-align > footer p.info {
     height: 40%;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 500px) {
     #body-login .update, #body-login .success {
         width: fit-content;
     }
