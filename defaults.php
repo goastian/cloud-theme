@@ -73,7 +73,7 @@ class OC_Theme {
 	 * @return string slogan
 	 */
 	public function getSlogan() {
-		return 'a safe home for all your data';
+		return 'Choose freedom';
 	}
 
 	/**
@@ -84,7 +84,7 @@ class OC_Theme {
 	public function getLogoClaim() {
 		return '';
 	}
-	
+
 	/**
 	 * Returns the terms and condition URL
 	 * @return string URL
@@ -118,7 +118,7 @@ class OC_Theme {
 		$footer = '<p>'.(\OC::$server->getL10N('core')->t('Copyright')).' © ' . date('Y') .' '.$this->getName() .'.</p><p> '.(\OC::$server->getL10N('core')->t('All Rights Reserved')).'.</p>' ;
 		$footer .= '<p>'.' <a href="' . $this->getTermsUrl() . '" target="_blank"> '.(\OC::$server->getL10N('core')->t('Terms & Conditions')).' </a>';
 		$footer .= ' - '.' <a href="' . $this->getPrivacyUrl() . '" target="_blank"> '.(\OC::$server->getL10N('core')->t('Privacy Policy')).' </a> </p>';
-		
+
 		return $footer;
 	}
 
