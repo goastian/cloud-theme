@@ -1732,5 +1732,5 @@
       }
   }
 .text-color-007fff {
-    color: #007fff;
+    color: var(--icon-active-color);
 }
