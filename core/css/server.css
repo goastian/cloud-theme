@@ -1734,3 +1734,6 @@
 .text-color-active {
     color: var(--icon-active-color);
 }
+.margin-top-10{
+	margin-top: 10px;
+}
