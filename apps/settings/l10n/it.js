@@ -1,0 +1,6 @@
+OC.L10N.register(
+    "settings",
+    {
+		"<b>Note:</b> You'll need to create a new <a class=\"text-color-active\" href=\"https://doc.e.foundation/support-topics/two-factor-authentication#using-an-application-password-for-the-eos-account-manager\">application password</a> to set your account within /e/OS. Additionally, you need to <a class=\"text-color-active\" href=\"https://doc.e.foundation/support-topics/two-factor-authentication#manually-setup-mail-application\">provide your main account password to /e/OS Mail</a>.": "<b>Nota:</b> Dovrai crearne uno nuovo <a class=\"text-color-active\" href=\"https://doc.e.foundation/support-topics/two-factor-authentication#using-an-application-password-for-the-eos-account-manager\">password per l'applicazione</a> per impostare il tuo account all'interno di /e/OS. Inoltre, devi <a class=\"text-color-active\" href=\"https://doc.e.foundation/support-topics/two-factor-authentication#manually-setup-mail-application\">fornire la password del tuo account principale a /e/OS Mail</a>."
+},
+"nplurals=2; plural=(n != 1);");
