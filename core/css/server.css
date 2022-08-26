@@ -1646,9 +1646,9 @@
   }
 
   #content-vue.app-talk #app-sidebar .username-form button.icon-rename,
-  button.edit-output-dir .icon-rename {
+  button.edit-output-dir span.icon-rename {
 	background-image: var(--icon-rename-000);
-	opacity: 1 !important;
+	opacity: 1;
   }
 
   /* Google integration */
