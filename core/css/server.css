@@ -821,7 +821,7 @@
   }
 
   #google-rm-cred .icon-close {
-	background-image: var(--icon-close-808080);
+	background-image: var(--icon-close-000);
   }
 
   .breadcrumb div.crumb span.icon-shared,
@@ -1656,19 +1656,19 @@
   }
 
   #google-import-contacts .icon-contacts-dark {
-	background-image: var(--icon-contacts-app-808080);
+	background-image: var(--icon-contacts-000);
   }
 
   #google-calendars button .icon-calendar-dark {
-	background-image: var(--icon-calendar-calendar-808080);
+	background-image: var(--icon-calendar-000);
   }
 
   #google-import-files .icon-files-dark {
-	background-image: var(--icon-files-app-808080);
+	background-image: var(--icon-files-000);
   }
 
   #google-import-photos .icon-picture {
-	background-image: var(--icon-picture-808080);
+	background-image: var(--icon-picture-000);
   }
 
   #header .header-right .magnify-icon > svg {
