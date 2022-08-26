@@ -1648,7 +1648,6 @@
   #content-vue.app-talk #app-sidebar .username-form button.icon-rename,
   button.edit-output-dir span.icon-rename {
 	background-image: var(--icon-rename-000);
-	opacity: 1;
   }
 
   /* Google integration */
@@ -1659,24 +1658,25 @@
 
   #google-import-contacts .icon-contacts-dark {
 	background-image: var(--icon-contacts-000);
-	opacity: 1;
   }
 
   #google-calendars button .icon-calendar-dark {
 	background-image: var(--icon-calendar-000);
-	opacity: 1;
   }
 
   #google-import-files .icon-files-dark {
 	background-image: var(--icon-files-000);
-	opacity: 1;
   }
 
   #google-import-photos .icon-picture {
 	background-image: var(--icon-picture-000);
+  }
+  
+  /* remove opacity */
+  #google-import-photos .icon-picture, #google-import-contacts .icon-contacts-dark,#google-calendars button .icon-calendar-dark, #google-import-files .icon-files-dark  {
 	opacity: 1;
   }
-
+  /** */
   #header .header-right .magnify-icon > svg {
 	display: none;
   }
