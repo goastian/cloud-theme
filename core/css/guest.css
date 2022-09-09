@@ -1591,6 +1591,7 @@ a.legal {
     border-top: 1px solid #d7d7d7;
     border-width: thin;
     padding: 15px;
+    font-size:16px;
 }
 .have-an-account a{
     color: #0086ff !important;
