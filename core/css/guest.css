@@ -187,6 +187,9 @@ body {
     display: inline;
 }
 
+.createaccmob{
+    display:none;
+}
 /* Default FORM */
 form {
     position: relative;
@@ -1559,6 +1562,12 @@ a.legal {
         width: fit-content;
         margin-left: auto;
         margin-right: auto;
+    }
+    .createaccmob{
+        display:block;
+    }
+    .createaccdesk{
+        display:none;
     }
 }
 @media only screen and (max-width: 375px) {
