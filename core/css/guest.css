@@ -8,7 +8,7 @@
     /* font-weight: 600; */
     /* font-style: normal; */
     font-display: swap;
-    letter-spacing: 1px;    
+    letter-spacing: 1px;
  }
 /* Mobile font sizes */
 @media screen and (max-width: 768px) {
@@ -93,7 +93,12 @@ body {
 
 /* Various fonts settings */
 #body-login .wrapper a {
-    color: #808080;
+    color: #0086FF;
+    font-weight: 400;
+    font-size: 16px;
+}
+#body-login .wrapper footer a{
+    font-size: 12px;
 }
 
 #body-login .toggle-password {
@@ -103,9 +108,9 @@ body {
     top: 4px;
 }
 
-#body-login .wrapper .update.two-factor a, 
-#body-login .wrapper .update.two-factor h3, 
-#body-login .wrapper .update.two-factor p, 
+#body-login .wrapper .update.two-factor a,
+#body-login .wrapper .update.two-factor h3,
+#body-login .wrapper .update.two-factor p,
 #body-login .wrapper .two-factor-secondary {
     color: #808080;
 }
@@ -182,6 +187,9 @@ body {
     display: inline;
 }
 
+.createaccmob{
+    display:none;
+}
 /* Default FORM */
 form {
     position: relative;
@@ -1180,7 +1188,7 @@ a.legal {
     margin: 24px 0px;
 }
 
-#body-login .totp-form input, 
+#body-login .totp-form input,
 #body-login .totp-form button {
     margin-top: 5%;
     max-width: 90%;
@@ -1555,6 +1563,12 @@ a.legal {
         margin-left: auto;
         margin-right: auto;
     }
+    .createaccmob{
+        display:block;
+    }
+    .createaccdesk{
+        display:none;
+    }
 }
 @media only screen and (max-width: 375px) {
     .banner-right-align{
@@ -1586,6 +1600,7 @@ a.legal {
     border-top: 1px solid #d7d7d7;
     border-width: thin;
     padding: 15px;
+    font-size:16px;
 }
 .have-an-account a{
     color: #0086ff !important;
