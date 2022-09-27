@@ -1240,6 +1240,10 @@
 	width: 100%;
   }
 
+  /* Delete Account */
+  .settings-hint, .settings-section__desc {
+    opacity: 1.0;
+  }
   /* Personal Info */
 
   #selectavatar.icon-folder {
