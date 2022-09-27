@@ -1241,7 +1241,7 @@
   }
 
   /* Delete Account */
-  .settings-hint, .settings-section__desc {
+  #body-settings .settings-hint, #body-settings .settings-section__desc {
     opacity: 1.0;
   }
   /* Personal Info */
