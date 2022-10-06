@@ -1745,3 +1745,6 @@
 .margin-top-10{
 	margin-top: 10px;
 }
+#content.app-deck .icon.action-item__menutoggle.action-item__menutoggle--default-icon > span {
+    display: none;
+}
