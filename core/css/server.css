@@ -1488,9 +1488,7 @@
   #content-vue.app-photos
 	.icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
   #content-vue.app-talk
-	.icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
-  #content.app-deck
-	.icon.action-item__menutoggle.action-item__menutoggle--default-icon::before {
+	.icon.action-item__menutoggle.action-item__menutoggle--default-icon::before{
 	content: var(--icon-more-808080);
 	font-size: unset;
 	font-weight: unset;
