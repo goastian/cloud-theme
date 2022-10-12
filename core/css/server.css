@@ -1712,7 +1712,7 @@
 	font-family: 'Roboto';
 	letter-spacing: 1px;
   }
-  #filestable thead{background-color: var(--color-main-background);}
+  #filestable thead{background-color: var(--color-background-dark);}
   #recommendations{height: 100px !important;}
   .recommendation{border: 1px solid #E6E8E9;padding: 10px !important;margin-bottom: 5px;border-radius: 6px !important;}
   progress{border-radius: 10px 10px !important;height: 12px !important;}
