@@ -1798,6 +1798,17 @@ progress {
 button#quotaincreasebutton {
   margin-top: 15px !important;
 }
+.app-cookbook .editingContainer .app-navigation-input-confirm__input:active+.app-navigation-input-confirm__confirm,
+.app-cookbook .editingContainer .app-navigation-input-confirm__input:active+.app-navigation-input-confirm__confirm,
+.app-cookbook .editingContainer .app-navigation-input-confirm__input:focus+.app-navigation-input-confirm__confirm,
+.app-cookbook .editingContainer .app-navigation-input-confirm__input:focus+.app-navigation-input-confirm__confirm,
+.app-cookbook .editingContainer .app-navigation-input-confirm__input:hover+.app-navigation-input-confirm__confirm,
+.app-cookbook .editingContainer .app-navigation-input-confirm__input:hover+.app-navigation-input-confirm__confirm {
+  border-color: var(--color-primary-element);
+  border-radius: 0 var(--border-radius) var(--border-radius) 0 !important;
+  border:1px solid var(--color-primary-element) !important;
+}
+
 @media only screen and (max-width: 640px) {
   .new-icons .color-icons {
     height: 50px;
