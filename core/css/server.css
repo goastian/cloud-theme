@@ -1479,8 +1479,6 @@
 
   #content.app-settings
 	.icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
-  #content.app-files
-	.icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
   #header
 	.icon.action-item__menutoggle.action-item__menutoggle--default-icon::before,
   #content-vue.app-bookmarks
