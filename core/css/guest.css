@@ -161,7 +161,7 @@ body {
 }
 
 #header .logo {
-    background-image: url('../img/logo@2x.svg');
+    background-image: url('../img/logo.png');
     background-repeat: no-repeat;
     background-size: 100px;
     background-position: center;
@@ -1301,9 +1301,8 @@ a.legal {
 }
 
 #body-login #header .logo {
-    background-image: url("../img/logo@2x.svg");
+    background-image: url("../img/logo.png");
     margin-top: 0.5em;
-    background-size: contain;
 }
 
 #body-login .lost-password-container .update {

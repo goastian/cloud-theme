@@ -236,17 +236,18 @@
   /* use logos from theme */
   #header .logo,
   #firstrunwizard .logo {
-	background-image: url("../img/logo@2x.svg");
-	width: 256px;
-	height: 128px;
+    background-image: url("../img/logo.png");
+    width: 256px;
+    height: 128px;
   }
   #header .logo-icon {
-	width: 130px;
-	height: 40px;
-	top: 5px;
-	bottom: 0px;
-	border-radius: 22px;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    bottom: 0px;
+    border-radius: 22px;
   }
+
 
   #header #nextcloud {
 	padding-left: 150px;
@@ -330,9 +331,6 @@
   }
   .icon-filetype-folder-drag-accept {
 	background-image: var(--icon-folder-drag-accept-007fff) !important;
-  }
-  #header .logo {
-	background-image: url("../img/logo@2x.svg");
   }
   #body-user #header,
   #body-settings #header,
