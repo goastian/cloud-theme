@@ -1195,6 +1195,7 @@ a.legal {
 
 #body-login #submit-form,
 #body-login .two-factor-submit {
+    width: 190px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -1202,7 +1203,6 @@ a.legal {
     align-items: center;
     padding: 12px 16px;
     gap: 10px;
-    width: 100%;
     height: 42px;
     background: #0086FF;
     border-radius: 24px;
@@ -1210,7 +1210,7 @@ a.legal {
 }
 
 #body-login #reset-password-submit {
-    /* width: 220px; */
+    width: 220px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -1218,7 +1218,6 @@ a.legal {
     align-items: center;
     padding: 12px 16px;
     gap: 10px;
-    width: 100%;
     height: 42px;
     background: #0086FF;
     border-radius: 24px;
@@ -1252,12 +1251,12 @@ a.legal {
 }
 
 #body-login #submit-wrapper .submit-icon {
-    top: 45px;
+    top: 32px;
     right: 30%;
 }
 
 #reset-password-wrapper .submit-icon {
-    top: 45px;
+    top: 32px;
     right: 30%;
 }
 
