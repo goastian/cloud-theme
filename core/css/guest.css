@@ -590,7 +590,7 @@ form .warning input[type='checkbox'] + label {
 }
 
 .body-login-container.two-factor {
-    max-width: 100%;
+    max-width: 290px;
     margin: 15px auto 0;
 }
 
@@ -1144,7 +1144,7 @@ a.legal {
 #body-login #password,
 #body-login .totp-form > input[type="tel"] {
     padding: 12px 16px;
-    width: 100%;
+    width: 424px;
     height: 48px;
     border: 1px solid #E6E8E9;
     box-sizing: border-box;
@@ -1168,8 +1168,7 @@ a.legal {
 #body-login #submit-wrapper,
 #body-login #reset-password-wrapper {
     background-color: #ffffff;
-    margin-top: 0px;
-}
+    margin-top: 26px;}
 
 #body-login #submit-form,
 #body-login #reset-password-submit,

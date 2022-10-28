@@ -354,10 +354,6 @@
 	color: var(--color-main-text);
   }
 
-  #header .logo {
-	background-size: auto;
-  }
-
   input.primary,
   #alternative-logins li a {
 	background-color: #999999;
