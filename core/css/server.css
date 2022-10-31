@@ -1686,7 +1686,7 @@
   .new-icons .onlyoffice_docx {background-image: url("../img/app-icons/Docs.svg");}
   .new-icons .onlyoffice_xlsx {background-image: url("../img/app-icons/Spreadsheet.svg");}
   .new-icons .onlyoffice_pptx {background-image: url("../img/app-icons/Presentation.svg");}
-  .new-icons .onlyoffice_pptx {background-image: url("../img/app-icons/Cookbook.svg");}
+  .new-icons .cookbook  {background-image: url("../img/app-icons/Cookbook.svg");}
 
   #appmenu li:hover a, #appmenu li a:focus {
 	font-size: 12px;
