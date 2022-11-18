@@ -9,7 +9,7 @@ OC.L10N.register(
 		"and many new features added regularly!": "et de nombreuses nouvelles fonctionnalités ajoutées régulièrement !",
 		"Create My Account": "Créer mon compte",
 		"Sign in to your account": "Connectez-vous à votre compte",
-		"Terms & Conditions": "termes et conditions",
+		"Terms of Service": "Conditions d'utilisation",
 		"Privacy Policy": "Politique de confidentialité",
 		"All Rights Reserved": "Tous les droits sont réservés",
 		"Copyright": "droits d'auteur",
