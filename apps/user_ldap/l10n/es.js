@@ -1,6 +1,7 @@
 OC.L10N.register(
     "user_ldap",
     {
-		"This directory is unavailable, please check the logs or contact the administrator": "Este directorio no está disponible, por favor compruebe los registros o contacte con Murena en <a href=\"mailto:support@helpdesk.com\">support@helpdesk.com</a>."
+		"Please try again or contact your administrator.": "Por favor, inténtelo de nuevo o contacte con Murena en <a href=\"mailto:support@helpdesk.com\">support@helpdesk.com</a>.",
+		"<b>Warning:</b> The PHP LDAP module is not installed, the backend will not work. Please ask your system administrator to install it.": "<b>Advertencia:</b> El módulo LDAP de PHP no está instalado, el backend no funcionará. Póngase en contacto con Murena en <a href=\"mailto:support@helpdesk.com\">support@helpdesk.com</a> para instalarlo."
 },
 "nplurals=2; plural=(n != 1);");
