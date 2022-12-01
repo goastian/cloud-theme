@@ -1673,7 +1673,7 @@
   .new-icons .contacts {background-image: url("../img/app-icons/Contacts.svg");}
   .new-icons .deck {background-image: url("../img/app-icons/Deck.svg");}
   .new-icons .docs {background-image: url("../img/app-icons/Docs.svg");}
-  .new-icons .email,.new-icons .rainloop {background-image: url("../img/app-icons/E-mail.svg");}
+  .new-icons .email,.new-icons .rainloop,.new-icons .snappymail {background-image: url("../img/app-icons/E-mail.svg");}
   .new-icons .gitlab {background-image: url("../img/app-icons/Gitlab.svg");}
   .new-icons .news {background-image: url("../img/app-icons/News.svg");}
   .new-icons .notes {background-image: url("../img/app-icons/Notes.svg");}
