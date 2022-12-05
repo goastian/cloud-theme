@@ -15,7 +15,7 @@ OC.L10N.register(
 		"Copyright": "Copyright",
 		"Don't have an account yet?": "Don't have an account yet?",
 		"Create an account": "Create an account",
-		"A password reset message has been sent to the email address of this account. If you do not receive it, check your spam/junk folders or ask your local administrator for help." : "A password reset message has been sent to the <b>recovery email address</b> of this account.",
+		"A password reset message has been sent to the email address of this account. If you do not receive it, check your spam/junk folders or ask your local administrator for help." : "A password reset message has been sent to the <strong>recovery email address</strong> of this account.",
 		"If it is not there ask your local administrator.": ""
 },
 "nplurals=2; plural=(n != 1);");
