@@ -14,6 +14,8 @@ OC.L10N.register(
 		"All Rights Reserved": "Alle rechten voorbehouden",
 		"Copyright": "Auteursrechten",
 		"Don't have an account yet?": "Heb je nog geen account?",
-		"Create an account": "Account aanmaken"
+		"Create an account": "Account aanmaken",
+		"A password reset message has been sent to the email address of this account. If you do not receive it, check your spam/junk folders or ask your local administrator for help." : "Eine Nachricht zum Zurücksetzen des Passworts wurde an die Wiederherstellungs-E-Mail-Adresse dieses Kontos gesendet.",
+		"If it is not there ask your local administrator.": ""
 },
 "nplurals=2; plural=(n != 1);");
