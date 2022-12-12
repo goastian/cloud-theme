@@ -1,0 +1,6 @@
+OC.L10N.register(
+    "files",
+    {
+		"This directory is unavailable, please check the logs or contact the administrator": "Este directorio no está disponible, por favor compruebe los registros o contacte con Murena en support@helpdesk.com."
+},
+"nplurals=2; plural=(n != 1);");
