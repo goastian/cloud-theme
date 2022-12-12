@@ -9,7 +9,7 @@ OC.L10N.register(
 		"and many new features added regularly!": "und viele neue Funktionen, die regelmäßig hinzugefügt werden!",
 		"Create My Account": "Erstelle meinen Account",
 		"Sign in to your account": "Melden Sie sich bei Ihrem Konto an",
-		"Terms & Conditions": "algemene voorwaarden",
+		"Terms of Service": "Allgemeine Geschäftsbedingungen",
 		"Privacy Policy": "Privacybeleid",
 		"All Rights Reserved": "Alle rechten voorbehouden",
 		"Copyright": "Auteursrechten",
@@ -29,6 +29,7 @@ OC.L10N.register(
 		"A password reset message has been sent to the email address of this account. If you do not receive it, check your spam/junk folders or ask your local administrator for help.": "Eine Nachricht zum Zurücksetzen des Passworts wurde an die E-Mail-Adresse dieses Kontos gesendet. Wenn Sie sie nicht erhalten, überprüfen Sie Ihren Spam-/Junk-Ordner oder kontaktieren Sie Murena unter <a href=\"mailto:support@helpdesk.com\">support@helpdesk.com</a>  um Hilfe zu erhalten.",
 		"Couldn't send reset email. Please contact your administrator.": "Couldn't send reset email. Kontaktieren Sie Murena unter <a href=\"mailto:support@helpdesk.com\">support@helpdesk.com</a>.",
 		"Your files are encrypted. There will be no way to get your data back after your password is reset. If you are not sure what to do, please contact your administrator before you continue. Do you really want to continue?": "Ihre Dateien sind verschlüsselt. Nachdem Ihr Passwort zurückgesetzt wurde, gibt es keine Möglichkeit mehr, Ihre Daten zurückzubekommen. Wenn Sie nicht sicher sind, was zu tun ist, wenden Sie sich bitte an Murena unter <a href=\"mailto:support@helpdesk.com\">support@helpdesk.com</a> bevor Sie fortfahren. Willst du wirklich weitermachen?",
-		"Password cannot be changed. Please contact your administrator.": "Das Passwort kann nicht geändert werden. Bitte kontaktieren Sie Murena unter <a href=\"mailto:support@helpdesk.com\">support@helpdesk.com</a>."
+		"Password cannot be changed. Please contact your administrator.": "Das Passwort kann nicht geändert werden. Bitte kontaktieren Sie Murena unter <a href=\"mailto:support@helpdesk.com\">support@helpdesk.com</a>.",
+		"If it is not there ask your local administrator.": ""
 },
 "nplurals=2; plural=(n != 1);");

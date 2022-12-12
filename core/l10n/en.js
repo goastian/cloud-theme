@@ -9,7 +9,7 @@ OC.L10N.register(
 		"and many new features added regularly!": "and many new features added regularly!",
 		"Create My Account": "Create My Account",
 		"Sign in to your account": "Sign in to your account",
-		"Terms & Conditions": "Terms & Conditions",
+		"Terms of Service": "Terms of Service",
 		"Privacy Policy": "Privacy Policy",
 		"All Rights Reserved": "All Rights Reserved",
 		"Copyright": "Copyright",
@@ -29,6 +29,7 @@ OC.L10N.register(
 		"A password reset message has been sent to the email address of this account. If you do not receive it, check your spam/junk folders or ask your local administrator for help.": "A password reset message has been sent to the email address of this account. If you do not receive it, check your spam/junk folders or contact Murena at <a href=\"mailto:support@helpdesk.com\">support@helpdesk.com</a> for help.",
 		"Couldn't send reset email. Please contact your administrator.": "Couldn't send reset email. Please contact Murena at <a href=\"mailto:support@helpdesk.com\">support@helpdesk.com</a>.",
 		"Your files are encrypted. There will be no way to get your data back after your password is reset. If you are not sure what to do, please contact your administrator before you continue. Do you really want to continue?": "Your files are encrypted. There will be no way to get your data back after your password is reset. If you are not sure what to do, please contact Murena at <a href=\"mailto:support@helpdesk.com\">support@helpdesk.com</a> before you continue. Do you really want to continue?",
-		"Password cannot be changed. Please contact your administrator.": "Password cannot be changed. Please contact Murena at <a href=\"mailto:support@helpdesk.com\">support@helpdesk.com</a>."
-	},
+		"Password cannot be changed. Please contact your administrator.": "Password cannot be changed. Please contact Murena at <a href=\"mailto:support@helpdesk.com\">support@helpdesk.com</a>.",
+		"If it is not there ask your local administrator.": ""
+},
 "nplurals=2; plural=(n != 1);");

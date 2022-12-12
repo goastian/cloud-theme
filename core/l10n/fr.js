@@ -9,7 +9,7 @@ OC.L10N.register(
 		"and many new features added regularly!": "et de nombreuses nouvelles fonctionnalités ajoutées régulièrement !",
 		"Create My Account": "Créer mon compte",
 		"Sign in to your account": "Connectez-vous à votre compte",
-		"Terms & Conditions": "termes et conditions",
+		"Terms of Service": "Conditions d'utilisation",
 		"Privacy Policy": "Politique de confidentialité",
 		"All Rights Reserved": "Tous les droits sont réservés",
 		"Copyright": "droits d'auteur",
@@ -29,6 +29,7 @@ OC.L10N.register(
 		"A password reset message has been sent to the email address of this account. If you do not receive it, check your spam/junk folders or ask your local administrator for help.": "Un message de réinitialisation du mot de passe a été envoyé à l'adresse électronique de ce compte. Si vous ne le recevez pas, vérifiez vos dossiers de courrier indésirable ou contactez Murena à l'adresse suivante <a href=\"mailto:support@helpdesk.com\">support@helpdesk.com</a> pour obtenir de l'aide.",
 		"Couldn't send reset email. Please contact your administrator.": "Impossible d'envoyer l'email de réinitialisation. Veuillez contacter Murena au <a href=\"mailto:support@helpdesk.com\">support@helpdesk.com</a>.",
 		"Your files are encrypted. There will be no way to get your data back after your password is reset. If you are not sure what to do, please contact your administrator before you continue. Do you really want to continue?": "Vos fichiers sont cryptés. Il n'y aura aucun moyen de récupérer vos données après la réinitialisation de votre mot de passe. Si vous n'êtes pas sûr de ce que vous devez faire, veuillez contacter Murena au <a href=\"mailto:support@helpdesk.com\">support@helpdesk.com</a> avant de continuer. Voulez-vous vraiment continuer?",
-		"Password cannot be changed. Please contact your administrator.": "Le mot de passe ne peut pas être modifié. Veuillez contacter Murena à <a href=\"mailto:support@helpdesk.com\">support@helpdesk.com</a>."
+		"Password cannot be changed. Please contact your administrator.": "Le mot de passe ne peut pas être modifié. Veuillez contacter Murena à <a href=\"mailto:support@helpdesk.com\">support@helpdesk.com</a>.",
+		"If it is not there ask your local administrator.": ""
 },
 "nplurals=2; plural=(n != 1);");
