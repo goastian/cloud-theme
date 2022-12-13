@@ -97,6 +97,13 @@ body {
     font-weight: 400;
     font-size: 16px;
 }
+#body-login .wrapper .alternative-logins{
+    padding:0;
+}
+#body-login .wrapper .alternative-logins .single-alt-login-option {
+    background-color:transparent;
+    padding: 0;
+}
 #body-login .wrapper footer a{
     font-size: 12px;
 }
@@ -705,7 +712,7 @@ form .warning input[type='checkbox'] + label {
     display: inline-block;
     text-align: center;
     box-sizing: border-box;
-    background-color: #0082c9;
+    background-color: #0086FF;
     color: white;
     border-radius: 100px; /* --border-radius-pill */
 }
