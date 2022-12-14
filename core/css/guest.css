@@ -1320,8 +1320,13 @@ a.legal {
 
 #body-login #submit-form:hover,
 #body-login #reset-password-submit:hover,
-#body-login .two-factor-submit:hover {
+#body-login .two-factor-submit:hover,
+#body-login #submit-form:active,
+#body-login #reset-password-submit:active,
+#body-login .two-factor-submit:active {
     opacity: 0.9;
+    border: none;
+    outline:none;
 }
 .banner-right-align {
     text-align: left;
