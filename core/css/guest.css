@@ -1316,7 +1316,10 @@ a.legal {
 #body-login .two-factor-submit:hover,
 #body-login #submit-form:active,
 #body-login #reset-password-submit:active,
-#body-login .two-factor-submit:active {
+#body-login .two-factor-submit:active,
+#body-login #submit-form:focus,
+#body-login #reset-password-submit:focus,
+#body-login .two-factor-submit:focus  {
     opacity: 0.9;
     border: none;
     outline:none;
