@@ -1321,8 +1321,8 @@ a.legal {
 #body-login #reset-password-submit:focus,
 #body-login .two-factor-submit:focus  {
     opacity: 0.9;
-    border: none;
-    outline:none;
+    border: none !important;
+    outline:none !important;
 }
 .banner-right-align {
     text-align: left;
