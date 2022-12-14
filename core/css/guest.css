@@ -1323,6 +1323,7 @@ a.legal {
     opacity: 0.9;
     border: none !important;
     outline:none !important;
+    box-shadow: none !important;
 }
 .banner-right-align {
     text-align: left;
