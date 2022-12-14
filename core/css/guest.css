@@ -1311,19 +1311,19 @@ a.legal {
     font-size: 1.1em;
 }
 
-#body-login #submit-form:hover,
-#body-login #reset-password-submit:hover,
-#body-login .two-factor-submit:hover,
-#body-login #submit-form:active,
-#body-login #reset-password-submit:active,
-#body-login .two-factor-submit:active,
-#body-login #submit-form:focus,
-#body-login #reset-password-submit:focus,
-#body-login .two-factor-submit:focus  {
+#body-login .v-align #submit-form:hover,
+#body-login .v-align #reset-password-submit:hover,
+#body-login .v-align .two-factor-submit:hover,
+#body-login .v-align #submit-form:active,
+#body-login .v-align #reset-password-submit:active,
+#body-login .v-align .two-factor-submit:active,
+#body-login .v-align #submit-form:focus,
+#body-login .v-align #reset-password-submit:focus,
+#body-login .v-align .two-factor-submit:focus  {
     opacity: 0.9;
-    border: none !important;
-    outline:none !important;
-    box-shadow: none !important;
+    border: none;
+    outline:none;
+    box-shadow: none;
 }
 .banner-right-align {
     text-align: left;
