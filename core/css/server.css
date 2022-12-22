@@ -1724,3 +1724,7 @@
 .margin-top-10{
 	margin-top: 10px;
 }
+body.theme--highcontrast span.material-design-icon.dots-horizontal-icon,
+body.theme--highcontrast svg.material-design-icon__svg{
+	color: #fff;
+}
