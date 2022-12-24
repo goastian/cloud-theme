@@ -1732,5 +1732,5 @@ body.theme--highcontrast svg.material-design-icon__svg{
     padding: 10px;
     text-align: center;
     font-size: 12px;
-    color: gray;
+    color: var(--color-text-lighter);
 }
