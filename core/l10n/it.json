@@ -29,7 +29,8 @@
 		"Couldn't send reset email. Please contact your administrator.": "Non è stato possibile inviare l'e-mail di ripristino. Contattare Murena al numero helpdesk@murena.com.",
 		"Your files are encrypted. There will be no way to get your data back after your password is reset. If you are not sure what to do, please contact your administrator before you continue. Do you really want to continue?": "I vostri file sono criptati. Non ci sarà modo di recuperare i dati dopo la reimpostazione della password. Se non siete sicuri di cosa fare, contattate Murena all'indirizzo helpdesk@murena.com prima di continuare. Volete davvero continuare?",
 		"Password cannot be changed. Please contact your administrator.": "La password non può essere modificata. Contattare Murena all'indirizzo helpdesk@murena.com.",
-		"If it is not there ask your local administrator.": ""
+		"If it is not there ask your local administrator.": "",
+		"Due to encryption the search is only done on files' name.": "A causa della crittografia, la ricerca viene effettuata solo sul nome dei file."
     },
 	"pluralForm": "nplurals=2; plural=(n != 1);"
 }

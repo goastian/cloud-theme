@@ -1728,3 +1728,10 @@ body.theme--highcontrast span.material-design-icon.dots-horizontal-icon,
 body.theme--highcontrast svg.material-design-icon__svg{
 	color: #fff;
 }
+/* used for help text in the search  */
+#search-help-text {
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--color-text-lighter);
+}
