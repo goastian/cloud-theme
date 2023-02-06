@@ -1730,8 +1730,7 @@ body.theme--highcontrast svg.material-design-icon__svg{
 }
 /* used for help text in the search  */
 #header-menu-unified-search .empty-content:after, #header-menu-unified-search ul.unified-search__results.unified-search__results-files:after {
-    content: "Due to encryption the search is only done on files' name.";
-    padding: 10px;
+    padding: 10px; 
     font-size: 12px;
     color: var(--color-text-lighter);
 }
