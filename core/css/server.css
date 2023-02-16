@@ -1729,7 +1729,7 @@ body.theme--highcontrast svg.material-design-icon__svg{
 	color: #fff;
 }
 /* used for help text in the search  */
-#search-help-text {
+#header-menu-unified-search .empty-content:after, #header-menu-unified-search ul.unified-search__results.unified-search__results-files:after {
   padding: 10px;
   text-align: center;
   font-size: 12px;
