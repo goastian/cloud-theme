@@ -68,7 +68,7 @@
   #body-user #header,
   #body-settings #header,
   #body-public #header {
-	background-color: white !important;
+	background-color: var(--color-main-background) !important;
   }
 
   button:not(:disabled):hover,
