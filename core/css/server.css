@@ -52,6 +52,7 @@
 	--color-dashboard-background-plain: #d2d2d2;
 	--color-sharing-icon-background: #767676;
   --logo:url("../img/logo@2x.svg");
+  --notification-icon-invert:invert(0%);
   }
 
   /* Force a few variables to right values for dark theme */
@@ -61,6 +62,7 @@
 	--icon-notifications-notifications-new-000000: url("/svg/notifications/notifications-new?color=000");
 	--icon-search-000: url("/svg/core/actions/search?color=fff");
   --logo:url("../img/logo@2x-dark.svg");
+  --notification-icon-invert:invert(100%);
   }
 
   body.theme--highcontrast {
@@ -257,6 +259,7 @@
   #header .notifications .svg {
 	height: 17px;
 	width: 17px;
+  filter: var(--notification-icon-invert);
   }
 
   /*
