@@ -37,6 +37,7 @@
 	--color-delete: #e9322d;
 	--color-success: #3ad975;
 	--color-main-background: #ffffff;
+  --color-main-background-header:#ffffff;
 	--color-main-background-translucent: #f2f2f2;
 	--color-main-text: black;
 	--color-background-hover: white;
@@ -57,6 +58,7 @@
 
   /* Force a few variables to right values for dark theme */
   body.theme--dark {
+  --color-main-background-header:#272727;
 	--input-background-color: #181818;
 	--icon-notifications-notifications-000000: url("/svg/notifications/notifications?color=000");
 	--icon-notifications-notifications-new-000000: url("/svg/notifications/notifications-new?color=000");
