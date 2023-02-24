@@ -1750,5 +1750,5 @@ body.theme--highcontrast #header #appmenu li a {
   filter: invert(1);
 }
 body.theme--dark.theme--highcontrast #header #appmenu li .icon-more-white {
-  background-image: var(--icon-more-fff);
+  background-image: var(--icon-more-000);
 }
