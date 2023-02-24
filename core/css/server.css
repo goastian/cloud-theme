@@ -1742,7 +1742,7 @@ body.theme--highcontrast svg.material-design-icon__svg{
     font-size: 12px;
     color: var(--color-text-lighter);
 }
-#header #appmenu li a {
+body.theme--dark #header #appmenu li a {
   opacity: 1;
 }
 body.theme--highcontrast #header #appmenu li a {
@@ -1753,6 +1753,6 @@ body.theme--dark.theme--highcontrast #header #appmenu li .icon-more-white {
   background-image: var(--icon-more-000);
 }
 body.theme--dark.theme--highcontrast #header .header-menu.unified-search a.header-menu__trigger,
-body.theme--dark.theme--highcontrast #header .notifications-button.hasNotifications{
+body.theme--dark.theme--highcontrast #header .notifications-button.hasNotifications {
   opacity: 1 !important;
 }
