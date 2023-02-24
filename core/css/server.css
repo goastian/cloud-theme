@@ -1738,6 +1738,7 @@ body.theme--dark.theme--highcontrast #header .header-menu.unified-search a.heade
 body.theme--dark.theme--highcontrast #header .notifications-button.hasNotifications {
     opacity: 1 !important;
 }
-body.theme--dark.theme--highcontrast #header #appmenu li a span {
+body.theme--dark.theme--highcontrast #header #appmenu li:hover a,
+body.theme--dark.theme--highcontrast #header #appmenu li:focus a {
     color: #fff;
 }
