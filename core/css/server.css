@@ -65,6 +65,7 @@
 	--icon-search-000: url("/svg/core/actions/search?color=fff");
   --logo:url("../img/logo@2x-dark.svg");
   --notification-icon-invert:invert(100%);
+  --icon-inactive-color: #fff;
   }
 
   body.theme--highcontrast {
