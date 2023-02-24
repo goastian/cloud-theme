@@ -1749,3 +1749,6 @@ body.theme--highcontrast #header #appmenu li a {
   opacity: 1;
   filter: invert(1);
 }
+body.theme--dark.theme--highcontrast #header #appmenu li .icon-more-white {
+  background-image: var(--icon-more-fff);
+}
