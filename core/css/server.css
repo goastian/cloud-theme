@@ -63,9 +63,8 @@
 	--icon-notifications-notifications-000000: url("/svg/notifications/notifications?color=000");
 	--icon-notifications-notifications-new-000000: url("/svg/notifications/notifications-new?color=000");
 	--icon-search-000: url("/svg/core/actions/search?color=fff");
-	--logo:url("../img/logo@2x-dark.svg");
-	--notification-icon-invert:invert(100%);
-	--icon-inactive-color: #fff;
+  --logo:url("../img/logo@2x-dark.svg");
+  --notification-icon-invert:invert(100%);
   }
 
   body.theme--highcontrast {
@@ -1742,4 +1741,7 @@ body.theme--highcontrast svg.material-design-icon__svg{
     text-align: center;
     font-size: 12px;
     color: var(--color-text-lighter);
+}
+#header #appmenu li a {
+  opacity: 1;
 }
