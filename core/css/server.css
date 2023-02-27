@@ -1731,7 +1731,7 @@ body.theme--highcontrast #header #appmenu li a {
     opacity: 1;
     filter: invert(1);
 }
-body.theme--highcontrast #header #appmenu li a:active {
+body.theme--highcontrast #header #appmenu li a.active {
     filter: invert(0);
 }
 body.theme--dark.theme--highcontrast #header #appmenu li .icon-more-white {
