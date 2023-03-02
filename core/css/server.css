@@ -1748,7 +1748,7 @@ body.theme--dark.theme--highcontrast #header #appmenu li:focus a {
 /* Dashboard theming */
 .app-ecloud-dashboard {
     z-index: 1000;
-    background-color: var(--color-main-background);
+    background-color: var(--color-main-background) !important;
     position: relative;
     flex-basis: 100vw;
     min-height: 100%;
