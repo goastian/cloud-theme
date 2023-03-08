@@ -1745,3 +1745,7 @@ body.theme--dark.theme--highcontrast #header #appmenu li:hover a,
 body.theme--dark.theme--highcontrast #header #appmenu li:focus a {
     color: #000;
 }
+/* Files App */
+#content.app-files #filestable {
+    padding-top: 10px;
+}
