@@ -1664,7 +1664,7 @@ button.edit-output-dir span.icon-rename,
     letter-spacing: 1px;
 }
 #filestable thead {
-    background-color: white !important;
+    background-color: var(--color-main-background-header) !important;
 }
 #recommendations {
     height: 100px !important;
@@ -1747,5 +1747,5 @@ body.theme--dark.theme--highcontrast #header #appmenu li:focus a {
 }
 /* Files App */
 #content.app-files #filestable {
-    padding-top: 10px;
+    padding-top: 20px;
 }
