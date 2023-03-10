@@ -1727,6 +1727,10 @@ body.theme--highcontrast svg.material-design-icon__svg {
 body.theme--dark #header #appmenu li a {
     opacity: 1;
 }
+body.theme--light.theme--highcontrast #header #appmenu li a {
+    opacity: 1;
+    filter: invert(0);
+}
 body.theme--highcontrast #header #appmenu li a {
     opacity: 1;
     filter: invert(1);
