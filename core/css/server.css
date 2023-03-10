@@ -1739,7 +1739,7 @@ body.theme--highcontrast #header #appmenu li a {
 body.theme--highcontrast #header #appmenu li a.active {
     filter: invert(0);
 }
-body.theme--dark.theme--highcontrast #header #appmenu li .icon-more-white {
+body.theme--highcontrast #header #appmenu li .icon-more-white {
     background-image: var(--icon-more-000);
 }
 body.theme--dark.theme--highcontrast #header .header-menu.unified-search a.header-menu__trigger,
