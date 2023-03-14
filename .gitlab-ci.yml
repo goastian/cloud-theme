@@ -9,7 +9,14 @@ include:
 
 .deploy:nextcloud-app-by-checkout:
   script:
-    - ssh $SSH_USER@$DEPLOYMENT_HOST "git clone --depth 1 $CI_REPOSITORY_URL --branch $CI_COMMIT_REF_NAME --single-branch /tmp/${CI_JOB_ID}/${APP_NAME} && sudo rsync -avzh --chown www-data:www-data --delete --exclude '.git*' /tmp/${CI_JOB_ID}/${eCloud} ${DEPLOYMENT_PATH}/html/themes/ && rm -rf /tmp/${CI_JOB_ID} && docker exec -u www-data $CONTAINER_NAME /usr/local/bin/php /var/www/html/occ maintenance:theme:update"
-
-
-
+    # print var to confirm
+    - echo "Deploying $APP_NAME to $CI_ENVIRONMENT_NAME ($DEPLOYMENT_HOST)"
+    # clone repo to /tmp
+    - |
+      ssh $SSH_USER@$DEPLOYMENT_HOST /bin/bash -s << EOT
+      git clone --depth 1 $CI_REPOSITORY_URL --branch $CI_COMMIT_REF_NAME --single-branch /tmp/${CI_JOB_ID}/${APP_NAME}
+      sudo rsync -avzh --chown www-data:www-data --delete --exclude '.git*' /tmp/${CI_JOB_ID}/${APP_NAME} ${DEPLOYMENT_PATH}/html/themes/${APP_PATH}
+      docker exec -u www-data $CONTAINER_NAME /usr/local/bin/php /var/www/html/occ maintenance:theme:update
+      fi
+      EOT
+    - echo "SUCCESS" > .job_status
