@@ -1785,6 +1785,6 @@ body.theme--dark.theme--highcontrast #header #appmenu li:focus a {
 .notification[object_type="announcement-news"] a.external:after {
   content: '';
 }
-.notification[object_type="announcement-news"] .notification-heading button:hover:not(:disabled) {
+.notification[object_type="announcement-news"] .notification-heading button:hover {
   background-color: unset;
 }
