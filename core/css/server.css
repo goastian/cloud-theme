@@ -1757,34 +1757,34 @@ body.theme--dark.theme--highcontrast #header #appmenu li:focus a {
 }
 
 /* notification */
-.notification[object_type="announcement-news"] {
+.notification[object_type="murena-notifications-news"] {
   background-color: var(--color-primary);
   color: var(--color-secondary-element);
 }
-.notification[object_type="announcement-news"] img.notification-icon {
+.notification[object_type="murena-notifications-news"] img.notification-icon {
   display: none;
 }
-.notification[object_type="announcement-news"] .image:after {
+.notification[object_type="murena-notifications-news"] .image:after {
   content: " ";
   background-image: url('../img/redeem.svg');
   padding: 5px 15px;
   background-size: contain;
 }
-.notification[object_type="announcement-news"] .notification-subject {
+.notification[object_type="murena-notifications-news"] .notification-subject {
   font-size: 18px;
 }
-.notification[object_type="announcement-news"] .notification-message,
-.notification[object_type="announcement-news"] a.external,
-.notification[object_type="announcement-news"] .notification-heading button,
-.notification[object_type="announcement-news"] .notification-heading .notification-time {
+.notification[object_type="murena-notifications-news"] .notification-message,
+.notification[object_type="murena-notifications-news"] a.external,
+.notification[object_type="murena-notifications-news"] .notification-heading button,
+.notification[object_type="murena-notifications-news"] .notification-heading .notification-time {
   color: var(--color-secondary-element);
 }
-.notification[object_type="announcement-news"] .icon-close {
+.notification[object_type="murena-notifications-news"] .icon-close {
   background-image: var(--icon-close-fff);
 }
-.notification[object_type="announcement-news"] a.external:after {
+.notification[object_type="murena-notifications-news"] a.external:after {
   content: '';
 }
-.notification[object_type="announcement-news"] .notification-heading button:hover {
+.notification[object_type="murena-notifications-news"] .notification-heading button:hover {
   background-color: unset;
 }
