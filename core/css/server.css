@@ -1778,6 +1778,9 @@ body.theme--dark.theme--highcontrast #header #appmenu li:focus a {
 .notification[object_type="announcement-news"] .notification-heading .notification-time {
   color: var(--color-secondary-element);
 }
+.notification[object_type="announcement-news"] .icon-close {
+  background-image: var(--icon-close-fff);
+}
 .notification[object_type="announcement-news"] a.external:after {
   content: '';
 }
