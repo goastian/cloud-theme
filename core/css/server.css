@@ -1724,37 +1724,6 @@ body.theme--highcontrast svg.material-design-icon__svg {
   font-size: 12px;
   color: var(--color-text-lighter);
 }
-
-/* notification */
-.notification[object_type="announcement-news"] {
-  background-color: var(--color-primary);
-  color: var(--color-secondary-element);
-}
-
-.notification[object_type="announcement-news"] img.notification-icon {
-  display: none;
-}
-
-.notification[object_type="announcement-news"] .image:after {
-  content: " ";
-  background-image: url('../img/redeem.svg');
-  padding: 5px 15px;
-  background-size: contain;
-}
-
-.notification[object_type="announcement-news"] .notification-subject {
-  font-size: 18px;
-}
-
-.notification[object_type="announcement-news"] .notification-message,
-.notification[object_type="announcement-news"] a.external,
-.notification[object_type="announcement-news"] .notification-heading .notification-time {
-  color: var(--color-secondary-element);
-}
-
-.notification[object_type="announcement-news"] a.external:after {
-  content: '';
-}
 #search-help-text {
     padding: 10px;
     text-align: center;
