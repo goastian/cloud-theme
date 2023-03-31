@@ -1753,13 +1753,16 @@ body.theme--highcontrast svg.material-design-icon__svg{
   background-size: contain;
 }
 
-.notification[object_type="announcement-news"] .notification-subject{
+.notification[object_type="announcement-news"] .notification-subject {
   font-size: 18px;
 }
-.notification[object_type="announcement-news"] .notification-message,.notification[object_type="announcement-news"] a.external{
+
+.notification[object_type="announcement-news"] .notification-message,
+.notification[object_type="announcement-news"] a.external,
+.notification[object_type="announcement-news"] .notification-heading .notification-time {
   color: var(--color-secondary-element);
 }
 
-.notification[object_type="announcement-news"] a.external:after{
+.notification[object_type="announcement-news"] a.external:after {
   content: '';
 }
