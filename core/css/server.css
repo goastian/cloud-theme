@@ -1775,6 +1775,7 @@ body.theme--dark.theme--highcontrast #header #appmenu li:focus a {
 }
 .notification[object_type="announcement-news"] .notification-message,
 .notification[object_type="announcement-news"] a.external,
+.notification[object_type="announcement-news"] .notification-heading button,
 .notification[object_type="announcement-news"] .notification-heading .notification-time {
   color: var(--color-secondary-element);
 }
@@ -1783,4 +1784,7 @@ body.theme--dark.theme--highcontrast #header #appmenu li:focus a {
 }
 .notification[object_type="announcement-news"] a.external:after {
   content: '';
+}
+.notification[object_type="announcement-news"] .notification-heading button:hover:not(:disabled) {
+  background-color: unset;
 }
