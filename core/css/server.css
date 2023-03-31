@@ -1788,3 +1788,7 @@ body.theme--dark.theme--highcontrast #header #appmenu li:focus a {
 .notification[object_type="announcement-news"] .notification-heading button:hover {
   background-color: unset;
 }
+
+.foobar {
+    color: red;
+}
