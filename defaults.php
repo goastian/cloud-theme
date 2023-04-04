@@ -17,8 +17,11 @@
  * You should have received a copy of the GNU Affero General Public License, version 3,
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
+namespace OCA\Theming\Themes;
 
-class OC_Theme {
+use OCA\Theming\ITheme;
+
+class OC_Theme extends DefaultTheme implements ITheme {
 
 	/**
 	 * Returns the base URL
