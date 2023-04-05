@@ -984,7 +984,7 @@ p.info {
     background-image: url('../img/actions/checkmark-white.svg?v=1');
 }
 
-#body-login .warning-messsage .icon-checkmark-white {
+#body-login .warning-message .icon-checkmark-white {
     background-image: url('../img/actions/checkmark-success.svg?v=1');
 }
 
@@ -1134,7 +1134,7 @@ a.legal {
     max-height: 100%;
     transition: all 0.3s linear;
 }
-#body-login .warning-messsage {
+#body-login .warning-message {
     width: 50%;
     margin: 0 auto;
     margin-top: 0;
@@ -1400,7 +1400,7 @@ a.legal {
 .v-align header{
     width: 100%;
 }
-.warning-messsage header{
+.warning-message header{
     margin-top: 0;
 }
 .sign-in-label {
@@ -1415,11 +1415,11 @@ a.legal {
     width: 100%;
     margin: 0 auto;
 }
-.warning-messsage main{
+.warning-message main{
     margin-bottom: 0;
     max-width: 90%;
 }
-.warning-messsage main{
+.warning-message main{
     margin-bottom: 0;
     max-width: 60%;
 }
@@ -1533,7 +1533,7 @@ a.legal {
     .banner-content-why-murena{
         margin: 5% 0 5% 0;
     }
-    .warning-messsage main{
+    .warning-message main{
         max-width: 90%;
         overflow-x: auto;
     }
@@ -1561,10 +1561,10 @@ a.legal {
     .lines{
         display: none;
     }
-    #body-login .warning-messsage {
+    #body-login .warning-message {
         width: 80%;
     }
-    .warning-messsage main{
+    .warning-message main{
         max-width: 90%;
     }
     #body-login .update, #body-login .success {
@@ -1588,7 +1588,7 @@ a.legal {
         margin: 0 auto;
         height: 100%;
     }
-    #body-login .warning-messsage {
+    #body-login .warning-message {
         width: 90%;
     }
 }
