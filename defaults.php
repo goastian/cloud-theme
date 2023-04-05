@@ -17,9 +17,9 @@
  * You should have received a copy of the GNU Affero General Public License, version 3,
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
+use OCA\Theming\ThemingDefaults;
 
-
-class OC_Theme extends \OCA\Theming\ThemingDefaults {
+class OC_Theme extends ThemingDefaults {
 
 	/**
 	 * Returns the base URL
