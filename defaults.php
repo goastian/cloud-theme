@@ -22,7 +22,7 @@ namespace OCA\Theming\Themes;
 use OCA\Theming\ITheme;
 use OCA\Theming\Themes\DefaultTheme;
 
-class OC_Theme extends DefaultTheme implements ITheme {
+class OC_Theme extends DefaultTheme {
 
 	/**
 	 * Returns the base URL
