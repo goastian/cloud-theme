@@ -26,7 +26,7 @@
 * {
     font-family: 'Roboto';
 }
-:root {
+[data-theme-light] {
     --color-primary: #007fff;
     --color-primary-element: #007fff;
     --color-secondary-element: white;
