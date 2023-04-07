@@ -916,6 +916,8 @@ body.theme--highcontrast #header .header-right .magnify-icon {
 #header .header-right .magnify-icon {
     background: var(--icon-search-000) no-repeat center;
     background-size: 15px;
+    width: inherit;
+    height: inherit;
 }
 
 #content.app-files #filestable span,
