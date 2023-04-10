@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU Affero General Public License, version 3,
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-@font-face {
+ @font-face {
     font-family: 'Roboto';
     src: url('../webfonts/Roboto-Regular.woff2') format('woff2'), url('../webfonts/Roboto-Regular.woff') format('woff');
     /* font-weight: 600; */
@@ -27,14 +27,14 @@
     font-family: 'Roboto';
 }
 :root {
-    --color-primary: #007fff;
-    --color-primary-element: #007fff;
-    --color-secondary-element: white;
-    --border-color-secondary-element: #007fff;
-    --color-primary-element-light: #007fff;
-    --color-error: #fb3845;
-    --color-delete: #e9322d;
-    --color-success: #3ad975;
+    --color-primary: #007fff !important;
+    --color-primary-element: #007fff !important;
+    --color-secondary-element: white !important;
+    --border-color-secondary-element: #007fff !important;
+    --color-primary-element-light: #007fff !important;
+    --color-error: #fb3845 !important;
+    --color-delete: #e9322d !important;
+    --color-success: #3ad975 !important;
     --color-main-background: #ffffff;
     --color-main-background-header: #ffffff;
     --color-main-background-translucent: #f2f2f2;
@@ -1123,7 +1123,6 @@ li.active .icon-share {
 }
 
 #app-navigation-vue #app-settings #app-settings-header .settings-button,
-#app-navigation #app-settings #app-settings-header .settings-button,
 .icon-category-tools {
     background-image: var(--icon-settings-808080);
 }
