@@ -1589,72 +1589,72 @@ button.edit-output-dir span.icon-rename,
 }
 .new-icons .drive,
 .new-icons .files {
-    background-image: url("../img/app-icons/Drive.svg");
+    background-image: url("../img/app-icons/Drive.svg") !important;
 }
 .new-icons .activity {
-    background-image: url("../img/app-icons/Activity.svg");
+    background-image: url("../img/app-icons/Activity.svg") !important;
 }
 .new-icons .bookmarks {
-    background-image: url("../img/app-icons/Bookmark.svg");
+    background-image: url("../img/app-icons/Bookmark.svg") !important;
 }
 .new-icons .calendar {
-    background-image: url("../img/app-icons/Calendar.svg");
+    background-image: url("../img/app-icons/Calendar.svg") !important;
 }
 .new-icons .carnet {
-    background-image: url("../img/app-icons/Carnet.svg");
+    background-image: url("../img/app-icons/Carnet.svg") !important;
 }
 .new-icons .contacts {
-    background-image: url("../img/app-icons/Contacts.svg");
+    background-image: url("../img/app-icons/Contacts.svg") !important;
 }
 .new-icons .deck {
-    background-image: url("../img/app-icons/Deck.svg");
+    background-image: url("../img/app-icons/Deck.svg") !important;
 }
 .new-icons .docs {
-    background-image: url("../img/app-icons/Docs.svg");
+    background-image: url("../img/app-icons/Docs.svg") !important;
 }
 .new-icons .email,
 .new-icons .rainloop,
 .new-icons .snappymail {
-    background-image: url("../img/app-icons/E-mail.svg");
+    background-image: url("../img/app-icons/E-mail.svg") !important;
 }
 .new-icons .gitlab {
-    background-image: url("../img/app-icons/Gitlab.svg");
+    background-image: url("../img/app-icons/Gitlab.svg") !important;
 }
 .new-icons .news {
-    background-image: url("../img/app-icons/News.svg");
+    background-image: url("../img/app-icons/News.svg") !important;
 }
 .new-icons .notes {
-    background-image: url("../img/app-icons/Notes.svg");
+    background-image: url("../img/app-icons/Notes.svg") !important;
 }
 .new-icons .presentation {
-    background-image: url("../img/app-icons/Presentation.svg");
+    background-image: url("../img/app-icons/Presentation.svg") !important;
 }
 .new-icons .spreadsheet {
-    background-image: url("../img/app-icons/Spreadsheet.svg");
+    background-image: url("../img/app-icons/Spreadsheet.svg") !important;
 }
 .new-icons .tasks {
-    background-image: url("../img/app-icons/Tasks.svg");
+    background-image: url("../img/app-icons/Tasks.svg") !important;
 }
 .new-icons .photos {
-    background-image: url("../img/app-icons/Gallery.svg");
+    background-image: url("../img/app-icons/Gallery.svg") !important;
 }
 .new-icons .e-user-support-center {
-    background-image: url("../img/app-icons/Support.svg");
+    background-image: url("../img/app-icons/Support.svg") !important;
 }
 .new-icons .passwords {
-    background-image: url("../img/app-icons/Password.svg");
+    background-image: url("../img/app-icons/Password.svg") !important;
 }
 .new-icons .onlyoffice_docx {
-    background-image: url("../img/app-icons/Docs.svg");
+    background-image: url("../img/app-icons/Docs.svg") !important;
 }
 .new-icons .onlyoffice_xlsx {
-    background-image: url("../img/app-icons/Spreadsheet.svg");
+    background-image: url("../img/app-icons/Spreadsheet.svg") !important;
 }
 .new-icons .onlyoffice_pptx {
-    background-image: url("../img/app-icons/Presentation.svg");
+    background-image: url("../img/app-icons/Presentation.svg") !important;
 }
 .new-icons .cookbook {
-    background-image: url("../img/app-icons/Cookbook.svg");
+    background-image: url("../img/app-icons/Cookbook.svg") !important;
 }
 
 #appmenu li:hover a,
@@ -1755,3 +1755,7 @@ body.theme--dark.theme--highcontrast #header #appmenu li:focus a {
 #content.app-files #filestable {
     padding-top: 20px;
 }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
