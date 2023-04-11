@@ -169,6 +169,7 @@ input[type="checkbox"].checkbox + label::before,
 input[type="radio"].checkbox + label::before {
     border-color: var(--icon-inactive-color);
     background-color: white;
+    border: 1px solid #878787;
 }
 
 textarea:not(:disabled),
