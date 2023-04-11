@@ -56,6 +56,11 @@
     --border-radius: 3px;
     --border-radius-large: 10px;
     --border-radius-pill: 100px;
+    --color-background-hover: whitesmoke;
+    --color-background-dark: #ededed;
+    --color-background-darker: #dbdbdb;
+    --color-placeholder-light: #e6e6e6;
+    --color-placeholder-dark: #ccc;
 }
 
 /* Force a few variables to right values for dark theme */
