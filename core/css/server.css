@@ -53,6 +53,7 @@
     --color-sharing-icon-background: #767676;
     --logo: url("../img/logo@2x.svg");
     --notification-icon-invert: invert(0%);
+    --border-radius-pill:3px;
 }
 
 /* Force a few variables to right values for dark theme */
