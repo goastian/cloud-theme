@@ -27,14 +27,14 @@
     font-family: 'Roboto';
 }
 :root {
-    --color-primary: #007fff !important;
-    --color-primary-element: #007fff !important;
-    --color-secondary-element: white !important;
-    --border-color-secondary-element: #007fff !important;
-    --color-primary-element-light: #007fff !important;
-    --color-error: #fb3845 !important;
-    --color-delete: #e9322d !important;
-    --color-success: #3ad975 !important;
+    --color-primary: #007fff;
+    --color-primary-element: #007fff;
+    --color-secondary-element: white;
+    --border-color-secondary-element: #007fff;
+    --color-primary-element-light: #007fff;
+    --color-error: #fb3845;
+    --color-delete: #e9322d;
+    --color-success: #3ad975;
     --color-main-background: #ffffff;
     --color-main-background-header: #ffffff;
     --color-main-background-translucent: #f2f2f2;
@@ -53,7 +53,9 @@
     --color-sharing-icon-background: #767676;
     --logo: url("../img/logo@2x.svg");
     --notification-icon-invert: invert(0%);
-    --border-radius-pill:3px;
+    --border-radius: 3px;
+    --border-radius-large: 10px;
+    --border-radius-pill: 100px;
 }
 
 /* Force a few variables to right values for dark theme */
