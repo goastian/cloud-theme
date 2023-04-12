@@ -1768,3 +1768,23 @@ body.theme--dark.theme--highcontrast #header #appmenu li:focus a {
 #content.app-files #filestable {
     padding-top: 20px;
 }
+
+div.select2-drop .select2-search input,
+select,
+button:not(.button-vue),
+.button,
+input:not([type='range']),
+textarea,
+div[contenteditable=true],
+.pager li a {
+    margin: 3px 3px 3px 0;
+    padding: 7px 6px;
+    font-size: 13px;
+    background-color: var(--color-main-background);
+    color: var(--color-main-text);
+    border: 1px solid var(--color-border-dark);
+    outline: none;
+    border-radius: var(--border-radius);
+    cursor: text;
+}
+
