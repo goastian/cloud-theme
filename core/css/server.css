@@ -61,7 +61,7 @@
 }
 
 /* Force a few variables to right values for dark theme */
-body.theme--dark {
+body[data-themes="dark"] {
     --color-main-background-header: #272727;
     --input-background-color: #181818;
     --icon-notifications-notifications-000000: url("/svg/notifications/notifications?color=000");
