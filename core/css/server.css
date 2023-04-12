@@ -1788,3 +1788,12 @@ div[contenteditable=true],
     cursor: text;
 }
 
+button:not(.button-vue),
+.button,
+input[type='button'],
+input[type='submit'],
+input[type='reset'] {
+    font-weight: bold;
+    border-radius: var(--border-radius-pill);
+}
+
