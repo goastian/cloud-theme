@@ -74,6 +74,14 @@ body[data-themes="dark"] {
 body.theme--highcontrast {
     --icon-inactive-color: black;
 }
+body {
+    background-color: var(--color-main-background);
+    font-weight: normal;
+    font-size: var(--default-font-size);
+    line-height: var(--default-line-height);
+    font-family: var(--font-face);
+    color: var(--color-main-text);
+}
 
 #body-user #header,
 #body-settings #header,
