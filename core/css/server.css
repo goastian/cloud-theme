@@ -1579,84 +1579,6 @@ button.edit-output-dir span.icon-rename,
 #header .header-right .magnify-icon > svg {
     display: none;
 }
-.new-icons .color-icons {
-    background-image: url("../img/app-icons/other.svg");
-    width: 100%;
-    height: 80px;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: 60px;
-}
-.new-icons .drive,
-.new-icons .files {
-    background-image: url("../img/app-icons/Drive.svg") !important;
-}
-.new-icons .activity {
-    background-image: url("../img/app-icons/Activity.svg") !important;
-}
-.new-icons .bookmarks {
-    background-image: url("../img/app-icons/Bookmark.svg") !important;
-}
-.new-icons .calendar {
-    background-image: url("../img/app-icons/Calendar.svg") !important;
-}
-.new-icons .carnet {
-    background-image: url("../img/app-icons/Carnet.svg") !important;
-}
-.new-icons .contacts {
-    background-image: url("../img/app-icons/Contacts.svg") !important;
-}
-.new-icons .deck {
-    background-image: url("../img/app-icons/Deck.svg") !important;
-}
-.new-icons .docs {
-    background-image: url("../img/app-icons/Docs.svg") !important;
-}
-.new-icons .email,
-.new-icons .rainloop,
-.new-icons .snappymail {
-    background-image: url("../img/app-icons/E-mail.svg") !important;
-}
-.new-icons .gitlab {
-    background-image: url("../img/app-icons/Gitlab.svg") !important;
-}
-.new-icons .news {
-    background-image: url("../img/app-icons/News.svg") !important;
-}
-.new-icons .notes {
-    background-image: url("../img/app-icons/Notes.svg") !important;
-}
-.new-icons .presentation {
-    background-image: url("../img/app-icons/Presentation.svg") !important;
-}
-.new-icons .spreadsheet {
-    background-image: url("../img/app-icons/Spreadsheet.svg") !important;
-}
-.new-icons .tasks {
-    background-image: url("../img/app-icons/Tasks.svg") !important;
-}
-.new-icons .photos {
-    background-image: url("../img/app-icons/Gallery.svg") !important;
-}
-.new-icons .e-user-support-center {
-    background-image: url("../img/app-icons/Support.svg") !important;
-}
-.new-icons .passwords {
-    background-image: url("../img/app-icons/Password.svg") !important;
-}
-.new-icons .onlyoffice_docx {
-    background-image: url("../img/app-icons/Docs.svg") !important;
-}
-.new-icons .onlyoffice_xlsx {
-    background-image: url("../img/app-icons/Spreadsheet.svg") !important;
-}
-.new-icons .onlyoffice_pptx {
-    background-image: url("../img/app-icons/Presentation.svg") !important;
-}
-.new-icons .cookbook {
-    background-image: url("../img/app-icons/Cookbook.svg") !important;
-}
-
 #appmenu li:hover a,
 #appmenu li a:focus {
     font-size: 12px;
@@ -1693,10 +1615,6 @@ button#quotaincreasebutton {
     margin-top: 15px !important;
 }
 @media only screen and(max-width: 640px) {
-    .new-icons .color-icons {
-        height: 50px;
-        background-size: 40px;
-    }
     #launcher-menu {
         width: 300px !important;
         left: 10% !important;
