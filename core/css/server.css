@@ -167,6 +167,7 @@ button.primary + button:not(.primary):active,
 .status-buttons .status-buttons__select {
     background-color: var(--color-secondary-element);
     color: var(--color-primary);
+    border: 1px solid;
     border-color: var(--border-color-secondary-element);
 }
 
@@ -1796,18 +1797,4 @@ input[type='reset'] {
     font-weight: bold;
     border-radius: var(--border-radius-pill);
 }
-div.select2-drop .select2-search input.primary,
-select.primary,
-button:not(.button-vue).primary,
-.button.primary,
-input:not([type='range']).primary,
-textarea.primary,
-div[contenteditable=true].primary,
-.pager li a.primary {
-    background-color: var(--color-primary-element);
-    border-color: var(--color-primary-element);
-    color: var(--color-primary-text);
-    cursor: pointer;
-}
-
 
