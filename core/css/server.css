@@ -1795,4 +1795,13 @@ input[type='reset'] {
     font-weight: bold;
     border-radius: var(--border-radius-pill);
 }
+.content.app-contacts .multiselect .multiselect__tags {
+    border: 1px solid var(--color-border-dark) !important;
+    border-radius: var(--border-radius) !important;
+}
+.content.app-contacts .property__row .property__label:not(.multiselect) {
+   padding-right:10px;
+}
+
+
 
