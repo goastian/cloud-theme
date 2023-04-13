@@ -92,7 +92,6 @@ input[type="reset"]:hover,
 #new-contact-button:hover,
 #new-user-button:hover,
 #deleteaccount:hover,
-#quotaincreasebutton:hover,
 #content-vue.app-tasks .action.icon-checkmark:hover,
 .button.today:hover,
 button.import-contact__button-main:hover,
@@ -119,7 +118,6 @@ button.primary:active,
 #new-contact-button,
 #new-user-button,
 #deleteaccount,
-#quotaincreasebutton,
 .mx-datepicker .mx-datepicker-footer .mx-btn,
 #content-vue.app-tasks .action.icon-checkmark,
 button.import-contact__button-main,
@@ -1691,9 +1689,7 @@ progress {
     display: none !important;
 }
 
-button#quotaincreasebutton {
-    margin-top: 15px !important;
-}
+
 @media only screen and(max-width: 640px) {
     .new-icons .color-icons {
         height: 50px;
