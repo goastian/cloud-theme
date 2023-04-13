@@ -160,8 +160,6 @@ a.primary:not(:disabled):focus {
 button.primary + button:not(.primary),
 button.primary + button:not(.primary):active,
 .entity-picker__navigation button:not(.primary),
-.event-popover__buttons button:not(.primary),
-.event-popover__buttons button:not(.primary):active,
 .oc-dialog-buttonrow.twobuttons button:not(.primary),
 .oc-dialog-buttonrow.twobuttons button:not(.primary):active,
 .status-buttons .status-buttons__select {
