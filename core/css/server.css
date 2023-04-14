@@ -298,10 +298,10 @@ li.app-navigation-entry.app-navigation-entry--collapsible > a:hover,
 .nc-theming-contrast {
     color: #fff;
 }
-#appmenu:not(.inverted) svg {
+#header .app-menu:not(.inverted) svg {
     filter: none;
 }
-#appmenu.inverted svg {
+#header .app-menu.inverted svg {
     filter: invert(1);
 }
 .icon-folder,
@@ -335,7 +335,7 @@ li.app-navigation-entry.app-navigation-entry--collapsible > a:hover,
     opacity: 1;
 }
 
-#appmenu li span {
+#header .app-menu li span {
     color: var(--color-main-text);
 }
 
@@ -1150,28 +1150,28 @@ button.menuitem:hover .icon-delete,
     background-image: var(--icon-delete-e9322d);
 }
 
-#appmenu li a span {
+#header .app-menu li a span {
     color: transparent;
 }
 
-#appmenu li:hover a span {
+#header .app-menu li:hover a span {
     color: var(--icon-inactive-color);
 }
 
-body.theme--highcontrast #appmenu li:hover a span {
+body.theme--highcontrast #header .app-menu li:hover a span {
     color: var(--color-main-text);
 }
 
-#appmenu li:hover a svg {
+#header .app-menu li:hover a svg {
     color: var(--color-main-text);
     transform: translateY(-7px);
 }
 
-#appmenu:hover li svg,
-#appmenu:hover li .icon-more,
-#appmenu:hover li .icon-more-white,
-#appmenu:hover li .icon-loading-small,
-#appmenu:hover li .icon-loading-small-dark {
+#header .app-menu:hover li svg,
+#header .app-menu:hover li .icon-more,
+#header .app-menu:hover li .icon-more-white,
+#header .app-menu:hover li .icon-loading-small,
+#header .app-menu:hover li .icon-loading-small-dark {
     transform: none;
 }
 
@@ -1657,8 +1657,8 @@ button.edit-output-dir span.icon-rename,
     background-image: url("../img/app-icons/Cookbook.svg");
 }
 
-#appmenu li:hover a,
-#appmenu li a:focus {
+#header .app-menu li:hover a,
+#header .app-menu li a:focus {
     font-size: 12px;
     font-family: 'Roboto';
     letter-spacing: 1px;
@@ -1679,8 +1679,8 @@ progress {
     border-radius: 10px 10px !important;
     height: 12px !important;
 }
-#appmenu li a:focus .icon-more,
-#appmenu li a:focus .icon-more-white {
+#header .app-menu li a:focus .icon-more,
+#header .app-menu li a:focus .icon-more-white {
     transform: none !important;
 }
 #more-apps:hover span,
@@ -1722,22 +1722,22 @@ body.theme--highcontrast svg.material-design-icon__svg {
     font-size: 12px;
     color: var(--color-text-lighter);
 }
-body.theme--dark #header #appmenu li a {
+body.theme--dark #header .app-menu li a {
     opacity: 1;
 }
-body.theme--light.theme--highcontrast #header #appmenu li a {
+body.theme--light.theme--highcontrast #header .app-menu li a {
     opacity: 1;
     filter: invert(0);
 }
 
-body.theme--highcontrast #header #appmenu li a {
+body.theme--highcontrast #header .app-menu li a {
     opacity: 1;
     filter: invert(1);
 }
-body.theme--highcontrast #header #appmenu li a.active {
+body.theme--highcontrast #header .app-menu li a.active {
     filter: invert(0);
 }
-body.theme--highcontrast #header #appmenu li .icon-more-white {
+body.theme--highcontrast #header .app-menu li .icon-more-white {
     background-image: var(--icon-more-000);
 }
 body.theme--dark.theme--highcontrast #header .header-menu.unified-search a.header-menu__trigger,
@@ -1745,8 +1745,8 @@ body.theme--highcontrast #header .notifications-button.hasNotifications,
 body.theme--highcontrast #unified-search .header-menu__trigger {
     opacity: 1 !important;
 }
-body.theme--dark.theme--highcontrast #header #appmenu li:hover a,
-body.theme--dark.theme--highcontrast #header #appmenu li:focus a {
+body.theme--dark.theme--highcontrast #header .app-menu li:hover a,
+body.theme--dark.theme--highcontrast #header .app-menu li:focus a {
     color: #000;
 }
 /* Files App */
