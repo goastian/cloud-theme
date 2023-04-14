@@ -335,7 +335,7 @@ li.app-navigation-entry.app-navigation-entry--collapsible > a:hover,
     opacity: 1;
 }
 
-#header .app-menu li span {
+#header .app-menu li .app-menu-entry--label {
     color: var(--color-main-text);
 }
 
@@ -1123,7 +1123,7 @@ li.active .icon-share {
 }
 
 #app-navigation-vue #app-settings #app-settings-header .settings-button,
-#app-navigation #app-settings #app-settings-header .settings-button,
+#app-navigation #app-settings #app-settings-header .settings-button::before,
 .icon-category-tools {
     background-image: var(--icon-settings-808080);
 }
@@ -1150,29 +1150,36 @@ button.menuitem:hover .icon-delete,
     background-image: var(--icon-delete-e9322d);
 }
 
-#header .app-menu li a span {
+#header .app-menu li a .app-menu-entry--label {
     color: transparent;
 }
 
-#header .app-menu li:hover a span {
+#header .app-menu li:hover a .app-menu-entry--label {
     color: var(--icon-inactive-color);
 }
 
-body.theme--highcontrast #header .app-menu li:hover a span {
+body.theme--highcontrast #header .app-menu li:hover a .app-menu-entry--label {
     color: var(--color-main-text);
 }
 
-#header .app-menu li:hover a svg {
+#header .app-menu li:hover a img {
     color: var(--color-main-text);
     transform: translateY(-7px);
 }
 
-#header .app-menu:hover li svg,
+#header .app-menu:hover li img,
 #header .app-menu:hover li .icon-more,
 #header .app-menu:hover li .icon-more-white,
 #header .app-menu:hover li .icon-loading-small,
 #header .app-menu:hover li .icon-loading-small-dark {
     transform: none;
+}
+
+#header .app-menu-main:hover img, 
+#header .app-menu-main:focus-within img, 
+#header .app-menu-main .app-menu-entry:hover img,
+#header .app-menu-main .app-menu-entry:focus img {
+    margin-top: 0px;
 }
 
 /* Settings app */
@@ -1734,7 +1741,16 @@ body.theme--highcontrast #header .app-menu li a {
     opacity: 1;
     filter: invert(1);
 }
-body.theme--highcontrast #header .app-menu li a.active {
+
+#header .app-menu li a {
+    opacity: 0.6;
+}
+
+#header .app-menu li:hover a {
+    opacity: 1;
+}
+
+body.theme--highcontrast #header .app-menu li.app-menu-entry__active a {
     filter: invert(0);
 }
 body.theme--highcontrast #header .app-menu li .icon-more-white {
