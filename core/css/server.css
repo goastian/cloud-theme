@@ -1759,7 +1759,8 @@ body.theme--highcontrast #header .app-menu li a {
     opacity: 0.6;
 }
 
-#header .app-menu li:hover a {
+#header .app-menu li:hover a,
+#header .app-menu li.app-menu-entry__active a {
     opacity: 1;
 }
 
