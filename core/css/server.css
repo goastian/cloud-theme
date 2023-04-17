@@ -1729,9 +1729,11 @@ body.theme--highcontrast svg.material-design-icon__svg {
     font-size: 12px;
     color: var(--color-text-lighter);
 }
-body.theme--dark #header .app-menu li a {
+body.theme--dark #header .app-menu li a,
+#header .app-menu-main .app-menu-entry {
     opacity: 1;
 }
+
 body.theme--light.theme--highcontrast #header .app-menu li a {
     opacity: 1;
     filter: invert(0);
