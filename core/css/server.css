@@ -364,6 +364,33 @@ footer {
     height: 92px;
 }
 
+#header #notifications .notifications-button__icon {
+    display: none;
+}
+
+#header #notifications .header-menu__trigger,
+#header #unified-search .magnify-icon {
+    opacity: 0.6;
+}
+
+#header #notifications .header-menu__trigger:hover,
+#header #unified-search .magnify-icon:hover {
+    opacity: 1;
+}
+
+
+#header #notifications[data-has-notifications="true"] .header-menu__trigger {
+    background: var(--icon-notifications-notifications-new-000000) no-repeat center;
+    background-size: 17px;
+
+}
+
+#header #notifications .header-menu__trigger {
+    background: var(--icon-notifications-notifications-000000) no-repeat center;
+    background-size: 17px;
+}
+
+
 .notifications-button.hasNotifications {
     opacity: 0.6 !important;
 }
