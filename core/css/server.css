@@ -53,6 +53,8 @@
     --color-sharing-icon-background: #767676;
     --logo: url("../img/logo@2x.svg");
     --notification-icon-invert: invert(0%);
+    --active-icon-filter: brightness(0) saturate(100%) invert(38%) sepia(88%) saturate(4068%) hue-rotate(197deg) brightness(102%) contrast(106%);
+    --inactive-icon-filter: brightness(0) saturate(100%) invert(50%) sepia(12%) saturate(0%) hue-rotate(187deg) brightness(98%) contrast(94%);
 }
 
 /* Force a few variables to right values for dark theme */
@@ -135,7 +137,7 @@ input.primary:not(:disabled):hover,
 input.primary:not(:disabled):focus,
 button.primary:not(:disabled):hover,
 button.primary:not(:disabled):focus,
-a.primary:not(:disabled):hover,
+a.pri#808080mary:not(:disabled):hover,
 a.primary:not(:disabled):focus {
     background-image: none;
 }
@@ -304,6 +306,15 @@ li.app-navigation-entry.app-navigation-entry--collapsible > a:hover,
 #header .app-menu.inverted svg {
     filter: invert(1);
 }
+
+#header .app-menu .app-menu-entry img {
+    filter: var(--inactive-icon-filter);
+}
+
+#header .app-menu .app-menu-entry.app-menu-entry__active img {
+    filter: var(--active-icon-filter);
+}
+
 .icon-folder,
 .icon-filetype-folder {
     background-image: var(--icon-folder-007FFF);
