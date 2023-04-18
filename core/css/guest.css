@@ -1617,3 +1617,7 @@ a.legal {
 .v-align > footer p.info {
     height: 40%;
 }
+#body-login .guest-box.login-box {
+    border-radius: none;
+    box-shadow: none;
+} 
