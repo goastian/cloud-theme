@@ -521,7 +521,9 @@ button .icon-link {
 body .icon-recent {
     background-image: var(--icon-files-recent-808080);
 }
-
+.sharing-entry .avatar-shared.icon-more-white {
+    background-image: var(--icon-more-fff);
+}
 body .icon-more,
 body .icon-more-white {
     background-image: var(--icon-more-808080);
@@ -1809,4 +1811,8 @@ body.theme--dark.theme--highcontrast #header .app-menu li:focus a {
 /* Files App */
 #content.app-files #filestable {
     padding-top: 20px;
+}
+
+.comments .comment__editor .rich-contenteditable__input {
+    min-height: 70px;
 }
