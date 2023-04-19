@@ -315,14 +315,14 @@ li.app-navigation-entry.app-navigation-entry--collapsible > a:hover,
     filter: var(--active-icon-filter);
 }
 
-.icon-folder,
-.icon-filetype-folder {
+body .icon-folder,
+body .icon-filetype-folder {
     background-image: var(--icon-folder-007FFF);
 }
-.icon-filetype-text {
+body .icon-filetype-text {
     background-image: var(--icon-text-007fff);
 }
-.icon-filetype-folder-drag-accept {
+body .icon-filetype-folder-drag-accept {
     background-image: var(--icon-folder-drag-accept-007fff) !important;
 }
 #header .logo {
@@ -407,7 +407,7 @@ footer {
     border-right: 1px solid var(--color-border);
 }
 
-.icon-home,
+body .icon-home,
 #oc-dialog-filepicker-content .dirtree div:first-child a {
     background-image: var(--icon-home-808080);
 }
@@ -417,18 +417,18 @@ footer {
     background-size: 20px;
 }
 
-.icon-mail {
+body .icon-mail {
     background-image: var(--icon-mail-808080);
 }
-.icon-error {
+body .icon-error {
     background-image: var(--icon-error-808080);
 }
 
-.icon-details {
+body .icon-details {
     background-image: var(--icon-details-808080);
 }
 
-.icon-add,
+body .icon-add,
 .action-item.icon-add,
 button.action-item__menutoggle.icon-add,
 #content.app-news .add-new button.icon-add,
@@ -442,19 +442,19 @@ button.action-item__menutoggle.icon-add,
     background-size: 40px;
 }
 
-.icon-rename,
+body .icon-rename,
 .who-has-access .action-item--single.action-item.icon-rename,
 .where-is-my-data .action-item--single.action-item.icon-rename {
     background-image: var(--icon-rename-808080);
 }
 
-.icon-download {
+body .icon-download {
     background-image: var(--icon-download-808080);
 }
-.icon-template-add {
+body .icon-template-add {
     background-image: var(--icon-template-add-808080);
 }
-.icon-tasks,
+body .icon-tasks,
 .panel--header .icon-tasks,
 .modal__content .icon-tasks {
     background-image: var(--icon-tasks-tasks-808080);
@@ -462,68 +462,68 @@ button.action-item__menutoggle.icon-add,
 #tasks_panel .empty-content .icon-tasks {
     background-image: var(--icon-tasks-tasks-808080) !important;
 }
-.icon-checkmark {
+body .icon-checkmark {
     background-image: var(--icon-checkmark-808080);
 }
-.icon-group {
+body .icon-group {
     background-image: var(--icon-group-808080);
 }
-.icon-timezone {
+body .icon-timezone {
     background-image: var(--icon-timezone-808080);
 }
-.icon-edit {
+body .icon-edit {
     background-image: var(--icon-edit-808080);
 }
-.icon-reminder {
+body .icon-reminder {
     background-image: var(--icon-notifications-notifications-808080);
 }
-.icon-gravatar {
+body .icon-gravatar {
     background-image: var(--icon-contacts-gravatar-808080);
 }
 #content-vue.app-calendar .app-sidebar-tabs__tab-icon.icon-reminder {
     background-size: 13px;
 }
-.icon-clippy {
+body .icon-clippy {
     background-image: var(--icon-clippy-808080);
 }
-.icon-confirm {
+body .icon-confirm {
     background-image: var(--icon-confirm-808080);
 }
 
-.icon-user-admin {
+body .icon-user-admin {
     background-image: var(--icon-user-admin-808080);
 }
 
-.icon-disabled-users {
+body .icon-disabled-users {
     background-image: var(--icon-disabled-users-808080);
 }
 
-.icon-notes,
-.icon-notes-trans {
+body .icon-notes,
+body .icon-notes-trans {
     background-image: var(--icon-notes-notes-808080);
 }
-.icon-projects {
+body .icon-projects {
     background-image: var(--icon-projects-808080);
 }
-.icon-comment {
+body .icon-comment {
     background-image: var(--icon-comment-808080);
 }
-.icon-activity {
+body .icon-activity {
     background-image: var(--icon-activity-activity-808080);
 }
-.icon-link {
+body .icon-link {
     background-image: var(--icon-public-808080);
 }
 button .icon-link {
     background-image: var(--icon-public-ffffff);
 }
 
-.icon-recent {
+body .icon-recent {
     background-image: var(--icon-files-recent-808080);
 }
 
-.icon-more,
-.icon-more-white {
+body .icon-more,
+body .icon-more-white {
     background-image: var(--icon-more-808080);
 }
 
@@ -541,7 +541,7 @@ button .icon-link {
     background-color: var(--color-sharing-icon-background);
 }
 
-.icon-files,
+body .icon-files,
 .icon-category-files,
 .icon-emptyfolder {
     background-image: var(--icon-files-app-808080);
@@ -552,34 +552,34 @@ button .icon-link {
     background-size: 17px;
 }
 
-.icon-notifications-new {
+body .icon-notifications-new {
     background-image: var(--icon-notifications-notifications-new-000000);
 }
 
-.icon-notifications {
+body .icon-notifications {
     background-image: var(--icon-notifications-notifications-000000);
 }
 
-.icon-external,
-.icon-goto {
+body .icon-external,
+body .icon-goto {
     background-image: var(--icon-external-808080);
 }
 
 .action.icon-checkmark {
     background-image: var(--icon-checkmark-ffffff);
 }
-.icon-phone {
+body .icon-phone {
     background-image: var(--icon-phone-808080);
 }
 
-.icon-password,
-.icon-category-security {
+body .icon-password,
+body .icon-category-security {
     background-image: var(--icon-password-808080);
 }
-.icon-link {
+body .icon-link {
     background-image: var(--icon-link-808080);
 }
-.icon-toggle-filelist {
+body .icon-toggle-filelist {
     background-image: var(--icon-toggle-filelist-808080);
 }
 
@@ -587,7 +587,7 @@ button.icon-toggle-filelist {
     background-color: var(--color-main-background);
 }
 
-.icon-toggle-pictures {
+body .icon-toggle-pictures {
     background-image: var(--icon-toggle-pictures-808080);
 }
 
@@ -612,14 +612,14 @@ button > span[class*=" icon-"],
     opacity: 1;
 }
 
-.icon-share,
-.icon-shared {
+body .icon-share,
+body .icon-shared {
     background-image: var(--icon-share-808080);
 }
 
-.icon-contacts-dark,
-.icon-contacts,
-.icon-category-social {
+body .icon-contacts-dark,
+body .icon-contacts,
+body .icon-category-social {
     background-image: var(--icon-contacts-app-808080);
 }
 
@@ -627,31 +627,31 @@ button > span[class*=" icon-"],
     background-image: var(--icon-contacts-000);
 }
 
-.icon-user,
-.icon-category-installed {
+body .icon-user,
+body .icon-category-installed {
     background-image: var(--icon-user-808080);
 }
 
-.icon-category-enabled {
+body .icon-category-enabled {
     background-image: var(--icon-checkmark-808080);
 }
 
-.icon-star,
-.icon-star-dark,
-.icon-starred:hover {
+body .icon-star,
+body .icon-star-dark,
+body .icon-starred:hover {
     background-image: var(--icon-star-808080);
 }
 
-.icon-starred,
-.icon-star:hover,
-.icon-star-dark:hover,
+body .icon-starred,
+body .icon-star:hover,
+body .icon-star-dark:hover,
 #filestable .filename .favorite-mark .icon-starred {
     background-image: var(--icon-star-FFCC00);
 }
 
-.icon-close,
+body .icon-close,
 #header-menu-unified-search .icon-close,
-.icon-category-disabled {
+body .icon-category-disabled {
     background-image: var(--icon-close-808080);
 }
 
@@ -670,18 +670,18 @@ table td {
     border-bottom: 1px solid var(--color-border);
 }
 
-.icon-files-dark {
+body .icon-files-dark {
     background-image: var(--icon-files-app-808080);
 }
 
-.icon-fullscreen {
+body .icon-fullscreen {
     background-image: var(--icon-fullscreen-808080);
 }
 
-.icon-calendar-dark {
+body .icon-calendar-dark {
     background-image: var(--icon-calendar-calendar-808080);
 }
-.icon-talk {
+body .icon-talk {
     background-image: var(--icon-spreed-app-808080);
 }
 
@@ -916,7 +916,7 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
     background-image: var(--icon-tag-007fff);
 }
 
-.icon-quota {
+body .icon-quota {
     background-image: var(--icon-quota-808080);
 }
 .app-sidebar-header__star.icon-star,
@@ -1016,7 +1016,7 @@ li.app-navigation-entry.active .icon-recent-actors {
 #content-vue.app-contacts .app-content > .empty-content {
     margin: 20vh;
 }
-.icon-address-book {
+body .icon-address-book {
     background-image: var(--icon-contacts-address-book-808080);
 }
 
@@ -1079,7 +1079,7 @@ button.menuitem .icon-delete,
 .menu-icon svg path {
     fill: var(--menu-icon-color);
 }
-.icon-recent-actors {
+body .icon-recent-actors {
     background-image: var(--icon-contacts-recent-actors-808080);
 }
 
@@ -1118,7 +1118,7 @@ button.menuitem .icon-delete,
 li.active .icon-yourphotos {
     background-image: var(--icon-photos-app-007fff);
 }
-.icon-yourphotos {
+body .icon-yourphotos {
     background-image: var(--icon-photos-app-808080);
 }
 
@@ -1126,22 +1126,22 @@ li.active .icon-video {
     background-image: var(--icon-video-007fff);
 }
 
-.icon-video {
+body .icon-video {
     background-image: var(--icon-video-808080);
 }
 
 li.active .icon-favorite {
     background-image: var(--icon-star-outline-007fff);
 }
-.icon-favorite {
+body .icon-favorite {
     background-image: var(--icon-star-outline-808080);
 }
 
 li.active .icon-tag {
     background-image: var(--icon-tag-007fff);
 }
-.icon-tag,
-.icon-systemtags {
+body .icon-tag,
+body .icon-systemtags {
     background-image: var(--icon-tag-808080);
 }
 
@@ -1152,7 +1152,7 @@ li.active .icon-address {
     background-image: var(--icon-address-007fff);
 }
 
-.icon-address {
+body .icon-address {
     background-image: var(--icon-address-808080);
 }
 
@@ -1162,7 +1162,7 @@ li.active .icon-share {
 
 #app-navigation-vue #app-settings #app-settings-header .settings-button,
 #app-navigation #app-settings #app-settings-header .settings-button::before,
-.icon-category-tools {
+body .icon-category-tools {
     background-image: var(--icon-settings-808080);
 }
 
@@ -1174,7 +1174,7 @@ li.active .icon-share {
     background-color: var(--color-main-background);
 }
 
-.icon-delete,
+body .icon-delete,
 button.action-button .icon-delete {
     background-image: var(--icon-files-delete-808080);
 }
@@ -1281,18 +1281,18 @@ button.social-diaspora {
     border: 0;
 }
 
-.icon-eye {
+body .icon-eye {
     background-image: var(--icon-calendar-eye-808080);
 }
 
-.icon-briefcase {
+body .icon-briefcase {
     background-image: var(--icon-calendar-briefcase-808080);
 }
 
-.icon-color-picker {
+body .icon-color-picker {
     background-image: var(--icon-calendar-color-picker-808080);
 }
-.icon-menu {
+body .icon-menu {
     background-image: var(--icon-menu-808080);
 }
 .mx-datepicker .mx-input-wrapper {
@@ -1329,15 +1329,15 @@ button.social-diaspora {
     border-radius: 8px;
 }
 
-.icon-new-calendar {
+body .icon-new-calendar {
     background-image: var(--icon-calendar-calendar-808080);
 }
 
-.icon-new-calendar-with-task-list {
+body .icon-new-calendar-with-task-list {
     background-image: var(--icon-calendar-new-calendar-with-task-list-808080);
 }
 
-.icon-public {
+body .icon-public {
     background-image: var(--icon-public-808080);
 }
 
@@ -1354,19 +1354,19 @@ button.social-diaspora {
     font-size: 1em;
 }
 
-.icon-view-week {
+body .icon-view-week {
     background-image: var(--icon-calendar-view-week-808080);
 }
 
-.icon-view-day {
+body .icon-view-day {
     background-image: var(--icon-calendar-view-day-808080);
 }
 
-.icon-view-module {
+body .icon-view-module {
     background-image: var(--icon-calendar-view-module-808080);
 }
 
-.icon-view-list {
+body .icon-view-list {
     background-image: var(--icon-calendar-view-list-808080);
 }
 
@@ -1473,38 +1473,38 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
 }
 /* Settings Apps categories icons */
 
-.icon-category-app-bundles {
+body .icon-category-app-bundles {
     background-image: var(--icon-bundles-808080);
 }
-.icon-category-dashboard {
+body .icon-category-dashboard {
     background-image: var(--icon-dashboard-dashboard-808080);
 }
-.icon-category-customization {
+body .icon-category-customization {
     background-image: var(--icon-customization-808080);
 }
-.icon-category-games {
+body .icon-category-games {
     background-image: var(--icon-games-808080);
 }
-.icon-category-integration {
+body .icon-category-integration {
     background-image: var(--icon-integration-808080);
 }
-.icon-category-monitoring {
+body .icon-category-monitoring {
     background-image: var(--icon-monitoring-808080);
 }
-.icon-category-multimedia {
+body .icon-category-multimedia {
     background-image: var(--icon-multimedia-808080);
 }
-.icon-category-office {
+body .icon-category-office {
     background-image: var(--icon-office-808080);
 }
-.icon-category-organization {
+body .icon-category-organization {
     background-image: var(--icon-organization-808080);
 }
-.icon-category-search {
+body .icon-category-search {
     background-image: var(--icon-search-808080);
 }
 
-.icon-category-workflow {
+body .icon-category-workflow {
     background-image: var(--icon-workflow-808080);
 }
 
