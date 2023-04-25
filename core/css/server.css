@@ -58,7 +58,7 @@
 }
 
 /* Force a few variables to right values for dark theme */
-body.theme--dark {
+body[data-themes="dark"] {
     --color-main-background-header: #272727;
     --input-background-color: #181818;
     --icon-notifications-notifications-000000: url("/svg/notifications/notifications?color=000");
@@ -70,6 +70,15 @@ body.theme--dark {
 
 body.theme--highcontrast {
     --icon-inactive-color: black;
+}
+
+body {
+    background-color: var(--color-main-background);
+    font-weight: normal;
+    font-size: var(--default-font-size);
+    line-height: var(--default-line-height);
+    font-family: var(--font-face);
+    color: var(--color-main-text);
 }
 
 #body-user #header,
@@ -147,8 +156,6 @@ a.primary:not(:disabled):focus {
 button.primary + button:not(.primary),
 button.primary + button:not(.primary):active,
 .entity-picker__navigation button:not(.primary),
-.event-popover__buttons button:not(.primary),
-.event-popover__buttons button:not(.primary):active,
 .oc-dialog-buttonrow.twobuttons button:not(.primary),
 .oc-dialog-buttonrow.twobuttons button:not(.primary):active,
 .status-buttons .status-buttons__select {
@@ -209,9 +216,6 @@ body.theme--dark #settings #expanddiv {
 .multiselect .multiselect__input,
 .multiselect .multiselect__content-wrapper .multiselect__content li.multiselect__element,
 .multiselect .multiselect__content-wrapper .multiselect__content li.multiselect__element .multiselect__option,
-#content-vue.app-contacts .property.property--without-actions.property--last.property-masonry:not(.property--addressbooks):not(.property--groups) .multiselect .multiselect__tags .multiselect__input,
-#content-vue.app-contacts .multiselect .multiselect__tags input.multiselect__input,
-#content-vue.app-contacts .multiselect > .multiselect__tags > span.multiselect__single,
 #content.app-files #commentsTabView .newCommentForm .message:hover,
 #app-dashboard .footer a:hover,
 #app-content-systemtagsfilter .select2-container ul {
@@ -1215,8 +1219,8 @@ body.theme--highcontrast #header .app-menu li:hover a .app-menu-entry--label {
     transform: none;
 }
 
-#header .app-menu-main:hover img, 
-#header .app-menu-main:focus-within img, 
+#header .app-menu-main:hover img,
+#header .app-menu-main:focus-within img,
 #header .app-menu-main .app-menu-entry:hover img,
 #header .app-menu-main .app-menu-entry:focus img {
     margin-top: 0px;
