@@ -58,7 +58,7 @@
 }
 
 /* Force a few variables to right values for dark theme */
-body.theme--dark {
+body[data-themes="dark"] {
     --color-main-background-header: #272727;
     --input-background-color: #181818;
     --icon-notifications-notifications-000000: url("/svg/notifications/notifications?color=000");
@@ -70,6 +70,15 @@ body.theme--dark {
 
 body.theme--highcontrast {
     --icon-inactive-color: black;
+}
+
+body {
+    background-color: var(--color-main-background);
+    font-weight: normal;
+    font-size: var(--default-font-size);
+    line-height: var(--default-line-height);
+    font-family: var(--font-face);
+    color: var(--color-main-text);
 }
 
 #body-user #header,
@@ -1215,8 +1224,8 @@ body.theme--highcontrast #header .app-menu li:hover a .app-menu-entry--label {
     transform: none;
 }
 
-#header .app-menu-main:hover img, 
-#header .app-menu-main:focus-within img, 
+#header .app-menu-main:hover img,
+#header .app-menu-main:focus-within img,
 #header .app-menu-main .app-menu-entry:hover img,
 #header .app-menu-main .app-menu-entry:focus img {
     margin-top: 0px;
