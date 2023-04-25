@@ -218,9 +218,6 @@ body.theme--dark #settings #expanddiv {
 .multiselect .multiselect__input,
 .multiselect .multiselect__content-wrapper .multiselect__content li.multiselect__element,
 .multiselect .multiselect__content-wrapper .multiselect__content li.multiselect__element .multiselect__option,
-#content-vue.app-contacts .property.property--without-actions.property--last.property-masonry:not(.property--addressbooks):not(.property--groups) .multiselect .multiselect__tags .multiselect__input,
-#content-vue.app-contacts .multiselect .multiselect__tags input.multiselect__input,
-#content-vue.app-contacts .multiselect > .multiselect__tags > span.multiselect__single,
 #content.app-files #commentsTabView .newCommentForm .message:hover,
 #app-dashboard .footer a:hover,
 #app-content-systemtagsfilter .select2-container ul {
