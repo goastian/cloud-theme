@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			document.querySelector(".v-align").classList.add("warning-message");
 			document.querySelector("footer").classList.add("forgotpass-footer");
 		}
-		else if (event.target.parentNode.classList.contains("lost-password-container") && window.innerWidth > 1050) {
+		else if (event.target.matches('.lost-password-container a') && window.innerWidth > 1050) {
 			document.querySelector(".banner-right-align").classList.remove("width0");
 			document.querySelector(".v-align").classList.remove("warning-message");
 			document.querySelector("footer").classList.remove("forgotpass-footer");
