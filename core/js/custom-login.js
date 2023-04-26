@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			document.querySelector(".banner-right-align").classList.remove("width0");
 			document.querySelector(".v-align").classList.remove("warning-message");
 			document.querySelector("footer").classList.remove("forgotpass-footer");
-			document.querySelector(".lines").style.display = "block";
-			document.querySelector(".banner-content").style.display = "block";
-			document.querySelector(".have-an-account").style.display = "block";
+			document.querySelector(".lines").style.display = "flex";
+			document.querySelector(".banner-content").style.display = "flex";
+			document.querySelector(".have-an-account").style.display = "flex";
 		}
 	})
 })
