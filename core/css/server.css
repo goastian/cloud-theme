@@ -319,6 +319,17 @@ li.app-navigation-entry.app-navigation-entry--collapsible > a:hover,
     filter: var(--active-icon-filter);
 }
 
+#header .app-menu .app-menu-entry[data-app-id^='external_index'] img,
+#header .app-menu .app-menu-entry.app-menu-entry__active[data-app-id^='external_index'] img,
+#header .app-menu .app-menu-entry[data-app-id='news'] img,
+#header .app-menu .app-menu-entry.app-menu-entry__active[data-app-id='news'] img,
+#header .app-menu .app-menu-entry[data-app-id='passwords'] img,
+#header .app-menu .app-menu-entry.app-menu-entry.app-menu-entry__active[data-app-id='passwords'] img,
+#header .app-menu .app-menu-entry[data-app-id='carnet'] img,
+#header .app-menu .app-menu-entry.app-menu-entry__active[data-app-id='carnet'] img {
+    filter: none;
+}
+
 body .icon-folder,
 body .icon-filetype-folder {
     background-image: var(--icon-folder-007FFF);
