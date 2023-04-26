@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (event.target.id === "lost-password" && window.innerWidth > 1050) {
 			document.querySelector(".banner-content").style.display = "none";
 			document.querySelector(".have-an-account").style.display = "none";
-			document.querySelector("banner-right-align").classList.add("width0");
+			document.querySelector(".banner-right-align").classList.add("width0");
 			document.querySelector(".lines").style.display = "none";
 			document.querySelector(".v-align").classList.add("warning-message");
 			document.querySelector("footer").classList.add("forgotpass-footer");
