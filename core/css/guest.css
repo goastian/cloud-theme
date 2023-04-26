@@ -1635,11 +1635,13 @@ a.legal {
 #body-login .button-vue--vue-primary{
     margin: 46px 0px;
 }
-.show {
+.slow-show {
     opacity: 0;
-    animation: fadeIn 1s;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
 }
-
 @keyframes fadeIn {
     from {
         opacity: 0;
