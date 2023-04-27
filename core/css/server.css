@@ -332,7 +332,7 @@ li.app-navigation-entry.app-navigation-entry--collapsible > a:hover,
 
 body .icon-folder,
 body .icon-filetype-folder {
-    background-image: var(--icon-folder-007FFF);
+    background-image: var(--icon-folder-007fff);
 }
 body .icon-filetype-text {
     background-image: var(--icon-text-007fff);
@@ -444,6 +444,7 @@ body .icon-details {
 }
 
 body .icon-add,
+.app-sidebar button .icon-add,
 .action-item.icon-add,
 button.action-item__menutoggle.icon-add,
 #content.app-news .add-new button.icon-add,
@@ -1126,7 +1127,7 @@ body .icon-recent-actors {
 }
 
 #content-vue.app-photos .icon-folder {
-    background-image: var(--icon-folder-007FFF);
+    background-image: var(--icon-folder-007fff);
 }
 #content-vue.app-photos .folder-name__icon {
     opacity: 0.8;
