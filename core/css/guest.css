@@ -1116,6 +1116,14 @@ a.legal {
     color: #808080;
     font-family: "Montserrat";
 }
+
+#body-login .warning-message {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 0;
+}
+
 #body-login .v-align {
     display: flex;
     flex-direction: column;
@@ -1134,12 +1142,21 @@ a.legal {
     max-height: 100%;
     transition: all 0.3s linear;
 }
-#body-login .warning-message {
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 0;
-    padding: 0;
+
+#body-login .v-align .guest-box {
+    justify-content: center !important;
+    width: 92%;
+    margin-left: 0;
+    margin-right: 0;
+    border: 1px solid;
+    box-shadow: none;
+    color: #029f3c;
 }
+#body-login .icon.icon-checkmark,
+#body-login .icon-checkmark-white{
+    display:none;
+}
+
 #body-login #user,
 #body-login #password,
 #body-login .totp-form > input[type="tel"] {
@@ -1149,7 +1166,6 @@ a.legal {
     border: 1px solid #E6E8E9;
     box-sizing: border-box;
     border-radius: 8px;
-    margin: 12px 0px;
     font-size: 16px;
     background-color: #ffffff;
 }
@@ -1550,6 +1566,7 @@ a.legal {
         overflow: hidden;
         position: unset !important;
         height: unset;
+        padding: 0 5vh;
     }
     .banner-content-get-free-murena{
         font-size: 18px;
@@ -1622,6 +1639,8 @@ a.legal {
 #body-login .guest-box.login-box {
     border-radius: none;
     box-shadow: none;
+    border: none;
+    color: var(--color-main-text);
 }
 #body-login .login-form__headline {
     display:none
@@ -1630,7 +1649,6 @@ a.legal {
     vertical-align: middle;
     height: 36px;
     line-height: 36px;
-    top: 12px;
 }
 #body-login .button-vue--vue-primary{
     margin: 46px 0px;

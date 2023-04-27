@@ -416,8 +416,7 @@ footer {
 #header .notification-wrapper .dismiss-all .icon.icon-close {
     margin-top: 4px;
 }
-#content #app-navigation,
-#content.app-news #app-navigation button {
+#content #app-navigation {
     color: var(--color-main-text);
     border-right: 1px solid var(--color-border);
 }
@@ -1060,7 +1059,6 @@ button.primary .icon-upload,
 #content-vue.app-calendar .settings-fieldset-interior-item .icon-upload,
 #content-vue.app-bookmarks #app-settings-content button .icon-upload,
 button.import-contact__button-main .icon-upload,
-.import-export button.icon-upload,
 .attachments-drag-zone button.icon-upload {
     background-image: var(--icon-upload-000);
 }
@@ -1836,4 +1834,22 @@ body.theme--dark.theme--highcontrast #header .app-menu li:focus a {
 #header-menu-user-menu .user-menu__nav .menu-entry img {
     filter: var(--inactive-icon-filter);
     opacity: 1;
+}
+input:not([type=range],
+.input-field__input,
+[type=submit],
+[type=button],
+[type=reset],
+.multiselect__input,
+.select2-input,
+.action-input__input,
+[class^=vs__]),
+select,
+div[contenteditable=true],
+textarea {
+    border: 1px solid var(--color-border-dark);
+    border-radius: var(--border-radius);
+}
+#content.app-murena-dashboard{
+    overflow:scroll;
 }
