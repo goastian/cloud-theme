@@ -1566,6 +1566,7 @@ a.legal {
         overflow: hidden;
         position: unset !important;
         height: unset;
+        padding: 0 5vh;
     }
     .banner-content-get-free-murena{
         font-size: 18px;
