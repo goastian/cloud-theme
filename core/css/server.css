@@ -1832,3 +1832,8 @@ body.theme--dark.theme--highcontrast #header .app-menu li:focus a {
 .comments .comment__editor .rich-contenteditable__input {
     min-height: 70px;
 }
+
+#header-menu-user-menu .user-menu__nav .menu-entry img {
+    filter: var(--inactive-icon-filter);
+    opacity: 1;
+}
