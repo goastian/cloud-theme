@@ -1149,7 +1149,12 @@ a.legal {
     margin-left: 0;
     margin-right: 0;
     border: 1px solid;
-    box-shadow:none;
+    box-shadow: none;
+    color: #029f3c;
+}
+#body-login .icon.icon-checkmark,
+#body-login .icon-checkmark-white{
+    display:none;
 }
 
 #body-login #user,
