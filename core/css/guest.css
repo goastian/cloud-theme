@@ -1639,6 +1639,8 @@ a.legal {
 #body-login .guest-box.login-box {
     border-radius: none;
     box-shadow: none;
+    border: none;
+    color: var(--color-main-text);
 }
 #body-login .login-form__headline {
     display:none
