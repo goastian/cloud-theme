@@ -1831,3 +1831,15 @@ body.theme--dark.theme--highcontrast #header .app-menu li:focus a {
 .comments .comment__editor .rich-contenteditable__input {
     min-height: 70px;
 }
+input:not([type=range],
+.input-field__input,
+[type=submit],
+[type=button],
+[type=reset],
+.multiselect__input,
+.select2-input,
+.action-input__input,
+[class^=vs__]) {
+    border: 1px solid var(--color-border-dark);
+    border-radius: var(--border-radius);
+}
