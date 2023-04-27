@@ -777,9 +777,9 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
 
 .breadcrumb .canDrop > a,
 .files-filestable tbody tr.canDrop,
-.files-filestable.view-grid:not(.hidden) .files-fileList tr:not(.hidden).highlighted .thumbnail-wrapper,
-.files-filestable.view-grid:not(.hidden) .files-fileList tr:not(.hidden).highlighted .fileactions,
-.files-filestable.view-grid:not(.hidden)  .files-fileList tr:not(.hidden).highlighted .nametext {
+.files-filestable.view-grid:not(.hidden) .files-fileList tr:not(.hidden).selected .thumbnail-wrapper,
+.files-filestable.view-grid:not(.hidden) .files-fileList tr:not(.hidden).selected .fileactions,
+.files-filestable.view-grid:not(.hidden)  .files-fileList tr:not(.hidden).selected .nametext {
     background-color: var(--color-primary-light);
 }
 
