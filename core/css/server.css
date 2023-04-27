@@ -1839,7 +1839,10 @@ input:not([type=range],
 .multiselect__input,
 .select2-input,
 .action-input__input,
-[class^=vs__]) {
+[class^=vs__]),
+select,
+div[contenteditable=true],
+textarea {
     border: 1px solid var(--color-border-dark);
     border-radius: var(--border-radius);
 }
