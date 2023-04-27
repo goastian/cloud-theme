@@ -1846,3 +1846,6 @@ textarea {
     border: 1px solid var(--color-border-dark);
     border-radius: var(--border-radius);
 }
+#content.app-murena-dashboard{
+    overflow:scroll;
+}
