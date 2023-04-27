@@ -1059,7 +1059,6 @@ button.primary .icon-upload,
 #content-vue.app-calendar .settings-fieldset-interior-item .icon-upload,
 #content-vue.app-bookmarks #app-settings-content button .icon-upload,
 button.import-contact__button-main .icon-upload,
-.import-export button.icon-upload,
 .attachments-drag-zone button.icon-upload {
     background-image: var(--icon-upload-000);
 }
