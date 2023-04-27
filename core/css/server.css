@@ -416,8 +416,7 @@ footer {
 #header .notification-wrapper .dismiss-all .icon.icon-close {
     margin-top: 4px;
 }
-#content #app-navigation,
-#content.app-news #app-navigation button {
+#content #app-navigation {
     color: var(--color-main-text);
     border-right: 1px solid var(--color-border);
 }
