@@ -1116,6 +1116,14 @@ a.legal {
     color: #808080;
     font-family: "Montserrat";
 }
+
+#body-login .v-align.warning-message {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 0;
+}
+
 #body-login .v-align {
     display: flex;
     flex-direction: column;
@@ -1134,12 +1142,16 @@ a.legal {
     max-height: 100%;
     transition: all 0.3s linear;
 }
-#body-login .warning-message {
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 0;
-    padding: 0;
+
+#body-login .v-align .guest-box {
+    justify-content: center !important;
+    width: 92%;
+    margin-left: 0;
+    margin-right: 0;
+    border: 1px solid;
+    box-shadow:none;
 }
+
 #body-login #user,
 #body-login #password,
 #body-login .totp-form > input[type="tel"] {
