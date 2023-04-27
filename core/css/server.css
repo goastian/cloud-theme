@@ -776,10 +776,10 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
 }
 
 .breadcrumb .canDrop > a,
-#filestable tbody tr.canDrop,
-#filestable.view-grid:not(.hidden) #fileList tr:not(.hidden).selected .thumbnail-wrapper,
-#filestable.view-grid:not(.hidden) #fileList tr:not(.hidden).selected .fileactions,
-#filestable.view-grid:not(.hidden) #fileList tr:not(.hidden).selected .nametext {
+.files-filestable tbody tr.canDrop,
+.files-filestable.view-grid:not(.hidden) .files-fileList tr:not(.hidden).highlighted .thumbnail-wrapper,
+.files-filestable.view-grid:not(.hidden) .files-fileList tr:not(.hidden).highlighted .fileactions,
+.files-filestable.view-grid:not(.hidden)  .files-fileList tr:not(.hidden).highlighted .nametext {
     background-color: var(--color-primary-light);
 }
 
