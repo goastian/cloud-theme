@@ -26,7 +26,7 @@
 * {
     font-family: 'Roboto';
 }
-:root {
+:root, [data-theme-light] {
     --color-primary: #007fff;
     --color-primary-element: #007fff;
     --color-secondary-element: white;
@@ -53,10 +53,12 @@
     --color-sharing-icon-background: #767676;
     --logo: url("../img/logo@2x.svg");
     --notification-icon-invert: invert(0%);
+    --active-icon-filter: brightness(0) saturate(100%) invert(38%) sepia(88%) saturate(4068%) hue-rotate(197deg) brightness(102%) contrast(106%);
+    --inactive-icon-filter: brightness(0) saturate(100%) invert(50%) sepia(12%) saturate(0%) hue-rotate(187deg) brightness(98%) contrast(94%);
 }
 
 /* Force a few variables to right values for dark theme */
-body.theme--dark {
+body[data-themes="dark"] {
     --color-main-background-header: #272727;
     --input-background-color: #181818;
     --icon-notifications-notifications-000000: url("/svg/notifications/notifications?color=000");
@@ -68,6 +70,15 @@ body.theme--dark {
 
 body.theme--highcontrast {
     --icon-inactive-color: black;
+}
+
+body {
+    background-color: var(--color-main-background);
+    font-weight: normal;
+    font-size: var(--default-font-size);
+    line-height: var(--default-line-height);
+    font-family: var(--font-face);
+    color: var(--color-main-text);
 }
 
 #body-user #header,
@@ -92,7 +103,6 @@ input[type="reset"]:hover,
 #new-contact-button:hover,
 #new-user-button:hover,
 #deleteaccount:hover,
-#quotaincreasebutton:hover,
 #content-vue.app-tasks .action.icon-checkmark:hover,
 .button.today:hover,
 button.import-contact__button-main:hover,
@@ -119,7 +129,6 @@ button.primary:active,
 #new-contact-button,
 #new-user-button,
 #deleteaccount,
-#quotaincreasebutton,
 .mx-datepicker .mx-datepicker-footer .mx-btn,
 #content-vue.app-tasks .action.icon-checkmark,
 button.import-contact__button-main,
@@ -147,8 +156,6 @@ a.primary:not(:disabled):focus {
 button.primary + button:not(.primary),
 button.primary + button:not(.primary):active,
 .entity-picker__navigation button:not(.primary),
-.event-popover__buttons button:not(.primary),
-.event-popover__buttons button:not(.primary):active,
 .oc-dialog-buttonrow.twobuttons button:not(.primary),
 .oc-dialog-buttonrow.twobuttons button:not(.primary):active,
 .status-buttons .status-buttons__select {
@@ -209,9 +216,6 @@ body.theme--dark #settings #expanddiv {
 .multiselect .multiselect__input,
 .multiselect .multiselect__content-wrapper .multiselect__content li.multiselect__element,
 .multiselect .multiselect__content-wrapper .multiselect__content li.multiselect__element .multiselect__option,
-#content-vue.app-contacts .property.property--without-actions.property--last.property-masonry:not(.property--addressbooks):not(.property--groups) .multiselect .multiselect__tags .multiselect__input,
-#content-vue.app-contacts .multiselect .multiselect__tags input.multiselect__input,
-#content-vue.app-contacts .multiselect > .multiselect__tags > span.multiselect__single,
 #content.app-files #commentsTabView .newCommentForm .message:hover,
 #app-dashboard .footer a:hover,
 #app-content-systemtagsfilter .select2-container ul {
@@ -300,20 +304,40 @@ li.app-navigation-entry.app-navigation-entry--collapsible > a:hover,
 .nc-theming-contrast {
     color: #fff;
 }
-#appmenu:not(.inverted) svg {
+#header .app-menu:not(.inverted) svg {
     filter: none;
 }
-#appmenu.inverted svg {
+#header .app-menu.inverted svg {
     filter: invert(1);
 }
-.icon-folder,
-.icon-filetype-folder {
-    background-image: var(--icon-folder-007FFF);
+
+#header .app-menu .app-menu-entry img {
+    filter: var(--inactive-icon-filter);
 }
-.icon-filetype-text {
+
+#header .app-menu .app-menu-entry.app-menu-entry__active img {
+    filter: var(--active-icon-filter);
+}
+
+#header .app-menu .app-menu-entry[data-app-id^='external_index'] img,
+#header .app-menu .app-menu-entry.app-menu-entry__active[data-app-id^='external_index'] img,
+#header .app-menu .app-menu-entry[data-app-id='news'] img,
+#header .app-menu .app-menu-entry.app-menu-entry__active[data-app-id='news'] img,
+#header .app-menu .app-menu-entry[data-app-id='passwords'] img,
+#header .app-menu .app-menu-entry.app-menu-entry.app-menu-entry__active[data-app-id='passwords'] img,
+#header .app-menu .app-menu-entry[data-app-id='carnet'] img,
+#header .app-menu .app-menu-entry.app-menu-entry__active[data-app-id='carnet'] img {
+    filter: none;
+}
+
+body .icon-folder,
+body .icon-filetype-folder {
+    background-image: var(--icon-folder-007fff);
+}
+body .icon-filetype-text {
     background-image: var(--icon-text-007fff);
 }
-.icon-filetype-folder-drag-accept {
+body .icon-filetype-folder-drag-accept {
     background-image: var(--icon-folder-drag-accept-007fff) !important;
 }
 #header .logo {
@@ -337,7 +361,7 @@ li.app-navigation-entry.app-navigation-entry--collapsible > a:hover,
     opacity: 1;
 }
 
-#appmenu li span {
+#header .app-menu li .app-menu-entry--label {
     color: var(--color-main-text);
 }
 
@@ -355,6 +379,33 @@ footer {
     height: 92px;
 }
 
+#header #notifications .notifications-button__icon {
+    display: none;
+}
+
+#header #notifications .header-menu__trigger,
+#header #unified-search .magnify-icon {
+    opacity: 0.6;
+}
+
+#header #notifications .header-menu__trigger:hover,
+#header #unified-search .magnify-icon:hover {
+    opacity: 1;
+}
+
+
+#header #notifications[data-has-notifications="true"] .header-menu__trigger {
+    background: var(--icon-notifications-notifications-new-000000) no-repeat center;
+    background-size: 17px;
+
+}
+
+#header #notifications .header-menu__trigger {
+    background: var(--icon-notifications-notifications-000000) no-repeat center;
+    background-size: 17px;
+}
+
+
 .notifications-button.hasNotifications {
     opacity: 0.6 !important;
 }
@@ -365,13 +416,12 @@ footer {
 #header .notification-wrapper .dismiss-all .icon.icon-close {
     margin-top: 4px;
 }
-#content #app-navigation,
-#content.app-news #app-navigation button {
+#content #app-navigation {
     color: var(--color-main-text);
     border-right: 1px solid var(--color-border);
 }
 
-.icon-home,
+body .icon-home,
 #oc-dialog-filepicker-content .dirtree div:first-child a {
     background-image: var(--icon-home-808080);
 }
@@ -381,18 +431,19 @@ footer {
     background-size: 20px;
 }
 
-.icon-mail {
+body .icon-mail {
     background-image: var(--icon-mail-808080);
 }
-.icon-error {
+body .icon-error {
     background-image: var(--icon-error-808080);
 }
 
-.icon-details {
+body .icon-details {
     background-image: var(--icon-details-808080);
 }
 
-.icon-add,
+body .icon-add,
+.app-sidebar button .icon-add,
 .action-item.icon-add,
 button.action-item__menutoggle.icon-add,
 #content.app-news .add-new button.icon-add,
@@ -406,19 +457,19 @@ button.action-item__menutoggle.icon-add,
     background-size: 40px;
 }
 
-.icon-rename,
+body .icon-rename,
 .who-has-access .action-item--single.action-item.icon-rename,
 .where-is-my-data .action-item--single.action-item.icon-rename {
     background-image: var(--icon-rename-808080);
 }
 
-.icon-download {
+body .icon-download {
     background-image: var(--icon-download-808080);
 }
-.icon-template-add {
+body .icon-template-add {
     background-image: var(--icon-template-add-808080);
 }
-.icon-tasks,
+body .icon-tasks,
 .panel--header .icon-tasks,
 .modal__content .icon-tasks {
     background-image: var(--icon-tasks-tasks-808080);
@@ -426,68 +477,70 @@ button.action-item__menutoggle.icon-add,
 #tasks_panel .empty-content .icon-tasks {
     background-image: var(--icon-tasks-tasks-808080) !important;
 }
-.icon-checkmark {
+body .icon-checkmark {
     background-image: var(--icon-checkmark-808080);
 }
-.icon-group {
+body .icon-group {
     background-image: var(--icon-group-808080);
 }
-.icon-timezone {
+body .icon-timezone {
     background-image: var(--icon-timezone-808080);
 }
-.icon-edit {
+body .icon-edit {
     background-image: var(--icon-edit-808080);
 }
-.icon-reminder {
+body .icon-reminder {
     background-image: var(--icon-notifications-notifications-808080);
 }
-.icon-gravatar {
+body .icon-gravatar {
     background-image: var(--icon-contacts-gravatar-808080);
 }
 #content-vue.app-calendar .app-sidebar-tabs__tab-icon.icon-reminder {
     background-size: 13px;
 }
-.icon-clippy {
+body .icon-clippy {
     background-image: var(--icon-clippy-808080);
 }
-.icon-confirm {
+body .icon-confirm {
     background-image: var(--icon-confirm-808080);
 }
 
-.icon-user-admin {
+body .icon-user-admin {
     background-image: var(--icon-user-admin-808080);
 }
 
-.icon-disabled-users {
+body .icon-disabled-users {
     background-image: var(--icon-disabled-users-808080);
 }
 
-.icon-notes,
-.icon-notes-trans {
+body .icon-notes,
+body .icon-notes-trans {
     background-image: var(--icon-notes-notes-808080);
 }
-.icon-projects {
+body .icon-projects {
     background-image: var(--icon-projects-808080);
 }
-.icon-comment {
+body .icon-comment {
     background-image: var(--icon-comment-808080);
 }
-.icon-activity {
+body .icon-activity {
     background-image: var(--icon-activity-activity-808080);
 }
-.icon-link {
+body .icon-link {
     background-image: var(--icon-public-808080);
 }
 button .icon-link {
     background-image: var(--icon-public-ffffff);
 }
 
-.icon-recent {
+body .icon-recent {
     background-image: var(--icon-files-recent-808080);
 }
-
-.icon-more,
-.icon-more-white {
+.sharing-entry .avatar-shared.icon-more-white {
+    background-image: var(--icon-more-fff);
+}
+body .icon-more,
+body .icon-more-white {
     background-image: var(--icon-more-808080);
 }
 
@@ -505,7 +558,7 @@ button .icon-link {
     background-color: var(--color-sharing-icon-background);
 }
 
-.icon-files,
+body .icon-files,
 .icon-category-files,
 .icon-emptyfolder {
     background-image: var(--icon-files-app-808080);
@@ -516,34 +569,34 @@ button .icon-link {
     background-size: 17px;
 }
 
-.icon-notifications-new {
+body .icon-notifications-new {
     background-image: var(--icon-notifications-notifications-new-000000);
 }
 
-.icon-notifications {
+body .icon-notifications {
     background-image: var(--icon-notifications-notifications-000000);
 }
 
-.icon-external,
-.icon-goto {
+body .icon-external,
+body .icon-goto {
     background-image: var(--icon-external-808080);
 }
 
 .action.icon-checkmark {
     background-image: var(--icon-checkmark-ffffff);
 }
-.icon-phone {
+body .icon-phone {
     background-image: var(--icon-phone-808080);
 }
 
-.icon-password,
-.icon-category-security {
+body .icon-password,
+body .icon-category-security {
     background-image: var(--icon-password-808080);
 }
-.icon-link {
+body .icon-link {
     background-image: var(--icon-link-808080);
 }
-.icon-toggle-filelist {
+body .icon-toggle-filelist {
     background-image: var(--icon-toggle-filelist-808080);
 }
 
@@ -551,7 +604,7 @@ button.icon-toggle-filelist {
     background-color: var(--color-main-background);
 }
 
-.icon-toggle-pictures {
+body .icon-toggle-pictures {
     background-image: var(--icon-toggle-pictures-808080);
 }
 
@@ -576,14 +629,14 @@ button > span[class*=" icon-"],
     opacity: 1;
 }
 
-.icon-share,
-.icon-shared {
+body .icon-share,
+body .icon-shared {
     background-image: var(--icon-share-808080);
 }
 
-.icon-contacts-dark,
-.icon-contacts,
-.icon-category-social {
+body .icon-contacts-dark,
+body .icon-contacts,
+body .icon-category-social {
     background-image: var(--icon-contacts-app-808080);
 }
 
@@ -591,31 +644,31 @@ button > span[class*=" icon-"],
     background-image: var(--icon-contacts-000);
 }
 
-.icon-user,
-.icon-category-installed {
+body .icon-user,
+body .icon-category-installed {
     background-image: var(--icon-user-808080);
 }
 
-.icon-category-enabled {
+body .icon-category-enabled {
     background-image: var(--icon-checkmark-808080);
 }
 
-.icon-star,
-.icon-star-dark,
-.icon-starred:hover {
+body .icon-star,
+body .icon-star-dark,
+body .icon-starred:hover {
     background-image: var(--icon-star-808080);
 }
 
-.icon-starred,
-.icon-star:hover,
-.icon-star-dark:hover,
+body .icon-starred,
+body .icon-star:hover,
+body .icon-star-dark:hover,
 #filestable .filename .favorite-mark .icon-starred {
     background-image: var(--icon-star-FFCC00);
 }
 
-.icon-close,
+body .icon-close,
 #header-menu-unified-search .icon-close,
-.icon-category-disabled {
+body .icon-category-disabled {
     background-image: var(--icon-close-808080);
 }
 
@@ -634,18 +687,18 @@ table td {
     border-bottom: 1px solid var(--color-border);
 }
 
-.icon-files-dark {
+body .icon-files-dark {
     background-image: var(--icon-files-app-808080);
 }
 
-.icon-fullscreen {
+body .icon-fullscreen {
     background-image: var(--icon-fullscreen-808080);
 }
 
-.icon-calendar-dark {
+body .icon-calendar-dark {
     background-image: var(--icon-calendar-calendar-808080);
 }
-.icon-talk {
+body .icon-talk {
     background-image: var(--icon-spreed-app-808080);
 }
 
@@ -722,10 +775,10 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
 }
 
 .breadcrumb .canDrop > a,
-#filestable tbody tr.canDrop,
-#filestable.view-grid:not(.hidden) #fileList tr:not(.hidden).selected .thumbnail-wrapper,
-#filestable.view-grid:not(.hidden) #fileList tr:not(.hidden).selected .fileactions,
-#filestable.view-grid:not(.hidden) #fileList tr:not(.hidden).selected .nametext {
+.files-filestable tbody tr.canDrop,
+.files-filestable.view-grid:not(.hidden) .files-fileList tr:not(.hidden).selected .thumbnail-wrapper,
+.files-filestable.view-grid:not(.hidden) .files-fileList tr:not(.hidden).selected .fileactions,
+.files-filestable.view-grid:not(.hidden)  .files-fileList tr:not(.hidden).selected .nametext {
     background-color: var(--color-primary-light);
 }
 
@@ -880,7 +933,7 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
     background-image: var(--icon-tag-007fff);
 }
 
-.icon-quota {
+body .icon-quota {
     background-image: var(--icon-quota-808080);
 }
 .app-sidebar-header__star.icon-star,
@@ -916,6 +969,8 @@ body.theme--highcontrast #header .header-right .magnify-icon {
 #header .header-right .magnify-icon {
     background: var(--icon-search-000) no-repeat center;
     background-size: 15px;
+    width: inherit;
+    height: inherit;
 }
 
 #content.app-files #filestable span,
@@ -978,7 +1033,7 @@ li.app-navigation-entry.active .icon-recent-actors {
 #content-vue.app-contacts .app-content > .empty-content {
     margin: 20vh;
 }
-.icon-address-book {
+body .icon-address-book {
     background-image: var(--icon-contacts-address-book-808080);
 }
 
@@ -1004,7 +1059,6 @@ button.primary .icon-upload,
 #content-vue.app-calendar .settings-fieldset-interior-item .icon-upload,
 #content-vue.app-bookmarks #app-settings-content button .icon-upload,
 button.import-contact__button-main .icon-upload,
-.import-export button.icon-upload,
 .attachments-drag-zone button.icon-upload {
     background-image: var(--icon-upload-000);
 }
@@ -1041,7 +1095,7 @@ button.menuitem .icon-delete,
 .menu-icon svg path {
     fill: var(--menu-icon-color);
 }
-.icon-recent-actors {
+body .icon-recent-actors {
     background-image: var(--icon-contacts-recent-actors-808080);
 }
 
@@ -1071,7 +1125,7 @@ button.menuitem .icon-delete,
 }
 
 #content-vue.app-photos .icon-folder {
-    background-image: var(--icon-folder-007FFF);
+    background-image: var(--icon-folder-007fff);
 }
 #content-vue.app-photos .folder-name__icon {
     opacity: 0.8;
@@ -1080,7 +1134,7 @@ button.menuitem .icon-delete,
 li.active .icon-yourphotos {
     background-image: var(--icon-photos-app-007fff);
 }
-.icon-yourphotos {
+body .icon-yourphotos {
     background-image: var(--icon-photos-app-808080);
 }
 
@@ -1088,22 +1142,22 @@ li.active .icon-video {
     background-image: var(--icon-video-007fff);
 }
 
-.icon-video {
+body .icon-video {
     background-image: var(--icon-video-808080);
 }
 
 li.active .icon-favorite {
     background-image: var(--icon-star-outline-007fff);
 }
-.icon-favorite {
+body .icon-favorite {
     background-image: var(--icon-star-outline-808080);
 }
 
 li.active .icon-tag {
     background-image: var(--icon-tag-007fff);
 }
-.icon-tag,
-.icon-systemtags {
+body .icon-tag,
+body .icon-systemtags {
     background-image: var(--icon-tag-808080);
 }
 
@@ -1114,7 +1168,7 @@ li.active .icon-address {
     background-image: var(--icon-address-007fff);
 }
 
-.icon-address {
+body .icon-address {
     background-image: var(--icon-address-808080);
 }
 
@@ -1123,8 +1177,8 @@ li.active .icon-share {
 }
 
 #app-navigation-vue #app-settings #app-settings-header .settings-button,
-#app-navigation #app-settings #app-settings-header .settings-button,
-.icon-category-tools {
+#app-navigation #app-settings #app-settings-header .settings-button::before,
+body .icon-category-tools {
     background-image: var(--icon-settings-808080);
 }
 
@@ -1136,7 +1190,7 @@ li.active .icon-share {
     background-color: var(--color-main-background);
 }
 
-.icon-delete,
+body .icon-delete,
 button.action-button .icon-delete {
     background-image: var(--icon-files-delete-808080);
 }
@@ -1150,29 +1204,36 @@ button.menuitem:hover .icon-delete,
     background-image: var(--icon-delete-e9322d);
 }
 
-#appmenu li a span {
+#header .app-menu li a .app-menu-entry--label {
     color: transparent;
 }
 
-#appmenu li:hover a span {
+#header .app-menu li:hover a .app-menu-entry--label {
     color: var(--icon-inactive-color);
 }
 
-body.theme--highcontrast #appmenu li:hover a span {
+body.theme--highcontrast #header .app-menu li:hover a .app-menu-entry--label {
     color: var(--color-main-text);
 }
 
-#appmenu li:hover a svg {
+#header .app-menu li:hover a img {
     color: var(--color-main-text);
     transform: translateY(-7px);
 }
 
-#appmenu:hover li svg,
-#appmenu:hover li .icon-more,
-#appmenu:hover li .icon-more-white,
-#appmenu:hover li .icon-loading-small,
-#appmenu:hover li .icon-loading-small-dark {
+#header .app-menu:hover li img,
+#header .app-menu:hover li .icon-more,
+#header .app-menu:hover li .icon-more-white,
+#header .app-menu:hover li .icon-loading-small,
+#header .app-menu:hover li .icon-loading-small-dark {
     transform: none;
+}
+
+#header .app-menu-main:hover img,
+#header .app-menu-main:focus-within img,
+#header .app-menu-main .app-menu-entry:hover img,
+#header .app-menu-main .app-menu-entry:focus img {
+    margin-top: 0px;
 }
 
 /* Settings app */
@@ -1236,18 +1297,18 @@ button.social-diaspora {
     border: 0;
 }
 
-.icon-eye {
+body .icon-eye {
     background-image: var(--icon-calendar-eye-808080);
 }
 
-.icon-briefcase {
+body .icon-briefcase {
     background-image: var(--icon-calendar-briefcase-808080);
 }
 
-.icon-color-picker {
+body .icon-color-picker {
     background-image: var(--icon-calendar-color-picker-808080);
 }
-.icon-menu {
+body .icon-menu {
     background-image: var(--icon-menu-808080);
 }
 .mx-datepicker .mx-input-wrapper {
@@ -1284,15 +1345,15 @@ button.social-diaspora {
     border-radius: 8px;
 }
 
-.icon-new-calendar {
+body .icon-new-calendar {
     background-image: var(--icon-calendar-calendar-808080);
 }
 
-.icon-new-calendar-with-task-list {
+body .icon-new-calendar-with-task-list {
     background-image: var(--icon-calendar-new-calendar-with-task-list-808080);
 }
 
-.icon-public {
+body .icon-public {
     background-image: var(--icon-public-808080);
 }
 
@@ -1309,19 +1370,19 @@ button.social-diaspora {
     font-size: 1em;
 }
 
-.icon-view-week {
+body .icon-view-week {
     background-image: var(--icon-calendar-view-week-808080);
 }
 
-.icon-view-day {
+body .icon-view-day {
     background-image: var(--icon-calendar-view-day-808080);
 }
 
-.icon-view-module {
+body .icon-view-module {
     background-image: var(--icon-calendar-view-module-808080);
 }
 
-.icon-view-list {
+body .icon-view-list {
     background-image: var(--icon-calendar-view-list-808080);
 }
 
@@ -1428,38 +1489,38 @@ input[type="email"]:not(:active):not(:hover):not(:focus) + .icon-confirm:focus {
 }
 /* Settings Apps categories icons */
 
-.icon-category-app-bundles {
+body .icon-category-app-bundles {
     background-image: var(--icon-bundles-808080);
 }
-.icon-category-dashboard {
+body .icon-category-dashboard {
     background-image: var(--icon-dashboard-dashboard-808080);
 }
-.icon-category-customization {
+body .icon-category-customization {
     background-image: var(--icon-customization-808080);
 }
-.icon-category-games {
+body .icon-category-games {
     background-image: var(--icon-games-808080);
 }
-.icon-category-integration {
+body .icon-category-integration {
     background-image: var(--icon-integration-808080);
 }
-.icon-category-monitoring {
+body .icon-category-monitoring {
     background-image: var(--icon-monitoring-808080);
 }
-.icon-category-multimedia {
+body .icon-category-multimedia {
     background-image: var(--icon-multimedia-808080);
 }
-.icon-category-office {
+body .icon-category-office {
     background-image: var(--icon-office-808080);
 }
-.icon-category-organization {
+body .icon-category-organization {
     background-image: var(--icon-organization-808080);
 }
-.icon-category-search {
+body .icon-category-search {
     background-image: var(--icon-search-808080);
 }
 
-.icon-category-workflow {
+body .icon-category-workflow {
     background-image: var(--icon-workflow-808080);
 }
 
@@ -1657,8 +1718,8 @@ button.edit-output-dir span.icon-rename,
     background-image: url("../img/app-icons/Cookbook.svg");
 }
 
-#appmenu li:hover a,
-#appmenu li a:focus {
+#header .app-menu li:hover a,
+#header .app-menu li a:focus {
     font-size: 12px;
     font-family: 'Roboto';
     letter-spacing: 1px;
@@ -1679,8 +1740,8 @@ progress {
     border-radius: 10px 10px !important;
     height: 12px !important;
 }
-#appmenu li a:focus .icon-more,
-#appmenu li a:focus .icon-more-white {
+#header .app-menu li a:focus .icon-more,
+#header .app-menu li a:focus .icon-more-white {
     transform: none !important;
 }
 #more-apps:hover span,
@@ -1689,9 +1750,7 @@ progress {
     display: none !important;
 }
 
-button#quotaincreasebutton {
-    margin-top: 15px !important;
-}
+
 @media only screen and(max-width: 640px) {
     .new-icons .color-icons {
         height: 50px;
@@ -1724,22 +1783,34 @@ body.theme--highcontrast svg.material-design-icon__svg {
     font-size: 12px;
     color: var(--color-text-lighter);
 }
-body.theme--dark #header #appmenu li a {
+body.theme--dark #header .app-menu li a,
+#header .app-menu-main .app-menu-entry {
     opacity: 1;
 }
-body.theme--light.theme--highcontrast #header #appmenu li a {
+
+body.theme--light.theme--highcontrast #header .app-menu li a {
     opacity: 1;
     filter: invert(0);
 }
 
-body.theme--highcontrast #header #appmenu li a {
+body.theme--highcontrast #header .app-menu li a {
     opacity: 1;
     filter: invert(1);
 }
-body.theme--highcontrast #header #appmenu li a.active {
+
+#header .app-menu li a {
+    opacity: 0.6;
+}
+
+#header .app-menu li:hover a,
+#header .app-menu li.app-menu-entry__active a {
+    opacity: 1;
+}
+
+body.theme--highcontrast #header .app-menu li.app-menu-entry__active a {
     filter: invert(0);
 }
-body.theme--highcontrast #header #appmenu li .icon-more-white {
+body.theme--highcontrast #header .app-menu li .icon-more-white {
     background-image: var(--icon-more-000);
 }
 body.theme--dark.theme--highcontrast #header .header-menu.unified-search a.header-menu__trigger,
@@ -1747,11 +1818,35 @@ body.theme--highcontrast #header .notifications-button.hasNotifications,
 body.theme--highcontrast #unified-search .header-menu__trigger {
     opacity: 1 !important;
 }
-body.theme--dark.theme--highcontrast #header #appmenu li:hover a,
-body.theme--dark.theme--highcontrast #header #appmenu li:focus a {
+body.theme--dark.theme--highcontrast #header .app-menu li:hover a,
+body.theme--dark.theme--highcontrast #header .app-menu li:focus a {
     color: #000;
 }
 /* Files App */
 #content.app-files #filestable {
     padding-top: 20px;
+}
+
+.comments .comment__editor .rich-contenteditable__input {
+    min-height: 70px;
+}
+
+#header-menu-user-menu .user-menu__nav .menu-entry img {
+    filter: var(--inactive-icon-filter);
+    opacity: 1;
+}
+input:not([type=range],
+.input-field__input,
+[type=submit],
+[type=button],
+[type=reset],
+.multiselect__input,
+.select2-input,
+.action-input__input,
+[class^=vs__]),
+select,
+div[contenteditable=true],
+textarea {
+    border: 1px solid var(--color-border-dark);
+    border-radius: var(--border-radius);
 }
