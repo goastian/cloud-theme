@@ -1689,6 +1689,7 @@ a.legal {
     border: none;
     color: #222222;
 }
-#body-login .guest-box.login-box .button-vue--vue-tertiary-no-background{
+#body-login .guest-box.login-box .button-vue--vue-tertiary-no-background,
+#body-login .guest-box.login-box .input-field__input {
     color: #222222;
 }
