@@ -1,20 +1,21 @@
-$(document).on('click','#lost-password', function(){
-	if(window.innerWidth > 1050){
-		$('.banner-content').hide('slow');
-		$('.have-an-account').hide('slow');
-		$('.banner-right-align').addClass('width0');
-		$('.lines').hide();
-		$('.v-align').addClass('warning-messsage');
-		$('footer').addClass('forgotpass-footer');
-	}
-});
-$(document).on('click','.lost-password-container a', function(){
-	if(window.innerWidth > 1050){
-		$('.banner-right-align').removeClass('width0');
-		$('.v-align').removeClass('warning-messsage');
-		$('footer').removeClass('forgotpass-footer');
-		$('.lines').show('slow');
-		$('.banner-content').show('slow');
-		$('.have-an-account').show('slow');
-	}
-});
+document.addEventListener('DOMContentLoaded', function() {
+	document.addEventListener('click', function(event) {
+		if (event.target.id === 'lost-password' && window.innerWidth > 1050) {
+			document.querySelector('.banner-content').style.display = 'none'
+			document.querySelector('.have-an-account').style.display = 'none'
+			document.querySelector('.banner-right-align').classList.add('width0')
+			document.querySelector('.lines').style.display = 'none'
+			document.querySelector('.v-align').classList.add('warning-message')
+			document.querySelector('footer').classList.add('forgotpass-footer')
+			document.querySelector('.banner-content').classList.remove('slow-show')
+		} else if (event.target.matches('.lost-password-container a') && window.innerWidth > 1050) {
+			document.querySelector('.banner-right-align').classList.remove('width0')
+			document.querySelector('.v-align').classList.remove('warning-message')
+			document.querySelector('footer').classList.remove('forgotpass-footer')
+			document.querySelector('.lines').style.display = 'block'
+			document.querySelector('.banner-content').style.display = 'block'
+			document.querySelector('.have-an-account').style.display = 'block'
+			document.querySelector('.banner-content').classList.add('slow-show')
+		}
+	})
+})
