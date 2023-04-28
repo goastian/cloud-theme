@@ -1689,3 +1689,6 @@ a.legal {
     border: none;
     color: #222222;
 }
+#body-login .guest-box.login-box .button-vue--vue-tertiary-no-background{
+    color: #222222;
+}
