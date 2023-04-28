@@ -1143,6 +1143,13 @@ a.legal {
     transition: all 0.3s linear;
 }
 
+#body-login .warning-messsage {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 0;
+}
+
 #body-login .v-align .guest-box {
     justify-content: center !important;
     width: 92%;
