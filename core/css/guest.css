@@ -1675,4 +1675,21 @@ a.legal {
         opacity: 1;
     }
 }
-
+.guest-box, .body-login-container {
+    color: #222222;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: var(--border-radius-large);
+    box-shadow: 0 0 10px var(--color-box-shadow);
+    display: inline-block;
+}
+#body-login .guest-box.login-box {
+    border-radius: none;
+    box-shadow: none;
+    border: none;
+    color: #222222;
+}
+#body-login .guest-box.login-box .button-vue--vue-tertiary-no-background,
+#body-login .guest-box.login-box .input-field__input {
+    color: #222222;
+}
