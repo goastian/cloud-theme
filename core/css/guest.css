@@ -1693,3 +1693,6 @@ a.legal {
 #body-login .guest-box.login-box .input-field__input {
     color: #222222;
 }
+#body-login .picker-window p.info{
+    color: #222222;
+}
