@@ -74,6 +74,12 @@ body.theme--highcontrast {
 @media(prefers-color-scheme: dark){
     :root {
         --color-main-background-header: #272727;
+        --input-background-color: #181818;
+        --icon-notifications-notifications-000000: url("/svg/notifications/notifications?color=000");
+        --icon-notifications-notifications-new-000000: url("/svg/notifications/notifications-new?color=000");
+        --icon-search-000: url("/svg/core/actions/search?color=fff");
+        --logo: url("../img/logo@2x-dark.svg");
+        --notification-icon-invert: invert(100%);
     }
 }
 
