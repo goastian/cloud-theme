@@ -1712,4 +1712,9 @@ a.legal {
     max-width: 100%;
 }
 
-
+#body-login .guest-box.login-box .button-vue--vue-tertiary-no-background .material-design-icon.eye-icon {
+    opacity:0.5;
+}
+#body-login .guest-box.login-box .button-vue.button-vue--icon-and-text.button-vue--vue-primary.button-vue--wide .button-vue__wrapper .button-vue__icon {
+  display:none;
+}
