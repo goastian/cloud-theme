@@ -1716,5 +1716,10 @@ a.legal {
     opacity:0.5;
 }
 #body-login .guest-box.login-box .button-vue.button-vue--icon-and-text.button-vue--vue-primary.button-vue--wide .button-vue__wrapper .button-vue__icon {
-  display:none;
+    display:none;
+}
+#body-login .guest-box.login-box .input-field__label{
+    color: #333333;
+    font-weight: 700;
+    font-size: 16px;
 }
