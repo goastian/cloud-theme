@@ -1155,10 +1155,17 @@ a.legal {
     width: 92%;
     margin-left: 0;
     margin-right: 0;
+    box-shadow: none;
+
+}
+#body-login .v-align .guest-box p.message {
+    justify-content: center !important;
+    padding: 16px;
     border: 1px solid;
     box-shadow: none;
     color: #029f3c;
 }
+
 #body-login .icon.icon-checkmark,
 #body-login .icon-checkmark-white{
     display:none;
