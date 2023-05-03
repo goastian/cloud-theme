@@ -71,6 +71,9 @@ body[data-themes="dark"] {
 body.theme--highcontrast {
     --icon-inactive-color: black;
 }
+@media (prefers-color-scheme: dark) {
+    --color-main-background-header: #272727;
+}
 
 body {
     background-color: var(--color-main-background);
