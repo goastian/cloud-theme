@@ -1164,6 +1164,7 @@ a.legal {
     border: 1px solid;
     box-shadow: none;
     color: #029f3c;
+    border-radius: var(--border-radius-large);
 }
 
 #body-login .icon.icon-checkmark,
