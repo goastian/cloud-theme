@@ -55,7 +55,7 @@
     --notification-icon-invert: invert(0%);
     --active-icon-filter: brightness(0) saturate(100%) invert(38%) sepia(88%) saturate(4068%) hue-rotate(197deg) brightness(102%) contrast(106%);
     --inactive-icon-filter: brightness(0) saturate(100%) invert(50%) sepia(12%) saturate(0%) hue-rotate(187deg) brightness(98%) contrast(94%);
-    --seach-notificaton-display: none;
+    --search-notificaton-display: none;
 }
 
 /* Force a few variables to right values for dark theme */
@@ -65,7 +65,7 @@ body[data-themes="dark"] , body[data-themes="dark-highcontrast"]{
     --icon-search-000: url("/svg/core/actions/search?color=fff");
     --logo: url("../img/logo@2x-dark.svg");
     --notification-icon-invert: invert(100%);
-    --seach-notificaton-display: block;
+    --search-notificaton-display: block;
 }
 
 body.theme--highcontrast {
@@ -389,7 +389,7 @@ footer {
 }
 
 #header #notifications .notifications-button__icon {
-    display: var(--seach-notificaton-display);
+    display: var(--search-notificaton-display);
 }
 
 #header #notifications .header-menu__trigger,
@@ -1647,7 +1647,7 @@ button.edit-output-dir span.icon-rename,
 }
 /** */
 #header .header-right .magnify-icon > svg {
-    display: var(--seach-notificaton-display);
+    display: var(--search-notificaton-display);
 }
 .new-icons .color-icons {
     background-image: url("../img/app-icons/other.svg");
