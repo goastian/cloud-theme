@@ -61,11 +61,9 @@
 }
 
 /* Force a few variables to right values for dark theme */
-body[data-themes="dark"] {
+body[data-themes="dark"] , body[data-themes="dark-highcontrast"]{
     --color-main-background-header: #272727;
     --input-background-color: #181818;
-    --icon-notifications-notifications-000000: url("/svg/notifications/notifications?color=000");
-    --icon-notifications-notifications-new-000000: url("/svg/notifications/notifications-new?color=000");
     --icon-search-000: url("/svg/core/actions/search?color=fff");
     --logo: url("../img/logo@2x-dark.svg");
     --notification-icon-invert: invert(100%);
@@ -74,6 +72,15 @@ body[data-themes="dark"] {
 body.theme--highcontrast {
     --icon-inactive-color: black;
 }
+@media(prefers-color-scheme: dark){
+    :root {
+        --color-main-background-header: #272727;
+        --input-background-color: #181818;
+        --logo: url("../img/logo@2x-dark.svg");
+        --notification-icon-invert: invert(100%);
+    }
+}
+
 
 body {
     background-color: var(--color-main-background);
@@ -848,7 +855,9 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
 #content.app-files #emptycontent .icon-share {
     background-image: var(--icon-files-share-808080);
 }
-
+#content {
+    border-radius: unset;
+}
 #content #app-content-files #controls {
     background-color: var(--color-main-background);
 }
