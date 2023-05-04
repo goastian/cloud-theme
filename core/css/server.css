@@ -1646,9 +1646,7 @@ button.edit-output-dir span.icon-rename,
     opacity: 1;
 }
 /** */
-#header .header-right .magnify-icon > svg {
-    display: none;
-}
+
 .new-icons .color-icons {
     background-image: url("../img/app-icons/other.svg");
     width: 100%;
