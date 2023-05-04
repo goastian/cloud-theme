@@ -388,10 +388,6 @@ footer {
     height: 92px;
 }
 
-#header #notifications .notifications-button__icon {
-    display: none;
-}
-
 #header #notifications .header-menu__trigger,
 #header #unified-search .magnify-icon {
     opacity: 0.6;
