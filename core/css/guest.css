@@ -1155,10 +1155,18 @@ a.legal {
     width: 92%;
     margin-left: 0;
     margin-right: 0;
+    box-shadow: none;
+
+}
+#body-login .v-align .guest-box p.message {
+    justify-content: center !important;
+    padding: 16px;
     border: 1px solid;
     box-shadow: none;
     color: #029f3c;
+    border-radius: var(--border-radius-large);
 }
+
 #body-login .icon.icon-checkmark,
 #body-login .icon-checkmark-white{
     display:none;
@@ -1654,7 +1662,7 @@ a.legal {
 }
 #body-login .input-field__clear-button.button-vue{
     vertical-align: middle;
-    height: 36px;
+    height: 32px;
     line-height: 36px;
 }
 #body-login .button-vue--vue-primary{
@@ -1692,4 +1700,34 @@ a.legal {
 #body-login .guest-box.login-box .button-vue--vue-tertiary-no-background,
 #body-login .guest-box.login-box .input-field__input {
     color: #222222;
+}
+#body-login .picker-window p.info{
+    color: #222222;
+}
+#body-login .picker-window {
+	display: inline-block;
+	padding: 16px;
+	margin: 20px;
+	background-color: var(--color-main-background);
+	color: var(--color-main-text);
+	border-radius: var(--border-radius-large);
+    box-shadow: none;
+    border: none;
+	cursor: default;
+}
+
+#body-login .picker-window.small {
+    max-width: 100%;
+}
+
+#body-login .guest-box.login-box .button-vue--vue-tertiary-no-background .material-design-icon.eye-icon {
+    opacity:0.5;
+}
+#body-login .guest-box.login-box .button-vue.button-vue--icon-and-text.button-vue--vue-primary.button-vue--wide .button-vue__wrapper .button-vue__icon {
+    display:none;
+}
+#body-login .guest-box.login-box .input-field__label{
+    color: #333333;
+    font-weight: 700;
+    font-size: 16px;
 }
