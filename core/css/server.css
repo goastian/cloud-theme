@@ -57,17 +57,18 @@
     --inactive-icon-filter: brightness(0) saturate(100%) invert(50%) sepia(12%) saturate(0%) hue-rotate(187deg) brightness(98%) contrast(94%);
     --notification-icon: var(--icon-notifications-notifications-000000);
     --notification-icon-has-notification: var(--icon-notifications-notifications-new-000000);
+    --search-icon: var(--icon-search-000);
     }
 
 /* Force a few variables to right values for dark theme */
 body[data-themes="dark"] , body[data-themes="dark-highcontrast"]{
     --color-main-background-header: #272727;
     --input-background-color: #181818;
-    --icon-search-000: url("/svg/core/actions/search?color=fff");
     --logo: url("../img/logo@2x-dark.svg");
     --notification-icon-invert: invert(100%);
     --notification-icon: var(--icon-notifications-notifications-ffffff);
     --notification-icon-has-notification: var(--icon-notifications-notifications-new-ffffff);
+    --search-icon: var(--icon-search-fff);
 }
 
 body.theme--highcontrast {
@@ -81,6 +82,7 @@ body.theme--highcontrast {
         --notification-icon-invert: invert(100%);
         --notification-icon: var(--icon-notifications-notifications-ffffff);
         --notification-icon-has-notification: var(--icon-notifications-notifications-new-ffffff);
+        --search-icon: var(--icon-search-fff);
     }
 }
 
@@ -978,11 +980,11 @@ body .icon-quota {
 }
 
 body.theme--highcontrast #header .header-right .magnify-icon {
-    background: var(--icon-search-000) no-repeat center;
+    background: var( --search-icon) no-repeat center;
 }
 
 #header .header-right .magnify-icon {
-    background: var(--icon-search-000) no-repeat center;
+    background: var( --search-icon) no-repeat center;
     background-size: 15px;
     width: inherit;
     height: inherit;
