@@ -55,9 +55,9 @@
     --notification-icon-invert: invert(0%);
     --active-icon-filter: brightness(0) saturate(100%) invert(38%) sepia(88%) saturate(4068%) hue-rotate(197deg) brightness(102%) contrast(106%);
     --inactive-icon-filter: brightness(0) saturate(100%) invert(50%) sepia(12%) saturate(0%) hue-rotate(187deg) brightness(98%) contrast(94%);
-    --notification-icon: var(--icon-notifications-notifications-000000);
+    --notification-icon: var(--original-icon-notifications-dark);
     --notification-icon-has-notification: var(--icon-notifications-notifications-new-000000);
-    --search-icon: var(--icon-search-000);
+    --search-icon: var(--original-icon-search-dark);
     }
 
 /* Force a few variables to right values for dark theme */
@@ -66,9 +66,9 @@ body[data-themes="dark"] , body[data-themes="dark-highcontrast"]{
     --input-background-color: #181818;
     --logo: url("../img/logo@2x-dark.svg");
     --notification-icon-invert: invert(100%);
-    --notification-icon: var(--icon-notifications-notifications-ffffff);
+    --notification-icon: var(--original-icon-notifications-white);
     --notification-icon-has-notification: var(--icon-notifications-notifications-new-ffffff);
-    --search-icon: var(--icon-search-fff);
+    --search-icon: var(--original-icon-search-white);
 }
 
 body.theme--highcontrast {
@@ -80,9 +80,9 @@ body.theme--highcontrast {
         --input-background-color: #181818;
         --logo: url("../img/logo@2x-dark.svg");
         --notification-icon-invert: invert(100%);
-        --notification-icon: var(--icon-notifications-notifications-ffffff);
+        --notification-icon: var(--original-icon-notifications-white);
         --notification-icon-has-notification: var(--icon-notifications-notifications-new-ffffff);
-        --search-icon: var(--icon-search-fff);
+        --search-icon: var(--original-icon-search-white);
     }
 }
 
