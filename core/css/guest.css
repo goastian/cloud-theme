@@ -1222,7 +1222,7 @@ a.legal {
 #body-login .totp-form input,
 #body-login .totp-form button {
     margin-top: 5%;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 #body-login #submit-form,
