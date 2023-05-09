@@ -1731,3 +1731,6 @@ a.legal {
     font-weight: 700;
     font-size: 16px;
 }
+#body-login .two-factor-totp-icon {
+    filter: none;
+}
