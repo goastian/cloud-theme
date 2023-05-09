@@ -1,21 +1,2 @@
 variables:
   APP_NAME: eCloud
-
-# Deploy stage
-include:
-  - project: 'e/infra/ecloud/nextcloud-apps/ci-templates'
-    ref: main
-    file: 'nc-apps-checkout-deploy.yml'
-
-.deploy:nextcloud-app-by-checkout:
-  script:
-    # print var to confirm
-    - echo "Deploying $APP_NAME to $CI_ENVIRONMENT_NAME ($DEPLOYMENT_HOST)"
-    # clone repo to /tmp
-    - |
-      ssh $SSH_USER@$DEPLOYMENT_HOST /bin/bash -s << EOT
-      git clone --depth 1 $CI_REPOSITORY_URL --branch $CI_COMMIT_REF_NAME --single-branch /tmp/${CI_JOB_ID}/${APP_NAME}
-      sudo rsync -avzh --chown www-data:www-data --delete --exclude '.git*' /tmp/${CI_JOB_ID}/${APP_NAME}/ ${DEPLOYMENT_PATH}/html/themes/${APP_NAME}/
-      docker exec -u www-data $CONTAINER_NAME /usr/local/bin/php /var/www/html/occ maintenance:theme:update
-      EOT
-    - echo "SUCCESS" > .job_status
