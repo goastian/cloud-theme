@@ -28,6 +28,7 @@
 }
 :root, [data-theme-light] {
     --color-primary: #007fff;
+    --color-primary-light: #0774F9;
     --color-primary-element: #007fff;
     --color-secondary-element: white;
     --border-color-secondary-element: #007fff;
