@@ -1219,12 +1219,6 @@ a.legal {
     margin: 24px 0px;
 }
 
-#body-login .totp-form input,
-#body-login .totp-form button {
-    margin-top: 5%;
-    max-width: 90%;
-}
-
 #body-login #submit-form,
 #body-login .two-factor-submit {
     box-sizing: border-box;
