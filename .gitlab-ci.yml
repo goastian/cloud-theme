@@ -5,7 +5,7 @@ variables:
 include:
   - project: 'e/infra/ecloud/nextcloud-apps/ci-templates'
     ref: main
-    file: 'nc-apps-deploy.yml'
+    file: 'nc-apps-checkout-deploy.yml'
 
 .deploy:nextcloud-app-by-checkout:
   script:
