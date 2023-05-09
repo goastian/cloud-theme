@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU Affero General Public License, version 3,
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-@font-face {
+ @font-face {
     font-family: 'Roboto';
     src: url('../webfonts/Roboto-Regular.woff2') format('woff2'), url('../webfonts/Roboto-Regular.woff') format('woff');
     /* font-weight: 600; */
@@ -55,6 +55,9 @@
     --notification-icon-invert: invert(0%);
     --active-icon-filter: brightness(0) saturate(100%) invert(38%) sepia(88%) saturate(4068%) hue-rotate(197deg) brightness(102%) contrast(106%);
     --inactive-icon-filter: brightness(0) saturate(100%) invert(50%) sepia(12%) saturate(0%) hue-rotate(187deg) brightness(98%) contrast(94%);
+    --notification-icon: var(--original-icon-notifications-dark);
+    --notification-icon-has-notification: var(--icon-has-notification-dark);
+    --search-icon: var(--original-icon-search-dark);
     --body-container-margin: 0px;
     --body-container-radius: 0px;
     --body-height: 100%;
@@ -64,9 +67,11 @@
 body[data-themes="dark"] , body[data-themes="dark-highcontrast"]{
     --color-main-background-header: #272727;
     --input-background-color: #181818;
-    --icon-search-000: url("/svg/core/actions/search?color=fff");
     --logo: url("../img/logo@2x-dark.svg");
     --notification-icon-invert: invert(100%);
+    --notification-icon: var(--original-icon-notifications-white);
+    --notification-icon-has-notification: var(--icon-has-notification-light);
+    --search-icon: var(--original-icon-search-white);
 }
 
 body.theme--highcontrast {
@@ -78,6 +83,9 @@ body.theme--highcontrast {
         --input-background-color: #181818;
         --logo: url("../img/logo@2x-dark.svg");
         --notification-icon-invert: invert(100%);
+        --notification-icon: var(--original-icon-notifications-white);
+        --notification-icon-has-notification: var(--icon-has-notification-light);
+        --search-icon: var(--original-icon-search-white);
     }
 }
 
@@ -406,13 +414,13 @@ footer {
 
 
 #header #notifications[data-has-notifications="true"] .header-menu__trigger {
-    background: var(--icon-notifications-notifications-new-000000) no-repeat center;
+    background: var(--notification-icon-has-notification) no-repeat center;
     background-size: 17px;
 
 }
 
 #header #notifications .header-menu__trigger {
-    background: var(--icon-notifications-notifications-000000) no-repeat center;
+    background: var(--notification-icon) no-repeat center;
     background-size: 17px;
 }
 
@@ -976,11 +984,11 @@ body .icon-quota {
 }
 
 body.theme--highcontrast #header .header-right .magnify-icon {
-    background: var(--icon-search-000) no-repeat center;
+    background: var( --search-icon) no-repeat center;
 }
 
 #header .header-right .magnify-icon {
-    background: var(--icon-search-000) no-repeat center;
+    background: var( --search-icon) no-repeat center;
     background-size: 15px;
     width: inherit;
     height: inherit;
