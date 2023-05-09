@@ -58,7 +58,10 @@
     --notification-icon: var(--original-icon-notifications-dark);
     --notification-icon-has-notification: var(--icon-has-notification-dark);
     --search-icon: var(--original-icon-search-dark);
-    }
+    --body-container-margin: 0px;
+    --body-container-radius: 0px;
+    --body-height: 100%;
+}
 
 /* Force a few variables to right values for dark theme */
 body[data-themes="dark"] , body[data-themes="dark-highcontrast"]{
@@ -94,6 +97,7 @@ body {
     line-height: var(--default-line-height);
     font-family: var(--font-face);
     color: var(--color-main-text);
+    background-image: unset;
 }
 
 #body-user #header,
