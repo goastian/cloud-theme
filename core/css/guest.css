@@ -1725,3 +1725,6 @@ a.legal {
     font-weight: 700;
     font-size: 16px;
 }
+#body-login .wrapper.not_alt_login a.button.primary {
+    color: #ffffff;
+}
