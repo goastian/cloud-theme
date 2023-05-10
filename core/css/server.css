@@ -59,6 +59,7 @@
     --notification-icon-has-notification: var(--icon-has-notification-dark);
     --search-icon: var(--original-icon-search-dark);
     --body-container-radius: 0px;
+    --default-grid-baseline: 0px
 }
 
 /* Force a few variables to right values for dark theme */
