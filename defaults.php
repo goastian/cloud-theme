@@ -90,7 +90,7 @@ class OC_Theme {
 	 * @return string URL
 	 */
 	public function getTermsUrl() {
-		return  $this->getBaseUrl().'apps/terms_of_service/en/termsandconditions';
+		return  'http://murena.io/apps/terms_of_service/en/termsandconditions';
 	}
 
 	/**
