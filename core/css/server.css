@@ -840,7 +840,6 @@ body[data-dashboard-background="default"] #app-dashboard h2 {
     background-image: var(--icon-text-007fff);
 }
 
-#uploadprogressbar + button.icon-close,
 #google-drive button .icon-close,
 #google-photos button .icon-close {
     background-image: var(--icon-close-fff);
