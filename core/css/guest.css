@@ -984,7 +984,7 @@ p.info {
     background-image: url('../img/actions/checkmark-white.svg?v=1');
 }
 
-#body-login .warning-messsage .icon-checkmark-white {
+#body-login .warning-message .icon-checkmark-white {
     background-image: url('../img/actions/checkmark-success.svg?v=1');
 }
 
@@ -1116,6 +1116,14 @@ a.legal {
     color: #808080;
     font-family: "Montserrat";
 }
+
+#body-login .warning-message {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 0;
+}
+
 #body-login .v-align {
     display: flex;
     flex-direction: column;
@@ -1134,12 +1142,36 @@ a.legal {
     max-height: 100%;
     transition: all 0.3s linear;
 }
+
 #body-login .warning-messsage {
     width: 50%;
     margin: 0 auto;
     margin-top: 0;
     padding: 0;
 }
+
+#body-login .v-align .guest-box {
+    justify-content: center !important;
+    width: 92%;
+    margin-left: 0;
+    margin-right: 0;
+    box-shadow: none;
+
+}
+#body-login .v-align .guest-box p.message {
+    justify-content: center !important;
+    padding: 16px;
+    border: 1px solid;
+    box-shadow: none;
+    color: #029f3c;
+    border-radius: var(--border-radius-large);
+}
+
+#body-login .icon.icon-checkmark,
+#body-login .icon-checkmark-white{
+    display:none;
+}
+
 #body-login #user,
 #body-login #password,
 #body-login .totp-form > input[type="tel"] {
@@ -1149,7 +1181,6 @@ a.legal {
     border: 1px solid #E6E8E9;
     box-sizing: border-box;
     border-radius: 8px;
-    margin: 12px 0px;
     font-size: 16px;
     background-color: #ffffff;
 }
@@ -1186,12 +1217,6 @@ a.legal {
     border-radius: 6px;
     flex-grow: 1;
     margin: 24px 0px;
-}
-
-#body-login .totp-form input,
-#body-login .totp-form button {
-    margin-top: 5%;
-    max-width: 90%;
 }
 
 #body-login #submit-form,
@@ -1400,7 +1425,7 @@ a.legal {
 .v-align header{
     width: 100%;
 }
-.warning-messsage header{
+.warning-message header{
     margin-top: 0;
 }
 .sign-in-label {
@@ -1415,11 +1440,11 @@ a.legal {
     width: 100%;
     margin: 0 auto;
 }
-.warning-messsage main{
+.warning-message main{
     margin-bottom: 0;
     max-width: 90%;
 }
-.warning-messsage main{
+.warning-message main{
     margin-bottom: 0;
     max-width: 60%;
 }
@@ -1430,6 +1455,8 @@ a.legal {
     font-weight: 400 !important;
     font-size: 16px !important;
     line-height: 150%;
+    display: block;
+    margin: 0 auto;
 }
  .v-align main .grouptop, .v-align main .groupbottom{
     position: relative;
@@ -1533,7 +1560,7 @@ a.legal {
     .banner-content-why-murena{
         margin: 5% 0 5% 0;
     }
-    .warning-messsage main{
+    .warning-message main{
         max-width: 90%;
         overflow-x: auto;
     }
@@ -1548,6 +1575,7 @@ a.legal {
         overflow: hidden;
         position: unset !important;
         height: unset;
+        padding: 0 5vh;
     }
     .banner-content-get-free-murena{
         font-size: 18px;
@@ -1561,10 +1589,10 @@ a.legal {
     .lines{
         display: none;
     }
-    #body-login .warning-messsage {
+    #body-login .warning-message {
         width: 80%;
     }
-    .warning-messsage main{
+    .warning-message main{
         max-width: 90%;
     }
     #body-login .update, #body-login .success {
@@ -1588,7 +1616,7 @@ a.legal {
         margin: 0 auto;
         height: 100%;
     }
-    #body-login .warning-messsage {
+    #body-login .warning-message {
         width: 90%;
     }
 }
@@ -1616,4 +1644,87 @@ a.legal {
 }
 .v-align > footer p.info {
     height: 40%;
+}
+#body-login .guest-box.login-box {
+    border-radius: none;
+    box-shadow: none;
+    border: none;
+    color: var(--color-main-text);
+}
+#body-login .login-form__headline {
+    display:none
+}
+#body-login .input-field__clear-button.button-vue{
+    vertical-align: middle;
+    height: 32px;
+    line-height: 36px;
+}
+#body-login .button-vue--vue-primary{
+    margin: 46px 0px;
+}
+.slow-show {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.guest-box, .body-login-container {
+    color: #222222;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: var(--border-radius-large);
+    box-shadow: 0 0 10px var(--color-box-shadow);
+    display: inline-block;
+}
+#body-login .guest-box.login-box {
+    border-radius: none;
+    box-shadow: none;
+    border: none;
+    color: #222222;
+}
+#body-login .guest-box.login-box .button-vue--vue-tertiary-no-background,
+#body-login .guest-box.login-box .input-field__input {
+    color: #222222;
+}
+#body-login .picker-window p.info{
+    color: #222222;
+}
+#body-login .picker-window {
+	display: inline-block;
+	padding: 16px;
+	margin: 20px;
+	background-color: var(--color-main-background);
+	color: var(--color-main-text);
+	border-radius: var(--border-radius-large);
+    box-shadow: none;
+    border: none;
+	cursor: default;
+}
+
+#body-login .picker-window.small {
+    max-width: 100%;
+}
+
+#body-login .guest-box.login-box .button-vue--vue-tertiary-no-background .material-design-icon.eye-icon {
+    opacity:0.5;
+}
+#body-login .guest-box.login-box .button-vue.button-vue--icon-and-text.button-vue--vue-primary.button-vue--wide .button-vue__wrapper .button-vue__icon {
+    display:none;
+}
+#body-login .guest-box.login-box .input-field__label{
+    color: #333333;
+    font-weight: 700;
+    font-size: 16px;
+}
+#body-login .wrapper.not_alt_login a.button.primary {
+    color: #ffffff;
 }
