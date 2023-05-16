@@ -90,7 +90,9 @@ class OC_Theme {
 	 * @return string URL
 	 */
 	public function getTermsUrl() {
-		return 'https://murena.com/terms-conditions/';
+		$language = \OC::$server->getL10N('core')->getLanguageCode();
+		$url = 'http://murena.io/apps/terms_of_service/'.$language.'/termsandconditions';
+		return $url;
 	}
 
 	/**
