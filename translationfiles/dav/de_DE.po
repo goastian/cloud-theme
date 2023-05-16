@@ -1,0 +1,46 @@
+#. extracted from apps/dav/l10n/en.json, apps/dav/l10n/de_DE.json
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-16 12:09+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.8.4\n"
+
+#: .translations.Maybe
+msgid "Maybe"
+msgstr "Vielleicht"
+
+#: .translations.This+occurrence+has+been+updated,+please+review+highlighted+information+below:
+msgid ""
+"This occurrence has been updated,<br> please review highlighted information "
+"below:"
+msgstr ""
+"Dieses Ereignis wurde aktualisiert,<br> bitte überprüfen Sie die "
+"hervorgehobenen Informationen unten:"
+
+#: .translations.This+event+has+been+updated,+please+review+the+information+below:
+msgid "This event has been updated,<br> please review the information below:"
+msgstr ""
+"Diese Veranstaltung wurde aktualisiert,<br> bitte beachten Sie die unten "
+"stehenden Informationen:"
+
+#: .translations.This+recurring+event+has+been+updated,+please+review+the+information+below:
+msgid ""
+"This recurring event has been updated,<br> please review the information "
+"below:"
+msgstr ""
+"Diese wiederkehrende Veranstaltung wurde aktualisiert,<br> bitte beachten "
+"Sie die unten stehenden Informationen:"
+
+#: .translations.The+invitation+has+been+cancelled
+msgid "The event has been cancelled"
+msgstr "Die Veranstaltung wurde abgesagt"
+
+

@@ -1,0 +1,53 @@
+#. extracted from apps/privacy/l10n/en.json, apps/privacy/l10n/es.json
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-16 12:18+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.8.4\n"
+
+#: .translations.Like+in+most+cloud+services,+a+reduced+number+of+administrators+can+see+your+files+and+all+the+information+in+the+database+as+they+need+to+make+backups,+perform+upgrades,+reset+passwords,+etc.
+msgid ""
+"Like in most cloud services, a reduced number of administrators can see your "
+"files and all the information in the database as they need to make backups, "
+"perform upgrades, reset passwords, etc."
+msgstr ""
+"Como en la mayoría de los servicios en la nube, un número reducido de "
+"administradores pueden ver los ficheros y toda la información en la base de "
+"datos; de esta manera pueden hacer copias de respaldo, realizar "
+"actualizaciones o reiniciar contraseñas, entre otras operaciones."
+
+#: .translations.Learn+more+about+this+topic+here.
+msgid "Learn more about this topic here."
+msgstr "Lea más sobre el tema aquí."
+
+#: .translations.To+protect+your+data,+we+have+implemented+server-side-encryption+on+our+servers+which+hides+by+default+the+content+of+your+files+and+notes+even+to+these+administrators.
+msgid ""
+"To protect your data, we have implemented server-side-encryption on our "
+"servers which hides by default the content of your files and notes even to "
+"these administrators."
+msgstr ""
+"Para proteger tus datos, hemos activado el cifrado en el servidor que impide "
+"por defecto ver el contenido de los ficheros y notas, incluso a los "
+"administradores."
+
+#: .translations.People+you+shared+documents+or+folders+with
+msgid "People you shared content with"
+msgstr "Personas con las que has compartido contenido"
+
+#: .translations.Where+is+your+data%3F
+msgid "Where is my data?"
+msgstr "¿Dónde están almacenados mis datos?"
+
+#: .translations.Who+has+access+to+your+data%3F
+msgid "Who has access to my data?"
+msgstr "¿Quién puede acceder a mis datos?"
+
+

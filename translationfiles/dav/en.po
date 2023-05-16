@@ -1,0 +1,44 @@
+#. extracted from apps/dav/l10n/en.json, apps/dav/l10n/en.json
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-16 12:09+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.8.4\n"
+
+#: .translations.Maybe
+msgid "Maybe"
+msgstr "Maybe"
+
+#: .translations.This+occurrence+has+been+updated,+please+review+highlighted+information+below:
+msgid ""
+"This occurrence has been updated,<br> please review highlighted information "
+"below:"
+msgstr ""
+"This occurrence has been updated,<br> please review highlighted information "
+"below:"
+
+#: .translations.This+event+has+been+updated,+please+review+the+information+below:
+msgid "This event has been updated,<br> please review the information below:"
+msgstr "This event has been updated,<br> please review the information below:"
+
+#: .translations.This+recurring+event+has+been+updated,+please+review+the+information+below:
+msgid ""
+"This recurring event has been updated,<br> please review the information "
+"below:"
+msgstr ""
+"This recurring event has been updated,<br> please review the information "
+"below:"
+
+#: .translations.The+invitation+has+been+cancelled
+msgid "The event has been cancelled"
+msgstr "The event has been cancelled"
+
+
