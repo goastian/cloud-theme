@@ -1,0 +1,44 @@
+#. extracted from apps/privacy/l10n/en.json
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-16 12:04+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.8.4\n"
+
+#: .Like+in+most+cloud+services,+a+reduced+number+of+administrators+can+see+your+files+and+all+the+information+in+the+database+as+they+need+to+make+backups,+perform+upgrades,+reset+passwords,+etc.
+msgid ""
+"Like in most cloud services, a reduced number of administrators can see your "
+"files and all the information in the database as they need to make backups, "
+"perform upgrades, reset passwords, etc."
+msgstr ""
+
+#: .Learn+more+about+this+topic+here.
+msgid "Learn more about this topic here."
+msgstr ""
+
+#: .To+protect+your+data,+we+have+implemented+server-side-encryption+on+our+servers+which+hides+by+default+the+content+of+your+files+and+notes+even+to+these+administrators.
+msgid ""
+"To protect your data, we have implemented server-side-encryption on our "
+"servers which hides by default the content of your files and notes even to "
+"these administrators."
+msgstr ""
+
+#: .People+you+shared+documents+or+folders+with
+msgid "People you shared content with"
+msgstr ""
+
+#: .Where+is+your+data%3F
+msgid "Where is my data?"
+msgstr ""
+
+#: .Who+has+access+to+your+data%3F
+msgid "Who has access to my data?"
+msgstr ""

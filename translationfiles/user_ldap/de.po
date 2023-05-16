@@ -1,0 +1,31 @@
+#. extracted from apps/user_ldap/l10n/en.json, apps/user_ldap/l10n/de.json
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-16 12:22+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.8.4\n"
+
+#: .translations.Please+try+again+or+contact+your+administrator.
+msgid "Please try again or contact Murena at helpdesk@murena.com."
+msgstr ""
+"Bitte versuchen Sie es erneut oder kontaktieren Sie Murena unter "
+"helpdesk@murena.com."
+
+#: .translations.%3Cb%3EWarning:%3C/b%3E+The+PHP+LDAP+module+is+not+installed,+the+backend+will+not+work.+Please+ask+your+system+administrator+to+install+it.
+msgid ""
+"<b>Warning:</b> The PHP LDAP module is not installed, the backend will not "
+"work. Please contact Murena at helpdesk@murena.com to install it."
+msgstr ""
+"<b>Warnung:</b> Das PHP LDAP-Modul ist nicht installiert, das Backend wird "
+"nicht funktionieren. Bitte kontaktieren Sie Murena unter helpdesk@"
+"murena.com, um es zu installieren."
+
+
