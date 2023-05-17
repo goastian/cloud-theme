@@ -59,6 +59,7 @@
     --notification-icon-has-notification: var(--icon-has-notification-dark);
     --search-icon: var(--original-icon-search-dark);
     --body-container-radius: 0px;
+    --app-icon-filter: brightness(0.5);
 }
 
 /* Force a few variables to right values for dark theme */
@@ -70,6 +71,7 @@ body[data-themes="dark"] , body[data-themes="dark-highcontrast"]{
     --notification-icon: var(--original-icon-notifications-white);
     --notification-icon-has-notification: var(--icon-has-notification-light);
     --search-icon: var(--original-icon-search-white);
+    --app-icon-filter: brightness(1);
 }
 
 body.theme--highcontrast {
