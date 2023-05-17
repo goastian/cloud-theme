@@ -59,6 +59,7 @@
     --notification-icon-has-notification: var(--icon-has-notification-dark);
     --search-icon: var(--original-icon-search-dark);
     --body-container-radius: 0px;
+    --app-icon-filter: brightness(0.5);
 }
 
 /* Force a few variables to right values for dark theme */
@@ -70,6 +71,7 @@ body[data-themes="dark"] , body[data-themes="dark-highcontrast"]{
     --notification-icon: var(--original-icon-notifications-white);
     --notification-icon-has-notification: var(--icon-has-notification-light);
     --search-icon: var(--original-icon-search-white);
+    --app-icon-filter: brightness(1);
 }
 
 body.theme--highcontrast {
@@ -1659,86 +1661,8 @@ button.edit-output-dir span.icon-rename,
 #header .header-right .magnify-icon > svg {
     display: none;
 }
-.new-icons .color-icons {
-    background-image: url("../img/app-icons/other.svg");
-    width: 100%;
-    height: 80px;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: 60px;
-}
-.new-icons .drive,
-.new-icons .files {
-    background-image: url("../img/app-icons/Drive.svg");
-}
-.new-icons .activity {
-    background-image: url("../img/app-icons/Activity.svg");
-}
-.new-icons .bookmarks {
-    background-image: url("../img/app-icons/Bookmark.svg");
-}
-.new-icons .calendar {
-    background-image: url("../img/app-icons/Calendar.svg");
-}
-.new-icons .carnet {
-    background-image: url("../img/app-icons/Carnet.svg");
-}
-.new-icons .contacts {
-    background-image: url("../img/app-icons/Contacts.svg");
-}
-.new-icons .deck {
-    background-image: url("../img/app-icons/Deck.svg");
-}
-.new-icons .docs {
-    background-image: url("../img/app-icons/Docs.svg");
-}
-.new-icons .email,
-.new-icons .rainloop,
-.new-icons .snappymail {
-    background-image: url("../img/app-icons/E-mail.svg");
-}
-.new-icons .gitlab {
-    background-image: url("../img/app-icons/Gitlab.svg");
-}
-.new-icons .news {
-    background-image: url("../img/app-icons/News.svg");
-}
-.new-icons .notes {
-    background-image: url("../img/app-icons/Notes.svg");
-}
-.new-icons .presentation {
-    background-image: url("../img/app-icons/Presentation.svg");
-}
-.new-icons .spreadsheet {
-    background-image: url("../img/app-icons/Spreadsheet.svg");
-}
-.new-icons .tasks {
-    background-image: url("../img/app-icons/Tasks.svg");
-}
-.new-icons .photos {
-    background-image: url("../img/app-icons/Gallery.svg");
-}
-.new-icons .e-user-support-center {
-    background-image: url("../img/app-icons/Support.svg");
-}
-.new-icons .passwords {
-    background-image: url("../img/app-icons/Password.svg");
-}
-.new-icons .onlyoffice_docx {
-    background-image: url("../img/app-icons/Docs.svg");
-}
-.new-icons .onlyoffice_xlsx {
-    background-image: url("../img/app-icons/Spreadsheet.svg");
-}
-.new-icons .onlyoffice_pptx {
-    background-image: url("../img/app-icons/Presentation.svg");
-}
-.new-icons .cookbook {
-    background-image: url("../img/app-icons/Cookbook.svg");
-}
-
-#header .app-menu li:hover a,
-#header .app-menu li a:focus {
+#appmenu li:hover a,
+#appmenu li a:focus {
     font-size: 12px;
     font-family: 'Roboto';
     letter-spacing: 1px;
@@ -1771,10 +1695,6 @@ progress {
 
 
 @media only screen and(max-width: 640px) {
-    .new-icons .color-icons {
-        height: 50px;
-        background-size: 40px;
-    }
     #launcher-menu {
         width: 300px !important;
         left: 10% !important;
