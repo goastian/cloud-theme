@@ -1,16 +1,5 @@
-<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M56.8 0H15.2C6.80527 0 0 6.80527 0 15.2V56.8C0 65.1947 6.80527 72 15.2 72H56.8C65.1947 72 72 65.1947 72 56.8V15.2C72 6.80527 65.1947 0 56.8 0Z" fill="url(#paint0_linear_509_2162)"/>
-<rect x="14" y="14" width="20" height="44" rx="4" fill="#BFD8FF"/>
-<rect x="38" y="38" width="20" height="20" rx="4" fill="url(#paint1_linear_509_2162)"/>
-<rect x="38" y="14" width="20" height="20" rx="4" fill="#BFD8FF"/>
-<defs>
-<linearGradient id="paint0_linear_509_2162" x1="36" y1="1.408" x2="36" y2="72.216" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="#E6E8E9"/>
-</linearGradient>
-<linearGradient id="paint1_linear_509_2162" x1="48" y1="38" x2="48" y2="58" gradientUnits="userSpaceOnUse">
-<stop stop-color="#128FFD"/>
-<stop offset="1" stop-color="#2B72F9"/>
-</linearGradient>
-</defs>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.17603 4.176V19.824H9.0633V4.176H4.17603ZM3.33603 2.136C2.67329 2.136 2.13603 2.67326 2.13603 3.336V20.664C2.13603 21.3267 2.67329 21.864 3.33603 21.864H9.90331C10.566 21.864 11.1033 21.3267 11.1033 20.664V3.336C11.1033 2.67326 10.566 2.136 9.90331 2.136H3.33603Z" fill="#808080"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.9368 14.9367V19.824H19.824V14.9367H14.9368ZM14.0968 12.8967C13.434 12.8967 12.8968 13.434 12.8968 14.0967V20.664C12.8968 21.3267 13.434 21.864 14.0968 21.864H20.664C21.3268 21.864 21.864 21.3267 21.864 20.664V14.0967C21.864 13.434 21.3268 12.8967 20.664 12.8967H14.0968Z" fill="#808080"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.9368 4.176V9.06327H19.824V4.176H14.9368ZM14.0968 2.136C13.434 2.136 12.8968 2.67326 12.8968 3.336V9.90327C12.8968 10.566 13.434 11.1033 14.0968 11.1033H20.664C21.3268 11.1033 21.864 10.566 21.864 9.90328V3.336C21.864 2.67326 21.3268 2.136 20.664 2.136H14.0968Z" fill="#808080"/>
 </svg>
