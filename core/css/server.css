@@ -339,13 +339,7 @@ li.app-navigation-entry.app-navigation-entry--collapsible > a:hover,
 }
 
 #header .app-menu .app-menu-entry[data-app-id^='external_index'] img,
-#header .app-menu .app-menu-entry.app-menu-entry__active[data-app-id^='external_index'] img,
-#header .app-menu .app-menu-entry[data-app-id='news'] img,
-#header .app-menu .app-menu-entry.app-menu-entry__active[data-app-id='news'] img,
-#header .app-menu .app-menu-entry[data-app-id='passwords'] img,
-#header .app-menu .app-menu-entry.app-menu-entry.app-menu-entry__active[data-app-id='passwords'] img,
-#header .app-menu .app-menu-entry[data-app-id='carnet'] img,
-#header .app-menu .app-menu-entry.app-menu-entry__active[data-app-id='carnet'] img {
+#header .app-menu .app-menu-entry.app-menu-entry__active[data-app-id^='external_index'] img {
     filter: none;
 }
 
