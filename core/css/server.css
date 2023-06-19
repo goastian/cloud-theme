@@ -508,9 +508,6 @@ body .icon-reminder {
 body .icon-gravatar {
     background-image: var(--icon-contacts-gravatar-808080);
 }
-#content-vue.app-calendar .app-sidebar-tabs__tab-icon.icon-reminder {
-    background-size: 13px;
-}
 body .icon-clippy {
     background-image: var(--icon-clippy-808080);
 }
