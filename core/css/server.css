@@ -508,6 +508,9 @@ body .icon-reminder {
 body .icon-gravatar {
     background-image: var(--icon-contacts-gravatar-808080);
 }
+#content-vue.app-calendar .app-sidebar-tabs__tab-icon.icon-reminder {
+    background-size: 13px;
+}
 body .icon-clippy {
     background-image: var(--icon-clippy-808080);
 }
@@ -1373,9 +1376,6 @@ body .icon-public {
 #content-vue.app-calendar #app-navigation-vue .action-item.icon-shared,
 #content-vue.app-contacts #addressbook-list .icon-shared {
     background-size: 12px;
-}
-#content-vue.app-calendar .fc-scrollgrid {
-    padding-top: 14px;
 }
 
 #content-vue.app-calendar .fc-dayGridMonth-view table {
