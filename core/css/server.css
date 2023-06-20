@@ -72,6 +72,7 @@ body[data-themes="dark"] , body[data-themes="dark-highcontrast"]{
     --notification-icon-has-notification: var(--icon-has-notification-light);
     --search-icon: var(--original-icon-search-white);
     --app-icon-filter: brightness(1);
+    --color-primary-text: #ffffff;
 }
 
 body.theme--highcontrast {
