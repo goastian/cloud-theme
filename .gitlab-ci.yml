@@ -19,3 +19,17 @@ include:
       docker exec -u www-data $CONTAINER_NAME /usr/local/bin/php /var/www/html/occ maintenance:theme:update
       EOT
     - echo "SUCCESS" > .job_status
+
+deploy:staging:
+  extends: .deploy:nextcloud-app
+  when: manual
+  only:
+    - main
+    - murena-main
+    - production
+    - tags
+    - dev/new-oo-icons
+  environment:
+    name: staging/01
+    url: https://eeo.one
+
