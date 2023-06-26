@@ -1780,3 +1780,12 @@ textarea {
     border: 1px solid var(--color-border-dark);
     border-radius: var(--border-radius);
 }
+#app-content-files .icon-onlyoffice-new-docx {
+    background-image: url(../img/filetypes/x-office-document.svg);
+}
+#app-content-files .icon-onlyoffice-new-xlsx {
+    background-image: url(../img/filetypes/x-office-spreadsheet.svg);
+}
+#app-content-files .icon-onlyoffice-new-pptx {
+    background-image: url(../img/filetypes/x-office-presentation.svg);
+}
