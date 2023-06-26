@@ -1377,9 +1377,6 @@ body .icon-public {
 #content-vue.app-contacts #addressbook-list .icon-shared {
     background-size: 12px;
 }
-#content-vue.app-calendar .fc-scrollgrid {
-    padding-top: 14px;
-}
 
 #content-vue.app-calendar .fc-dayGridMonth-view table {
     font-size: 1em;
