@@ -60,6 +60,9 @@
     --search-icon: var(--original-icon-search-dark);
     --body-container-radius: 0px;
     --app-icon-filter: brightness(0.5);
+    --image-logoheader-custom:true;
+    --background-image-invert-if-bright:no;
+    --image-background:none;
 }
 
 /* Force a few variables to right values for dark theme */
@@ -72,6 +75,9 @@ body[data-themes="dark"] , body[data-themes="dark-highcontrast"]{
     --notification-icon-has-notification: var(--icon-has-notification-light);
     --search-icon: var(--original-icon-search-white);
     --app-icon-filter: brightness(1);
+    --image-logoheader-custom:true;
+    --background-image-invert-if-bright:no;
+    --image-background:none;
 }
 
 body.theme--highcontrast {
