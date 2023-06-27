@@ -60,9 +60,9 @@
     --search-icon: var(--original-icon-search-dark);
     --body-container-radius: 0px;
     --app-icon-filter: brightness(0.5);
-    --image-logoheader-custom:true;
-    --background-image-invert-if-bright:no;
-    --image-background:none;
+    --image-logoheader-custom:true  !important;
+    --background-image-invert-if-bright:no !important;
+    --image-background:none  !important;
 }
 
 /* Force a few variables to right values for dark theme */
@@ -76,8 +76,8 @@ body[data-themes="dark"] , body[data-themes="dark-highcontrast"]{
     --search-icon: var(--original-icon-search-white);
     --app-icon-filter: brightness(1);
     --image-logoheader-custom:true;
-    --background-image-invert-if-bright:no;
-    --image-background:none;
+    --background-image-invert-if-bright:no !important;
+    --image-background:none !important;
 }
 
 body.theme--highcontrast {
