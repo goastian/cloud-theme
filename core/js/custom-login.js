@@ -19,3 +19,18 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 	})
 })
+if (window.location.href.includes("?showResetPassword=1")) {
+  var elementLostPassword = document.getElementById("lost-password");
+  if (elementLostPassword) {
+    elementLostPassword.click();
+  }
+}
+if (window.location.href.includes("?showLoginWithDevice=1")) {
+	var targetHref = '#';
+	var targetText = 'Log in with a device';
+	var element = document.querySelector('a[href="' + targetHref + '"]:contains("' + targetText + '")');
+	if (element) {
+		element.click();
+	}
+}
+
