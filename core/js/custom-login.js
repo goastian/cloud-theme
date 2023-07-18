@@ -25,12 +25,3 @@ if (window.location.href.includes("?showResetPassword=1")) {
     elementLostPassword.click();
   }
 }
-if (window.location.href.includes("?showLoginWithDevice=1")) {
-	var targetHref = '#';
-	var targetText = 'Log in with a device';
-	var element = document.querySelector('a[href="' + targetHref + '"]:contains("' + targetText + '")');
-	if (element) {
-		element.click();
-	}
-}
-
