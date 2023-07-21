@@ -18,10 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
 			document.querySelector('.banner-content').classList.add('slow-show')
 		}
 	})
+
+	if (window.location.href.includes("?showResetPassword=1")) {
+		var elementLostPassword = document.getElementById("lost-password");
+		if (elementLostPassword) {
+		  elementLostPassword.click();
+		}
+	}
 })
-if (window.location.href.includes("?showResetPassword=1")) {
-  var elementLostPassword = document.getElementById("lost-password");
-  if (elementLostPassword) {
-    elementLostPassword.click();
-  }
-}
+
