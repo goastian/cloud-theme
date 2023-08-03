@@ -1,7 +1,7 @@
 OC.L10N.register(
     "core",
     {
-        "Get your FREE Murena account now" : "Holen Sie sich jetzt Ihr KOSTENLOSES Murena-Konto",
+        "Get your FREE Murena Cloud account now" : "Holen Sie sich jetzt Ihr KOSTENLOSES Murena-Konto",
 		"1GB storage for FREE to store and sync your pictures & videos.": "1 GB Speicherplatz KOSTENLOS zum Speichern und Synchronisieren Ihrer Bilder und Videos.",
 		"Edit your documents online.": "Bearbeiten Sie Ihre Dokumente online.",
 		"Your unique email address @murena.io": "Ihre eindeutige E-Mail-Adresse @murena.io",
