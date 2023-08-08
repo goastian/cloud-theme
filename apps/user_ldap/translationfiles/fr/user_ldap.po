@@ -14,16 +14,16 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.8.4\n"
 
 #: .translations.Please+try+again+or+contact+your+administrator.
-msgid "Please try again or contact Murena at helpdesk@murena.com."
-msgstr "Veuillez réessayer ou contacter Murena à helpdesk@murena.com."
+msgid "Please try again or contact Murena Cloud at helpdesk@murena.com."
+msgstr "Veuillez réessayer ou contacter Murena Cloud à helpdesk@murena.com."
 
 #: .translations.%3Cb%3EWarning:%3C/b%3E+The+PHP+LDAP+module+is+not+installed,+the+backend+will+not+work.+Please+ask+your+system+administrator+to+install+it.
 msgid ""
 "<b>Warning:</b> The PHP LDAP module is not installed, the backend will not "
-"work. Please contact Murena at helpdesk@murena.com to install it."
+"work. Please contact Murena Cloud at helpdesk@murena.com to install it."
 msgstr ""
 "<b>Avertissement:</b> Le module LDAP de PHP n'est pas installé, le backend "
-"ne fonctionnera pas. Veuillez contacter Murena à helpdesk@murena.com pour "
+"ne fonctionnera pas. Veuillez contacter Murena Cloud à helpdesk@murena.com pour "
 "l'installer."
 
 
