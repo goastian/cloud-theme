@@ -3,6 +3,6 @@ OC.L10N.register(
     {
         "Gallery": "Galleria", 
         "Gallery Settings": "Impostazioni della galleria",
-        "Gallery has been updated to {version}. Reload to get the new version." : "La galleria è stata aggiornata a {version}. Ricaricare per ottenere la nuova versione.",
+        "Gallery has been updated to {version}. Reload to get the new version." : "Abbiamo aggiornato Galleria alla nuova versione (version). Per poterla utilizzare, ricarica la pagina.",
     },
     "nplurals=2; plural=(n != 1);");
