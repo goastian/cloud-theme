@@ -108,7 +108,7 @@ class OC_Theme {
 	 * @return string short footer
 	 */
 	public function getShortFooter() {
-		$footer = 'Copyright © ' . date('Y') . ' <a href="' . $this->getBaseUrl() . '" target="_blank">' . $this->getName() . '</a>' ;
+		$footer = 'Copyright © ' . date('Y') . ' <a href="' . $this->getBaseUrl() . '" target="_blank">' . 'Murena' . '</a>' ;
 
 		return $footer;
 	}
@@ -117,7 +117,7 @@ class OC_Theme {
 	 * @return string long footer
 	 */
 	public function getLongFooter() {
-		$footer = '<p>'.(\OC::$server->getL10N('core')->t('Copyright')).' © ' . date('Y') .' '.$this->getName() .'-'.(\OC::$server->getL10N('core')->t('All Rights Reserved')).'-</p>' ;
+		$footer = '<p>'.(\OC::$server->getL10N('core')->t('Copyright')).' © ' . date('Y') .' '. 'Murena' .'-'.(\OC::$server->getL10N('core')->t('All Rights Reserved')).'-</p>' ;
 		$footer .= '<p>'.' <a href="' . $this->getTermsUrl() . '" target="_blank"> '.(\OC::$server->getL10N('core')->t('Terms of Service')).' </a>';
 		$footer .= ' - '.' <a href="' . $this->getPrivacyUrl() . '" target="_blank"> '.(\OC::$server->getL10N('core')->t('Privacy Policy')).' </a> </p>';
 
