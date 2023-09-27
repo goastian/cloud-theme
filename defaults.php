@@ -142,6 +142,13 @@ class OC_Theme {
 	}
 
 	/**
+	 * Returns mail header color
+	 * @return string
+	 */
+	public function getDefaultColor() {
+		return '#007FFF';
+	}	
+	/**
 	 * Returns variables to overload defaults from core/css/variables.scss
 	 * @return array
 	 */
