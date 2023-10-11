@@ -40,4 +40,4 @@ const memoriesTranslations = {
     "Gallery Settings": "Gallery Settings",
     "Gallery has been updated to {version}. Reload to get the new version.": "Gallery has been updated to {version}. Reload to get the new version.",
 }
-OC.L10N.register("memories", memoriesTranslations, "nplurals=2; plural=(n != 1);")
+OC.L10N.register("memories", memoriesTranslations, "nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;")
