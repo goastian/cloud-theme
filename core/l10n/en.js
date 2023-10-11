@@ -34,3 +34,10 @@ OC.L10N.register(
 		"Due to encryption the search is only done on files' name.": "Due to encryption the search is only done on files' name."
 },
 "nplurals=2; plural=(n != 1);");
+
+const memoriesTranslations = {
+	"Gallery": "Gallery",
+    "Gallery Settings": "Gallery Settings",
+    "Gallery has been updated to {version}. Reload to get the new version.": "Gallery has been updated to {version}. Reload to get the new version.",
+}
+OC.L10N.register("memories", memoriesTranslations, "nplurals=2; plural=(n != 1);")
