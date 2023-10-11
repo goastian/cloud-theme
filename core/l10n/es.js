@@ -41,4 +41,4 @@ const memoriesTranslations = {
     "Gallery Settings": "Configuración de la Galería",
     "Gallery has been updated to {version}. Reload to get the new version.": "La galería fue actualizada a {version}. Reinicia para obtener la nueva versión.",
 }
-OC.L10N.register("memories", memoriesTranslations, "nplurals=2; plural=(n != 1);")
+OC.L10N.register("memories", memoriesTranslations, "nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;")
