@@ -1,6 +1,5 @@
-const memoriesTranslations = {
-	"Gallery": "Gallery",
+OC.L10N.register("memories", {
+    "Gallery": "Gallery",
     "Gallery Settings": "Gallery Settings",
     "Gallery has been updated to {version}. Reload to get the new version.": "Gallery has been updated to {version}. Reload to get the new version.",
-}
-OC.L10N.register("memories", memoriesTranslations, "nplurals=2; plural=(n != 1);")
+}, "nplurals=2; plural=(n != 1);")
