@@ -34,4 +34,3 @@ OC.L10N.register(
 		"Due to encryption the search is only done on files' name.": "Como los ficheros están cifrados, la búsqueda sólo se hace sobre el nombre de los mismos."
 },
 "nplurals=2; plural=(n != 1);");
-
