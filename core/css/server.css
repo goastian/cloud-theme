@@ -1679,9 +1679,6 @@ button.edit-output-dir span.icon-rename,
 progress {
     border-radius: 10px 10px !important;
     height: 12px !important;
-    --progress-bar-height: 12px !important;
-    bottom:0px !important;
-
 }
 #header .app-menu li a:focus .icon-more,
 #header .app-menu li a:focus .icon-more-white {
