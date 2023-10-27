@@ -1795,7 +1795,7 @@ textarea {
 #app-content-files .icon-onlyoffice-new-pptx {
     background-image: url(../img/filetypes/x-office-presentation.svg);
 }
-.unified-search__result .unified-search__result-icon,.unified-search__result .unified-search__result-icon img,body .icon-filter {
+.unified-search__result .unified-search__result-icon,.unified-search__result .unified-search__result-icon img,.v-popper__popper .icon-filter {
     filter :var(--inactive-icon-filter);
 
 }
