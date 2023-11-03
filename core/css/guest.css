@@ -1512,7 +1512,6 @@ a.legal {
         max-width: 80%;
     }
     #body-login .v-align{
-        overflow: hidden;
         width: 70%;
         height: auto;
     }
@@ -1573,7 +1572,6 @@ a.legal {
     #body-login .v-align{
         width: 100%;
         margin: 0 auto;
-        overflow: hidden;
         position: unset !important;
         height: unset;
         padding: 0 5vh;
