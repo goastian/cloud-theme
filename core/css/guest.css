@@ -1138,7 +1138,6 @@ a.legal {
     box-sizing: border-box;
     padding: 5vh;
     position: relative;
-    overflow: auto;
     max-height: 100%;
     transition: all 0.3s linear;
 }
