@@ -181,7 +181,7 @@ body {
 
 .wrapper {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     max-width: unset;
     margin-top: 0;
     display: inline;
