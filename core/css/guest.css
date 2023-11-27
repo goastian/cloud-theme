@@ -1731,3 +1731,6 @@ a.legal {
 #body-login .guest-box.login-box .lost-password-container .notecard.notecard--success{
     color:#222222 !important;
 }
+#fields-password .Password__strength-meter{
+    margin-bottom: 0;
+}
