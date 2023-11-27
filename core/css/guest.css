@@ -1127,7 +1127,7 @@ a.legal {
 #body-login .v-align {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: safe center;
     align-items: flex-start;
     height: 100%;
     background-color: #FFFFFF;
