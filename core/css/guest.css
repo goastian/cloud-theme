@@ -33,6 +33,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 
 html {
     height: 100%;
+    background: var(--color-main-background);
 }
 
 article, aside, dialog, figure, footer, header, hgroup, nav, section {
@@ -1511,7 +1512,6 @@ a.legal {
         max-width: 80%;
     }
     #body-login .v-align{
-        overflow: hidden;
         width: 70%;
         height: auto;
     }
@@ -1572,7 +1572,6 @@ a.legal {
     #body-login .v-align{
         width: 100%;
         margin: 0 auto;
-        overflow: hidden;
         position: unset !important;
         height: unset;
         padding: 0 5vh;
