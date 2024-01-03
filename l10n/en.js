@@ -10,6 +10,7 @@ OC.L10N.register(
 		"Create My Account": "Create My Account",
 		"Sign in to your account": "Sign in to your account",
 		"Terms & Conditions": "Terms & Conditions",
-		"Privacy Policy": "Privacy Policy"
+		"Privacy Policy": "Privacy Policy",
+		"Public link shares are available to people outside Nextcloud." : "Public link shares are available to people outside Murena Cloud.",
 },
 "nplurals=2; plural=(n != 1);");

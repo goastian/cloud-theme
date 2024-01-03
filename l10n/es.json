@@ -9,7 +9,8 @@
 		"Create My Account": "Crear mi cuenta",
 		"Sign in to your account": "Iniciar sesión en su cuenta",
 		"Terms & Conditions": "Términos y condiciones",
-		"Privacy Policy": "Política de privacidad"
+		"Privacy Policy": "Política de privacidad",
+		"Public link shares are available to people outside Nextcloud." : "Los enlaces públicos están disponibles para las personas fuera de Murena Cloud."
 	},
 	"pluralForm": "nplurals=2; plural=(n != 1);"
 }
