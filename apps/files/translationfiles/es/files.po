@@ -1,24 +1,24 @@
 #. extracted from apps/files/l10n/en.json, apps/files/l10n/es.json
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 12:10+0530\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2024-01-27 06:06+0000\n"
+"Last-Translator: Juan Sánchez <j.sanchez@e.email>\n"
+"Language-Team: Spanish <https://i18n.e.foundation/projects/"
+"murena-cloud-theme/files/es/>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.8.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.3.1\n"
 
 #: .translations.This+directory+is+unavailable,+please+check+the+logs+or+contact+the+administrator
 msgid ""
 "This directory is unavailable, please check the logs or contact Murena Cloud at "
 "helpdesk@murena.com."
 msgstr ""
-"Este directorio no está disponible, por favor compruebe los registros o "
-"contacte con Murena Cloud en helpdesk@murena.com."
-
-
+"Este directorio no está disponible, por favor comprueba los registros o "
+"contacta Murena Cloud en helpdesk@murena.com."
