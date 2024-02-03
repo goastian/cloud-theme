@@ -4,14 +4,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 12:04+0530\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-02-04 03:40+0000\n"
+"Last-Translator: Kristian Nordin <kristian.po@proton.me>\n"
+"Language-Team: Swedish <https://i18n.e.foundation/projects/"
+"murena-cloud-theme/privacy/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.8.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.3.1\n"
 
 #: .Like+in+most+cloud+services,+a+reduced+number+of+administrators+can+see+your+files+and+all+the+information+in+the+database+as+they+need+to+make+backups,+perform+upgrades,+reset+passwords,+etc.
 msgid ""
@@ -22,7 +24,7 @@ msgstr ""
 
 #: .Learn+more+about+this+topic+here.
 msgid "Learn more about this topic here."
-msgstr ""
+msgstr "Lär dig mer om ämnet här."
 
 #: .To+protect+your+data,+we+have+implemented+server-side-encryption+on+our+servers+which+hides+by+default+the+content+of+your+files+and+notes+even+to+these+administrators.
 msgid ""
@@ -37,8 +39,8 @@ msgstr ""
 
 #: .Where+is+your+data%3F
 msgid "Where is my data?"
-msgstr ""
+msgstr "Vart är min data?"
 
 #: .Who+has+access+to+your+data%3F
 msgid "Who has access to my data?"
-msgstr ""
+msgstr "Vem har tillgång till min data?"
