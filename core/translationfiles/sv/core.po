@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 12:00+0530\n"
-"PO-Revision-Date: 2024-02-04 00:27+0000\n"
+"PO-Revision-Date: 2024-02-06 20:52+0000\n"
 "Last-Translator: Kristian Nordin <kristian.po@proton.me>\n"
 "Language-Team: Swedish <https://i18n.e.foundation/projects/"
 "murena-cloud-theme/core/sv/>\n"
@@ -29,15 +29,15 @@ msgstr "Redigera dina dokument online."
 
 #: .translations.Your+unique+email+address+@murena.io
 msgid "Your unique email address @murena.io"
-msgstr ""
+msgstr "Din unika e-postadress @murena.io"
 
 #: .translations.Sync+calendar+and+contacts+with+the+cloud
 msgid "Sync calendar and contacts with the cloud"
-msgstr ""
+msgstr "Synka kalender och kontakter med molnet"
 
 #: .translations.and+many+new+features+added+regularly%21
 msgid "and many new features added regularly!"
-msgstr ""
+msgstr "och många andra funktioner läggs till regelbundet!"
 
 #: .translations.Create+My+Account
 msgid "Create My Account"
@@ -45,31 +45,31 @@ msgstr ""
 
 #: .translations.Sign+in+to+your+account
 msgid "Sign in to your account"
-msgstr ""
+msgstr "Logga in till ditt konto"
 
 #: .translations.Terms+of+Service
 msgid "Terms of Service"
-msgstr ""
+msgstr "Användarvillkor"
 
 #: .translations.Privacy+Policy
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Integritetspolicy"
 
 #: .translations.All+Rights+Reserved
 msgid "All Rights Reserved"
-msgstr ""
+msgstr "Alla rättigheter förbehållna"
 
 #: .translations.Copyright
 msgid "Copyright"
-msgstr ""
+msgstr "Upphovsrätt"
 
 #: .translations.Don%27t+have+an+account+yet%3F
 msgid "Don't have an account yet?"
-msgstr ""
+msgstr "Har du inte ett konto än?"
 
 #: .translations.Create+an+account
 msgid "Create an account"
-msgstr ""
+msgstr "Skapa ett konto"
 
 #: .translations.Please+contact+your+administrator.
 msgid "Please contact Murena Cloud at helpdesk@murena.com"
@@ -78,6 +78,7 @@ msgstr ""
 #: .translations.Please+try+again+or+contact+your+administrator.
 msgid "Please try again or contact Murena Cloud at helpdesk@murena.com."
 msgstr ""
+"Vänligen försök igen eller kontakta Murena Cloud via helpdesk@murena.com."
 
 #: .translations.If+you+did+not+request+this,+please+contact+an+administrator.
 msgid ""
