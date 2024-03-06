@@ -1,4 +1,6 @@
-{ "translations": {
-    "This directory is unavailable, please check the logs or contact Murena Cloud at helpdesk@murena.com." : "Este directorio no está disponible, por favor compruebe los registros o contacte con Murena Cloud en helpdesk@murena.com."
-},"pluralForm" :""
+{
+    "translations": {
+        "This directory is unavailable, please check the logs or contact the administrator": "Este directorio no está disponible, por favor compruebe los registros o contacte con Murena Cloud en helpdesk@murena.com."
+    },
+    "pluralForm": ""
 }
