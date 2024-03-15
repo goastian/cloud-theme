@@ -8,4 +8,4 @@ OC.L10N.register(
         "Where is your data?": "Wo werden meine Daten gespeichert?",
         "Who has access to your data?": "Wer kann auf meine Daten zugreifen?"
     },
-    "");
+    "nplurals=2; plural=(n != 1);");

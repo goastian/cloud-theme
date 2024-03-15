@@ -2,5 +2,5 @@
     "translations": {
         "This directory is unavailable, please check the logs or contact the administrator": "This directory is unavailable, please check the logs or contact Murena Cloud at helpdesk@murena.com."
     },
-    "pluralForm": ""
+    "pluralForm": "nplurals=2; plural=(n != 1);"
 }

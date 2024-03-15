@@ -7,5 +7,5 @@
         "Where is your data?": "¿Dónde están almacenados mis datos?",
         "Who has access to your data?": "¿Quién puede acceder a mis datos?"
     },
-    "pluralForm": ""
+    "pluralForm": "nplurals=2; plural=(n != 1);"
 }

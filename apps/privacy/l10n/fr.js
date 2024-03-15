@@ -9,4 +9,4 @@ OC.L10N.register(
         "Who has access to your data?": "Qui peut accéder à mes données ?",
         "Your data is located in: ": "Vos données sont situées en : "
     },
-    "");
+    "nplurals=2; plural=(n != 1);");
