@@ -1807,5 +1807,5 @@ textarea {
     margin-top: 10px;
 }
 svg#mdi-delete{
-    fill: var(--color-sharing-icon-background);
+    filter: var(--inactive-icon-filter);
 }
