@@ -1806,3 +1806,6 @@ textarea {
 .files-filestable{
     margin-top: 10px;
 }
+svg#mdi-delete{
+    fill: var(--color-sharing-icon-background);
+}
