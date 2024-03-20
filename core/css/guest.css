@@ -1732,4 +1732,5 @@ a.legal {
 }
 #app-content-files .app-files .actions .button.new{
     background-color: var(--color-primary);
+    color: #FFFFFF;
 }
