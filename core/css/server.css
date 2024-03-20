@@ -1803,3 +1803,6 @@ textarea {
     background-color: var(--color-primary);
     color: #FFFFFF;
 }
+.files-filestable{
+    margin-top: 10px;
+}
