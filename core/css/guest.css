@@ -1730,7 +1730,3 @@ a.legal {
 #body-login .guest-box.login-box .lost-password-container .notecard.notecard--success{
     color:#222222 !important;
 }
-#app-content-files .actions .button.new{
-    background-color: var(--color-primary);
-    color: #FFFFFF;
-}

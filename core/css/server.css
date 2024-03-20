@@ -1799,3 +1799,7 @@ textarea {
     filter :var(--inactive-icon-filter);
 
 }
+#app-content-files .actions .button.new{
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+}
