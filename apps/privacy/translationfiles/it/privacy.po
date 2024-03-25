@@ -39,15 +39,15 @@ msgstr ""
 "delle note per impostazione predefinita."
 
 #: .translations.People+you+shared+documents+or+folders+with
-msgid "People you shared content with"
+msgid "People you shared documents or folders with"
 msgstr "Persone con cui hai condiviso contenuti"
 
 #: .translations.Where+is+your+data%3F
-msgid "Where is my data?"
+msgid "Where is your data?"
 msgstr "Dove sono conservati i miei dati?"
 
 #: .translations.Who+has+access+to+your+data%3F
-msgid "Who has access to my data?"
+msgid "Who has access to your data?"
 msgstr "Chi può accedere ai miei dati?"
 
 

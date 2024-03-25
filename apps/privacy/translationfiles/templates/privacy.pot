@@ -32,13 +32,13 @@ msgid ""
 msgstr ""
 
 #: .People+you+shared+documents+or+folders+with
-msgid "People you shared content with"
+msgid "People you shared documents or folders with"
 msgstr ""
 
 #: .Where+is+your+data%3F
-msgid "Where is my data?"
+msgid "Where is your data?"
 msgstr ""
 
 #: .Who+has+access+to+your+data%3F
-msgid "Who has access to my data?"
+msgid "Who has access to your data?"
 msgstr ""

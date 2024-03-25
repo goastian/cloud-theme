@@ -40,13 +40,13 @@ msgstr ""
 "dessa administratörer."
 
 #: .People+you+shared+documents+or+folders+with
-msgid "People you shared content with"
+msgid "People you shared documents or folders with"
 msgstr "Personer du delat innehåll med"
 
 #: .Where+is+your+data%3F
-msgid "Where is my data?"
+msgid "Where is your data?"
 msgstr "Vart är min data?"
 
 #: .Who+has+access+to+your+data%3F
-msgid "Who has access to my data?"
+msgid "Who has access to your data?"
 msgstr "Vem har tillgång till min data?"

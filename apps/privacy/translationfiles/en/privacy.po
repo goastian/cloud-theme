@@ -38,15 +38,15 @@ msgstr ""
 "these administrators."
 
 #: .translations.People+you+shared+documents+or+folders+with
-msgid "People you shared content with"
+msgid "People you shared documents or folders with"
 msgstr "People you shared content with"
 
 #: .translations.Where+is+your+data%3F
-msgid "Where is my data?"
+msgid "Where is your data?"
 msgstr "Where is my data?"
 
 #: .translations.Who+has+access+to+your+data%3F
-msgid "Who has access to my data?"
+msgid "Who has access to your data?"
 msgstr "Who has access to my data?"
 
 

@@ -40,15 +40,15 @@ msgstr ""
 "Dateien und Notizen einzusehen."
 
 #: .translations.People+you+shared+documents+or+folders+with
-msgid "People you shared content with"
+msgid "People you shared documents or folders with"
 msgstr "Personen, mit denen du Inhalte geteilt hast"
 
 #: .translations.Where+is+your+data%3F
-msgid "Where is my data?"
+msgid "Where is your data?"
 msgstr "Wo werden meine Daten gespeichert?"
 
 #: .translations.Who+has+access+to+your+data%3F
-msgid "Who has access to my data?"
+msgid "Who has access to your data?"
 msgstr "Wer kann auf meine Daten zugreifen?"
 
 
