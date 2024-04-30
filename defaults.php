@@ -117,7 +117,7 @@ class OC_Theme {
 	 * @return string long footer
 	 */
 	public function getLongFooter() {
-		$footer = '<p>'.(\OC::$server->getL10N('core')->t('Copyright')).' © ' . date('Y') .' '. 'Murena' .'-'.(\OC::$server->getL10N('core')->t('All Rights Reserved')).'-</p>' ;
+		$footer = '<p>'.(\OC::$server->getL10N('core')->t('Copyright')).' © ' . date('Y') .' '. 'Murena' .' - '.(\OC::$server->getL10N('core')->t('All Rights Reserved')).'</p>' ;
 		$footer .= '<p>'.' <a href="' . $this->getTermsUrl() . '" target="_blank"> '.(\OC::$server->getL10N('core')->t('Terms of Service')).' </a>';
 		$footer .= ' - '.' <a href="' . $this->getPrivacyUrl() . '" target="_blank"> '.(\OC::$server->getL10N('core')->t('Privacy Policy')).' </a> </p>';
 
