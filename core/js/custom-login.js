@@ -25,5 +25,12 @@ document.addEventListener('DOMContentLoaded', function() {
 		  elementLostPassword.click();
 		}
 	}
+	if (window.location.href.includes("?showLoginWithDevice=1")) {
+		var lostPasswordLink = document.getElementById("lost-password");
+		if (lostPasswordLink && lostPasswordLink.nextElementSibling) {
+			var loginWithDeviceLink = lostPasswordLink.nextElementSibling;
+			loginWithDeviceLink.click();
+		}
+	}
 })
 
