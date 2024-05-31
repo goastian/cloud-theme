@@ -1799,3 +1799,35 @@ textarea {
     filter :var(--inactive-icon-filter);
 
 }
+
+
+/* Nextcloud passwords compatibility error style */
+
+.passwords-info {
+    max-width: 400px;
+    margin: auto;
+    color: var(--color-main-text);
+    padding: 0px 24px 24px 24px;
+}
+
+.passwords-quote {
+    padding: 8px 8px 8px 8px;
+    background: #D0D0D036;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.passwords-title{
+    color: var(--color-main-text);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.passwords-warning{
+    margin-right: 4px;
+    height: 24px;
+}
+
+.password-message{
+    display: flex;
+    justify-content: center;
+}
