@@ -1803,31 +1803,31 @@ textarea {
 
 /* Nextcloud passwords compatibility error style */
 
-.passwords-info {
+.passwords-jit-compatibility .info {
     max-width: 400px;
     margin: auto;
     color: var(--color-main-text);
     padding: 0px 24px 24px 24px;
 }
 
-.passwords-quote {
+.passwords-jit-compatibility .quote {
     padding: 8px 8px 8px 8px;
     background: #D0D0D036;
     margin-top: 8px;
     margin-bottom: 8px;
 }
-.passwords-title{
+.passwords-jit-compatibility .howto{
     color: var(--color-main-text);
     font-weight: bold;
     font-size: 20px;
 }
 
-.passwords-warning{
+.passwords-jit-compatibility .warning-icon{
     margin-right: 4px;
     height: 24px;
 }
 
-.password-message{
+.passwords-jit-compatibility .message{
     display: flex;
     justify-content: center;
 }

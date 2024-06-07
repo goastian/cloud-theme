@@ -42,30 +42,27 @@ function showBrowserCompatibilityWarning() {
     throw new Error('Browser does not suport ECMAScript 2017 / ES2017');
 }
 
-function showWebAssemblyCompatibilityWarning() {
-
-    var imgpath   = OC.generateUrl('themes/eCloud/apps/passwords/img/warning.png'),
-        container = document.getElementById('main');
-    container.innerHTML =
-        '<div class="passwords-browser-compatibility">' +
-        '<div class="message password-message"><img class="passwords-warning" src="' + imgpath +'"/>To view this website properly, please enable Javascript JIT.' +
-        '</div><div class="passwords-info" >' +
-        '<h3 class="passwords-title">How to enable it</h3>' +
-        '<p>JavaScript JIT is disabled by default in the browser in order to render web content in a more secure configuration.</p><br />' +
-        '<p><b>Steps:</b> You can always enable Javascript JIT in the settings. To do it, click on the 3 dots icon at the top left corner and go to:' +
-        '<div class="passwords-quote">Settings  > Site settings</div>' +
-        'Then, enable <b>Javascript JIT</b> at the bottom of the list.' +
-        '</p></div></div>';
-    container.setAttribute('class', '');
-
-    throw new Error('Browser does not suport ECMAScript 2017 / ES2017');
-}
-
 function isWebAssemblyEnable(){
     if(!window.hasOwnProperty('WebAssembly') || typeof window.WebAssembly.instantiate !== "function") {
         console.error('WebAssembly not supported');
         return false;
     }
+}
+
+function showWebAssemblyCompatibilityWarning() {
+
+    var imgpath   = OC.generateUrl('themes/eCloud/apps/passwords/img/warning.png'),
+        container = document.getElementById('main');
+    container.innerHTML =
+        '<div class="passwords-browser-compatibility passwords-jit-compatibility">' +
+        '<div class="message"><img class="warning-icon" src="' + imgpath +'"/>'+OC.L10N.translate('passwords', 'To view this website properly, please enable Javascript JIT.') +
+        '</div><div class="info" >' +
+        '<h3 class="howto">' + OC.L10N.translate('passwords', 'How to enable it') + '</h3>' +
+        '<p>' + OC.L10N.translate('passwords', 'JavaScript JIT might be disabled in your browser in order to render web content in a more secure configuration. You can always enable Javascript JIT in the settings, depending on your web browser.') + '</p><br />' +
+        '</div></div>';
+    container.setAttribute('class', '');
+
+    throw new Error('Browser does not suport WebAssembly');
 }
 
 function checkSystem() {
