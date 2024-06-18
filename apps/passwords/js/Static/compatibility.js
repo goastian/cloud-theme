@@ -29,9 +29,9 @@ function showBrowserCompatibilityWarning() {
         container = document.getElementById('main');
     container.innerHTML =
         '<div class="passwords-browser-compatibility">' +
-        '<h1 class="title">Your Browser is outdated</h1>' +
-        '<div class="message">Your browser is outdated and does not provide the necessary functionality to display this page.' +
-        '<br>Please check if an update is available for your browser or choose a modern and compatible browser from the list below.' +
+        '<h1 class="title">'+t('passwords', 'Your Browser is outdated')+'</h1>' +
+        '<div class="message">'+t('passwords', 'Your browser is outdated and does not provide the necessary functionality to display this page.') +
+        '<br>'+t('passwords', 'Please check if an update is available for your browser or choose a modern and compatible browser from the list below.') +
         '</div><div class="browser">' +
         '<a target="_blank" rel="noreferrer noopener" href="https://www.mozilla.org/firefox/new/" style="background-image: url(' + imgpath + 'firefox.png)">Firefox</a>' +
         '<a target="_blank" rel="noreferrer noopener" href="https://vivaldi.com/download/" style="background-image: url(' + imgpath + 'vivaldi.png)">Vivaldi</a>' +
@@ -55,10 +55,10 @@ function showWebAssemblyCompatibilityWarning() {
         container = document.getElementById('main');
     container.innerHTML =
         '<div class="passwords-browser-compatibility passwords-jit-compatibility">' +
-        '<div class="message"><img class="warning-icon" src="' + imgpath +'"/>'+OC.L10N.translate('passwords', 'To view this website properly, please enable Javascript JIT.') +
+        '<div class="message"><img class="warning-icon" src="' + imgpath +'"/>'+t('passwords', 'To view this website properly, please enable Javascript JIT.') +
         '</div><div class="info" >' +
-        '<h3 class="howto">' + OC.L10N.translate('passwords', 'How to enable it') + '</h3>' +
-        '<p>' + OC.L10N.translate('passwords', 'JavaScript JIT might be disabled in your browser in order to render web content in a more secure configuration. You can always enable Javascript JIT in the settings, depending on your web browser.') + '</p><br />' +
+        '<h3 class="howto">' + t('passwords', 'How to enable it') + '</h3>' +
+        '<p>' + t('passwords', 'JavaScript JIT might be disabled in your browser in order to render web content in a more secure configuration. You can always enable Javascript JIT in the settings, depending on your web browser.') + '</p><br />' +
         '</div></div>';
     container.setAttribute('class', '');
 
@@ -66,8 +66,8 @@ function showWebAssemblyCompatibilityWarning() {
 }
 
 function checkSystem() {
-    if(!isWebAssemblyEnable()) showWebAssemblyCompatibilityWarning();
-    else if(!isCompatibleBrowser()) showBrowserCompatibilityWarning();
+   // if(!isWebAssemblyEnable()) showWebAssemblyCompatibilityWarning();
+    if(!isCompatibleBrowser()) showBrowserCompatibilityWarning();
 }
 
 window.addEventListener('DOMContentLoaded', checkSystem, false);
