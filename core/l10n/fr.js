@@ -31,8 +31,6 @@ OC.L10N.register(
         "Your files are encrypted. There will be no way to get your data back after your password is reset. If you are not sure what to do, please contact your administrator before you continue. Do you really want to continue?": "Vos fichiers sont cryptés. Il n'y aura aucun moyen de récupérer vos données après la réinitialisation de votre mot de passe. Si vous n'êtes pas sûr de ce que vous devez faire, veuillez contacter Murena Cloud au helpdesk@murena.com avant de continuer. Voulez-vous vraiment continuer?",
         "Password cannot be changed. Please contact your administrator.": "Le mot de passe ne peut pas être modifié. Veuillez contacter Murena Cloud à helpdesk@murena.com.",
         "If it is not there ask your local administrator.": "",
-        "Due to encryption the search is only done on files' name.": "Les fichiers étant chiffrés, la recherche n'est effectuée que sur le nom des fichiers.",
-        "JavaScript JIT is disabled by default in the browser in order to render web content in a more secure configuration. You can always enable Javascript JIT in the settings, depending on your web browser.": "<p><b>Steps:</b> You can always enable Javascript JIT in the settings. To do it, click on the 3 dots icon at the top left corner and go to:<div class=\"quote\">Settings  > Site settings</div>Then, enable <b>Javascript JIT</b> at the bottom of the list.</p>"
-
+        "Due to encryption the search is only done on files' name.": "Les fichiers étant chiffrés, la recherche n'est effectuée que sur le nom des fichiers."
     },
     "nplurals=2; plural=(n != 1);");
