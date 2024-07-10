@@ -16,12 +16,12 @@ msgstr ""
 "X-Generator: Weblate 5.3.1\n"
 
 #: .translations.Please+try+again+or+contact+your+administrator.
-msgid "Please try again or contact Murena Cloud at helpdesk@murena.com."
+msgid "Please try again or contact Murena Workspace at helpdesk@murena.com."
 msgstr ""
-"Vänligen försök igen eller kontakta Murena Cloud via helpdesk@murena.com."
+"Vänligen försök igen eller kontakta Murena Workspace via helpdesk@murena.com."
 
 #: .translations.%3Cb%3EWarning:%3C/b%3E+The+PHP+LDAP+module+is+not+installed,+the+backend+will+not+work.+Please+ask+your+system+administrator+to+install+it.
 msgid ""
 "<b>Warning:</b> The PHP LDAP module is not installed, the backend will not "
-"work. Please contact Murena Cloud at helpdesk@murena.com to install it."
+"work. Please contact Murena Workspace at helpdesk@murena.com to install it."
 msgstr ""
