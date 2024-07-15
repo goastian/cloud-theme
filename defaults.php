@@ -41,7 +41,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getTitle() {
-		return 'Murena Cloud';
+		return 'Murena Workspace';
 	}
 
 	/**
@@ -49,7 +49,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getName() {
-		return 'Murena Cloud';
+		return 'Murena Workspace';
 	}
 
 	/**
@@ -57,7 +57,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getHTMLName() {
-		return 'Murena Cloud';
+		return 'Murena Workspace';
 	}
 
 	/**

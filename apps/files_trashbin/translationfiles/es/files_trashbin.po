@@ -15,10 +15,10 @@ msgstr ""
 
 #: .translations.This+directory+is+unavailable,+please+check+the+logs+or+contact+the+administrator
 msgid ""
-"This directory is unavailable, please check the logs or contact Murena Cloud at "
+"This directory is unavailable, please check the logs or contact Murena Workspace at "
 "helpdesk@murena.com."
 msgstr ""
 "Este directorio no está disponible, por favor compruebe los registros o "
-"contacte con Murena Cloud en helpdesk@murena.com."
+"contacte con Murena Workspace en helpdesk@murena.com."
 
 
