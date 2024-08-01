@@ -309,6 +309,7 @@ body.theme--dark #settings #expanddiv {
 .app-navigation-administration>ul>li a.active,
 .app-navigation-administration>ul>li a.active>a {
     background-color: var(--color-main-background);
+    color: var(--color-main-text);
 }
 
 li.app-navigation-entry,
