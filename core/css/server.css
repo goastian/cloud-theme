@@ -1852,5 +1852,5 @@ textarea {
     background-color: var(--color-primary-element-light) !important
 }
 #app-navigation-vue .app-navigation-entry.active .app-navigation-entry-link {
-    background-color: var(--color-main-text) !important
+    color: var(--color-main-text) !important
 }
