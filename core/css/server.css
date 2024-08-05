@@ -1784,7 +1784,7 @@ body.theme--dark.theme--highcontrast #header .app-menu li:focus a {
     min-height: 70px;
 }
 
-#header-menu-user-menu .user-menu__nav .menu-entry img {
+#header-menu-user-menu .header-menu__content .menu-entry img {
     filter: var(--inactive-icon-filter);
     opacity: 1;
 }
