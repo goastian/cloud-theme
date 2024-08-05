@@ -1788,6 +1788,12 @@ body.theme--dark.theme--highcontrast #header .app-menu li:focus a {
     filter: var(--inactive-icon-filter);
     opacity: 1;
 }
+#header-menu-user-menu .user-menu ul li a:active:not(:focus-visible), 
+#header-menu-user-menu .user-menu ul li a.active:not(:focus-visible), 
+#header-menu-user-menu .user-menu ul li button:active:not(:focus-visible), 
+#header-menu-user-menu .user-menu ul li button.active:not(:focus-visible) {
+    background-color: var(--color-primary-element-light);
+}
 input:not([type=range],
 .input-field__input,
 [type=submit],
