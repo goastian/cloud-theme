@@ -1793,6 +1793,7 @@ body.theme--dark.theme--highcontrast #header .app-menu li:focus a {
 #header-menu-user-menu .user-menu ul li button:active:not(:focus-visible), 
 #header-menu-user-menu .user-menu ul li button.active:not(:focus-visible) {
     background-color: var(--color-primary-element-light);
+    color: var(--color-main-text);
 }
 input:not([type=range],
 .input-field__input,
