@@ -291,8 +291,25 @@ body.theme--dark #settings #expanddiv {
 #app-navigation:not(.vue) > ul > li.active > a,
 #app-navigation:not(.vue) > ul > li a:active > a,
 #app-navigation:not(.vue) > ul > li a.selected > a,
-#app-navigation:not(.vue) > ul > li a.active > a {
+#app-navigation:not(.vue) > ul > li a.active > a,
+.app-navigation-personal>ul>li.active,
+.app-navigation-personal>ul>li.active>a,
+.app-navigation-personal>ul>li a:active,
+.app-navigation-personal>ul>li a:active>a,
+.app-navigation-personal>ul>li a.selected,
+.app-navigation-personal>ul>li a.selected>a,
+.app-navigation-personal>ul>li a.active,
+.app-navigation-personal>ul>li a.active>a,
+.app-navigation-administration>ul>li.active,
+.app-navigation-administration>ul>li.active>a,
+.app-navigation-administration>ul>li a:active,
+.app-navigation-administration>ul>li a:active>a,
+.app-navigation-administration>ul>li a.selected,
+.app-navigation-administration>ul>li a.selected>a,
+.app-navigation-administration>ul>li a.active,
+.app-navigation-administration>ul>li a.active>a {
     background-color: var(--color-main-background);
+    color: var(--color-main-text);
 }
 
 li.app-navigation-entry,
@@ -1830,4 +1847,10 @@ textarea {
 .passwords-jit-compatibility .message{
     display: flex;
     justify-content: center;
+}
+#app-navigation-vue .app-navigation-entry.active {
+    background-color: var(--color-primary-element-light) !important
+}
+#app-navigation-vue .app-navigation-entry.active .app-navigation-entry-link {
+    color: var(--color-main-text) !important
 }
