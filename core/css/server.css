@@ -1789,10 +1789,14 @@ body.theme--dark.theme--highcontrast #header .app-menu li:focus a {
     opacity: 1;
 }
 #user-menu.user-menu ul li a.active:not(:focus-visible),  
-#user-menu.user-menu ul li button.active:not(:focus-visible) {
+#user-menu.user-menu ul li button.active:not(:focus-visible),
+#user-menu.user-menu ul li a:active:not(:focus-visible),
+#user-menu.user-menu ul li button.active:not(:focus-visible)
+{
     background-color: var(--color-primary-element-light);
     color: var(--color-main-text);
 }
+
 #user-menu.user-menu ul li a:focus-visible,  
 #user-menu.user-menu ul li button.active:focus-visible {
     background-color: var(--color-primary-element-light);
