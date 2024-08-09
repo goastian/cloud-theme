@@ -1866,6 +1866,11 @@ textarea {
 #app-navigation-vue .app-navigation-entry.active {
     background-color: var(--color-primary-element-light) !important
 }
+
 #app-navigation-vue .app-navigation-entry.active .app-navigation-entry-link {
     color: var(--color-main-text) !important
+}
+
+#body-user .material-design-icon.menu-icon svg {
+    filter: brightness(0) saturate(100%) invert(50%) sepia(9%) saturate(11%) hue-rotate(314deg) brightness(98%) contrast(94%);
 }
