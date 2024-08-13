@@ -1784,9 +1784,24 @@ body.theme--dark.theme--highcontrast #header .app-menu li:focus a {
     min-height: 70px;
 }
 
-#header-menu-user-menu .user-menu__nav .menu-entry img {
+#header-menu-user-menu .header-menu__content .menu-entry img {
     filter: var(--inactive-icon-filter);
     opacity: 1;
+}
+#user-menu.user-menu ul li a.active:not(:focus-visible),  
+#user-menu.user-menu ul li button.active:not(:focus-visible),
+#user-menu.user-menu ul li a:active:not(:focus-visible),
+#user-menu.user-menu ul li button.active:not(:focus-visible)
+{
+    background-color: var(--color-primary-element-light);
+    color: var(--color-main-text);
+}
+
+#user-menu.user-menu ul li a:focus-visible,  
+#user-menu.user-menu ul li button.active:focus-visible {
+    background-color: var(--color-primary-element-light);
+    color: var(--color-main-text);
+    box-shadow: none !important;
 }
 input:not([type=range],
 .input-field__input,
@@ -1851,6 +1866,15 @@ textarea {
 #app-navigation-vue .app-navigation-entry.active {
     background-color: var(--color-primary-element-light) !important
 }
+
 #app-navigation-vue .app-navigation-entry.active .app-navigation-entry-link {
     color: var(--color-main-text) !important
+}
+
+#body-user .material-design-icon.menu-icon svg {
+    filter: brightness(0) saturate(100%) invert(50%) sepia(9%) saturate(11%) hue-rotate(314deg) brightness(98%) contrast(94%);
+}
+
+#body-user .material-design-icon.menu-open-icon svg {
+    color: var(--icon-inactive-color);
 }
