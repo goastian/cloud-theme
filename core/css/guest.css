@@ -1704,6 +1704,9 @@ a.legal {
     font-size: 16px;
     background-color: #ffffff;
 }
+#body-login .guest-box.login-box .login-additional.login-passwordless .button-vue.button-vue--size-normal.button-vue--text-only.button-vue--vue-tertiary.button-vue--wide {
+    color: #808080;
+}
 #body-login .guest-box.login-box h2{
     color: #333333;
 }
