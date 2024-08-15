@@ -1693,8 +1693,14 @@ a.legal {
 #body-login .guest-box.login-box .button-vue--vue-tertiary-no-background,
 #body-login .guest-box.login-box .input-field__input {
     color: #222222;
+}
+#body-login .guest-box.login-box .input-field__label {
     background: #ffffff;
 }
+#body-login .guest-box.login-box .input-input-field__input {
+    padding: 12px 16px;
+}
+
 #body-login .picker-window p.info{
     color: #222222;
 }
