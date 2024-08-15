@@ -1699,6 +1699,7 @@ a.legal {
 }
 #body-login .guest-box.login-box .input-input-field__input {
     padding: 12px 16px;
+    background: #ffffff;
 }
 
 #body-login .picker-window p.info{
