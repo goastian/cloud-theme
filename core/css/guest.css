@@ -1175,7 +1175,6 @@ a.legal {
 
 #body-login #user,
 #body-login #password,
-#body-login .guest-box.login-box input[type="text"]
 #body-login .totp-form > input[type="tel"] {
     padding: 12px 16px;
     width: 100%;
@@ -1691,14 +1690,10 @@ a.legal {
     border: none;
     color: #222222;
 }
-#body-login .guest-box.login-box .button-vue--vue-tertiary-no-background{
+#body-login .guest-box.login-box .button-vue--vue-tertiary-no-background,
+#body-login .guest-box.login-box .input-field__input {
     color: #222222;
 }
-#body-login .guest-box.login-box .input-field__label {
-    background: var(--input-background-color);
-    color: var(--color-main-text);
-}
-
 #body-login .picker-window p.info{
     color: #222222;
 }
