@@ -1693,6 +1693,7 @@ a.legal {
 #body-login .guest-box.login-box .button-vue--vue-tertiary-no-background,
 #body-login .guest-box.login-box .input-field__input {
     color: #222222;
+    background: #ffffff;
 }
 #body-login .picker-window p.info{
     color: #222222;
