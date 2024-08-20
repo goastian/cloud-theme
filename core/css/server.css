@@ -1879,6 +1879,6 @@ textarea {
     color: var(--icon-inactive-color);
 }
 
-.notification img.notification-icon {
+#header-menu-notifications .notification img.notification-icon {
     filter: brightness(0) saturate(100%) invert(42%) sepia(97%) saturate(0%) hue-rotate(150deg) brightness(98%) contrast(101%);
 }
