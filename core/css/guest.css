@@ -1747,3 +1747,9 @@ a.legal {
 #body-login .guest-box.login-box .lost-password-container .notecard.notecard--success{
     color:#222222 !important;
 }
+@media(prefers-color-scheme: dark){
+    #body-login .picker-window h2 ,#body-login .picker-window p.info {
+        color:var(--color-main-text);
+    }    
+
+}   
