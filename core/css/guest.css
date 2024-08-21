@@ -1747,3 +1747,15 @@ a.legal {
 #body-login .guest-box.login-box .lost-password-container .notecard.notecard--success{
     color:#222222 !important;
 }
+@media(prefers-color-scheme: dark){
+    #body-login .not_alt_login .picker-window h2 ,#body-login .not_alt_login .picker-window p.info {
+        color:var(--color-main-text);
+    }
+    #body-login .not_alt_login .notecard.warning h3{
+        color: #fb3845;
+    }
+    #body-login .not_alt_login #submit-wrapper {
+        background-color: unset;
+    }     
+
+}   
