@@ -1,3 +1,9 @@
+stages:
+  - test
+  - performance
+  - dast
+  - deploy
+
 variables:
   APP_NAME: eCloud
 
