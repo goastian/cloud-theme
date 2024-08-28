@@ -1,7 +1,7 @@
 {
     "translations": {
         "Internal server error! Please check your data/nextcloud.log file for additional information!": "Interner Serverfehler! Bitte kontaktieren Sie den Support für weitere Informationen!",
-        "Request failed, Nextcloud is in currently in maintenance mode!": "Anfrage fehlgeschlagen, diese Murena-Instanz befindet sich derzeit im Wartungsmodus."
+        "Request failed, Nextcloud is in currently in maintenance mode!": "Anfrage fehlgeschlagen, diese Murena Workspace-Instanz befindet sich derzeit im Wartungsmodus."
     },
     "pluralForm": "nplurals=2; plural=(n != 1);"
 }
