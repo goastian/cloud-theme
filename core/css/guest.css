@@ -1757,5 +1757,7 @@ a.legal {
     #body-login .not_alt_login #submit-wrapper {
         background-color: unset;
     }     
-
+    #body-login .login-form .notecard.notecard--error {
+        color:#222222;
+    }  
 }   
