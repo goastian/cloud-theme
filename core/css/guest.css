@@ -1758,6 +1758,6 @@ a.legal {
         background-color: unset;
     }     
     #body-login .login-form .notecard.notecard--error {
-        color:#222222;
+        color:#222222 !important;
     }  
 }   
