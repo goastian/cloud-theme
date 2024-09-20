@@ -13,13 +13,13 @@ include:
     ref: main
     file: "nc-apps-checkout-deploy.yml"
   - project: "e/infra/ecloud/nextcloud-apps/ci-templates"
-    ref: dev/1789-setup-mr-review-tools-in-gitlab
+    ref: main
     file: "mr-review-tools.yml"
   - project: "e/infra/ecloud/nextcloud-apps/ci-templates"
-    ref: dev/1789-setup-mr-review-tools-in-gitlab
+    ref: main
     file: "git-operations.yml"
   - project: "e/infra/ecloud/nextcloud-apps/ci-templates"
-    ref: dev/1789-setup-mr-review-tools-in-gitlab
+    ref: main
     file: "populate-code-climate-default-config.yml"
 
 .deploy:nextcloud-app-by-checkout:
