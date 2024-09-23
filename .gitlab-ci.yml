@@ -1,19 +1,36 @@
+stages:
+  - test
+  - performance
+  - dast
+  - deploy
+
 variables:
   APP_NAME: eCloud
 
 # Deploy stage
 include:
-  - project: 'e/infra/ecloud/nextcloud-apps/ci-templates'
+  - project: "e/infra/ecloud/nextcloud-apps/ci-templates"
     ref: main
-    file: 'nc-apps-checkout-deploy.yml'
+    file: "nc-apps-checkout-deploy.yml"
+  - project: "e/infra/ecloud/nextcloud-apps/ci-templates"
+    ref: main
+    file: "mr-review-tools.yml"
+  - project: "e/infra/ecloud/nextcloud-apps/ci-templates"
+    ref: main
+    file: "git-operations.yml"
+  - project: "e/infra/ecloud/nextcloud-apps/ci-templates"
+    ref: main
+    file: "populate-code-climate-default-config.yml"
 
 .deploy:nextcloud-app-by-checkout:
   script:
+    - set -e
     # print var to confirm
     - echo "Deploying $APP_NAME to $CI_ENVIRONMENT_NAME ($DEPLOYMENT_HOST)"
     # clone repo to /tmp
     - |
       ssh $SSH_USER@$DEPLOYMENT_HOST /bin/bash -s << EOT
+      set -e
       git clone --depth 1 $CI_REPOSITORY_URL --branch $CI_COMMIT_REF_NAME --single-branch /tmp/${CI_JOB_ID}/${APP_NAME}
       sudo rsync -avzh --chown www-data:www-data --delete --exclude '.git*' /tmp/${CI_JOB_ID}/${APP_NAME}/ ${DEPLOYMENT_PATH}/html/themes/${APP_NAME}/
       docker exec -u www-data $CONTAINER_NAME /usr/local/bin/php /var/www/html/occ maintenance:theme:update
