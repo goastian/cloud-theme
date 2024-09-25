@@ -28,6 +28,7 @@
     "Couldn't send reset email. Please contact Murena Workspace at helpdesk@murena.com." : "Couldn't send reset email. Please contact Murena Workspace at helpdesk@murena.com.",
     "Your files are encrypted. There will be no way to get your data back after your password is reset. If you are not sure what to do, please contact Murena Workspace at helpdesk@murena.com before you continue. Do you really want to continue?" : "Your files are encrypted. There will be no way to get your data back after your password is reset. If you are not sure what to do, please contact Murena Workspace at helpdesk@murena.com before you continue. Do you really want to continue?",
     "Password cannot be changed. Please contact Murena Workspace at helpdesk@murena.com." : "Password cannot be changed. Please contact Murena Workspace at helpdesk@murena.com.",
-    "Due to encryption the search is only done on files' name." : "Due to encryption the search is only done on files' name."
+    "Due to encryption the search is only done on files' name." : "Due to encryption the search is only done on files' name.",
+    "If this account exists, a password reset message has been sent to its email address. If you do not receive it, verify your email address and/or Login, check your spam/junk folders or ask your local administration for help.":"If this account exists, a password reset message has been sent to its recovery email address. If you do not receive it, please verify your login and check your spam/junk folders. If you still cannot login please contact the Helpdesk at https://murena.com/contact-us/"
 },"pluralForm" :""
 }
