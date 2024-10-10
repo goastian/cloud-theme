@@ -186,6 +186,7 @@ body {
     max-width: unset;
     margin-top: 0;
     display: inline;
+    flex: 1;
 }
 
 .createaccmob{
