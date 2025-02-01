@@ -1,4 +1,4 @@
-Nextcloud theme for /e/ - nextcloud V20 compatible version
+Nextcloud theme for Astian Cloud - Nextcloud. 
 
 
 # Installation
